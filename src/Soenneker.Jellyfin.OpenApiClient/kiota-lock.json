@@ -1,6 +1,6 @@
 {
   "descriptionHash": "A8DB6870D8B782FC8E9F2DA6726F83855843A629A50B46DCEEB1B52CA44E0C099BDD18B9861FA3B3EA5901F232322776FC3569EC1F0BB21A05A1BA117FFCED58",
-  "descriptionLocation": "../../openapi.json",
+  "descriptionLocation": "../../openapi.fixed.json",
   "lockFileVersion": "1.0.0",
   "kiotaVersion": "1.35.0",
   "clientClassName": "JellyfinOpenApiClient",
