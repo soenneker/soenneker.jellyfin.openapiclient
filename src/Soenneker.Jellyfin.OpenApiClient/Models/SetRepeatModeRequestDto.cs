@@ -13,7 +13,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class SetRepeatModeRequestDto : IParsable
     {
-        /// <summary>Gets or sets the repeat mode.</summary>
+        /// <summary>Enum GroupRepeatMode.</summary>
         public global::Soenneker.Jellyfin.OpenApiClient.Models.SetRepeatModeRequestDto_Mode? Mode { get; set; }
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value

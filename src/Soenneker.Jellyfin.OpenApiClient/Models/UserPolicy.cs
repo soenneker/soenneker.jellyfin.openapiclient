@@ -170,7 +170,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
 #endif
         /// <summary>The RemoteClientBitrateLimit property</summary>
         public int? RemoteClientBitrateLimit { get; set; }
-        /// <summary>Enum SyncPlayUserAccessType.</summary>
+        /// <summary>Gets or sets a value indicating what SyncPlay features the user can access.</summary>
         public global::Soenneker.Jellyfin.OpenApiClient.Models.UserPolicy_SyncPlayAccess? SyncPlayAccess { get; set; }
         /// <summary>
         /// Instantiates a new <see cref="global::Soenneker.Jellyfin.OpenApiClient.Models.UserPolicy"/> and sets the default values.

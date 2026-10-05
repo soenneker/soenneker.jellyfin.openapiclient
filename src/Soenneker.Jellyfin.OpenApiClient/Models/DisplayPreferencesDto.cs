@@ -53,7 +53,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public bool? RememberIndexing { get; set; }
         /// <summary>Gets or sets a value indicating whether [remember sorting].</summary>
         public bool? RememberSorting { get; set; }
-        /// <summary>An enum representing the axis that should be scrolled.</summary>
+        /// <summary>Gets or sets the scroll direction.</summary>
         public global::Soenneker.Jellyfin.OpenApiClient.Models.DisplayPreferencesDto_ScrollDirection? ScrollDirection { get; set; }
         /// <summary>Gets or sets a value indicating whether to show backdrops on this item.</summary>
         public bool? ShowBackdrop { get; set; }
@@ -67,7 +67,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
 #else
         public string SortBy { get; set; }
 #endif
-        /// <summary>An enum representing the sorting order.</summary>
+        /// <summary>Gets or sets the sort order.</summary>
         public global::Soenneker.Jellyfin.OpenApiClient.Models.DisplayPreferencesDto_SortOrder? SortOrder { get; set; }
         /// <summary>Gets or sets the type of the view.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
