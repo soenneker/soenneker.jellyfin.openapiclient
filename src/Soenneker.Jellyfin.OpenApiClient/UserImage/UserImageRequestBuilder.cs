@@ -83,18 +83,17 @@ namespace Soenneker.Jellyfin.OpenApiClient.UserImage
         /// <summary>
         /// Get user profile image.
         /// </summary>
-        /// <returns>A <see cref="Stream"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         /// <exception cref="global::Soenneker.Jellyfin.OpenApiClient.Models.ProblemDetails">When receiving a 400 status code</exception>
         /// <exception cref="global::Soenneker.Jellyfin.OpenApiClient.Models.ProblemDetails">When receiving a 404 status code</exception>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<Stream?> HeadAsync(Action<RequestConfiguration<global::Soenneker.Jellyfin.OpenApiClient.UserImage.UserImageRequestBuilder.UserImageRequestBuilderHeadQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task HeadAsync(Action<RequestConfiguration<global::Soenneker.Jellyfin.OpenApiClient.UserImage.UserImageRequestBuilder.UserImageRequestBuilderHeadQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<Stream> HeadAsync(Action<RequestConfiguration<global::Soenneker.Jellyfin.OpenApiClient.UserImage.UserImageRequestBuilder.UserImageRequestBuilderHeadQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task HeadAsync(Action<RequestConfiguration<global::Soenneker.Jellyfin.OpenApiClient.UserImage.UserImageRequestBuilder.UserImageRequestBuilderHeadQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToHeadRequestInformation(requestConfiguration);
@@ -103,7 +102,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.UserImage
                 { "400", global::Soenneker.Jellyfin.OpenApiClient.Models.ProblemDetails.CreateFromDiscriminatorValue },
                 { "404", global::Soenneker.Jellyfin.OpenApiClient.Models.ProblemDetails.CreateFromDiscriminatorValue },
             };
-            return await RequestAdapter.SendPrimitiveAsync<Stream>(requestInfo, errorMapping, cancellationToken).ConfigureAwait(false);
+            await RequestAdapter.SendNoContentAsync(requestInfo, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Sets the user image.
