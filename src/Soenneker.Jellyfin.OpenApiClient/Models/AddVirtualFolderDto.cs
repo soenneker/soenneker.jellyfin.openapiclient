@@ -18,7 +18,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("LibraryOptions") is { } nullNodeLibraryOptions && nullNodeLibraryOptions.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LibraryOptions = null;
+            if (parseNode.GetChildNode("LibraryOptions") is null) { _explicitNullValueLibraryOptions = default!; _explicitNullProperties?.Remove("LibraryOptions"); }
+            else if (parseNode.GetChildNode("LibraryOptions") is { } nullNodeLibraryOptions && nullNodeLibraryOptions.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LibraryOptions = null;
         }
 
         /// <summary>Gets or sets library options.</summary>

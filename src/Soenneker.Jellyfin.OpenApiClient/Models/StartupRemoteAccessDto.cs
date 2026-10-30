@@ -18,7 +18,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("EnableRemoteAccess") is { } nullNodeEnableRemoteAccess && nullNodeEnableRemoteAccess.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableRemoteAccess = null;
+            if (parseNode.GetChildNode("EnableRemoteAccess") is null) { _explicitNullValueEnableRemoteAccess = default!; _explicitNullProperties?.Remove("EnableRemoteAccess"); }
+            else if (parseNode.GetChildNode("EnableRemoteAccess") is { } nullNodeEnableRemoteAccess && nullNodeEnableRemoteAccess.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableRemoteAccess = null;
         }
 
         /// <summary>Gets or sets a value indicating whether enable remote access.</summary>

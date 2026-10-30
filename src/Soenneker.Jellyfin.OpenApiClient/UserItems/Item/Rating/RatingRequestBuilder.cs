@@ -83,7 +83,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.UserItems.Item.Rating
         public RequestInformation ToDeleteRequestInformation(Action<RequestConfiguration<global::Soenneker.Jellyfin.OpenApiClient.UserItems.Item.Rating.RatingRequestBuilder.RatingRequestBuilderDeleteQueryParameters>> requestConfiguration = default)
         {
 #endif
-            var requestInfo = new RequestInformation(Method.DELETE, UrlTemplate, PathParameters);
+            var requestInfo = new RequestInformation(Method.DELETE, global::Soenneker.OpenApi.Generated.OpenApiServiceRoutes.Resolve(UrlTemplate, RequestAdapter.BaseUrl, "http://localhost", "/UserItems/{itemId}/Rating", PathParameters.ContainsKey("request-raw-url")), PathParameters);
             requestInfo.Configure(requestConfiguration);
             requestInfo.Headers.TryAdd("Accept", "application/json, application/json;profile=\"CamelCase\", application/json;profile=\"PascalCase\"");
             return requestInfo;
@@ -102,7 +102,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.UserItems.Item.Rating
         public RequestInformation ToPostRequestInformation(Action<RequestConfiguration<global::Soenneker.Jellyfin.OpenApiClient.UserItems.Item.Rating.RatingRequestBuilder.RatingRequestBuilderPostQueryParameters>> requestConfiguration = default)
         {
 #endif
-            var requestInfo = new RequestInformation(Method.POST, UrlTemplate, PathParameters);
+            var requestInfo = new RequestInformation(Method.POST, global::Soenneker.OpenApi.Generated.OpenApiServiceRoutes.Resolve(UrlTemplate, RequestAdapter.BaseUrl, "http://localhost", "/UserItems/{itemId}/Rating", PathParameters.ContainsKey("request-raw-url")), PathParameters);
             requestInfo.Configure(requestConfiguration);
             requestInfo.Headers.TryAdd("Accept", "application/json, application/json;profile=\"CamelCase\", application/json;profile=\"PascalCase\"");
             return requestInfo;

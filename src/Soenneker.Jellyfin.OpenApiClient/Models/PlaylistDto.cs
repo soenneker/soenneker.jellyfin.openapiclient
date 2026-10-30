@@ -18,9 +18,12 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("ItemIds") is { } nullNodeItemIds && nullNodeItemIds.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ItemIds = null;
-            if (parseNode.GetChildNode("OpenAccess") is { } nullNodeOpenAccess && nullNodeOpenAccess.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) OpenAccess = null;
-            if (parseNode.GetChildNode("Shares") is { } nullNodeShares && nullNodeShares.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Shares = null;
+            if (parseNode.GetChildNode("ItemIds") is null) { _explicitNullValueItemIds = default!; _explicitNullProperties?.Remove("ItemIds"); }
+            else if (parseNode.GetChildNode("ItemIds") is { } nullNodeItemIds && nullNodeItemIds.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ItemIds = null;
+            if (parseNode.GetChildNode("OpenAccess") is null) { _explicitNullValueOpenAccess = default!; _explicitNullProperties?.Remove("OpenAccess"); }
+            else if (parseNode.GetChildNode("OpenAccess") is { } nullNodeOpenAccess && nullNodeOpenAccess.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) OpenAccess = null;
+            if (parseNode.GetChildNode("Shares") is null) { _explicitNullValueShares = default!; _explicitNullProperties?.Remove("Shares"); }
+            else if (parseNode.GetChildNode("Shares") is { } nullNodeShares && nullNodeShares.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Shares = null;
         }
 
         /// <summary>Gets or sets the item ids.</summary>

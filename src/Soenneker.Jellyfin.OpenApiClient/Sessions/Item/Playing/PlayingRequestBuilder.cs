@@ -76,7 +76,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Sessions.Item.Playing
         public RequestInformation ToPostRequestInformation(Action<RequestConfiguration<global::Soenneker.Jellyfin.OpenApiClient.Sessions.Item.Playing.PlayingRequestBuilder.PlayingRequestBuilderPostQueryParameters>> requestConfiguration = default)
         {
 #endif
-            var requestInfo = new RequestInformation(Method.POST, UrlTemplate, PathParameters);
+            var requestInfo = new RequestInformation(Method.POST, global::Soenneker.OpenApi.Generated.OpenApiServiceRoutes.Resolve(UrlTemplate, RequestAdapter.BaseUrl, "http://localhost", "/Sessions/{sessionId}/Playing", PathParameters.ContainsKey("request-raw-url")), PathParameters);
             requestInfo.Configure(requestConfiguration);
             return requestInfo;
         }

@@ -18,9 +18,12 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("ProviderChannelId") is { } nullNodeProviderChannelId && nullNodeProviderChannelId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ProviderChannelId = null;
-            if (parseNode.GetChildNode("ProviderId") is { } nullNodeProviderId && nullNodeProviderId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ProviderId = null;
-            if (parseNode.GetChildNode("TunerChannelId") is { } nullNodeTunerChannelId && nullNodeTunerChannelId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) TunerChannelId = null;
+            if (parseNode.GetChildNode("ProviderChannelId") is null) { _explicitNullValueProviderChannelId = default!; _explicitNullProperties?.Remove("ProviderChannelId"); }
+            else if (parseNode.GetChildNode("ProviderChannelId") is { } nullNodeProviderChannelId && nullNodeProviderChannelId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ProviderChannelId = null;
+            if (parseNode.GetChildNode("ProviderId") is null) { _explicitNullValueProviderId = default!; _explicitNullProperties?.Remove("ProviderId"); }
+            else if (parseNode.GetChildNode("ProviderId") is { } nullNodeProviderId && nullNodeProviderId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ProviderId = null;
+            if (parseNode.GetChildNode("TunerChannelId") is null) { _explicitNullValueTunerChannelId = default!; _explicitNullProperties?.Remove("TunerChannelId"); }
+            else if (parseNode.GetChildNode("TunerChannelId") is { } nullNodeTunerChannelId && nullNodeTunerChannelId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) TunerChannelId = null;
         }
 
         /// <summary>Gets or sets the provider channel id.</summary>

@@ -167,7 +167,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Items.Item.Images.Item.Item
         public RequestInformation ToDeleteRequestInformation(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
         {
 #endif
-            var requestInfo = new RequestInformation(Method.DELETE, UrlTemplate, PathParameters);
+            var requestInfo = new RequestInformation(Method.DELETE, global::Soenneker.OpenApi.Generated.OpenApiServiceRoutes.Resolve(UrlTemplate, RequestAdapter.BaseUrl, "http://localhost", "/Items/{itemId}/Images/{imageType}/{imageIndex}", PathParameters.ContainsKey("request-raw-url")), PathParameters);
             requestInfo.Configure(requestConfiguration);
             requestInfo.Headers.TryAdd("Accept", "application/json, application/json;profile=\"CamelCase\", application/json;profile=\"PascalCase\"");
             return requestInfo;
@@ -186,7 +186,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Items.Item.Images.Item.Item
         public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::Soenneker.Jellyfin.OpenApiClient.Items.Item.Images.Item.Item.WithImageIndexItemRequestBuilder.WithImageIndexItemRequestBuilderGetQueryParameters>> requestConfiguration = default)
         {
 #endif
-            var requestInfo = new RequestInformation(Method.GET, UrlTemplate, PathParameters);
+            var requestInfo = new RequestInformation(Method.GET, global::Soenneker.OpenApi.Generated.OpenApiServiceRoutes.Resolve(UrlTemplate, RequestAdapter.BaseUrl, "http://localhost", "/Items/{itemId}/Images/{imageType}/{imageIndex}", PathParameters.ContainsKey("request-raw-url")), PathParameters);
             requestInfo.Configure(requestConfiguration);
             requestInfo.Headers.TryAdd("Accept", "image/*, application/json, application/json;profile=\"CamelCase\", application/json;profile=\"PascalCase\"");
             return requestInfo;
@@ -205,7 +205,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Items.Item.Images.Item.Item
         public RequestInformation ToHeadRequestInformation(Action<RequestConfiguration<global::Soenneker.Jellyfin.OpenApiClient.Items.Item.Images.Item.Item.WithImageIndexItemRequestBuilder.WithImageIndexItemRequestBuilderHeadQueryParameters>> requestConfiguration = default)
         {
 #endif
-            var requestInfo = new RequestInformation(Method.HEAD, UrlTemplate, PathParameters);
+            var requestInfo = new RequestInformation(Method.HEAD, global::Soenneker.OpenApi.Generated.OpenApiServiceRoutes.Resolve(UrlTemplate, RequestAdapter.BaseUrl, "http://localhost", "/Items/{itemId}/Images/{imageType}/{imageIndex}", PathParameters.ContainsKey("request-raw-url")), PathParameters);
             requestInfo.Configure(requestConfiguration);
             requestInfo.Headers.TryAdd("Accept", "image/*, application/json, application/json;profile=\"CamelCase\", application/json;profile=\"PascalCase\"");
             return requestInfo;
@@ -226,7 +226,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Items.Item.Images.Item.Item
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
-            var requestInfo = new RequestInformation(Method.POST, UrlTemplate, PathParameters);
+            var requestInfo = new RequestInformation(Method.POST, global::Soenneker.OpenApi.Generated.OpenApiServiceRoutes.Resolve(UrlTemplate, RequestAdapter.BaseUrl, "http://localhost", "/Items/{itemId}/Images/{imageType}/{imageIndex}", PathParameters.ContainsKey("request-raw-url")), PathParameters);
             requestInfo.Configure(requestConfiguration);
             requestInfo.Headers.TryAdd("Accept", "application/json, application/json;profile=\"CamelCase\", application/json;profile=\"PascalCase\"");
             requestInfo.SetStreamContent(body, "image/*");

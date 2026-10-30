@@ -17,9 +17,12 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("Action") is { } nullNodeAction && nullNodeAction.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Action = null;
-            if (parseNode.GetChildNode("PinExpirationDate") is { } nullNodePinExpirationDate && nullNodePinExpirationDate.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PinExpirationDate = null;
-            if (parseNode.GetChildNode("PinFile") is { } nullNodePinFile && nullNodePinFile.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PinFile = null;
+            if (parseNode.GetChildNode("Action") is null) { _explicitNullValueAction = default!; _explicitNullProperties?.Remove("Action"); }
+            else if (parseNode.GetChildNode("Action") is { } nullNodeAction && nullNodeAction.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Action = null;
+            if (parseNode.GetChildNode("PinExpirationDate") is null) { _explicitNullValuePinExpirationDate = default!; _explicitNullProperties?.Remove("PinExpirationDate"); }
+            else if (parseNode.GetChildNode("PinExpirationDate") is { } nullNodePinExpirationDate && nullNodePinExpirationDate.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PinExpirationDate = null;
+            if (parseNode.GetChildNode("PinFile") is null) { _explicitNullValuePinFile = default!; _explicitNullProperties?.Remove("PinFile"); }
+            else if (parseNode.GetChildNode("PinFile") is { } nullNodePinFile && nullNodePinFile.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PinFile = null;
         }
 
         /// <summary>Gets or sets the action.</summary>

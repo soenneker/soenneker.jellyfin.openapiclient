@@ -18,9 +18,12 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("CustomCss") is { } nullNodeCustomCss && nullNodeCustomCss.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) CustomCss = null;
-            if (parseNode.GetChildNode("LoginDisclaimer") is { } nullNodeLoginDisclaimer && nullNodeLoginDisclaimer.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LoginDisclaimer = null;
-            if (parseNode.GetChildNode("SplashscreenEnabled") is { } nullNodeSplashscreenEnabled && nullNodeSplashscreenEnabled.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SplashscreenEnabled = null;
+            if (parseNode.GetChildNode("CustomCss") is null) { _explicitNullValueCustomCss = default!; _explicitNullProperties?.Remove("CustomCss"); }
+            else if (parseNode.GetChildNode("CustomCss") is { } nullNodeCustomCss && nullNodeCustomCss.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) CustomCss = null;
+            if (parseNode.GetChildNode("LoginDisclaimer") is null) { _explicitNullValueLoginDisclaimer = default!; _explicitNullProperties?.Remove("LoginDisclaimer"); }
+            else if (parseNode.GetChildNode("LoginDisclaimer") is { } nullNodeLoginDisclaimer && nullNodeLoginDisclaimer.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LoginDisclaimer = null;
+            if (parseNode.GetChildNode("SplashscreenEnabled") is null) { _explicitNullValueSplashscreenEnabled = default!; _explicitNullProperties?.Remove("SplashscreenEnabled"); }
+            else if (parseNode.GetChildNode("SplashscreenEnabled") is { } nullNodeSplashscreenEnabled && nullNodeSplashscreenEnabled.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SplashscreenEnabled = null;
         }
 
         /// <summary>Gets or sets the custom CSS.</summary>

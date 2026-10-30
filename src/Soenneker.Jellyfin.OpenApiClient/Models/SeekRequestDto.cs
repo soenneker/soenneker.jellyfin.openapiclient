@@ -18,7 +18,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("PositionTicks") is { } nullNodePositionTicks && nullNodePositionTicks.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PositionTicks = null;
+            if (parseNode.GetChildNode("PositionTicks") is null) { _explicitNullValuePositionTicks = default!; _explicitNullProperties?.Remove("PositionTicks"); }
+            else if (parseNode.GetChildNode("PositionTicks") is { } nullNodePositionTicks && nullNodePositionTicks.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PositionTicks = null;
         }
 
         /// <summary>Gets or sets the position ticks.</summary>

@@ -80,7 +80,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.MusicGenres.Item
         public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::Soenneker.Jellyfin.OpenApiClient.MusicGenres.Item.GenreNameItemRequestBuilder.GenreNameItemRequestBuilderGetQueryParameters>> requestConfiguration = default)
         {
 #endif
-            var requestInfo = new RequestInformation(Method.GET, UrlTemplate, PathParameters);
+            var requestInfo = new RequestInformation(Method.GET, global::Soenneker.OpenApi.Generated.OpenApiServiceRoutes.Resolve(UrlTemplate, RequestAdapter.BaseUrl, "http://localhost", "/MusicGenres/{genreName%2Did}", PathParameters.ContainsKey("request-raw-url")), PathParameters);
             requestInfo.Configure(requestConfiguration);
             requestInfo.Headers.TryAdd("Accept", "application/json, application/json;profile=\"CamelCase\", application/json;profile=\"PascalCase\"");
             return requestInfo;

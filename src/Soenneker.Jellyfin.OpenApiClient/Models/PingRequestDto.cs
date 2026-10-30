@@ -18,7 +18,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("Ping") is { } nullNodePing && nullNodePing.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Ping = null;
+            if (parseNode.GetChildNode("Ping") is null) { _explicitNullValuePing = default!; _explicitNullProperties?.Remove("Ping"); }
+            else if (parseNode.GetChildNode("Ping") is { } nullNodePing && nullNodePing.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Ping = null;
         }
 
         /// <summary>Gets or sets the ping time.</summary>

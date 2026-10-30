@@ -18,7 +18,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("EnteredUsername") is { } nullNodeEnteredUsername && nullNodeEnteredUsername.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnteredUsername = null;
+            if (parseNode.GetChildNode("EnteredUsername") is null) { _explicitNullValueEnteredUsername = default!; _explicitNullProperties?.Remove("EnteredUsername"); }
+            else if (parseNode.GetChildNode("EnteredUsername") is { } nullNodeEnteredUsername && nullNodeEnteredUsername.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnteredUsername = null;
         }
 
         /// <summary>Gets or sets the entered username to have its password reset.</summary>

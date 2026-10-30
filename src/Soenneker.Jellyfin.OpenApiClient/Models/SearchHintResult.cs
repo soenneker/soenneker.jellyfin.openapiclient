@@ -18,8 +18,10 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("SearchHints") is { } nullNodeSearchHints && nullNodeSearchHints.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SearchHints = null;
-            if (parseNode.GetChildNode("TotalRecordCount") is { } nullNodeTotalRecordCount && nullNodeTotalRecordCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) TotalRecordCount = null;
+            if (parseNode.GetChildNode("SearchHints") is null) { _explicitNullValueSearchHints = default!; _explicitNullProperties?.Remove("SearchHints"); }
+            else if (parseNode.GetChildNode("SearchHints") is { } nullNodeSearchHints && nullNodeSearchHints.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SearchHints = null;
+            if (parseNode.GetChildNode("TotalRecordCount") is null) { _explicitNullValueTotalRecordCount = default!; _explicitNullProperties?.Remove("TotalRecordCount"); }
+            else if (parseNode.GetChildNode("TotalRecordCount") is { } nullNodeTotalRecordCount && nullNodeTotalRecordCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) TotalRecordCount = null;
         }
 
         /// <summary>Gets the search hints.</summary>

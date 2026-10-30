@@ -18,8 +18,10 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("RequestReceptionTime") is { } nullNodeRequestReceptionTime && nullNodeRequestReceptionTime.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) RequestReceptionTime = null;
-            if (parseNode.GetChildNode("ResponseTransmissionTime") is { } nullNodeResponseTransmissionTime && nullNodeResponseTransmissionTime.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ResponseTransmissionTime = null;
+            if (parseNode.GetChildNode("RequestReceptionTime") is null) { _explicitNullValueRequestReceptionTime = default!; _explicitNullProperties?.Remove("RequestReceptionTime"); }
+            else if (parseNode.GetChildNode("RequestReceptionTime") is { } nullNodeRequestReceptionTime && nullNodeRequestReceptionTime.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) RequestReceptionTime = null;
+            if (parseNode.GetChildNode("ResponseTransmissionTime") is null) { _explicitNullValueResponseTransmissionTime = default!; _explicitNullProperties?.Remove("ResponseTransmissionTime"); }
+            else if (parseNode.GetChildNode("ResponseTransmissionTime") is { } nullNodeResponseTransmissionTime && nullNodeResponseTransmissionTime.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ResponseTransmissionTime = null;
         }
 
         /// <summary>Gets the UTC time when request has been received.</summary>

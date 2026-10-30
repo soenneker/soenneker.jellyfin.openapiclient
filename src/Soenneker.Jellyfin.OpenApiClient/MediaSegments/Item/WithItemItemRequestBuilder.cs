@@ -72,7 +72,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.MediaSegments.Item
         public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::Soenneker.Jellyfin.OpenApiClient.MediaSegments.Item.WithItemItemRequestBuilder.WithItemItemRequestBuilderGetQueryParameters>> requestConfiguration = default)
         {
 #endif
-            var requestInfo = new RequestInformation(Method.GET, UrlTemplate, PathParameters);
+            var requestInfo = new RequestInformation(Method.GET, global::Soenneker.OpenApi.Generated.OpenApiServiceRoutes.Resolve(UrlTemplate, RequestAdapter.BaseUrl, "http://localhost", "/MediaSegments/{itemId}", PathParameters.ContainsKey("request-raw-url")), PathParameters);
             requestInfo.Configure(requestConfiguration);
             requestInfo.Headers.TryAdd("Accept", "application/json, application/json;profile=\"CamelCase\", application/json;profile=\"PascalCase\"");
             return requestInfo;

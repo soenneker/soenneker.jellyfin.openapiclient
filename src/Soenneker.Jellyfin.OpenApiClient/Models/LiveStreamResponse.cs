@@ -17,7 +17,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("MediaSource") is { } nullNodeMediaSource && nullNodeMediaSource.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MediaSource = null;
+            if (parseNode.GetChildNode("MediaSource") is null) { _explicitNullValueMediaSource = default!; _explicitNullProperties?.Remove("MediaSource"); }
+            else if (parseNode.GetChildNode("MediaSource") is { } nullNodeMediaSource && nullNodeMediaSource.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MediaSource = null;
         }
 
         /// <summary>The MediaSource property</summary>

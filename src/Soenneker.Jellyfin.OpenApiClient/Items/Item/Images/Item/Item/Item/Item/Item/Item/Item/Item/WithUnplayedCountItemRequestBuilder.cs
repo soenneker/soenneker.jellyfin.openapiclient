@@ -96,7 +96,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Items.Item.Images.Item.Item.Item.Item
         public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::Soenneker.Jellyfin.OpenApiClient.Items.Item.Images.Item.Item.Item.Item.Item.Item.Item.Item.WithUnplayedCountItemRequestBuilder.WithUnplayedCountItemRequestBuilderGetQueryParameters>> requestConfiguration = default)
         {
 #endif
-            var requestInfo = new RequestInformation(Method.GET, UrlTemplate, PathParameters);
+            var requestInfo = new RequestInformation(Method.GET, global::Soenneker.OpenApi.Generated.OpenApiServiceRoutes.Resolve(UrlTemplate, RequestAdapter.BaseUrl, "http://localhost", "/Items/{itemId}/Images/{imageType}/{imageIndex}/{tag}/{format}/{maxWidth}/{maxHeight}/{percentPlayed}/{unplayedCount}", PathParameters.ContainsKey("request-raw-url")), PathParameters);
             requestInfo.Configure(requestConfiguration);
             requestInfo.Headers.TryAdd("Accept", "image/*, application/json, application/json;profile=\"CamelCase\", application/json;profile=\"PascalCase\"");
             return requestInfo;
@@ -115,7 +115,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Items.Item.Images.Item.Item.Item.Item
         public RequestInformation ToHeadRequestInformation(Action<RequestConfiguration<global::Soenneker.Jellyfin.OpenApiClient.Items.Item.Images.Item.Item.Item.Item.Item.Item.Item.Item.WithUnplayedCountItemRequestBuilder.WithUnplayedCountItemRequestBuilderHeadQueryParameters>> requestConfiguration = default)
         {
 #endif
-            var requestInfo = new RequestInformation(Method.HEAD, UrlTemplate, PathParameters);
+            var requestInfo = new RequestInformation(Method.HEAD, global::Soenneker.OpenApi.Generated.OpenApiServiceRoutes.Resolve(UrlTemplate, RequestAdapter.BaseUrl, "http://localhost", "/Items/{itemId}/Images/{imageType}/{imageIndex}/{tag}/{format}/{maxWidth}/{maxHeight}/{percentPlayed}/{unplayedCount}", PathParameters.ContainsKey("request-raw-url")), PathParameters);
             requestInfo.Configure(requestConfiguration);
             requestInfo.Headers.TryAdd("Accept", "image/*, application/json, application/json;profile=\"CamelCase\", application/json;profile=\"PascalCase\"");
             return requestInfo;

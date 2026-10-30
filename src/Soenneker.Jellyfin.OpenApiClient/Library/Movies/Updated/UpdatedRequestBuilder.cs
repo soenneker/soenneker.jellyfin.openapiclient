@@ -63,7 +63,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Library.Movies.Updated
         public RequestInformation ToPostRequestInformation(Action<RequestConfiguration<global::Soenneker.Jellyfin.OpenApiClient.Library.Movies.Updated.UpdatedRequestBuilder.UpdatedRequestBuilderPostQueryParameters>> requestConfiguration = default)
         {
 #endif
-            var requestInfo = new RequestInformation(Method.POST, UrlTemplate, PathParameters);
+            var requestInfo = new RequestInformation(Method.POST, global::Soenneker.OpenApi.Generated.OpenApiServiceRoutes.Resolve(UrlTemplate, RequestAdapter.BaseUrl, "http://localhost", "/Library/Movies/Updated", PathParameters.ContainsKey("request-raw-url")), PathParameters);
             requestInfo.Configure(requestConfiguration);
             return requestInfo;
         }

@@ -102,7 +102,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.LiveTv.ListingProviders
         public RequestInformation ToDeleteRequestInformation(Action<RequestConfiguration<global::Soenneker.Jellyfin.OpenApiClient.LiveTv.ListingProviders.ListingProvidersRequestBuilder.ListingProvidersRequestBuilderDeleteQueryParameters>> requestConfiguration = default)
         {
 #endif
-            var requestInfo = new RequestInformation(Method.DELETE, UrlTemplate, PathParameters);
+            var requestInfo = new RequestInformation(Method.DELETE, global::Soenneker.OpenApi.Generated.OpenApiServiceRoutes.Resolve(UrlTemplate, RequestAdapter.BaseUrl, "http://localhost", "/LiveTv/ListingProviders", PathParameters.ContainsKey("request-raw-url")), PathParameters);
             requestInfo.Configure(requestConfiguration);
             return requestInfo;
         }
@@ -122,7 +122,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.LiveTv.ListingProviders
         {
 #endif
             if(ReferenceEquals(body, null)) throw new ArgumentNullException(nameof(body));
-            var requestInfo = new RequestInformation(Method.POST, UrlTemplate, PathParameters);
+            var requestInfo = new RequestInformation(Method.POST, global::Soenneker.OpenApi.Generated.OpenApiServiceRoutes.Resolve(UrlTemplate, RequestAdapter.BaseUrl, "http://localhost", "/LiveTv/ListingProviders", PathParameters.ContainsKey("request-raw-url")), PathParameters);
             requestInfo.Configure(requestConfiguration);
             requestInfo.Headers.TryAdd("Accept", "application/json, application/json;profile=\"CamelCase\", application/json;profile=\"PascalCase\"");
             requestInfo.SetContentFromParsable(RequestAdapter, "application/json", body);

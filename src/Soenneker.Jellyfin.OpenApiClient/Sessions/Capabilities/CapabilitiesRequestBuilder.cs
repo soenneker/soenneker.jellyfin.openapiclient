@@ -70,7 +70,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Sessions.Capabilities
         public RequestInformation ToPostRequestInformation(Action<RequestConfiguration<global::Soenneker.Jellyfin.OpenApiClient.Sessions.Capabilities.CapabilitiesRequestBuilder.CapabilitiesRequestBuilderPostQueryParameters>> requestConfiguration = default)
         {
 #endif
-            var requestInfo = new RequestInformation(Method.POST, UrlTemplate, PathParameters);
+            var requestInfo = new RequestInformation(Method.POST, global::Soenneker.OpenApi.Generated.OpenApiServiceRoutes.Resolve(UrlTemplate, RequestAdapter.BaseUrl, "http://localhost", "/Sessions/Capabilities", PathParameters.ContainsKey("request-raw-url")), PathParameters);
             requestInfo.Configure(requestConfiguration);
             return requestInfo;
         }

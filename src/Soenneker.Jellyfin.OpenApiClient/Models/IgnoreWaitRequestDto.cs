@@ -18,7 +18,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("IgnoreWait") is { } nullNodeIgnoreWait && nullNodeIgnoreWait.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IgnoreWait = null;
+            if (parseNode.GetChildNode("IgnoreWait") is null) { _explicitNullValueIgnoreWait = default!; _explicitNullProperties?.Remove("IgnoreWait"); }
+            else if (parseNode.GetChildNode("IgnoreWait") is { } nullNodeIgnoreWait && nullNodeIgnoreWait.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IgnoreWait = null;
         }
 
         /// <summary>Gets or sets a value indicating whether the client should be ignored.</summary>

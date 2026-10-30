@@ -18,9 +18,12 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("Items") is { } nullNodeItems && nullNodeItems.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Items = null;
-            if (parseNode.GetChildNode("StartIndex") is { } nullNodeStartIndex && nullNodeStartIndex.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) StartIndex = null;
-            if (parseNode.GetChildNode("TotalRecordCount") is { } nullNodeTotalRecordCount && nullNodeTotalRecordCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) TotalRecordCount = null;
+            if (parseNode.GetChildNode("Items") is null) { _explicitNullValueItems = default!; _explicitNullProperties?.Remove("Items"); }
+            else if (parseNode.GetChildNode("Items") is { } nullNodeItems && nullNodeItems.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Items = null;
+            if (parseNode.GetChildNode("StartIndex") is null) { _explicitNullValueStartIndex = default!; _explicitNullProperties?.Remove("StartIndex"); }
+            else if (parseNode.GetChildNode("StartIndex") is { } nullNodeStartIndex && nullNodeStartIndex.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) StartIndex = null;
+            if (parseNode.GetChildNode("TotalRecordCount") is null) { _explicitNullValueTotalRecordCount = default!; _explicitNullProperties?.Remove("TotalRecordCount"); }
+            else if (parseNode.GetChildNode("TotalRecordCount") is { } nullNodeTotalRecordCount && nullNodeTotalRecordCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) TotalRecordCount = null;
         }
 
         /// <summary>Gets or sets the items.</summary>

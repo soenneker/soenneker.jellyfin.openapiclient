@@ -18,9 +18,12 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
 
         public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
         {
-            if (parseNode.GetChildNode("ErrorCode") is { } nullNodeErrorCode && nullNodeErrorCode.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ErrorCode = null;
-            if (parseNode.GetChildNode("MediaSources") is { } nullNodeMediaSources && nullNodeMediaSources.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MediaSources = null;
-            if (parseNode.GetChildNode("PlaySessionId") is { } nullNodePlaySessionId && nullNodePlaySessionId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PlaySessionId = null;
+            if (parseNode.GetChildNode("ErrorCode") is null) { _explicitNullValueErrorCode = default!; _explicitNullProperties?.Remove("ErrorCode"); }
+            else if (parseNode.GetChildNode("ErrorCode") is { } nullNodeErrorCode && nullNodeErrorCode.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ErrorCode = null;
+            if (parseNode.GetChildNode("MediaSources") is null) { _explicitNullValueMediaSources = default!; _explicitNullProperties?.Remove("MediaSources"); }
+            else if (parseNode.GetChildNode("MediaSources") is { } nullNodeMediaSources && nullNodeMediaSources.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MediaSources = null;
+            if (parseNode.GetChildNode("PlaySessionId") is null) { _explicitNullValuePlaySessionId = default!; _explicitNullProperties?.Remove("PlaySessionId"); }
+            else if (parseNode.GetChildNode("PlaySessionId") is { } nullNodePlaySessionId && nullNodePlaySessionId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PlaySessionId = null;
         }
 
         /// <summary>Gets or sets the error code.</summary>
