@@ -53,6 +53,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Plugins.Item.Configuration
             var errorMapping = new Dictionary<string, ParsableFactory<IParsable>>
             {
                 { "404", global::Soenneker.Jellyfin.OpenApiClient.Models.ProblemDetails.CreateFromDiscriminatorValue },
+                { "4XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
+                { "5XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
             };
             return await RequestAdapter.SendAsync<global::Soenneker.Jellyfin.OpenApiClient.Models.BasePluginConfiguration>(requestInfo, global::Soenneker.Jellyfin.OpenApiClient.Models.BasePluginConfiguration.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
@@ -75,6 +77,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Plugins.Item.Configuration
             var errorMapping = new Dictionary<string, ParsableFactory<IParsable>>
             {
                 { "404", global::Soenneker.Jellyfin.OpenApiClient.Models.ProblemDetails.CreateFromDiscriminatorValue },
+                { "4XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
+                { "5XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
             };
             await RequestAdapter.SendNoContentAsync(requestInfo, errorMapping, cancellationToken).ConfigureAwait(false);
         }

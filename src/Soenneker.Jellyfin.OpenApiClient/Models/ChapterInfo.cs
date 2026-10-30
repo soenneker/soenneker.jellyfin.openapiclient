@@ -12,35 +12,55 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class ChapterInfo : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("ImageDateModified") is { } nullNodeImageDateModified && nullNodeImageDateModified.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ImageDateModified = null;
+            if (parseNode.GetChildNode("ImagePath") is { } nullNodeImagePath && nullNodeImagePath.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ImagePath = null;
+            if (parseNode.GetChildNode("ImageTag") is { } nullNodeImageTag && nullNodeImageTag.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ImageTag = null;
+            if (parseNode.GetChildNode("Name") is { } nullNodeName && nullNodeName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Name = null;
+            if (parseNode.GetChildNode("StartPositionTicks") is { } nullNodeStartPositionTicks && nullNodeStartPositionTicks.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) StartPositionTicks = null;
+        }
+
         /// <summary>The ImageDateModified property</summary>
-        public DateTimeOffset? ImageDateModified { get; set; }
+        public DateTimeOffset? ImageDateModified { get => _explicitNullValueImageDateModified; set { _explicitNullValueImageDateModified = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ImageDateModified"); else _explicitNullProperties?.Remove("ImageDateModified"); } }
+        private DateTimeOffset? _explicitNullValueImageDateModified = default!;
         /// <summary>Gets or sets the image path.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ImagePath { get; set; }
+        public string? ImagePath { get => _explicitNullValueImagePath; set { _explicitNullValueImagePath = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ImagePath"); else _explicitNullProperties?.Remove("ImagePath"); } }
+        private string? _explicitNullValueImagePath = default!;
 #nullable restore
 #else
-        public string ImagePath { get; set; }
+        public string ImagePath { get => _explicitNullValueImagePath; set { _explicitNullValueImagePath = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ImagePath"); else _explicitNullProperties?.Remove("ImagePath"); } }
+        private string _explicitNullValueImagePath = default!;
 #endif
         /// <summary>The ImageTag property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ImageTag { get; set; }
+        public string? ImageTag { get => _explicitNullValueImageTag; set { _explicitNullValueImageTag = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ImageTag"); else _explicitNullProperties?.Remove("ImageTag"); } }
+        private string? _explicitNullValueImageTag = default!;
 #nullable restore
 #else
-        public string ImageTag { get; set; }
+        public string ImageTag { get => _explicitNullValueImageTag; set { _explicitNullValueImageTag = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ImageTag"); else _explicitNullProperties?.Remove("ImageTag"); } }
+        private string _explicitNullValueImageTag = default!;
 #endif
         /// <summary>Gets or sets the name.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Name { get; set; }
+        public string? Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Name"); else _explicitNullProperties?.Remove("Name"); } }
+        private string? _explicitNullValueName = default!;
 #nullable restore
 #else
-        public string Name { get; set; }
+        public string Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Name"); else _explicitNullProperties?.Remove("Name"); } }
+        private string _explicitNullValueName = default!;
 #endif
         /// <summary>Gets or sets the start position ticks.</summary>
-        public long? StartPositionTicks { get; set; }
+        public long? StartPositionTicks { get => _explicitNullValueStartPositionTicks; set { _explicitNullValueStartPositionTicks = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("StartPositionTicks"); else _explicitNullProperties?.Remove("StartPositionTicks"); } }
+        private long? _explicitNullValueStartPositionTicks = default!;
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
@@ -49,7 +69,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.ChapterInfo CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.ChapterInfo();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.ChapterInfo(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -77,7 +97,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteStringValue("ImagePath", ImagePath);
             writer.WriteStringValue("ImageTag", ImageTag);
             writer.WriteStringValue("Name", Name);
-            writer.WriteLongValue("StartPositionTicks", StartPositionTicks);
+            writer.WriteLongValue("StartPositionTicks", StartPositionTicks);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

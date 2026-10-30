@@ -75,6 +75,7 @@ namespace Soenneker.Jellyfin.OpenApiClient
             get => new global::Soenneker.Jellyfin.OpenApiClient.Albums.AlbumsRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>The Artists property</summary>
+        [Obsolete("")]
         public global::Soenneker.Jellyfin.OpenApiClient.Artists.ArtistsRequestBuilder Artists
         {
             get => new global::Soenneker.Jellyfin.OpenApiClient.Artists.ArtistsRequestBuilder(PathParameters, RequestAdapter);
@@ -275,6 +276,7 @@ namespace Soenneker.Jellyfin.OpenApiClient
             get => new global::Soenneker.Jellyfin.OpenApiClient.System.SystemRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>The Trailers property</summary>
+        [Obsolete("")]
         public global::Soenneker.Jellyfin.OpenApiClient.Trailers.TrailersRequestBuilder Trailers
         {
             get => new global::Soenneker.Jellyfin.OpenApiClient.Trailers.TrailersRequestBuilder(PathParameters, RequestAdapter);

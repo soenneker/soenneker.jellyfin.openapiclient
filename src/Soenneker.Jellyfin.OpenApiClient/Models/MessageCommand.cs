@@ -12,25 +12,40 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class MessageCommand : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("Header") is { } nullNodeHeader && nullNodeHeader.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Header = null;
+            if (parseNode.GetChildNode("Text") is { } nullNodeText && nullNodeText.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Text = null;
+            if (parseNode.GetChildNode("TimeoutMs") is { } nullNodeTimeoutMs && nullNodeTimeoutMs.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) TimeoutMs = null;
+        }
+
         /// <summary>Gets or sets the message header.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Header { get; set; }
+        public string? Header { get => _explicitNullValueHeader; set { _explicitNullValueHeader = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Header"); else _explicitNullProperties?.Remove("Header"); } }
+        private string? _explicitNullValueHeader = default!;
 #nullable restore
 #else
-        public string Header { get; set; }
+        public string Header { get => _explicitNullValueHeader; set { _explicitNullValueHeader = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Header"); else _explicitNullProperties?.Remove("Header"); } }
+        private string _explicitNullValueHeader = default!;
 #endif
         /// <summary>Gets or sets the message text.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Text { get; set; }
+        public string? Text { get => _explicitNullValueText; set { _explicitNullValueText = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Text"); else _explicitNullProperties?.Remove("Text"); } }
+        private string? _explicitNullValueText = default!;
 #nullable restore
 #else
-        public string Text { get; set; }
+        public string Text { get => _explicitNullValueText; set { _explicitNullValueText = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Text"); else _explicitNullProperties?.Remove("Text"); } }
+        private string _explicitNullValueText = default!;
 #endif
         /// <summary>Gets or sets the timeout in milliseconds after which the message should be dismissed.</summary>
-        public long? TimeoutMs { get; set; }
+        public long? TimeoutMs { get => _explicitNullValueTimeoutMs; set { _explicitNullValueTimeoutMs = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("TimeoutMs"); else _explicitNullProperties?.Remove("TimeoutMs"); } }
+        private long? _explicitNullValueTimeoutMs = default!;
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
@@ -39,7 +54,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.MessageCommand CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.MessageCommand();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.MessageCommand(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -63,7 +78,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
             writer.WriteStringValue("Header", Header);
             writer.WriteStringValue("Text", Text);
-            writer.WriteLongValue("TimeoutMs", TimeoutMs);
+            writer.WriteLongValue("TimeoutMs", TimeoutMs);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

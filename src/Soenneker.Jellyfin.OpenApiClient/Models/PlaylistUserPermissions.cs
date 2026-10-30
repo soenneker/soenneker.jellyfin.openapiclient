@@ -12,11 +12,22 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class PlaylistUserPermissions : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("CanEdit") is { } nullNodeCanEdit && nullNodeCanEdit.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) CanEdit = null;
+            if (parseNode.GetChildNode("UserId") is { } nullNodeUserId && nullNodeUserId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) UserId = null;
+        }
+
         /// <summary>Gets or sets a value indicating whether the user has edit permissions.</summary>
-        public bool? CanEdit { get; set; }
+        public bool? CanEdit { get => _explicitNullValueCanEdit; set { _explicitNullValueCanEdit = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("CanEdit"); else _explicitNullProperties?.Remove("CanEdit"); } }
+        private bool? _explicitNullValueCanEdit = default!;
         /// <summary>Gets or sets the user id.</summary>
-        public Guid? UserId { get; set; }
+        public Guid? UserId { get => _explicitNullValueUserId; set { _explicitNullValueUserId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("UserId"); else _explicitNullProperties?.Remove("UserId"); } }
+        private Guid? _explicitNullValueUserId = default!;
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
@@ -25,7 +36,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.PlaylistUserPermissions CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.PlaylistUserPermissions();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.PlaylistUserPermissions(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -47,7 +58,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         {
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
             writer.WriteBoolValue("CanEdit", CanEdit);
-            writer.WriteGuidValue("UserId", UserId);
+            writer.WriteGuidValue("UserId", UserId);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

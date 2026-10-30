@@ -11,57 +11,84 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     #pragma warning disable CS1591
     public partial class PublicSystemInfo : IParsable
     #pragma warning restore CS1591
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("Id") is { } nullNodeId && nullNodeId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Id = null;
+            if (parseNode.GetChildNode("LocalAddress") is { } nullNodeLocalAddress && nullNodeLocalAddress.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LocalAddress = null;
+            if (parseNode.GetChildNode("OperatingSystem") is { } nullNodeOperatingSystem && nullNodeOperatingSystem.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) OperatingSystem = null;
+            if (parseNode.GetChildNode("ProductName") is { } nullNodeProductName && nullNodeProductName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ProductName = null;
+            if (parseNode.GetChildNode("ServerName") is { } nullNodeServerName && nullNodeServerName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ServerName = null;
+            if (parseNode.GetChildNode("StartupWizardCompleted") is { } nullNodeStartupWizardCompleted && nullNodeStartupWizardCompleted.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) StartupWizardCompleted = null;
+            if (parseNode.GetChildNode("Version") is { } nullNodeVersion && nullNodeVersion.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Version = null;
+        }
+
         /// <summary>Gets or sets the id.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Id { get; set; }
+        public string? Id { get => _explicitNullValueId; set { _explicitNullValueId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Id"); else _explicitNullProperties?.Remove("Id"); } }
+        private string? _explicitNullValueId = default!;
 #nullable restore
 #else
-        public string Id { get; set; }
+        public string Id { get => _explicitNullValueId; set { _explicitNullValueId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Id"); else _explicitNullProperties?.Remove("Id"); } }
+        private string _explicitNullValueId = default!;
 #endif
         /// <summary>Gets or sets the local address.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? LocalAddress { get; set; }
+        public string? LocalAddress { get => _explicitNullValueLocalAddress; set { _explicitNullValueLocalAddress = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LocalAddress"); else _explicitNullProperties?.Remove("LocalAddress"); } }
+        private string? _explicitNullValueLocalAddress = default!;
 #nullable restore
 #else
-        public string LocalAddress { get; set; }
+        public string LocalAddress { get => _explicitNullValueLocalAddress; set { _explicitNullValueLocalAddress = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LocalAddress"); else _explicitNullProperties?.Remove("LocalAddress"); } }
+        private string _explicitNullValueLocalAddress = default!;
 #endif
         /// <summary>Gets or sets the operating system.</summary>
         [Obsolete("")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? OperatingSystem { get; set; }
+        public string? OperatingSystem { get => _explicitNullValueOperatingSystem; set { _explicitNullValueOperatingSystem = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("OperatingSystem"); else _explicitNullProperties?.Remove("OperatingSystem"); } }
+        private string? _explicitNullValueOperatingSystem = default!;
 #nullable restore
 #else
-        public string OperatingSystem { get; set; }
+        public string OperatingSystem { get => _explicitNullValueOperatingSystem; set { _explicitNullValueOperatingSystem = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("OperatingSystem"); else _explicitNullProperties?.Remove("OperatingSystem"); } }
+        private string _explicitNullValueOperatingSystem = default!;
 #endif
         /// <summary>Gets or sets the product name. This is the AssemblyProduct name.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ProductName { get; set; }
+        public string? ProductName { get => _explicitNullValueProductName; set { _explicitNullValueProductName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ProductName"); else _explicitNullProperties?.Remove("ProductName"); } }
+        private string? _explicitNullValueProductName = default!;
 #nullable restore
 #else
-        public string ProductName { get; set; }
+        public string ProductName { get => _explicitNullValueProductName; set { _explicitNullValueProductName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ProductName"); else _explicitNullProperties?.Remove("ProductName"); } }
+        private string _explicitNullValueProductName = default!;
 #endif
         /// <summary>Gets or sets the name of the server.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ServerName { get; set; }
+        public string? ServerName { get => _explicitNullValueServerName; set { _explicitNullValueServerName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ServerName"); else _explicitNullProperties?.Remove("ServerName"); } }
+        private string? _explicitNullValueServerName = default!;
 #nullable restore
 #else
-        public string ServerName { get; set; }
+        public string ServerName { get => _explicitNullValueServerName; set { _explicitNullValueServerName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ServerName"); else _explicitNullProperties?.Remove("ServerName"); } }
+        private string _explicitNullValueServerName = default!;
 #endif
         /// <summary>Gets or sets a value indicating whether the startup wizard is completed.</summary>
-        public bool? StartupWizardCompleted { get; set; }
+        public bool? StartupWizardCompleted { get => _explicitNullValueStartupWizardCompleted; set { _explicitNullValueStartupWizardCompleted = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("StartupWizardCompleted"); else _explicitNullProperties?.Remove("StartupWizardCompleted"); } }
+        private bool? _explicitNullValueStartupWizardCompleted = default!;
         /// <summary>Gets or sets the server version.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Version { get; set; }
+        public string? Version { get => _explicitNullValueVersion; set { _explicitNullValueVersion = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Version"); else _explicitNullProperties?.Remove("Version"); } }
+        private string? _explicitNullValueVersion = default!;
 #nullable restore
 #else
-        public string Version { get; set; }
+        public string Version { get => _explicitNullValueVersion; set { _explicitNullValueVersion = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Version"); else _explicitNullProperties?.Remove("Version"); } }
+        private string _explicitNullValueVersion = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -71,7 +98,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.PublicSystemInfo CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.PublicSystemInfo();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.PublicSystemInfo(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -103,7 +130,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteStringValue("ProductName", ProductName);
             writer.WriteStringValue("ServerName", ServerName);
             writer.WriteBoolValue("StartupWizardCompleted", StartupWizardCompleted);
-            writer.WriteStringValue("Version", Version);
+            writer.WriteStringValue("Version", Version);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

@@ -11,164 +11,244 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     #pragma warning disable CS1591
     public partial class TimerInfoDto : IParsable
     #pragma warning restore CS1591
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("ChannelId") is { } nullNodeChannelId && nullNodeChannelId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ChannelId = null;
+            if (parseNode.GetChildNode("ChannelName") is { } nullNodeChannelName && nullNodeChannelName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ChannelName = null;
+            if (parseNode.GetChildNode("ChannelPrimaryImageTag") is { } nullNodeChannelPrimaryImageTag && nullNodeChannelPrimaryImageTag.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ChannelPrimaryImageTag = null;
+            if (parseNode.GetChildNode("EndDate") is { } nullNodeEndDate && nullNodeEndDate.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EndDate = null;
+            if (parseNode.GetChildNode("ExternalChannelId") is { } nullNodeExternalChannelId && nullNodeExternalChannelId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ExternalChannelId = null;
+            if (parseNode.GetChildNode("ExternalId") is { } nullNodeExternalId && nullNodeExternalId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ExternalId = null;
+            if (parseNode.GetChildNode("ExternalProgramId") is { } nullNodeExternalProgramId && nullNodeExternalProgramId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ExternalProgramId = null;
+            if (parseNode.GetChildNode("ExternalSeriesTimerId") is { } nullNodeExternalSeriesTimerId && nullNodeExternalSeriesTimerId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ExternalSeriesTimerId = null;
+            if (parseNode.GetChildNode("Id") is { } nullNodeId && nullNodeId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Id = null;
+            if (parseNode.GetChildNode("IsPostPaddingRequired") is { } nullNodeIsPostPaddingRequired && nullNodeIsPostPaddingRequired.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsPostPaddingRequired = null;
+            if (parseNode.GetChildNode("IsPrePaddingRequired") is { } nullNodeIsPrePaddingRequired && nullNodeIsPrePaddingRequired.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsPrePaddingRequired = null;
+            if (parseNode.GetChildNode("KeepUntil") is { } nullNodeKeepUntil && nullNodeKeepUntil.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) KeepUntil = null;
+            if (parseNode.GetChildNode("Name") is { } nullNodeName && nullNodeName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Name = null;
+            if (parseNode.GetChildNode("Overview") is { } nullNodeOverview && nullNodeOverview.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Overview = null;
+            if (parseNode.GetChildNode("ParentBackdropImageTags") is { } nullNodeParentBackdropImageTags && nullNodeParentBackdropImageTags.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ParentBackdropImageTags = null;
+            if (parseNode.GetChildNode("ParentBackdropItemId") is { } nullNodeParentBackdropItemId && nullNodeParentBackdropItemId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ParentBackdropItemId = null;
+            if (parseNode.GetChildNode("PostPaddingSeconds") is { } nullNodePostPaddingSeconds && nullNodePostPaddingSeconds.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PostPaddingSeconds = null;
+            if (parseNode.GetChildNode("PrePaddingSeconds") is { } nullNodePrePaddingSeconds && nullNodePrePaddingSeconds.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PrePaddingSeconds = null;
+            if (parseNode.GetChildNode("Priority") is { } nullNodePriority && nullNodePriority.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Priority = null;
+            if (parseNode.GetChildNode("ProgramId") is { } nullNodeProgramId && nullNodeProgramId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ProgramId = null;
+            if (parseNode.GetChildNode("ProgramInfo") is { } nullNodeProgramInfo && nullNodeProgramInfo.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ProgramInfo = null;
+            if (parseNode.GetChildNode("RunTimeTicks") is { } nullNodeRunTimeTicks && nullNodeRunTimeTicks.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) RunTimeTicks = null;
+            if (parseNode.GetChildNode("SeriesTimerId") is { } nullNodeSeriesTimerId && nullNodeSeriesTimerId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SeriesTimerId = null;
+            if (parseNode.GetChildNode("ServerId") is { } nullNodeServerId && nullNodeServerId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ServerId = null;
+            if (parseNode.GetChildNode("ServiceName") is { } nullNodeServiceName && nullNodeServiceName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ServiceName = null;
+            if (parseNode.GetChildNode("StartDate") is { } nullNodeStartDate && nullNodeStartDate.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) StartDate = null;
+            if (parseNode.GetChildNode("Status") is { } nullNodeStatus && nullNodeStatus.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Status = null;
+            if (parseNode.GetChildNode("Type") is { } nullNodeType && nullNodeType.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Type = null;
+        }
+
         /// <summary>Gets or sets the channel id of the recording.</summary>
-        public Guid? ChannelId { get; set; }
+        public Guid? ChannelId { get => _explicitNullValueChannelId; set { _explicitNullValueChannelId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ChannelId"); else _explicitNullProperties?.Remove("ChannelId"); } }
+        private Guid? _explicitNullValueChannelId = default!;
         /// <summary>Gets or sets the channel name of the recording.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ChannelName { get; set; }
+        public string? ChannelName { get => _explicitNullValueChannelName; set { _explicitNullValueChannelName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ChannelName"); else _explicitNullProperties?.Remove("ChannelName"); } }
+        private string? _explicitNullValueChannelName = default!;
 #nullable restore
 #else
-        public string ChannelName { get; set; }
+        public string ChannelName { get => _explicitNullValueChannelName; set { _explicitNullValueChannelName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ChannelName"); else _explicitNullProperties?.Remove("ChannelName"); } }
+        private string _explicitNullValueChannelName = default!;
 #endif
         /// <summary>The ChannelPrimaryImageTag property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ChannelPrimaryImageTag { get; set; }
+        public string? ChannelPrimaryImageTag { get => _explicitNullValueChannelPrimaryImageTag; set { _explicitNullValueChannelPrimaryImageTag = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ChannelPrimaryImageTag"); else _explicitNullProperties?.Remove("ChannelPrimaryImageTag"); } }
+        private string? _explicitNullValueChannelPrimaryImageTag = default!;
 #nullable restore
 #else
-        public string ChannelPrimaryImageTag { get; set; }
+        public string ChannelPrimaryImageTag { get => _explicitNullValueChannelPrimaryImageTag; set { _explicitNullValueChannelPrimaryImageTag = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ChannelPrimaryImageTag"); else _explicitNullProperties?.Remove("ChannelPrimaryImageTag"); } }
+        private string _explicitNullValueChannelPrimaryImageTag = default!;
 #endif
         /// <summary>Gets or sets the end date of the recording, in UTC.</summary>
-        public DateTimeOffset? EndDate { get; set; }
+        public DateTimeOffset? EndDate { get => _explicitNullValueEndDate; set { _explicitNullValueEndDate = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EndDate"); else _explicitNullProperties?.Remove("EndDate"); } }
+        private DateTimeOffset? _explicitNullValueEndDate = default!;
         /// <summary>Gets or sets the external channel identifier.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ExternalChannelId { get; set; }
+        public string? ExternalChannelId { get => _explicitNullValueExternalChannelId; set { _explicitNullValueExternalChannelId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ExternalChannelId"); else _explicitNullProperties?.Remove("ExternalChannelId"); } }
+        private string? _explicitNullValueExternalChannelId = default!;
 #nullable restore
 #else
-        public string ExternalChannelId { get; set; }
+        public string ExternalChannelId { get => _explicitNullValueExternalChannelId; set { _explicitNullValueExternalChannelId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ExternalChannelId"); else _explicitNullProperties?.Remove("ExternalChannelId"); } }
+        private string _explicitNullValueExternalChannelId = default!;
 #endif
         /// <summary>Gets or sets the external identifier.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ExternalId { get; set; }
+        public string? ExternalId { get => _explicitNullValueExternalId; set { _explicitNullValueExternalId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ExternalId"); else _explicitNullProperties?.Remove("ExternalId"); } }
+        private string? _explicitNullValueExternalId = default!;
 #nullable restore
 #else
-        public string ExternalId { get; set; }
+        public string ExternalId { get => _explicitNullValueExternalId; set { _explicitNullValueExternalId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ExternalId"); else _explicitNullProperties?.Remove("ExternalId"); } }
+        private string _explicitNullValueExternalId = default!;
 #endif
         /// <summary>Gets or sets the external program identifier.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ExternalProgramId { get; set; }
+        public string? ExternalProgramId { get => _explicitNullValueExternalProgramId; set { _explicitNullValueExternalProgramId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ExternalProgramId"); else _explicitNullProperties?.Remove("ExternalProgramId"); } }
+        private string? _explicitNullValueExternalProgramId = default!;
 #nullable restore
 #else
-        public string ExternalProgramId { get; set; }
+        public string ExternalProgramId { get => _explicitNullValueExternalProgramId; set { _explicitNullValueExternalProgramId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ExternalProgramId"); else _explicitNullProperties?.Remove("ExternalProgramId"); } }
+        private string _explicitNullValueExternalProgramId = default!;
 #endif
         /// <summary>Gets or sets the external series timer identifier.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ExternalSeriesTimerId { get; set; }
+        public string? ExternalSeriesTimerId { get => _explicitNullValueExternalSeriesTimerId; set { _explicitNullValueExternalSeriesTimerId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ExternalSeriesTimerId"); else _explicitNullProperties?.Remove("ExternalSeriesTimerId"); } }
+        private string? _explicitNullValueExternalSeriesTimerId = default!;
 #nullable restore
 #else
-        public string ExternalSeriesTimerId { get; set; }
+        public string ExternalSeriesTimerId { get => _explicitNullValueExternalSeriesTimerId; set { _explicitNullValueExternalSeriesTimerId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ExternalSeriesTimerId"); else _explicitNullProperties?.Remove("ExternalSeriesTimerId"); } }
+        private string _explicitNullValueExternalSeriesTimerId = default!;
 #endif
         /// <summary>Gets or sets the Id of the recording.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Id { get; set; }
+        public string? Id { get => _explicitNullValueId; set { _explicitNullValueId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Id"); else _explicitNullProperties?.Remove("Id"); } }
+        private string? _explicitNullValueId = default!;
 #nullable restore
 #else
-        public string Id { get; set; }
+        public string Id { get => _explicitNullValueId; set { _explicitNullValueId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Id"); else _explicitNullProperties?.Remove("Id"); } }
+        private string _explicitNullValueId = default!;
 #endif
         /// <summary>Gets or sets a value indicating whether this instance is post padding required.</summary>
-        public bool? IsPostPaddingRequired { get; set; }
+        public bool? IsPostPaddingRequired { get => _explicitNullValueIsPostPaddingRequired; set { _explicitNullValueIsPostPaddingRequired = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IsPostPaddingRequired"); else _explicitNullProperties?.Remove("IsPostPaddingRequired"); } }
+        private bool? _explicitNullValueIsPostPaddingRequired = default!;
         /// <summary>Gets or sets a value indicating whether this instance is pre padding required.</summary>
-        public bool? IsPrePaddingRequired { get; set; }
+        public bool? IsPrePaddingRequired { get => _explicitNullValueIsPrePaddingRequired; set { _explicitNullValueIsPrePaddingRequired = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IsPrePaddingRequired"); else _explicitNullProperties?.Remove("IsPrePaddingRequired"); } }
+        private bool? _explicitNullValueIsPrePaddingRequired = default!;
         /// <summary>The KeepUntil property</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.TimerInfoDto_KeepUntil? KeepUntil { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.TimerInfoDto_KeepUntil? KeepUntil { get => _explicitNullValueKeepUntil; set { _explicitNullValueKeepUntil = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("KeepUntil"); else _explicitNullProperties?.Remove("KeepUntil"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.TimerInfoDto_KeepUntil? _explicitNullValueKeepUntil = default!;
         /// <summary>Gets or sets the name of the recording.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Name { get; set; }
+        public string? Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Name"); else _explicitNullProperties?.Remove("Name"); } }
+        private string? _explicitNullValueName = default!;
 #nullable restore
 #else
-        public string Name { get; set; }
+        public string Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Name"); else _explicitNullProperties?.Remove("Name"); } }
+        private string _explicitNullValueName = default!;
 #endif
         /// <summary>Gets or sets the description of the recording.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Overview { get; set; }
+        public string? Overview { get => _explicitNullValueOverview; set { _explicitNullValueOverview = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Overview"); else _explicitNullProperties?.Remove("Overview"); } }
+        private string? _explicitNullValueOverview = default!;
 #nullable restore
 #else
-        public string Overview { get; set; }
+        public string Overview { get => _explicitNullValueOverview; set { _explicitNullValueOverview = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Overview"); else _explicitNullProperties?.Remove("Overview"); } }
+        private string _explicitNullValueOverview = default!;
 #endif
         /// <summary>Gets or sets the parent backdrop image tags.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? ParentBackdropImageTags { get; set; }
+        public List<string>? ParentBackdropImageTags { get => _explicitNullValueParentBackdropImageTags; set { _explicitNullValueParentBackdropImageTags = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ParentBackdropImageTags"); else _explicitNullProperties?.Remove("ParentBackdropImageTags"); } }
+        private List<string>? _explicitNullValueParentBackdropImageTags = default!;
 #nullable restore
 #else
-        public List<string> ParentBackdropImageTags { get; set; }
+        public List<string> ParentBackdropImageTags { get => _explicitNullValueParentBackdropImageTags; set { _explicitNullValueParentBackdropImageTags = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ParentBackdropImageTags"); else _explicitNullProperties?.Remove("ParentBackdropImageTags"); } }
+        private List<string> _explicitNullValueParentBackdropImageTags = default!;
 #endif
         /// <summary>Gets or sets the Id of the Parent that has a backdrop if the item does not have one.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ParentBackdropItemId { get; set; }
+        public string? ParentBackdropItemId { get => _explicitNullValueParentBackdropItemId; set { _explicitNullValueParentBackdropItemId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ParentBackdropItemId"); else _explicitNullProperties?.Remove("ParentBackdropItemId"); } }
+        private string? _explicitNullValueParentBackdropItemId = default!;
 #nullable restore
 #else
-        public string ParentBackdropItemId { get; set; }
+        public string ParentBackdropItemId { get => _explicitNullValueParentBackdropItemId; set { _explicitNullValueParentBackdropItemId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ParentBackdropItemId"); else _explicitNullProperties?.Remove("ParentBackdropItemId"); } }
+        private string _explicitNullValueParentBackdropItemId = default!;
 #endif
         /// <summary>Gets or sets the post padding seconds.</summary>
-        public int? PostPaddingSeconds { get; set; }
+        public int? PostPaddingSeconds { get => _explicitNullValuePostPaddingSeconds; set { _explicitNullValuePostPaddingSeconds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PostPaddingSeconds"); else _explicitNullProperties?.Remove("PostPaddingSeconds"); } }
+        private int? _explicitNullValuePostPaddingSeconds = default!;
         /// <summary>Gets or sets the pre padding seconds.</summary>
-        public int? PrePaddingSeconds { get; set; }
+        public int? PrePaddingSeconds { get => _explicitNullValuePrePaddingSeconds; set { _explicitNullValuePrePaddingSeconds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PrePaddingSeconds"); else _explicitNullProperties?.Remove("PrePaddingSeconds"); } }
+        private int? _explicitNullValuePrePaddingSeconds = default!;
         /// <summary>Gets or sets the priority.</summary>
-        public int? Priority { get; set; }
+        public int? Priority { get => _explicitNullValuePriority; set { _explicitNullValuePriority = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Priority"); else _explicitNullProperties?.Remove("Priority"); } }
+        private int? _explicitNullValuePriority = default!;
         /// <summary>Gets or sets the program identifier.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ProgramId { get; set; }
+        public string? ProgramId { get => _explicitNullValueProgramId; set { _explicitNullValueProgramId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ProgramId"); else _explicitNullProperties?.Remove("ProgramId"); } }
+        private string? _explicitNullValueProgramId = default!;
 #nullable restore
 #else
-        public string ProgramId { get; set; }
+        public string ProgramId { get => _explicitNullValueProgramId; set { _explicitNullValueProgramId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ProgramId"); else _explicitNullProperties?.Remove("ProgramId"); } }
+        private string _explicitNullValueProgramId = default!;
 #endif
         /// <summary>Gets or sets the program information.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto? ProgramInfo { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto? ProgramInfo { get => _explicitNullValueProgramInfo; set { _explicitNullValueProgramInfo = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ProgramInfo"); else _explicitNullProperties?.Remove("ProgramInfo"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto? _explicitNullValueProgramInfo = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto ProgramInfo { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto ProgramInfo { get => _explicitNullValueProgramInfo; set { _explicitNullValueProgramInfo = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ProgramInfo"); else _explicitNullProperties?.Remove("ProgramInfo"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto _explicitNullValueProgramInfo = default!;
 #endif
         /// <summary>Gets or sets the run time ticks.</summary>
-        public long? RunTimeTicks { get; set; }
+        public long? RunTimeTicks { get => _explicitNullValueRunTimeTicks; set { _explicitNullValueRunTimeTicks = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("RunTimeTicks"); else _explicitNullProperties?.Remove("RunTimeTicks"); } }
+        private long? _explicitNullValueRunTimeTicks = default!;
         /// <summary>Gets or sets the series timer identifier.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? SeriesTimerId { get; set; }
+        public string? SeriesTimerId { get => _explicitNullValueSeriesTimerId; set { _explicitNullValueSeriesTimerId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SeriesTimerId"); else _explicitNullProperties?.Remove("SeriesTimerId"); } }
+        private string? _explicitNullValueSeriesTimerId = default!;
 #nullable restore
 #else
-        public string SeriesTimerId { get; set; }
+        public string SeriesTimerId { get => _explicitNullValueSeriesTimerId; set { _explicitNullValueSeriesTimerId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SeriesTimerId"); else _explicitNullProperties?.Remove("SeriesTimerId"); } }
+        private string _explicitNullValueSeriesTimerId = default!;
 #endif
         /// <summary>Gets or sets the server identifier.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ServerId { get; set; }
+        public string? ServerId { get => _explicitNullValueServerId; set { _explicitNullValueServerId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ServerId"); else _explicitNullProperties?.Remove("ServerId"); } }
+        private string? _explicitNullValueServerId = default!;
 #nullable restore
 #else
-        public string ServerId { get; set; }
+        public string ServerId { get => _explicitNullValueServerId; set { _explicitNullValueServerId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ServerId"); else _explicitNullProperties?.Remove("ServerId"); } }
+        private string _explicitNullValueServerId = default!;
 #endif
         /// <summary>Gets or sets the name of the service.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ServiceName { get; set; }
+        public string? ServiceName { get => _explicitNullValueServiceName; set { _explicitNullValueServiceName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ServiceName"); else _explicitNullProperties?.Remove("ServiceName"); } }
+        private string? _explicitNullValueServiceName = default!;
 #nullable restore
 #else
-        public string ServiceName { get; set; }
+        public string ServiceName { get => _explicitNullValueServiceName; set { _explicitNullValueServiceName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ServiceName"); else _explicitNullProperties?.Remove("ServiceName"); } }
+        private string _explicitNullValueServiceName = default!;
 #endif
         /// <summary>Gets or sets the start date of the recording, in UTC.</summary>
-        public DateTimeOffset? StartDate { get; set; }
+        public DateTimeOffset? StartDate { get => _explicitNullValueStartDate; set { _explicitNullValueStartDate = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("StartDate"); else _explicitNullProperties?.Remove("StartDate"); } }
+        private DateTimeOffset? _explicitNullValueStartDate = default!;
         /// <summary>Gets or sets the status.</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.TimerInfoDto_Status? Status { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.TimerInfoDto_Status? Status { get => _explicitNullValueStatus; set { _explicitNullValueStatus = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Status"); else _explicitNullProperties?.Remove("Status"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.TimerInfoDto_Status? _explicitNullValueStatus = default!;
         /// <summary>The Type property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Type { get; set; }
+        public string? Type { get => _explicitNullValueType; set { _explicitNullValueType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Type"); else _explicitNullProperties?.Remove("Type"); } }
+        private string? _explicitNullValueType = default!;
 #nullable restore
 #else
-        public string Type { get; set; }
+        public string Type { get => _explicitNullValueType; set { _explicitNullValueType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Type"); else _explicitNullProperties?.Remove("Type"); } }
+        private string _explicitNullValueType = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -178,7 +258,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.TimerInfoDto CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.TimerInfoDto();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.TimerInfoDto(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -252,7 +332,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteStringValue("ServiceName", ServiceName);
             writer.WriteDateTimeOffsetValue("StartDate", StartDate);
             writer.WriteEnumValue<global::Soenneker.Jellyfin.OpenApiClient.Models.TimerInfoDto_Status>("Status", Status);
-            writer.WriteStringValue("Type", Type);
+            writer.WriteStringValue("Type", Type);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

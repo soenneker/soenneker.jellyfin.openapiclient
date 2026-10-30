@@ -12,36 +12,58 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class CreatePlaylistDto : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("Ids") is { } nullNodeIds && nullNodeIds.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Ids = null;
+            if (parseNode.GetChildNode("IsPublic") is { } nullNodeIsPublic && nullNodeIsPublic.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsPublic = null;
+            if (parseNode.GetChildNode("MediaType") is { } nullNodeMediaType && nullNodeMediaType.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MediaType = null;
+            if (parseNode.GetChildNode("Name") is { } nullNodeName && nullNodeName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Name = null;
+            if (parseNode.GetChildNode("UserId") is { } nullNodeUserId && nullNodeUserId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) UserId = null;
+            if (parseNode.GetChildNode("Users") is { } nullNodeUsers && nullNodeUsers.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Users = null;
+        }
+
         /// <summary>Gets or sets item ids to add to the playlist.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<Guid?>? Ids { get; set; }
+        public List<Guid?>? Ids { get => _explicitNullValueIds; set { _explicitNullValueIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Ids"); else _explicitNullProperties?.Remove("Ids"); } }
+        private List<Guid?>? _explicitNullValueIds = default!;
 #nullable restore
 #else
-        public List<Guid?> Ids { get; set; }
+        public List<Guid?> Ids { get => _explicitNullValueIds; set { _explicitNullValueIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Ids"); else _explicitNullProperties?.Remove("Ids"); } }
+        private List<Guid?> _explicitNullValueIds = default!;
 #endif
         /// <summary>Gets or sets a value indicating whether the playlist is public.</summary>
-        public bool? IsPublic { get; set; }
+        public bool? IsPublic { get => _explicitNullValueIsPublic; set { _explicitNullValueIsPublic = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IsPublic"); else _explicitNullProperties?.Remove("IsPublic"); } }
+        private bool? _explicitNullValueIsPublic = default!;
         /// <summary>Gets or sets the media type.</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.CreatePlaylistDto_MediaType? MediaType { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.CreatePlaylistDto_MediaType? MediaType { get => _explicitNullValueMediaType; set { _explicitNullValueMediaType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MediaType"); else _explicitNullProperties?.Remove("MediaType"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.CreatePlaylistDto_MediaType? _explicitNullValueMediaType = default!;
         /// <summary>Gets or sets the name of the new playlist.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Name { get; set; }
+        public string? Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Name"); else _explicitNullProperties?.Remove("Name"); } }
+        private string? _explicitNullValueName = default!;
 #nullable restore
 #else
-        public string Name { get; set; }
+        public string Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Name"); else _explicitNullProperties?.Remove("Name"); } }
+        private string _explicitNullValueName = default!;
 #endif
         /// <summary>Gets or sets the user id.</summary>
-        public Guid? UserId { get; set; }
+        public Guid? UserId { get => _explicitNullValueUserId; set { _explicitNullValueUserId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("UserId"); else _explicitNullProperties?.Remove("UserId"); } }
+        private Guid? _explicitNullValueUserId = default!;
         /// <summary>Gets or sets the playlist users.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.PlaylistUserPermissions>? Users { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.PlaylistUserPermissions>? Users { get => _explicitNullValueUsers; set { _explicitNullValueUsers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Users"); else _explicitNullProperties?.Remove("Users"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.PlaylistUserPermissions>? _explicitNullValueUsers = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.PlaylistUserPermissions> Users { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.PlaylistUserPermissions> Users { get => _explicitNullValueUsers; set { _explicitNullValueUsers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Users"); else _explicitNullProperties?.Remove("Users"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.PlaylistUserPermissions> _explicitNullValueUsers = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -51,7 +73,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.CreatePlaylistDto CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.CreatePlaylistDto();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.CreatePlaylistDto(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -81,7 +103,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteEnumValue<global::Soenneker.Jellyfin.OpenApiClient.Models.CreatePlaylistDto_MediaType>("MediaType", MediaType);
             writer.WriteStringValue("Name", Name);
             writer.WriteGuidValue("UserId", UserId);
-            writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.PlaylistUserPermissions>("Users", Users);
+            writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.PlaylistUserPermissions>("Users", Users);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

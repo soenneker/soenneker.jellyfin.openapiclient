@@ -12,38 +12,57 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class StartupConfigurationDto : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("MetadataCountryCode") is { } nullNodeMetadataCountryCode && nullNodeMetadataCountryCode.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MetadataCountryCode = null;
+            if (parseNode.GetChildNode("PreferredMetadataLanguage") is { } nullNodePreferredMetadataLanguage && nullNodePreferredMetadataLanguage.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PreferredMetadataLanguage = null;
+            if (parseNode.GetChildNode("ServerName") is { } nullNodeServerName && nullNodeServerName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ServerName = null;
+            if (parseNode.GetChildNode("UICulture") is { } nullNodeUICulture && nullNodeUICulture.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) UICulture = null;
+        }
+
         /// <summary>Gets or sets the metadata country code.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? MetadataCountryCode { get; set; }
+        public string? MetadataCountryCode { get => _explicitNullValueMetadataCountryCode; set { _explicitNullValueMetadataCountryCode = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MetadataCountryCode"); else _explicitNullProperties?.Remove("MetadataCountryCode"); } }
+        private string? _explicitNullValueMetadataCountryCode = default!;
 #nullable restore
 #else
-        public string MetadataCountryCode { get; set; }
+        public string MetadataCountryCode { get => _explicitNullValueMetadataCountryCode; set { _explicitNullValueMetadataCountryCode = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MetadataCountryCode"); else _explicitNullProperties?.Remove("MetadataCountryCode"); } }
+        private string _explicitNullValueMetadataCountryCode = default!;
 #endif
         /// <summary>Gets or sets the preferred language for the metadata.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? PreferredMetadataLanguage { get; set; }
+        public string? PreferredMetadataLanguage { get => _explicitNullValuePreferredMetadataLanguage; set { _explicitNullValuePreferredMetadataLanguage = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PreferredMetadataLanguage"); else _explicitNullProperties?.Remove("PreferredMetadataLanguage"); } }
+        private string? _explicitNullValuePreferredMetadataLanguage = default!;
 #nullable restore
 #else
-        public string PreferredMetadataLanguage { get; set; }
+        public string PreferredMetadataLanguage { get => _explicitNullValuePreferredMetadataLanguage; set { _explicitNullValuePreferredMetadataLanguage = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PreferredMetadataLanguage"); else _explicitNullProperties?.Remove("PreferredMetadataLanguage"); } }
+        private string _explicitNullValuePreferredMetadataLanguage = default!;
 #endif
         /// <summary>Gets or sets the server name.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ServerName { get; set; }
+        public string? ServerName { get => _explicitNullValueServerName; set { _explicitNullValueServerName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ServerName"); else _explicitNullProperties?.Remove("ServerName"); } }
+        private string? _explicitNullValueServerName = default!;
 #nullable restore
 #else
-        public string ServerName { get; set; }
+        public string ServerName { get => _explicitNullValueServerName; set { _explicitNullValueServerName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ServerName"); else _explicitNullProperties?.Remove("ServerName"); } }
+        private string _explicitNullValueServerName = default!;
 #endif
         /// <summary>Gets or sets UI language culture.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? UICulture { get; set; }
+        public string? UICulture { get => _explicitNullValueUICulture; set { _explicitNullValueUICulture = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("UICulture"); else _explicitNullProperties?.Remove("UICulture"); } }
+        private string? _explicitNullValueUICulture = default!;
 #nullable restore
 #else
-        public string UICulture { get; set; }
+        public string UICulture { get => _explicitNullValueUICulture; set { _explicitNullValueUICulture = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("UICulture"); else _explicitNullProperties?.Remove("UICulture"); } }
+        private string _explicitNullValueUICulture = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -53,7 +72,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.StartupConfigurationDto CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.StartupConfigurationDto();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.StartupConfigurationDto(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -79,7 +98,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteStringValue("MetadataCountryCode", MetadataCountryCode);
             writer.WriteStringValue("PreferredMetadataLanguage", PreferredMetadataLanguage);
             writer.WriteStringValue("ServerName", ServerName);
-            writer.WriteStringValue("UICulture", UICulture);
+            writer.WriteStringValue("UICulture", UICulture);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

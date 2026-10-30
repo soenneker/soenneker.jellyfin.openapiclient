@@ -11,70 +11,101 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     #pragma warning disable CS1591
     public partial class TypeOptions : IParsable
     #pragma warning restore CS1591
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("ImageFetcherOrder") is { } nullNodeImageFetcherOrder && nullNodeImageFetcherOrder.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ImageFetcherOrder = null;
+            if (parseNode.GetChildNode("ImageFetchers") is { } nullNodeImageFetchers && nullNodeImageFetchers.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ImageFetchers = null;
+            if (parseNode.GetChildNode("ImageOptions") is { } nullNodeImageOptions && nullNodeImageOptions.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ImageOptions = null;
+            if (parseNode.GetChildNode("MetadataFetcherOrder") is { } nullNodeMetadataFetcherOrder && nullNodeMetadataFetcherOrder.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MetadataFetcherOrder = null;
+            if (parseNode.GetChildNode("MetadataFetchers") is { } nullNodeMetadataFetchers && nullNodeMetadataFetchers.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MetadataFetchers = null;
+            if (parseNode.GetChildNode("SimilarItemProviderOrder") is { } nullNodeSimilarItemProviderOrder && nullNodeSimilarItemProviderOrder.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SimilarItemProviderOrder = null;
+            if (parseNode.GetChildNode("SimilarItemProviders") is { } nullNodeSimilarItemProviders && nullNodeSimilarItemProviders.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SimilarItemProviders = null;
+            if (parseNode.GetChildNode("Type") is { } nullNodeType && nullNodeType.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Type = null;
+        }
+
         /// <summary>The ImageFetcherOrder property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? ImageFetcherOrder { get; set; }
+        public List<string>? ImageFetcherOrder { get => _explicitNullValueImageFetcherOrder; set { _explicitNullValueImageFetcherOrder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ImageFetcherOrder"); else _explicitNullProperties?.Remove("ImageFetcherOrder"); } }
+        private List<string>? _explicitNullValueImageFetcherOrder = default!;
 #nullable restore
 #else
-        public List<string> ImageFetcherOrder { get; set; }
+        public List<string> ImageFetcherOrder { get => _explicitNullValueImageFetcherOrder; set { _explicitNullValueImageFetcherOrder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ImageFetcherOrder"); else _explicitNullProperties?.Remove("ImageFetcherOrder"); } }
+        private List<string> _explicitNullValueImageFetcherOrder = default!;
 #endif
         /// <summary>The ImageFetchers property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? ImageFetchers { get; set; }
+        public List<string>? ImageFetchers { get => _explicitNullValueImageFetchers; set { _explicitNullValueImageFetchers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ImageFetchers"); else _explicitNullProperties?.Remove("ImageFetchers"); } }
+        private List<string>? _explicitNullValueImageFetchers = default!;
 #nullable restore
 #else
-        public List<string> ImageFetchers { get; set; }
+        public List<string> ImageFetchers { get => _explicitNullValueImageFetchers; set { _explicitNullValueImageFetchers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ImageFetchers"); else _explicitNullProperties?.Remove("ImageFetchers"); } }
+        private List<string> _explicitNullValueImageFetchers = default!;
 #endif
         /// <summary>The ImageOptions property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ImageOption>? ImageOptions { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ImageOption>? ImageOptions { get => _explicitNullValueImageOptions; set { _explicitNullValueImageOptions = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ImageOptions"); else _explicitNullProperties?.Remove("ImageOptions"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ImageOption>? _explicitNullValueImageOptions = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ImageOption> ImageOptions { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ImageOption> ImageOptions { get => _explicitNullValueImageOptions; set { _explicitNullValueImageOptions = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ImageOptions"); else _explicitNullProperties?.Remove("ImageOptions"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ImageOption> _explicitNullValueImageOptions = default!;
 #endif
         /// <summary>The MetadataFetcherOrder property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? MetadataFetcherOrder { get; set; }
+        public List<string>? MetadataFetcherOrder { get => _explicitNullValueMetadataFetcherOrder; set { _explicitNullValueMetadataFetcherOrder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MetadataFetcherOrder"); else _explicitNullProperties?.Remove("MetadataFetcherOrder"); } }
+        private List<string>? _explicitNullValueMetadataFetcherOrder = default!;
 #nullable restore
 #else
-        public List<string> MetadataFetcherOrder { get; set; }
+        public List<string> MetadataFetcherOrder { get => _explicitNullValueMetadataFetcherOrder; set { _explicitNullValueMetadataFetcherOrder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MetadataFetcherOrder"); else _explicitNullProperties?.Remove("MetadataFetcherOrder"); } }
+        private List<string> _explicitNullValueMetadataFetcherOrder = default!;
 #endif
         /// <summary>The MetadataFetchers property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? MetadataFetchers { get; set; }
+        public List<string>? MetadataFetchers { get => _explicitNullValueMetadataFetchers; set { _explicitNullValueMetadataFetchers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MetadataFetchers"); else _explicitNullProperties?.Remove("MetadataFetchers"); } }
+        private List<string>? _explicitNullValueMetadataFetchers = default!;
 #nullable restore
 #else
-        public List<string> MetadataFetchers { get; set; }
+        public List<string> MetadataFetchers { get => _explicitNullValueMetadataFetchers; set { _explicitNullValueMetadataFetchers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MetadataFetchers"); else _explicitNullProperties?.Remove("MetadataFetchers"); } }
+        private List<string> _explicitNullValueMetadataFetchers = default!;
 #endif
         /// <summary>The SimilarItemProviderOrder property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? SimilarItemProviderOrder { get; set; }
+        public List<string>? SimilarItemProviderOrder { get => _explicitNullValueSimilarItemProviderOrder; set { _explicitNullValueSimilarItemProviderOrder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SimilarItemProviderOrder"); else _explicitNullProperties?.Remove("SimilarItemProviderOrder"); } }
+        private List<string>? _explicitNullValueSimilarItemProviderOrder = default!;
 #nullable restore
 #else
-        public List<string> SimilarItemProviderOrder { get; set; }
+        public List<string> SimilarItemProviderOrder { get => _explicitNullValueSimilarItemProviderOrder; set { _explicitNullValueSimilarItemProviderOrder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SimilarItemProviderOrder"); else _explicitNullProperties?.Remove("SimilarItemProviderOrder"); } }
+        private List<string> _explicitNullValueSimilarItemProviderOrder = default!;
 #endif
         /// <summary>The SimilarItemProviders property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? SimilarItemProviders { get; set; }
+        public List<string>? SimilarItemProviders { get => _explicitNullValueSimilarItemProviders; set { _explicitNullValueSimilarItemProviders = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SimilarItemProviders"); else _explicitNullProperties?.Remove("SimilarItemProviders"); } }
+        private List<string>? _explicitNullValueSimilarItemProviders = default!;
 #nullable restore
 #else
-        public List<string> SimilarItemProviders { get; set; }
+        public List<string> SimilarItemProviders { get => _explicitNullValueSimilarItemProviders; set { _explicitNullValueSimilarItemProviders = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SimilarItemProviders"); else _explicitNullProperties?.Remove("SimilarItemProviders"); } }
+        private List<string> _explicitNullValueSimilarItemProviders = default!;
 #endif
         /// <summary>The Type property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Type { get; set; }
+        public string? Type { get => _explicitNullValueType; set { _explicitNullValueType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Type"); else _explicitNullProperties?.Remove("Type"); } }
+        private string? _explicitNullValueType = default!;
 #nullable restore
 #else
-        public string Type { get; set; }
+        public string Type { get => _explicitNullValueType; set { _explicitNullValueType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Type"); else _explicitNullProperties?.Remove("Type"); } }
+        private string _explicitNullValueType = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -84,7 +115,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.TypeOptions CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.TypeOptions();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.TypeOptions(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -118,7 +149,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteCollectionOfPrimitiveValues<string>("MetadataFetchers", MetadataFetchers);
             writer.WriteCollectionOfPrimitiveValues<string>("SimilarItemProviderOrder", SimilarItemProviderOrder);
             writer.WriteCollectionOfPrimitiveValues<string>("SimilarItemProviders", SimilarItemProviders);
-            writer.WriteStringValue("Type", Type);
+            writer.WriteStringValue("Type", Type);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

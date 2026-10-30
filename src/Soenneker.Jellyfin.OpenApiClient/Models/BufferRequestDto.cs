@@ -12,15 +12,30 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class BufferRequestDto : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("IsPlaying") is { } nullNodeIsPlaying && nullNodeIsPlaying.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsPlaying = null;
+            if (parseNode.GetChildNode("PlaylistItemId") is { } nullNodePlaylistItemId && nullNodePlaylistItemId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PlaylistItemId = null;
+            if (parseNode.GetChildNode("PositionTicks") is { } nullNodePositionTicks && nullNodePositionTicks.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PositionTicks = null;
+            if (parseNode.GetChildNode("When") is { } nullNodeWhen && nullNodeWhen.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) When = null;
+        }
+
         /// <summary>Gets or sets a value indicating whether the client playback is unpaused.</summary>
-        public bool? IsPlaying { get; set; }
+        public bool? IsPlaying { get => _explicitNullValueIsPlaying; set { _explicitNullValueIsPlaying = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IsPlaying"); else _explicitNullProperties?.Remove("IsPlaying"); } }
+        private bool? _explicitNullValueIsPlaying = default!;
         /// <summary>Gets or sets the playlist item identifier of the playing item.</summary>
-        public Guid? PlaylistItemId { get; set; }
+        public Guid? PlaylistItemId { get => _explicitNullValuePlaylistItemId; set { _explicitNullValuePlaylistItemId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PlaylistItemId"); else _explicitNullProperties?.Remove("PlaylistItemId"); } }
+        private Guid? _explicitNullValuePlaylistItemId = default!;
         /// <summary>Gets or sets the position ticks.</summary>
-        public long? PositionTicks { get; set; }
+        public long? PositionTicks { get => _explicitNullValuePositionTicks; set { _explicitNullValuePositionTicks = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PositionTicks"); else _explicitNullProperties?.Remove("PositionTicks"); } }
+        private long? _explicitNullValuePositionTicks = default!;
         /// <summary>Gets or sets when the request has been made by the client.</summary>
-        public DateTimeOffset? When { get; set; }
+        public DateTimeOffset? When { get => _explicitNullValueWhen; set { _explicitNullValueWhen = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("When"); else _explicitNullProperties?.Remove("When"); } }
+        private DateTimeOffset? _explicitNullValueWhen = default!;
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
@@ -29,7 +44,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.BufferRequestDto CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.BufferRequestDto();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.BufferRequestDto(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -55,7 +70,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteBoolValue("IsPlaying", IsPlaying);
             writer.WriteGuidValue("PlaylistItemId", PlaylistItemId);
             writer.WriteLongValue("PositionTicks", PositionTicks);
-            writer.WriteDateTimeOffsetValue("When", When);
+            writer.WriteDateTimeOffsetValue("When", When);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

@@ -49,7 +49,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Items.Item.ThemeMedia
         {
 #endif
             var requestInfo = ToGetRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::Soenneker.Jellyfin.OpenApiClient.Models.AllThemeMediaResult>(requestInfo, global::Soenneker.Jellyfin.OpenApiClient.Models.AllThemeMediaResult.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::Soenneker.Jellyfin.OpenApiClient.Models.AllThemeMediaResult>(requestInfo, global::Soenneker.Jellyfin.OpenApiClient.Models.AllThemeMediaResult.CreateFromDiscriminatorValue, new global::System.Collections.Generic.Dictionary<string, global::Microsoft.Kiota.Abstractions.Serialization.ParsableFactory<global::Microsoft.Kiota.Abstractions.Serialization.IParsable>> { { "4XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue }, { "5XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue } }, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Get theme songs and videos for an item.

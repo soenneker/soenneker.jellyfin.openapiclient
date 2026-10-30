@@ -12,70 +12,111 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class DisplayPreferencesDto : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("Client") is { } nullNodeClient && nullNodeClient.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Client = null;
+            if (parseNode.GetChildNode("CustomPrefs") is { } nullNodeCustomPrefs && nullNodeCustomPrefs.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) CustomPrefs = null;
+            if (parseNode.GetChildNode("Id") is { } nullNodeId && nullNodeId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Id = null;
+            if (parseNode.GetChildNode("IndexBy") is { } nullNodeIndexBy && nullNodeIndexBy.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IndexBy = null;
+            if (parseNode.GetChildNode("PrimaryImageHeight") is { } nullNodePrimaryImageHeight && nullNodePrimaryImageHeight.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PrimaryImageHeight = null;
+            if (parseNode.GetChildNode("PrimaryImageWidth") is { } nullNodePrimaryImageWidth && nullNodePrimaryImageWidth.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PrimaryImageWidth = null;
+            if (parseNode.GetChildNode("RememberIndexing") is { } nullNodeRememberIndexing && nullNodeRememberIndexing.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) RememberIndexing = null;
+            if (parseNode.GetChildNode("RememberSorting") is { } nullNodeRememberSorting && nullNodeRememberSorting.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) RememberSorting = null;
+            if (parseNode.GetChildNode("ScrollDirection") is { } nullNodeScrollDirection && nullNodeScrollDirection.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ScrollDirection = null;
+            if (parseNode.GetChildNode("ShowBackdrop") is { } nullNodeShowBackdrop && nullNodeShowBackdrop.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ShowBackdrop = null;
+            if (parseNode.GetChildNode("ShowSidebar") is { } nullNodeShowSidebar && nullNodeShowSidebar.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ShowSidebar = null;
+            if (parseNode.GetChildNode("SortBy") is { } nullNodeSortBy && nullNodeSortBy.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SortBy = null;
+            if (parseNode.GetChildNode("SortOrder") is { } nullNodeSortOrder && nullNodeSortOrder.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SortOrder = null;
+            if (parseNode.GetChildNode("ViewType") is { } nullNodeViewType && nullNodeViewType.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ViewType = null;
+        }
+
         /// <summary>Gets or sets the client.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Client { get; set; }
+        public string? Client { get => _explicitNullValueClient; set { _explicitNullValueClient = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Client"); else _explicitNullProperties?.Remove("Client"); } }
+        private string? _explicitNullValueClient = default!;
 #nullable restore
 #else
-        public string Client { get; set; }
+        public string Client { get => _explicitNullValueClient; set { _explicitNullValueClient = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Client"); else _explicitNullProperties?.Remove("Client"); } }
+        private string _explicitNullValueClient = default!;
 #endif
         /// <summary>Gets or sets the custom prefs.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.DisplayPreferencesDto_CustomPrefs? CustomPrefs { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.DisplayPreferencesDto_CustomPrefs? CustomPrefs { get => _explicitNullValueCustomPrefs; set { _explicitNullValueCustomPrefs = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("CustomPrefs"); else _explicitNullProperties?.Remove("CustomPrefs"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.DisplayPreferencesDto_CustomPrefs? _explicitNullValueCustomPrefs = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.DisplayPreferencesDto_CustomPrefs CustomPrefs { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.DisplayPreferencesDto_CustomPrefs CustomPrefs { get => _explicitNullValueCustomPrefs; set { _explicitNullValueCustomPrefs = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("CustomPrefs"); else _explicitNullProperties?.Remove("CustomPrefs"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.DisplayPreferencesDto_CustomPrefs _explicitNullValueCustomPrefs = default!;
 #endif
         /// <summary>Gets or sets the user id.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Id { get; set; }
+        public string? Id { get => _explicitNullValueId; set { _explicitNullValueId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Id"); else _explicitNullProperties?.Remove("Id"); } }
+        private string? _explicitNullValueId = default!;
 #nullable restore
 #else
-        public string Id { get; set; }
+        public string Id { get => _explicitNullValueId; set { _explicitNullValueId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Id"); else _explicitNullProperties?.Remove("Id"); } }
+        private string _explicitNullValueId = default!;
 #endif
         /// <summary>Gets or sets the index by.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? IndexBy { get; set; }
+        public string? IndexBy { get => _explicitNullValueIndexBy; set { _explicitNullValueIndexBy = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IndexBy"); else _explicitNullProperties?.Remove("IndexBy"); } }
+        private string? _explicitNullValueIndexBy = default!;
 #nullable restore
 #else
-        public string IndexBy { get; set; }
+        public string IndexBy { get => _explicitNullValueIndexBy; set { _explicitNullValueIndexBy = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IndexBy"); else _explicitNullProperties?.Remove("IndexBy"); } }
+        private string _explicitNullValueIndexBy = default!;
 #endif
         /// <summary>Gets or sets the height of the primary image.</summary>
-        public int? PrimaryImageHeight { get; set; }
+        public int? PrimaryImageHeight { get => _explicitNullValuePrimaryImageHeight; set { _explicitNullValuePrimaryImageHeight = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PrimaryImageHeight"); else _explicitNullProperties?.Remove("PrimaryImageHeight"); } }
+        private int? _explicitNullValuePrimaryImageHeight = default!;
         /// <summary>Gets or sets the width of the primary image.</summary>
-        public int? PrimaryImageWidth { get; set; }
+        public int? PrimaryImageWidth { get => _explicitNullValuePrimaryImageWidth; set { _explicitNullValuePrimaryImageWidth = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PrimaryImageWidth"); else _explicitNullProperties?.Remove("PrimaryImageWidth"); } }
+        private int? _explicitNullValuePrimaryImageWidth = default!;
         /// <summary>Gets or sets a value indicating whether [remember indexing].</summary>
-        public bool? RememberIndexing { get; set; }
+        public bool? RememberIndexing { get => _explicitNullValueRememberIndexing; set { _explicitNullValueRememberIndexing = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("RememberIndexing"); else _explicitNullProperties?.Remove("RememberIndexing"); } }
+        private bool? _explicitNullValueRememberIndexing = default!;
         /// <summary>Gets or sets a value indicating whether [remember sorting].</summary>
-        public bool? RememberSorting { get; set; }
+        public bool? RememberSorting { get => _explicitNullValueRememberSorting; set { _explicitNullValueRememberSorting = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("RememberSorting"); else _explicitNullProperties?.Remove("RememberSorting"); } }
+        private bool? _explicitNullValueRememberSorting = default!;
         /// <summary>Gets or sets the scroll direction.</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.DisplayPreferencesDto_ScrollDirection? ScrollDirection { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.DisplayPreferencesDto_ScrollDirection? ScrollDirection { get => _explicitNullValueScrollDirection; set { _explicitNullValueScrollDirection = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ScrollDirection"); else _explicitNullProperties?.Remove("ScrollDirection"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.DisplayPreferencesDto_ScrollDirection? _explicitNullValueScrollDirection = default!;
         /// <summary>Gets or sets a value indicating whether to show backdrops on this item.</summary>
-        public bool? ShowBackdrop { get; set; }
+        public bool? ShowBackdrop { get => _explicitNullValueShowBackdrop; set { _explicitNullValueShowBackdrop = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ShowBackdrop"); else _explicitNullProperties?.Remove("ShowBackdrop"); } }
+        private bool? _explicitNullValueShowBackdrop = default!;
         /// <summary>Gets or sets a value indicating whether [show sidebar].</summary>
-        public bool? ShowSidebar { get; set; }
+        public bool? ShowSidebar { get => _explicitNullValueShowSidebar; set { _explicitNullValueShowSidebar = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ShowSidebar"); else _explicitNullProperties?.Remove("ShowSidebar"); } }
+        private bool? _explicitNullValueShowSidebar = default!;
         /// <summary>Gets or sets the sort by.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? SortBy { get; set; }
+        public string? SortBy { get => _explicitNullValueSortBy; set { _explicitNullValueSortBy = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SortBy"); else _explicitNullProperties?.Remove("SortBy"); } }
+        private string? _explicitNullValueSortBy = default!;
 #nullable restore
 #else
-        public string SortBy { get; set; }
+        public string SortBy { get => _explicitNullValueSortBy; set { _explicitNullValueSortBy = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SortBy"); else _explicitNullProperties?.Remove("SortBy"); } }
+        private string _explicitNullValueSortBy = default!;
 #endif
         /// <summary>Gets or sets the sort order.</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.DisplayPreferencesDto_SortOrder? SortOrder { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.DisplayPreferencesDto_SortOrder? SortOrder { get => _explicitNullValueSortOrder; set { _explicitNullValueSortOrder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SortOrder"); else _explicitNullProperties?.Remove("SortOrder"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.DisplayPreferencesDto_SortOrder? _explicitNullValueSortOrder = default!;
         /// <summary>Gets or sets the type of the view.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ViewType { get; set; }
+        public string? ViewType { get => _explicitNullValueViewType; set { _explicitNullValueViewType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ViewType"); else _explicitNullProperties?.Remove("ViewType"); } }
+        private string? _explicitNullValueViewType = default!;
 #nullable restore
 #else
-        public string ViewType { get; set; }
+        public string ViewType { get => _explicitNullValueViewType; set { _explicitNullValueViewType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ViewType"); else _explicitNullProperties?.Remove("ViewType"); } }
+        private string _explicitNullValueViewType = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -85,7 +126,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.DisplayPreferencesDto CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.DisplayPreferencesDto();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.DisplayPreferencesDto(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -131,7 +172,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteBoolValue("ShowSidebar", ShowSidebar);
             writer.WriteStringValue("SortBy", SortBy);
             writer.WriteEnumValue<global::Soenneker.Jellyfin.OpenApiClient.Models.DisplayPreferencesDto_SortOrder>("SortOrder", SortOrder);
-            writer.WriteStringValue("ViewType", ViewType);
+            writer.WriteStringValue("ViewType", ViewType);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

@@ -11,38 +11,57 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     #pragma warning disable CS1591
     public partial class QueryFiltersLegacy : IParsable
     #pragma warning restore CS1591
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("Genres") is { } nullNodeGenres && nullNodeGenres.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Genres = null;
+            if (parseNode.GetChildNode("OfficialRatings") is { } nullNodeOfficialRatings && nullNodeOfficialRatings.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) OfficialRatings = null;
+            if (parseNode.GetChildNode("Tags") is { } nullNodeTags && nullNodeTags.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Tags = null;
+            if (parseNode.GetChildNode("Years") is { } nullNodeYears && nullNodeYears.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Years = null;
+        }
+
         /// <summary>The Genres property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? Genres { get; set; }
+        public List<string>? Genres { get => _explicitNullValueGenres; set { _explicitNullValueGenres = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Genres"); else _explicitNullProperties?.Remove("Genres"); } }
+        private List<string>? _explicitNullValueGenres = default!;
 #nullable restore
 #else
-        public List<string> Genres { get; set; }
+        public List<string> Genres { get => _explicitNullValueGenres; set { _explicitNullValueGenres = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Genres"); else _explicitNullProperties?.Remove("Genres"); } }
+        private List<string> _explicitNullValueGenres = default!;
 #endif
         /// <summary>The OfficialRatings property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? OfficialRatings { get; set; }
+        public List<string>? OfficialRatings { get => _explicitNullValueOfficialRatings; set { _explicitNullValueOfficialRatings = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("OfficialRatings"); else _explicitNullProperties?.Remove("OfficialRatings"); } }
+        private List<string>? _explicitNullValueOfficialRatings = default!;
 #nullable restore
 #else
-        public List<string> OfficialRatings { get; set; }
+        public List<string> OfficialRatings { get => _explicitNullValueOfficialRatings; set { _explicitNullValueOfficialRatings = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("OfficialRatings"); else _explicitNullProperties?.Remove("OfficialRatings"); } }
+        private List<string> _explicitNullValueOfficialRatings = default!;
 #endif
         /// <summary>The Tags property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? Tags { get; set; }
+        public List<string>? Tags { get => _explicitNullValueTags; set { _explicitNullValueTags = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Tags"); else _explicitNullProperties?.Remove("Tags"); } }
+        private List<string>? _explicitNullValueTags = default!;
 #nullable restore
 #else
-        public List<string> Tags { get; set; }
+        public List<string> Tags { get => _explicitNullValueTags; set { _explicitNullValueTags = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Tags"); else _explicitNullProperties?.Remove("Tags"); } }
+        private List<string> _explicitNullValueTags = default!;
 #endif
         /// <summary>The Years property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<int?>? Years { get; set; }
+        public List<int?>? Years { get => _explicitNullValueYears; set { _explicitNullValueYears = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Years"); else _explicitNullProperties?.Remove("Years"); } }
+        private List<int?>? _explicitNullValueYears = default!;
 #nullable restore
 #else
-        public List<int?> Years { get; set; }
+        public List<int?> Years { get => _explicitNullValueYears; set { _explicitNullValueYears = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Years"); else _explicitNullProperties?.Remove("Years"); } }
+        private List<int?> _explicitNullValueYears = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -52,7 +71,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.QueryFiltersLegacy CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.QueryFiltersLegacy();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.QueryFiltersLegacy(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -78,7 +97,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteCollectionOfPrimitiveValues<string>("Genres", Genres);
             writer.WriteCollectionOfPrimitiveValues<string>("OfficialRatings", OfficialRatings);
             writer.WriteCollectionOfPrimitiveValues<string>("Tags", Tags);
-            writer.WriteCollectionOfPrimitiveValues<int?>("Years", Years);
+            writer.WriteCollectionOfPrimitiveValues<int?>("Years", Years);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

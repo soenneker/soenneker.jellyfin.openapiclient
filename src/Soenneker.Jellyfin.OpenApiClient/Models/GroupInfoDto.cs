@@ -12,29 +12,48 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class GroupInfoDto : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("GroupId") is { } nullNodeGroupId && nullNodeGroupId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) GroupId = null;
+            if (parseNode.GetChildNode("GroupName") is { } nullNodeGroupName && nullNodeGroupName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) GroupName = null;
+            if (parseNode.GetChildNode("LastUpdatedAt") is { } nullNodeLastUpdatedAt && nullNodeLastUpdatedAt.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LastUpdatedAt = null;
+            if (parseNode.GetChildNode("Participants") is { } nullNodeParticipants && nullNodeParticipants.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Participants = null;
+            if (parseNode.GetChildNode("State") is { } nullNodeState && nullNodeState.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) State = null;
+        }
+
         /// <summary>Gets the group identifier.</summary>
-        public Guid? GroupId { get; set; }
+        public Guid? GroupId { get => _explicitNullValueGroupId; set { _explicitNullValueGroupId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("GroupId"); else _explicitNullProperties?.Remove("GroupId"); } }
+        private Guid? _explicitNullValueGroupId = default!;
         /// <summary>Gets the group name.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? GroupName { get; set; }
+        public string? GroupName { get => _explicitNullValueGroupName; set { _explicitNullValueGroupName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("GroupName"); else _explicitNullProperties?.Remove("GroupName"); } }
+        private string? _explicitNullValueGroupName = default!;
 #nullable restore
 #else
-        public string GroupName { get; set; }
+        public string GroupName { get => _explicitNullValueGroupName; set { _explicitNullValueGroupName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("GroupName"); else _explicitNullProperties?.Remove("GroupName"); } }
+        private string _explicitNullValueGroupName = default!;
 #endif
         /// <summary>Gets the date when this DTO has been created.</summary>
-        public DateTimeOffset? LastUpdatedAt { get; set; }
+        public DateTimeOffset? LastUpdatedAt { get => _explicitNullValueLastUpdatedAt; set { _explicitNullValueLastUpdatedAt = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LastUpdatedAt"); else _explicitNullProperties?.Remove("LastUpdatedAt"); } }
+        private DateTimeOffset? _explicitNullValueLastUpdatedAt = default!;
         /// <summary>Gets the participants.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? Participants { get; set; }
+        public List<string>? Participants { get => _explicitNullValueParticipants; set { _explicitNullValueParticipants = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Participants"); else _explicitNullProperties?.Remove("Participants"); } }
+        private List<string>? _explicitNullValueParticipants = default!;
 #nullable restore
 #else
-        public List<string> Participants { get; set; }
+        public List<string> Participants { get => _explicitNullValueParticipants; set { _explicitNullValueParticipants = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Participants"); else _explicitNullProperties?.Remove("Participants"); } }
+        private List<string> _explicitNullValueParticipants = default!;
 #endif
         /// <summary>Gets the group state.</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.GroupInfoDto_State? State { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.GroupInfoDto_State? State { get => _explicitNullValueState; set { _explicitNullValueState = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("State"); else _explicitNullProperties?.Remove("State"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.GroupInfoDto_State? _explicitNullValueState = default!;
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
@@ -43,7 +62,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.GroupInfoDto CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.GroupInfoDto();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.GroupInfoDto(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -71,7 +90,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteStringValue("GroupName", GroupName);
             writer.WriteDateTimeOffsetValue("LastUpdatedAt", LastUpdatedAt);
             writer.WriteCollectionOfPrimitiveValues<string>("Participants", Participants);
-            writer.WriteEnumValue<global::Soenneker.Jellyfin.OpenApiClient.Models.GroupInfoDto_State>("State", State);
+            writer.WriteEnumValue<global::Soenneker.Jellyfin.OpenApiClient.Models.GroupInfoDto_State>("State", State);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

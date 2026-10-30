@@ -11,16 +11,28 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     #pragma warning disable CS1591
     public partial class PinRedeemResult : IParsable
     #pragma warning restore CS1591
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("Success") is { } nullNodeSuccess && nullNodeSuccess.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Success = null;
+            if (parseNode.GetChildNode("UsersReset") is { } nullNodeUsersReset && nullNodeUsersReset.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) UsersReset = null;
+        }
+
         /// <summary>Gets or sets a value indicating whether this MediaBrowser.Model.Users.PinRedeemResult is success.</summary>
-        public bool? Success { get; set; }
+        public bool? Success { get => _explicitNullValueSuccess; set { _explicitNullValueSuccess = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Success"); else _explicitNullProperties?.Remove("Success"); } }
+        private bool? _explicitNullValueSuccess = default!;
         /// <summary>Gets or sets the users reset.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? UsersReset { get; set; }
+        public List<string>? UsersReset { get => _explicitNullValueUsersReset; set { _explicitNullValueUsersReset = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("UsersReset"); else _explicitNullProperties?.Remove("UsersReset"); } }
+        private List<string>? _explicitNullValueUsersReset = default!;
 #nullable restore
 #else
-        public List<string> UsersReset { get; set; }
+        public List<string> UsersReset { get => _explicitNullValueUsersReset; set { _explicitNullValueUsersReset = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("UsersReset"); else _explicitNullProperties?.Remove("UsersReset"); } }
+        private List<string> _explicitNullValueUsersReset = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -30,7 +42,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.PinRedeemResult CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.PinRedeemResult();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.PinRedeemResult(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -52,7 +64,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         {
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
             writer.WriteBoolValue("Success", Success);
-            writer.WriteCollectionOfPrimitiveValues<string>("UsersReset", UsersReset);
+            writer.WriteCollectionOfPrimitiveValues<string>("UsersReset", UsersReset);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

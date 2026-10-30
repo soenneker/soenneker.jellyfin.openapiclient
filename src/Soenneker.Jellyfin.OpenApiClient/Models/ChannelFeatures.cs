@@ -11,55 +11,90 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     #pragma warning disable CS1591
     public partial class ChannelFeatures : IParsable
     #pragma warning restore CS1591
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("AutoRefreshLevels") is { } nullNodeAutoRefreshLevels && nullNodeAutoRefreshLevels.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AutoRefreshLevels = null;
+            if (parseNode.GetChildNode("CanFilter") is { } nullNodeCanFilter && nullNodeCanFilter.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) CanFilter = null;
+            if (parseNode.GetChildNode("CanSearch") is { } nullNodeCanSearch && nullNodeCanSearch.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) CanSearch = null;
+            if (parseNode.GetChildNode("ContentTypes") is { } nullNodeContentTypes && nullNodeContentTypes.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ContentTypes = null;
+            if (parseNode.GetChildNode("DefaultSortFields") is { } nullNodeDefaultSortFields && nullNodeDefaultSortFields.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DefaultSortFields = null;
+            if (parseNode.GetChildNode("Id") is { } nullNodeId && nullNodeId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Id = null;
+            if (parseNode.GetChildNode("MaxPageSize") is { } nullNodeMaxPageSize && nullNodeMaxPageSize.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MaxPageSize = null;
+            if (parseNode.GetChildNode("MediaTypes") is { } nullNodeMediaTypes && nullNodeMediaTypes.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MediaTypes = null;
+            if (parseNode.GetChildNode("Name") is { } nullNodeName && nullNodeName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Name = null;
+            if (parseNode.GetChildNode("SupportsContentDownloading") is { } nullNodeSupportsContentDownloading && nullNodeSupportsContentDownloading.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SupportsContentDownloading = null;
+            if (parseNode.GetChildNode("SupportsLatestMedia") is { } nullNodeSupportsLatestMedia && nullNodeSupportsLatestMedia.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SupportsLatestMedia = null;
+            if (parseNode.GetChildNode("SupportsSortOrderToggle") is { } nullNodeSupportsSortOrderToggle && nullNodeSupportsSortOrderToggle.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SupportsSortOrderToggle = null;
+        }
+
         /// <summary>Gets or sets the automatic refresh levels.</summary>
-        public int? AutoRefreshLevels { get; set; }
+        public int? AutoRefreshLevels { get => _explicitNullValueAutoRefreshLevels; set { _explicitNullValueAutoRefreshLevels = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("AutoRefreshLevels"); else _explicitNullProperties?.Remove("AutoRefreshLevels"); } }
+        private int? _explicitNullValueAutoRefreshLevels = default!;
         /// <summary>Gets or sets a value indicating whether this instance can filter.</summary>
-        public bool? CanFilter { get; set; }
+        public bool? CanFilter { get => _explicitNullValueCanFilter; set { _explicitNullValueCanFilter = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("CanFilter"); else _explicitNullProperties?.Remove("CanFilter"); } }
+        private bool? _explicitNullValueCanFilter = default!;
         /// <summary>Gets or sets a value indicating whether this instance can search.</summary>
-        public bool? CanSearch { get; set; }
+        public bool? CanSearch { get => _explicitNullValueCanSearch; set { _explicitNullValueCanSearch = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("CanSearch"); else _explicitNullProperties?.Remove("CanSearch"); } }
+        private bool? _explicitNullValueCanSearch = default!;
         /// <summary>Gets or sets the content types.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ChannelMediaContentType?>? ContentTypes { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ChannelMediaContentType?>? ContentTypes { get => _explicitNullValueContentTypes; set { _explicitNullValueContentTypes = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ContentTypes"); else _explicitNullProperties?.Remove("ContentTypes"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ChannelMediaContentType?>? _explicitNullValueContentTypes = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ChannelMediaContentType?> ContentTypes { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ChannelMediaContentType?> ContentTypes { get => _explicitNullValueContentTypes; set { _explicitNullValueContentTypes = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ContentTypes"); else _explicitNullProperties?.Remove("ContentTypes"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ChannelMediaContentType?> _explicitNullValueContentTypes = default!;
 #endif
         /// <summary>Gets or sets the default sort orders.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ChannelItemSortField?>? DefaultSortFields { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ChannelItemSortField?>? DefaultSortFields { get => _explicitNullValueDefaultSortFields; set { _explicitNullValueDefaultSortFields = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DefaultSortFields"); else _explicitNullProperties?.Remove("DefaultSortFields"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ChannelItemSortField?>? _explicitNullValueDefaultSortFields = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ChannelItemSortField?> DefaultSortFields { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ChannelItemSortField?> DefaultSortFields { get => _explicitNullValueDefaultSortFields; set { _explicitNullValueDefaultSortFields = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DefaultSortFields"); else _explicitNullProperties?.Remove("DefaultSortFields"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ChannelItemSortField?> _explicitNullValueDefaultSortFields = default!;
 #endif
         /// <summary>Gets or sets the identifier.</summary>
-        public Guid? Id { get; set; }
+        public Guid? Id { get => _explicitNullValueId; set { _explicitNullValueId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Id"); else _explicitNullProperties?.Remove("Id"); } }
+        private Guid? _explicitNullValueId = default!;
         /// <summary>Gets or sets the maximum number of records the channel allows retrieving at a time.</summary>
-        public int? MaxPageSize { get; set; }
+        public int? MaxPageSize { get => _explicitNullValueMaxPageSize; set { _explicitNullValueMaxPageSize = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MaxPageSize"); else _explicitNullProperties?.Remove("MaxPageSize"); } }
+        private int? _explicitNullValueMaxPageSize = default!;
         /// <summary>Gets or sets the media types.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ChannelMediaType?>? MediaTypes { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ChannelMediaType?>? MediaTypes { get => _explicitNullValueMediaTypes; set { _explicitNullValueMediaTypes = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MediaTypes"); else _explicitNullProperties?.Remove("MediaTypes"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ChannelMediaType?>? _explicitNullValueMediaTypes = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ChannelMediaType?> MediaTypes { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ChannelMediaType?> MediaTypes { get => _explicitNullValueMediaTypes; set { _explicitNullValueMediaTypes = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MediaTypes"); else _explicitNullProperties?.Remove("MediaTypes"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ChannelMediaType?> _explicitNullValueMediaTypes = default!;
 #endif
         /// <summary>Gets or sets the name.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Name { get; set; }
+        public string? Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Name"); else _explicitNullProperties?.Remove("Name"); } }
+        private string? _explicitNullValueName = default!;
 #nullable restore
 #else
-        public string Name { get; set; }
+        public string Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Name"); else _explicitNullProperties?.Remove("Name"); } }
+        private string _explicitNullValueName = default!;
 #endif
         /// <summary>Gets or sets a value indicating whether [supports content downloading].</summary>
-        public bool? SupportsContentDownloading { get; set; }
+        public bool? SupportsContentDownloading { get => _explicitNullValueSupportsContentDownloading; set { _explicitNullValueSupportsContentDownloading = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SupportsContentDownloading"); else _explicitNullProperties?.Remove("SupportsContentDownloading"); } }
+        private bool? _explicitNullValueSupportsContentDownloading = default!;
         /// <summary>Gets or sets a value indicating whether [supports latest media].</summary>
-        public bool? SupportsLatestMedia { get; set; }
+        public bool? SupportsLatestMedia { get => _explicitNullValueSupportsLatestMedia; set { _explicitNullValueSupportsLatestMedia = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SupportsLatestMedia"); else _explicitNullProperties?.Remove("SupportsLatestMedia"); } }
+        private bool? _explicitNullValueSupportsLatestMedia = default!;
         /// <summary>Gets or sets a value indicating whether a sort ascending/descending toggle is supported.</summary>
-        public bool? SupportsSortOrderToggle { get; set; }
+        public bool? SupportsSortOrderToggle { get => _explicitNullValueSupportsSortOrderToggle; set { _explicitNullValueSupportsSortOrderToggle = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SupportsSortOrderToggle"); else _explicitNullProperties?.Remove("SupportsSortOrderToggle"); } }
+        private bool? _explicitNullValueSupportsSortOrderToggle = default!;
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
@@ -68,7 +103,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.ChannelFeatures CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.ChannelFeatures();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.ChannelFeatures(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -110,7 +145,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteStringValue("Name", Name);
             writer.WriteBoolValue("SupportsContentDownloading", SupportsContentDownloading);
             writer.WriteBoolValue("SupportsLatestMedia", SupportsLatestMedia);
-            writer.WriteBoolValue("SupportsSortOrderToggle", SupportsSortOrderToggle);
+            writer.WriteBoolValue("SupportsSortOrderToggle", SupportsSortOrderToggle);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

@@ -12,56 +12,83 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class MediaAttachment : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("Codec") is { } nullNodeCodec && nullNodeCodec.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Codec = null;
+            if (parseNode.GetChildNode("CodecTag") is { } nullNodeCodecTag && nullNodeCodecTag.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) CodecTag = null;
+            if (parseNode.GetChildNode("Comment") is { } nullNodeComment && nullNodeComment.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Comment = null;
+            if (parseNode.GetChildNode("DeliveryUrl") is { } nullNodeDeliveryUrl && nullNodeDeliveryUrl.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DeliveryUrl = null;
+            if (parseNode.GetChildNode("FileName") is { } nullNodeFileName && nullNodeFileName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) FileName = null;
+            if (parseNode.GetChildNode("Index") is { } nullNodeIndex && nullNodeIndex.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Index = null;
+            if (parseNode.GetChildNode("MimeType") is { } nullNodeMimeType && nullNodeMimeType.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MimeType = null;
+        }
+
         /// <summary>Gets or sets the codec.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Codec { get; set; }
+        public string? Codec { get => _explicitNullValueCodec; set { _explicitNullValueCodec = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Codec"); else _explicitNullProperties?.Remove("Codec"); } }
+        private string? _explicitNullValueCodec = default!;
 #nullable restore
 #else
-        public string Codec { get; set; }
+        public string Codec { get => _explicitNullValueCodec; set { _explicitNullValueCodec = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Codec"); else _explicitNullProperties?.Remove("Codec"); } }
+        private string _explicitNullValueCodec = default!;
 #endif
         /// <summary>Gets or sets the codec tag.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? CodecTag { get; set; }
+        public string? CodecTag { get => _explicitNullValueCodecTag; set { _explicitNullValueCodecTag = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("CodecTag"); else _explicitNullProperties?.Remove("CodecTag"); } }
+        private string? _explicitNullValueCodecTag = default!;
 #nullable restore
 #else
-        public string CodecTag { get; set; }
+        public string CodecTag { get => _explicitNullValueCodecTag; set { _explicitNullValueCodecTag = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("CodecTag"); else _explicitNullProperties?.Remove("CodecTag"); } }
+        private string _explicitNullValueCodecTag = default!;
 #endif
         /// <summary>Gets or sets the comment.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Comment { get; set; }
+        public string? Comment { get => _explicitNullValueComment; set { _explicitNullValueComment = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Comment"); else _explicitNullProperties?.Remove("Comment"); } }
+        private string? _explicitNullValueComment = default!;
 #nullable restore
 #else
-        public string Comment { get; set; }
+        public string Comment { get => _explicitNullValueComment; set { _explicitNullValueComment = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Comment"); else _explicitNullProperties?.Remove("Comment"); } }
+        private string _explicitNullValueComment = default!;
 #endif
         /// <summary>Gets or sets the delivery URL.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? DeliveryUrl { get; set; }
+        public string? DeliveryUrl { get => _explicitNullValueDeliveryUrl; set { _explicitNullValueDeliveryUrl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DeliveryUrl"); else _explicitNullProperties?.Remove("DeliveryUrl"); } }
+        private string? _explicitNullValueDeliveryUrl = default!;
 #nullable restore
 #else
-        public string DeliveryUrl { get; set; }
+        public string DeliveryUrl { get => _explicitNullValueDeliveryUrl; set { _explicitNullValueDeliveryUrl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DeliveryUrl"); else _explicitNullProperties?.Remove("DeliveryUrl"); } }
+        private string _explicitNullValueDeliveryUrl = default!;
 #endif
         /// <summary>Gets or sets the filename.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? FileName { get; set; }
+        public string? FileName { get => _explicitNullValueFileName; set { _explicitNullValueFileName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("FileName"); else _explicitNullProperties?.Remove("FileName"); } }
+        private string? _explicitNullValueFileName = default!;
 #nullable restore
 #else
-        public string FileName { get; set; }
+        public string FileName { get => _explicitNullValueFileName; set { _explicitNullValueFileName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("FileName"); else _explicitNullProperties?.Remove("FileName"); } }
+        private string _explicitNullValueFileName = default!;
 #endif
         /// <summary>Gets or sets the index.</summary>
-        public int? Index { get; set; }
+        public int? Index { get => _explicitNullValueIndex; set { _explicitNullValueIndex = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Index"); else _explicitNullProperties?.Remove("Index"); } }
+        private int? _explicitNullValueIndex = default!;
         /// <summary>Gets or sets the MIME type.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? MimeType { get; set; }
+        public string? MimeType { get => _explicitNullValueMimeType; set { _explicitNullValueMimeType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MimeType"); else _explicitNullProperties?.Remove("MimeType"); } }
+        private string? _explicitNullValueMimeType = default!;
 #nullable restore
 #else
-        public string MimeType { get; set; }
+        public string MimeType { get => _explicitNullValueMimeType; set { _explicitNullValueMimeType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MimeType"); else _explicitNullProperties?.Remove("MimeType"); } }
+        private string _explicitNullValueMimeType = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -71,7 +98,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.MediaAttachment CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.MediaAttachment();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.MediaAttachment(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -103,7 +130,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteStringValue("DeliveryUrl", DeliveryUrl);
             writer.WriteStringValue("FileName", FileName);
             writer.WriteIntValue("Index", Index);
-            writer.WriteStringValue("MimeType", MimeType);
+            writer.WriteStringValue("MimeType", MimeType);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

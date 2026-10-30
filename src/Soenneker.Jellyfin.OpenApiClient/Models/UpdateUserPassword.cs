@@ -12,33 +12,51 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class UpdateUserPassword : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("CurrentPassword") is { } nullNodeCurrentPassword && nullNodeCurrentPassword.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) CurrentPassword = null;
+            if (parseNode.GetChildNode("CurrentPw") is { } nullNodeCurrentPw && nullNodeCurrentPw.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) CurrentPw = null;
+            if (parseNode.GetChildNode("NewPw") is { } nullNodeNewPw && nullNodeNewPw.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) NewPw = null;
+            if (parseNode.GetChildNode("ResetPassword") is { } nullNodeResetPassword && nullNodeResetPassword.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ResetPassword = null;
+        }
+
         /// <summary>Gets or sets the current sha1-hashed password.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? CurrentPassword { get; set; }
+        public string? CurrentPassword { get => _explicitNullValueCurrentPassword; set { _explicitNullValueCurrentPassword = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("CurrentPassword"); else _explicitNullProperties?.Remove("CurrentPassword"); } }
+        private string? _explicitNullValueCurrentPassword = default!;
 #nullable restore
 #else
-        public string CurrentPassword { get; set; }
+        public string CurrentPassword { get => _explicitNullValueCurrentPassword; set { _explicitNullValueCurrentPassword = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("CurrentPassword"); else _explicitNullProperties?.Remove("CurrentPassword"); } }
+        private string _explicitNullValueCurrentPassword = default!;
 #endif
         /// <summary>Gets or sets the current plain text password.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? CurrentPw { get; set; }
+        public string? CurrentPw { get => _explicitNullValueCurrentPw; set { _explicitNullValueCurrentPw = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("CurrentPw"); else _explicitNullProperties?.Remove("CurrentPw"); } }
+        private string? _explicitNullValueCurrentPw = default!;
 #nullable restore
 #else
-        public string CurrentPw { get; set; }
+        public string CurrentPw { get => _explicitNullValueCurrentPw; set { _explicitNullValueCurrentPw = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("CurrentPw"); else _explicitNullProperties?.Remove("CurrentPw"); } }
+        private string _explicitNullValueCurrentPw = default!;
 #endif
         /// <summary>Gets or sets the new plain text password.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? NewPw { get; set; }
+        public string? NewPw { get => _explicitNullValueNewPw; set { _explicitNullValueNewPw = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("NewPw"); else _explicitNullProperties?.Remove("NewPw"); } }
+        private string? _explicitNullValueNewPw = default!;
 #nullable restore
 #else
-        public string NewPw { get; set; }
+        public string NewPw { get => _explicitNullValueNewPw; set { _explicitNullValueNewPw = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("NewPw"); else _explicitNullProperties?.Remove("NewPw"); } }
+        private string _explicitNullValueNewPw = default!;
 #endif
         /// <summary>Gets or sets a value indicating whether to reset the password.</summary>
-        public bool? ResetPassword { get; set; }
+        public bool? ResetPassword { get => _explicitNullValueResetPassword; set { _explicitNullValueResetPassword = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ResetPassword"); else _explicitNullProperties?.Remove("ResetPassword"); } }
+        private bool? _explicitNullValueResetPassword = default!;
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
@@ -47,7 +65,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.UpdateUserPassword CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.UpdateUserPassword();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.UpdateUserPassword(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -73,7 +91,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteStringValue("CurrentPassword", CurrentPassword);
             writer.WriteStringValue("CurrentPw", CurrentPw);
             writer.WriteStringValue("NewPw", NewPw);
-            writer.WriteBoolValue("ResetPassword", ResetPassword);
+            writer.WriteBoolValue("ResetPassword", ResetPassword);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

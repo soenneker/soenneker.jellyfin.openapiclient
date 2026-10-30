@@ -2,7 +2,7 @@
   "descriptionHash": "0118EB099B45646F5AC1AC2F66EEEBBD82445DB37DAB28EC67EBDF22A658AA438EB6A34A53420EAA34CCA2DA2424C7C5B5E4F8269EB46C933731E31C44E57B72",
   "descriptionLocation": "../../openapi.fixed.json",
   "lockFileVersion": "1.0.0",
-  "kiotaVersion": "1.36.1",
+  "kiotaVersion": "1.37.0",
   "clientClassName": "JellyfinOpenApiClient",
   "typeAccessModifier": "Public",
   "clientNamespaceName": "Soenneker.Jellyfin.OpenApiClient",

@@ -12,15 +12,30 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class BackupOptionsDto : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("Database") is { } nullNodeDatabase && nullNodeDatabase.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Database = null;
+            if (parseNode.GetChildNode("Metadata") is { } nullNodeMetadata && nullNodeMetadata.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Metadata = null;
+            if (parseNode.GetChildNode("Subtitles") is { } nullNodeSubtitles && nullNodeSubtitles.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Subtitles = null;
+            if (parseNode.GetChildNode("Trickplay") is { } nullNodeTrickplay && nullNodeTrickplay.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Trickplay = null;
+        }
+
         /// <summary>Gets or sets a value indicating whether the archive contains the Database contents.</summary>
-        public bool? Database { get; set; }
+        public bool? Database { get => _explicitNullValueDatabase; set { _explicitNullValueDatabase = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Database"); else _explicitNullProperties?.Remove("Database"); } }
+        private bool? _explicitNullValueDatabase = default!;
         /// <summary>Gets or sets a value indicating whether the archive contains the Metadata contents.</summary>
-        public bool? Metadata { get; set; }
+        public bool? Metadata { get => _explicitNullValueMetadata; set { _explicitNullValueMetadata = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Metadata"); else _explicitNullProperties?.Remove("Metadata"); } }
+        private bool? _explicitNullValueMetadata = default!;
         /// <summary>Gets or sets a value indicating whether the archive contains the Subtitle contents.</summary>
-        public bool? Subtitles { get; set; }
+        public bool? Subtitles { get => _explicitNullValueSubtitles; set { _explicitNullValueSubtitles = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Subtitles"); else _explicitNullProperties?.Remove("Subtitles"); } }
+        private bool? _explicitNullValueSubtitles = default!;
         /// <summary>Gets or sets a value indicating whether the archive contains the Trickplay contents.</summary>
-        public bool? Trickplay { get; set; }
+        public bool? Trickplay { get => _explicitNullValueTrickplay; set { _explicitNullValueTrickplay = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Trickplay"); else _explicitNullProperties?.Remove("Trickplay"); } }
+        private bool? _explicitNullValueTrickplay = default!;
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
@@ -29,7 +44,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.BackupOptionsDto CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.BackupOptionsDto();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.BackupOptionsDto(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -55,7 +70,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteBoolValue("Database", Database);
             writer.WriteBoolValue("Metadata", Metadata);
             writer.WriteBoolValue("Subtitles", Subtitles);
-            writer.WriteBoolValue("Trickplay", Trickplay);
+            writer.WriteBoolValue("Trickplay", Trickplay);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

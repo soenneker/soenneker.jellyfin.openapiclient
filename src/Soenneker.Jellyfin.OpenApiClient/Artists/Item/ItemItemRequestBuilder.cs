@@ -21,19 +21,16 @@ namespace Soenneker.Jellyfin.OpenApiClient.Artists.Item
     public partial class ItemItemRequestBuilder : BaseRequestBuilder
     {
         /// <summary>The Images property</summary>
-        [Obsolete("")]
         public global::Soenneker.Jellyfin.OpenApiClient.Artists.Item.Images.ImagesRequestBuilder Images
         {
             get => new global::Soenneker.Jellyfin.OpenApiClient.Artists.Item.Images.ImagesRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>The InstantMix property</summary>
-        [Obsolete("")]
         public global::Soenneker.Jellyfin.OpenApiClient.Artists.Item.InstantMix.InstantMixRequestBuilder InstantMix
         {
             get => new global::Soenneker.Jellyfin.OpenApiClient.Artists.Item.InstantMix.InstantMixRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>The Similar property</summary>
-        [Obsolete("")]
         public global::Soenneker.Jellyfin.OpenApiClient.Artists.Item.Similar.SimilarRequestBuilder Similar
         {
             get => new global::Soenneker.Jellyfin.OpenApiClient.Artists.Item.Similar.SimilarRequestBuilder(PathParameters, RequestAdapter);
@@ -71,7 +68,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Artists.Item
         {
 #endif
             var requestInfo = ToGetRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto>(requestInfo, global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto>(requestInfo, global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto.CreateFromDiscriminatorValue, new global::System.Collections.Generic.Dictionary<string, global::Microsoft.Kiota.Abstractions.Serialization.ParsableFactory<global::Microsoft.Kiota.Abstractions.Serialization.IParsable>> { { "4XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue }, { "5XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue } }, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Gets an artist by name.

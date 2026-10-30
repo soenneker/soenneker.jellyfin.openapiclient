@@ -57,6 +57,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.ClientLog.Document
             {
                 { "403", global::Soenneker.Jellyfin.OpenApiClient.Models.ProblemDetails.CreateFromDiscriminatorValue },
                 { "413", global::Soenneker.Jellyfin.OpenApiClient.Models.ProblemDetails.CreateFromDiscriminatorValue },
+                { "4XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
+                { "5XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
             };
             return await RequestAdapter.SendAsync<global::Soenneker.Jellyfin.OpenApiClient.Models.ClientLogDocumentResponseDto>(requestInfo, global::Soenneker.Jellyfin.OpenApiClient.Models.ClientLogDocumentResponseDto.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }

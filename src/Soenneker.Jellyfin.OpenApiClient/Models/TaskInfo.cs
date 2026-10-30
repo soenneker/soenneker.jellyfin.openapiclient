@@ -12,68 +12,102 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class TaskInfo : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("Category") is { } nullNodeCategory && nullNodeCategory.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Category = null;
+            if (parseNode.GetChildNode("CurrentProgressPercentage") is { } nullNodeCurrentProgressPercentage && nullNodeCurrentProgressPercentage.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) CurrentProgressPercentage = null;
+            if (parseNode.GetChildNode("Description") is { } nullNodeDescription && nullNodeDescription.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Description = null;
+            if (parseNode.GetChildNode("Id") is { } nullNodeId && nullNodeId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Id = null;
+            if (parseNode.GetChildNode("IsHidden") is { } nullNodeIsHidden && nullNodeIsHidden.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsHidden = null;
+            if (parseNode.GetChildNode("Key") is { } nullNodeKey && nullNodeKey.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Key = null;
+            if (parseNode.GetChildNode("LastExecutionResult") is { } nullNodeLastExecutionResult && nullNodeLastExecutionResult.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LastExecutionResult = null;
+            if (parseNode.GetChildNode("Name") is { } nullNodeName && nullNodeName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Name = null;
+            if (parseNode.GetChildNode("State") is { } nullNodeState && nullNodeState.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) State = null;
+            if (parseNode.GetChildNode("Triggers") is { } nullNodeTriggers && nullNodeTriggers.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Triggers = null;
+        }
+
         /// <summary>Gets or sets the category.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Category { get; set; }
+        public string? Category { get => _explicitNullValueCategory; set { _explicitNullValueCategory = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Category"); else _explicitNullProperties?.Remove("Category"); } }
+        private string? _explicitNullValueCategory = default!;
 #nullable restore
 #else
-        public string Category { get; set; }
+        public string Category { get => _explicitNullValueCategory; set { _explicitNullValueCategory = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Category"); else _explicitNullProperties?.Remove("Category"); } }
+        private string _explicitNullValueCategory = default!;
 #endif
         /// <summary>Gets or sets the progress.</summary>
-        public double? CurrentProgressPercentage { get; set; }
+        public double? CurrentProgressPercentage { get => _explicitNullValueCurrentProgressPercentage; set { _explicitNullValueCurrentProgressPercentage = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("CurrentProgressPercentage"); else _explicitNullProperties?.Remove("CurrentProgressPercentage"); } }
+        private double? _explicitNullValueCurrentProgressPercentage = default!;
         /// <summary>Gets or sets the description.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Description { get; set; }
+        public string? Description { get => _explicitNullValueDescription; set { _explicitNullValueDescription = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Description"); else _explicitNullProperties?.Remove("Description"); } }
+        private string? _explicitNullValueDescription = default!;
 #nullable restore
 #else
-        public string Description { get; set; }
+        public string Description { get => _explicitNullValueDescription; set { _explicitNullValueDescription = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Description"); else _explicitNullProperties?.Remove("Description"); } }
+        private string _explicitNullValueDescription = default!;
 #endif
         /// <summary>Gets or sets the id.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Id { get; set; }
+        public string? Id { get => _explicitNullValueId; set { _explicitNullValueId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Id"); else _explicitNullProperties?.Remove("Id"); } }
+        private string? _explicitNullValueId = default!;
 #nullable restore
 #else
-        public string Id { get; set; }
+        public string Id { get => _explicitNullValueId; set { _explicitNullValueId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Id"); else _explicitNullProperties?.Remove("Id"); } }
+        private string _explicitNullValueId = default!;
 #endif
         /// <summary>Gets or sets a value indicating whether this instance is hidden.</summary>
-        public bool? IsHidden { get; set; }
+        public bool? IsHidden { get => _explicitNullValueIsHidden; set { _explicitNullValueIsHidden = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IsHidden"); else _explicitNullProperties?.Remove("IsHidden"); } }
+        private bool? _explicitNullValueIsHidden = default!;
         /// <summary>Gets or sets the key.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Key { get; set; }
+        public string? Key { get => _explicitNullValueKey; set { _explicitNullValueKey = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Key"); else _explicitNullProperties?.Remove("Key"); } }
+        private string? _explicitNullValueKey = default!;
 #nullable restore
 #else
-        public string Key { get; set; }
+        public string Key { get => _explicitNullValueKey; set { _explicitNullValueKey = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Key"); else _explicitNullProperties?.Remove("Key"); } }
+        private string _explicitNullValueKey = default!;
 #endif
         /// <summary>Gets or sets the last execution result.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.TaskResult? LastExecutionResult { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.TaskResult? LastExecutionResult { get => _explicitNullValueLastExecutionResult; set { _explicitNullValueLastExecutionResult = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LastExecutionResult"); else _explicitNullProperties?.Remove("LastExecutionResult"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.TaskResult? _explicitNullValueLastExecutionResult = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.TaskResult LastExecutionResult { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.TaskResult LastExecutionResult { get => _explicitNullValueLastExecutionResult; set { _explicitNullValueLastExecutionResult = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LastExecutionResult"); else _explicitNullProperties?.Remove("LastExecutionResult"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.TaskResult _explicitNullValueLastExecutionResult = default!;
 #endif
         /// <summary>Gets or sets the name.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Name { get; set; }
+        public string? Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Name"); else _explicitNullProperties?.Remove("Name"); } }
+        private string? _explicitNullValueName = default!;
 #nullable restore
 #else
-        public string Name { get; set; }
+        public string Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Name"); else _explicitNullProperties?.Remove("Name"); } }
+        private string _explicitNullValueName = default!;
 #endif
         /// <summary>Gets or sets the state of the task.</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.TaskInfo_State? State { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.TaskInfo_State? State { get => _explicitNullValueState; set { _explicitNullValueState = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("State"); else _explicitNullProperties?.Remove("State"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.TaskInfo_State? _explicitNullValueState = default!;
         /// <summary>Gets or sets the triggers.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.TaskTriggerInfo>? Triggers { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.TaskTriggerInfo>? Triggers { get => _explicitNullValueTriggers; set { _explicitNullValueTriggers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Triggers"); else _explicitNullProperties?.Remove("Triggers"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.TaskTriggerInfo>? _explicitNullValueTriggers = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.TaskTriggerInfo> Triggers { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.TaskTriggerInfo> Triggers { get => _explicitNullValueTriggers; set { _explicitNullValueTriggers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Triggers"); else _explicitNullProperties?.Remove("Triggers"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.TaskTriggerInfo> _explicitNullValueTriggers = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -83,7 +117,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.TaskInfo CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.TaskInfo();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.TaskInfo(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -121,7 +155,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteObjectValue<global::Soenneker.Jellyfin.OpenApiClient.Models.TaskResult>("LastExecutionResult", LastExecutionResult);
             writer.WriteStringValue("Name", Name);
             writer.WriteEnumValue<global::Soenneker.Jellyfin.OpenApiClient.Models.TaskInfo_State>("State", State);
-            writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.TaskTriggerInfo>("Triggers", Triggers);
+            writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.TaskTriggerInfo>("Triggers", Triggers);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

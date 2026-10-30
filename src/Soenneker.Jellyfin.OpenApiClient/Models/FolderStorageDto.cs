@@ -12,35 +12,55 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class FolderStorageDto : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("DeviceId") is { } nullNodeDeviceId && nullNodeDeviceId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DeviceId = null;
+            if (parseNode.GetChildNode("FreeSpace") is { } nullNodeFreeSpace && nullNodeFreeSpace.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) FreeSpace = null;
+            if (parseNode.GetChildNode("Path") is { } nullNodePath && nullNodePath.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Path = null;
+            if (parseNode.GetChildNode("StorageType") is { } nullNodeStorageType && nullNodeStorageType.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) StorageType = null;
+            if (parseNode.GetChildNode("UsedSpace") is { } nullNodeUsedSpace && nullNodeUsedSpace.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) UsedSpace = null;
+        }
+
         /// <summary>Gets the Device Identifier.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? DeviceId { get; set; }
+        public string? DeviceId { get => _explicitNullValueDeviceId; set { _explicitNullValueDeviceId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DeviceId"); else _explicitNullProperties?.Remove("DeviceId"); } }
+        private string? _explicitNullValueDeviceId = default!;
 #nullable restore
 #else
-        public string DeviceId { get; set; }
+        public string DeviceId { get => _explicitNullValueDeviceId; set { _explicitNullValueDeviceId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DeviceId"); else _explicitNullProperties?.Remove("DeviceId"); } }
+        private string _explicitNullValueDeviceId = default!;
 #endif
         /// <summary>Gets the free space of the underlying storage device of the Jellyfin.Api.Models.SystemInfoDtos.FolderStorageDto.Path.</summary>
-        public long? FreeSpace { get; set; }
+        public long? FreeSpace { get => _explicitNullValueFreeSpace; set { _explicitNullValueFreeSpace = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("FreeSpace"); else _explicitNullProperties?.Remove("FreeSpace"); } }
+        private long? _explicitNullValueFreeSpace = default!;
         /// <summary>Gets the path of the folder in question.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Path { get; set; }
+        public string? Path { get => _explicitNullValuePath; set { _explicitNullValuePath = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Path"); else _explicitNullProperties?.Remove("Path"); } }
+        private string? _explicitNullValuePath = default!;
 #nullable restore
 #else
-        public string Path { get; set; }
+        public string Path { get => _explicitNullValuePath; set { _explicitNullValuePath = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Path"); else _explicitNullProperties?.Remove("Path"); } }
+        private string _explicitNullValuePath = default!;
 #endif
         /// <summary>Gets the kind of storage device of the Jellyfin.Api.Models.SystemInfoDtos.FolderStorageDto.Path.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? StorageType { get; set; }
+        public string? StorageType { get => _explicitNullValueStorageType; set { _explicitNullValueStorageType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("StorageType"); else _explicitNullProperties?.Remove("StorageType"); } }
+        private string? _explicitNullValueStorageType = default!;
 #nullable restore
 #else
-        public string StorageType { get; set; }
+        public string StorageType { get => _explicitNullValueStorageType; set { _explicitNullValueStorageType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("StorageType"); else _explicitNullProperties?.Remove("StorageType"); } }
+        private string _explicitNullValueStorageType = default!;
 #endif
         /// <summary>Gets the used space of the underlying storage device of the Jellyfin.Api.Models.SystemInfoDtos.FolderStorageDto.Path.</summary>
-        public long? UsedSpace { get; set; }
+        public long? UsedSpace { get => _explicitNullValueUsedSpace; set { _explicitNullValueUsedSpace = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("UsedSpace"); else _explicitNullProperties?.Remove("UsedSpace"); } }
+        private long? _explicitNullValueUsedSpace = default!;
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
@@ -49,7 +69,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -77,7 +97,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteLongValue("FreeSpace", FreeSpace);
             writer.WriteStringValue("Path", Path);
             writer.WriteStringValue("StorageType", StorageType);
-            writer.WriteLongValue("UsedSpace", UsedSpace);
+            writer.WriteLongValue("UsedSpace", UsedSpace);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

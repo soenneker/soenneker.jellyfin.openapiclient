@@ -11,27 +11,44 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     #pragma warning disable CS1591
     public partial class RecommendationDto : IParsable
     #pragma warning restore CS1591
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("BaselineItemName") is { } nullNodeBaselineItemName && nullNodeBaselineItemName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) BaselineItemName = null;
+            if (parseNode.GetChildNode("CategoryId") is { } nullNodeCategoryId && nullNodeCategoryId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) CategoryId = null;
+            if (parseNode.GetChildNode("Items") is { } nullNodeItems && nullNodeItems.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Items = null;
+            if (parseNode.GetChildNode("RecommendationType") is { } nullNodeRecommendationType && nullNodeRecommendationType.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) RecommendationType = null;
+        }
+
         /// <summary>The BaselineItemName property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? BaselineItemName { get; set; }
+        public string? BaselineItemName { get => _explicitNullValueBaselineItemName; set { _explicitNullValueBaselineItemName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("BaselineItemName"); else _explicitNullProperties?.Remove("BaselineItemName"); } }
+        private string? _explicitNullValueBaselineItemName = default!;
 #nullable restore
 #else
-        public string BaselineItemName { get; set; }
+        public string BaselineItemName { get => _explicitNullValueBaselineItemName; set { _explicitNullValueBaselineItemName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("BaselineItemName"); else _explicitNullProperties?.Remove("BaselineItemName"); } }
+        private string _explicitNullValueBaselineItemName = default!;
 #endif
         /// <summary>The CategoryId property</summary>
-        public Guid? CategoryId { get; set; }
+        public Guid? CategoryId { get => _explicitNullValueCategoryId; set { _explicitNullValueCategoryId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("CategoryId"); else _explicitNullProperties?.Remove("CategoryId"); } }
+        private Guid? _explicitNullValueCategoryId = default!;
         /// <summary>The Items property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto>? Items { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto>? Items { get => _explicitNullValueItems; set { _explicitNullValueItems = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Items"); else _explicitNullProperties?.Remove("Items"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto>? _explicitNullValueItems = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto> Items { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto> Items { get => _explicitNullValueItems; set { _explicitNullValueItems = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Items"); else _explicitNullProperties?.Remove("Items"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto> _explicitNullValueItems = default!;
 #endif
         /// <summary>The RecommendationType property</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.RecommendationDto_RecommendationType? RecommendationType { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.RecommendationDto_RecommendationType? RecommendationType { get => _explicitNullValueRecommendationType; set { _explicitNullValueRecommendationType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("RecommendationType"); else _explicitNullProperties?.Remove("RecommendationType"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.RecommendationDto_RecommendationType? _explicitNullValueRecommendationType = default!;
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
@@ -40,7 +57,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.RecommendationDto CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.RecommendationDto();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.RecommendationDto(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -66,7 +83,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteStringValue("BaselineItemName", BaselineItemName);
             writer.WriteGuidValue("CategoryId", CategoryId);
             writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto>("Items", Items);
-            writer.WriteEnumValue<global::Soenneker.Jellyfin.OpenApiClient.Models.RecommendationDto_RecommendationType>("RecommendationType", RecommendationType);
+            writer.WriteEnumValue<global::Soenneker.Jellyfin.OpenApiClient.Models.RecommendationDto_RecommendationType>("RecommendationType", RecommendationType);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

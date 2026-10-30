@@ -11,24 +11,39 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     #pragma warning disable CS1591
     public partial class LiveTvInfo : IParsable
     #pragma warning restore CS1591
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("EnabledUsers") is { } nullNodeEnabledUsers && nullNodeEnabledUsers.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnabledUsers = null;
+            if (parseNode.GetChildNode("IsEnabled") is { } nullNodeIsEnabled && nullNodeIsEnabled.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsEnabled = null;
+            if (parseNode.GetChildNode("Services") is { } nullNodeServices && nullNodeServices.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Services = null;
+        }
+
         /// <summary>Gets or sets the enabled users.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? EnabledUsers { get; set; }
+        public List<string>? EnabledUsers { get => _explicitNullValueEnabledUsers; set { _explicitNullValueEnabledUsers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnabledUsers"); else _explicitNullProperties?.Remove("EnabledUsers"); } }
+        private List<string>? _explicitNullValueEnabledUsers = default!;
 #nullable restore
 #else
-        public List<string> EnabledUsers { get; set; }
+        public List<string> EnabledUsers { get => _explicitNullValueEnabledUsers; set { _explicitNullValueEnabledUsers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnabledUsers"); else _explicitNullProperties?.Remove("EnabledUsers"); } }
+        private List<string> _explicitNullValueEnabledUsers = default!;
 #endif
         /// <summary>Gets or sets a value indicating whether this instance is enabled.</summary>
-        public bool? IsEnabled { get; set; }
+        public bool? IsEnabled { get => _explicitNullValueIsEnabled; set { _explicitNullValueIsEnabled = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IsEnabled"); else _explicitNullProperties?.Remove("IsEnabled"); } }
+        private bool? _explicitNullValueIsEnabled = default!;
         /// <summary>Gets or sets the services.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LiveTvServiceInfo>? Services { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LiveTvServiceInfo>? Services { get => _explicitNullValueServices; set { _explicitNullValueServices = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Services"); else _explicitNullProperties?.Remove("Services"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.LiveTvServiceInfo>? _explicitNullValueServices = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LiveTvServiceInfo> Services { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LiveTvServiceInfo> Services { get => _explicitNullValueServices; set { _explicitNullValueServices = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Services"); else _explicitNullProperties?.Remove("Services"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.LiveTvServiceInfo> _explicitNullValueServices = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -38,7 +53,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.LiveTvInfo CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.LiveTvInfo();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.LiveTvInfo(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -62,7 +77,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
             writer.WriteCollectionOfPrimitiveValues<string>("EnabledUsers", EnabledUsers);
             writer.WriteBoolValue("IsEnabled", IsEnabled);
-            writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.LiveTvServiceInfo>("Services", Services);
+            writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.LiveTvServiceInfo>("Services", Services);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

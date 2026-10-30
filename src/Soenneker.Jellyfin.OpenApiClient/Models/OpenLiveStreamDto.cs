@@ -12,59 +12,98 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class OpenLiveStreamDto : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("AlwaysBurnInSubtitleWhenTranscoding") is { } nullNodeAlwaysBurnInSubtitleWhenTranscoding && nullNodeAlwaysBurnInSubtitleWhenTranscoding.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AlwaysBurnInSubtitleWhenTranscoding = null;
+            if (parseNode.GetChildNode("AudioStreamIndex") is { } nullNodeAudioStreamIndex && nullNodeAudioStreamIndex.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AudioStreamIndex = null;
+            if (parseNode.GetChildNode("DeviceProfile") is { } nullNodeDeviceProfile && nullNodeDeviceProfile.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DeviceProfile = null;
+            if (parseNode.GetChildNode("DirectPlayProtocols") is { } nullNodeDirectPlayProtocols && nullNodeDirectPlayProtocols.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DirectPlayProtocols = null;
+            if (parseNode.GetChildNode("EnableDirectPlay") is { } nullNodeEnableDirectPlay && nullNodeEnableDirectPlay.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableDirectPlay = null;
+            if (parseNode.GetChildNode("EnableDirectStream") is { } nullNodeEnableDirectStream && nullNodeEnableDirectStream.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableDirectStream = null;
+            if (parseNode.GetChildNode("ItemId") is { } nullNodeItemId && nullNodeItemId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ItemId = null;
+            if (parseNode.GetChildNode("MaxAudioChannels") is { } nullNodeMaxAudioChannels && nullNodeMaxAudioChannels.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MaxAudioChannels = null;
+            if (parseNode.GetChildNode("MaxStreamingBitrate") is { } nullNodeMaxStreamingBitrate && nullNodeMaxStreamingBitrate.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MaxStreamingBitrate = null;
+            if (parseNode.GetChildNode("OpenToken") is { } nullNodeOpenToken && nullNodeOpenToken.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) OpenToken = null;
+            if (parseNode.GetChildNode("PlaySessionId") is { } nullNodePlaySessionId && nullNodePlaySessionId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PlaySessionId = null;
+            if (parseNode.GetChildNode("StartTimeTicks") is { } nullNodeStartTimeTicks && nullNodeStartTimeTicks.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) StartTimeTicks = null;
+            if (parseNode.GetChildNode("SubtitleStreamIndex") is { } nullNodeSubtitleStreamIndex && nullNodeSubtitleStreamIndex.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SubtitleStreamIndex = null;
+            if (parseNode.GetChildNode("UserId") is { } nullNodeUserId && nullNodeUserId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) UserId = null;
+        }
+
         /// <summary>Gets or sets a value indicating whether always burn in subtitles when transcoding.</summary>
-        public bool? AlwaysBurnInSubtitleWhenTranscoding { get; set; }
+        public bool? AlwaysBurnInSubtitleWhenTranscoding { get => _explicitNullValueAlwaysBurnInSubtitleWhenTranscoding; set { _explicitNullValueAlwaysBurnInSubtitleWhenTranscoding = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("AlwaysBurnInSubtitleWhenTranscoding"); else _explicitNullProperties?.Remove("AlwaysBurnInSubtitleWhenTranscoding"); } }
+        private bool? _explicitNullValueAlwaysBurnInSubtitleWhenTranscoding = default!;
         /// <summary>Gets or sets the audio stream index.</summary>
-        public int? AudioStreamIndex { get; set; }
+        public int? AudioStreamIndex { get => _explicitNullValueAudioStreamIndex; set { _explicitNullValueAudioStreamIndex = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("AudioStreamIndex"); else _explicitNullProperties?.Remove("AudioStreamIndex"); } }
+        private int? _explicitNullValueAudioStreamIndex = default!;
         /// <summary>A MediaBrowser.Model.Dlna.DeviceProfile represents a set of metadata which determines which content a certain device is able to play.Specifically, it defines the supported &lt;see cref=&quot;P:MediaBrowser.Model.Dlna.DeviceProfile.ContainerProfiles&quot;&gt;containers&lt;/see&gt; and&lt;see cref=&quot;P:MediaBrowser.Model.Dlna.DeviceProfile.CodecProfiles&quot;&gt;codecs&lt;/see&gt; (video and/or audio, including codec profiles and levels)the device is able to direct play (without transcoding or remuxing),as well as which &lt;see cref=&quot;P:MediaBrowser.Model.Dlna.DeviceProfile.TranscodingProfiles&quot;&gt;containers/codecs to transcode to&lt;/see&gt; in case it isn&apos;t.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.DeviceProfile? DeviceProfile { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.DeviceProfile? DeviceProfile { get => _explicitNullValueDeviceProfile; set { _explicitNullValueDeviceProfile = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DeviceProfile"); else _explicitNullProperties?.Remove("DeviceProfile"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.DeviceProfile? _explicitNullValueDeviceProfile = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.DeviceProfile DeviceProfile { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.DeviceProfile DeviceProfile { get => _explicitNullValueDeviceProfile; set { _explicitNullValueDeviceProfile = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DeviceProfile"); else _explicitNullProperties?.Remove("DeviceProfile"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.DeviceProfile _explicitNullValueDeviceProfile = default!;
 #endif
         /// <summary>Gets or sets the device play protocols.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaProtocol?>? DirectPlayProtocols { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaProtocol?>? DirectPlayProtocols { get => _explicitNullValueDirectPlayProtocols; set { _explicitNullValueDirectPlayProtocols = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DirectPlayProtocols"); else _explicitNullProperties?.Remove("DirectPlayProtocols"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaProtocol?>? _explicitNullValueDirectPlayProtocols = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaProtocol?> DirectPlayProtocols { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaProtocol?> DirectPlayProtocols { get => _explicitNullValueDirectPlayProtocols; set { _explicitNullValueDirectPlayProtocols = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DirectPlayProtocols"); else _explicitNullProperties?.Remove("DirectPlayProtocols"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaProtocol?> _explicitNullValueDirectPlayProtocols = default!;
 #endif
         /// <summary>Gets or sets a value indicating whether to enable direct play.</summary>
-        public bool? EnableDirectPlay { get; set; }
+        public bool? EnableDirectPlay { get => _explicitNullValueEnableDirectPlay; set { _explicitNullValueEnableDirectPlay = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableDirectPlay"); else _explicitNullProperties?.Remove("EnableDirectPlay"); } }
+        private bool? _explicitNullValueEnableDirectPlay = default!;
         /// <summary>Gets or sets a value indicating whether to enable direct stream.</summary>
-        public bool? EnableDirectStream { get; set; }
+        public bool? EnableDirectStream { get => _explicitNullValueEnableDirectStream; set { _explicitNullValueEnableDirectStream = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableDirectStream"); else _explicitNullProperties?.Remove("EnableDirectStream"); } }
+        private bool? _explicitNullValueEnableDirectStream = default!;
         /// <summary>Gets or sets the item id.</summary>
-        public Guid? ItemId { get; set; }
+        public Guid? ItemId { get => _explicitNullValueItemId; set { _explicitNullValueItemId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ItemId"); else _explicitNullProperties?.Remove("ItemId"); } }
+        private Guid? _explicitNullValueItemId = default!;
         /// <summary>Gets or sets the max audio channels.</summary>
-        public int? MaxAudioChannels { get; set; }
+        public int? MaxAudioChannels { get => _explicitNullValueMaxAudioChannels; set { _explicitNullValueMaxAudioChannels = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MaxAudioChannels"); else _explicitNullProperties?.Remove("MaxAudioChannels"); } }
+        private int? _explicitNullValueMaxAudioChannels = default!;
         /// <summary>Gets or sets the max streaming bitrate.</summary>
-        public int? MaxStreamingBitrate { get; set; }
+        public int? MaxStreamingBitrate { get => _explicitNullValueMaxStreamingBitrate; set { _explicitNullValueMaxStreamingBitrate = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MaxStreamingBitrate"); else _explicitNullProperties?.Remove("MaxStreamingBitrate"); } }
+        private int? _explicitNullValueMaxStreamingBitrate = default!;
         /// <summary>Gets or sets the open token.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? OpenToken { get; set; }
+        public string? OpenToken { get => _explicitNullValueOpenToken; set { _explicitNullValueOpenToken = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("OpenToken"); else _explicitNullProperties?.Remove("OpenToken"); } }
+        private string? _explicitNullValueOpenToken = default!;
 #nullable restore
 #else
-        public string OpenToken { get; set; }
+        public string OpenToken { get => _explicitNullValueOpenToken; set { _explicitNullValueOpenToken = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("OpenToken"); else _explicitNullProperties?.Remove("OpenToken"); } }
+        private string _explicitNullValueOpenToken = default!;
 #endif
         /// <summary>Gets or sets the play session id.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? PlaySessionId { get; set; }
+        public string? PlaySessionId { get => _explicitNullValuePlaySessionId; set { _explicitNullValuePlaySessionId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PlaySessionId"); else _explicitNullProperties?.Remove("PlaySessionId"); } }
+        private string? _explicitNullValuePlaySessionId = default!;
 #nullable restore
 #else
-        public string PlaySessionId { get; set; }
+        public string PlaySessionId { get => _explicitNullValuePlaySessionId; set { _explicitNullValuePlaySessionId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PlaySessionId"); else _explicitNullProperties?.Remove("PlaySessionId"); } }
+        private string _explicitNullValuePlaySessionId = default!;
 #endif
         /// <summary>Gets or sets the start time in ticks.</summary>
-        public long? StartTimeTicks { get; set; }
+        public long? StartTimeTicks { get => _explicitNullValueStartTimeTicks; set { _explicitNullValueStartTimeTicks = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("StartTimeTicks"); else _explicitNullProperties?.Remove("StartTimeTicks"); } }
+        private long? _explicitNullValueStartTimeTicks = default!;
         /// <summary>Gets or sets the subtitle stream index.</summary>
-        public int? SubtitleStreamIndex { get; set; }
+        public int? SubtitleStreamIndex { get => _explicitNullValueSubtitleStreamIndex; set { _explicitNullValueSubtitleStreamIndex = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SubtitleStreamIndex"); else _explicitNullProperties?.Remove("SubtitleStreamIndex"); } }
+        private int? _explicitNullValueSubtitleStreamIndex = default!;
         /// <summary>Gets or sets the user id.</summary>
-        public Guid? UserId { get; set; }
+        public Guid? UserId { get => _explicitNullValueUserId; set { _explicitNullValueUserId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("UserId"); else _explicitNullProperties?.Remove("UserId"); } }
+        private Guid? _explicitNullValueUserId = default!;
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
@@ -73,7 +112,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.OpenLiveStreamDto CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.OpenLiveStreamDto();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.OpenLiveStreamDto(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -119,7 +158,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteStringValue("PlaySessionId", PlaySessionId);
             writer.WriteLongValue("StartTimeTicks", StartTimeTicks);
             writer.WriteIntValue("SubtitleStreamIndex", SubtitleStreamIndex);
-            writer.WriteGuidValue("UserId", UserId);
+            writer.WriteGuidValue("UserId", UserId);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

@@ -12,110 +12,156 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class BaseItemDto_ImageBlurHashes : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("Art") is { } nullNodeArt && nullNodeArt.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Art = null;
+            if (parseNode.GetChildNode("Backdrop") is { } nullNodeBackdrop && nullNodeBackdrop.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Backdrop = null;
+            if (parseNode.GetChildNode("Banner") is { } nullNodeBanner && nullNodeBanner.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Banner = null;
+            if (parseNode.GetChildNode("Box") is { } nullNodeBox && nullNodeBox.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Box = null;
+            if (parseNode.GetChildNode("BoxRear") is { } nullNodeBoxRear && nullNodeBoxRear.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) BoxRear = null;
+            if (parseNode.GetChildNode("Chapter") is { } nullNodeChapter && nullNodeChapter.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Chapter = null;
+            if (parseNode.GetChildNode("Disc") is { } nullNodeDisc && nullNodeDisc.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Disc = null;
+            if (parseNode.GetChildNode("Logo") is { } nullNodeLogo && nullNodeLogo.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Logo = null;
+            if (parseNode.GetChildNode("Menu") is { } nullNodeMenu && nullNodeMenu.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Menu = null;
+            if (parseNode.GetChildNode("Primary") is { } nullNodePrimary && nullNodePrimary.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Primary = null;
+            if (parseNode.GetChildNode("Profile") is { } nullNodeProfile && nullNodeProfile.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Profile = null;
+            if (parseNode.GetChildNode("Screenshot") is { } nullNodeScreenshot && nullNodeScreenshot.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Screenshot = null;
+            if (parseNode.GetChildNode("Thumb") is { } nullNodeThumb && nullNodeThumb.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Thumb = null;
+        }
+
         /// <summary>The Art property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Art? Art { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Art? Art { get => _explicitNullValueArt; set { _explicitNullValueArt = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Art"); else _explicitNullProperties?.Remove("Art"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Art? _explicitNullValueArt = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Art Art { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Art Art { get => _explicitNullValueArt; set { _explicitNullValueArt = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Art"); else _explicitNullProperties?.Remove("Art"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Art _explicitNullValueArt = default!;
 #endif
         /// <summary>The Backdrop property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Backdrop? Backdrop { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Backdrop? Backdrop { get => _explicitNullValueBackdrop; set { _explicitNullValueBackdrop = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Backdrop"); else _explicitNullProperties?.Remove("Backdrop"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Backdrop? _explicitNullValueBackdrop = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Backdrop Backdrop { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Backdrop Backdrop { get => _explicitNullValueBackdrop; set { _explicitNullValueBackdrop = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Backdrop"); else _explicitNullProperties?.Remove("Backdrop"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Backdrop _explicitNullValueBackdrop = default!;
 #endif
         /// <summary>The Banner property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Banner? Banner { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Banner? Banner { get => _explicitNullValueBanner; set { _explicitNullValueBanner = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Banner"); else _explicitNullProperties?.Remove("Banner"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Banner? _explicitNullValueBanner = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Banner Banner { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Banner Banner { get => _explicitNullValueBanner; set { _explicitNullValueBanner = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Banner"); else _explicitNullProperties?.Remove("Banner"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Banner _explicitNullValueBanner = default!;
 #endif
         /// <summary>The Box property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Box? Box { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Box? Box { get => _explicitNullValueBox; set { _explicitNullValueBox = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Box"); else _explicitNullProperties?.Remove("Box"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Box? _explicitNullValueBox = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Box Box { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Box Box { get => _explicitNullValueBox; set { _explicitNullValueBox = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Box"); else _explicitNullProperties?.Remove("Box"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Box _explicitNullValueBox = default!;
 #endif
         /// <summary>The BoxRear property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_BoxRear? BoxRear { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_BoxRear? BoxRear { get => _explicitNullValueBoxRear; set { _explicitNullValueBoxRear = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("BoxRear"); else _explicitNullProperties?.Remove("BoxRear"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_BoxRear? _explicitNullValueBoxRear = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_BoxRear BoxRear { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_BoxRear BoxRear { get => _explicitNullValueBoxRear; set { _explicitNullValueBoxRear = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("BoxRear"); else _explicitNullProperties?.Remove("BoxRear"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_BoxRear _explicitNullValueBoxRear = default!;
 #endif
         /// <summary>The Chapter property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Chapter? Chapter { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Chapter? Chapter { get => _explicitNullValueChapter; set { _explicitNullValueChapter = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Chapter"); else _explicitNullProperties?.Remove("Chapter"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Chapter? _explicitNullValueChapter = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Chapter Chapter { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Chapter Chapter { get => _explicitNullValueChapter; set { _explicitNullValueChapter = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Chapter"); else _explicitNullProperties?.Remove("Chapter"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Chapter _explicitNullValueChapter = default!;
 #endif
         /// <summary>The Disc property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Disc? Disc { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Disc? Disc { get => _explicitNullValueDisc; set { _explicitNullValueDisc = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Disc"); else _explicitNullProperties?.Remove("Disc"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Disc? _explicitNullValueDisc = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Disc Disc { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Disc Disc { get => _explicitNullValueDisc; set { _explicitNullValueDisc = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Disc"); else _explicitNullProperties?.Remove("Disc"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Disc _explicitNullValueDisc = default!;
 #endif
         /// <summary>The Logo property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Logo? Logo { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Logo? Logo { get => _explicitNullValueLogo; set { _explicitNullValueLogo = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Logo"); else _explicitNullProperties?.Remove("Logo"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Logo? _explicitNullValueLogo = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Logo Logo { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Logo Logo { get => _explicitNullValueLogo; set { _explicitNullValueLogo = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Logo"); else _explicitNullProperties?.Remove("Logo"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Logo _explicitNullValueLogo = default!;
 #endif
         /// <summary>The Menu property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Menu? Menu { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Menu? Menu { get => _explicitNullValueMenu; set { _explicitNullValueMenu = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Menu"); else _explicitNullProperties?.Remove("Menu"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Menu? _explicitNullValueMenu = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Menu Menu { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Menu Menu { get => _explicitNullValueMenu; set { _explicitNullValueMenu = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Menu"); else _explicitNullProperties?.Remove("Menu"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Menu _explicitNullValueMenu = default!;
 #endif
         /// <summary>The Primary property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Primary? Primary { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Primary? Primary { get => _explicitNullValuePrimary; set { _explicitNullValuePrimary = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Primary"); else _explicitNullProperties?.Remove("Primary"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Primary? _explicitNullValuePrimary = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Primary Primary { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Primary Primary { get => _explicitNullValuePrimary; set { _explicitNullValuePrimary = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Primary"); else _explicitNullProperties?.Remove("Primary"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Primary _explicitNullValuePrimary = default!;
 #endif
         /// <summary>The Profile property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Profile? Profile { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Profile? Profile { get => _explicitNullValueProfile; set { _explicitNullValueProfile = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Profile"); else _explicitNullProperties?.Remove("Profile"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Profile? _explicitNullValueProfile = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Profile Profile { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Profile Profile { get => _explicitNullValueProfile; set { _explicitNullValueProfile = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Profile"); else _explicitNullProperties?.Remove("Profile"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Profile _explicitNullValueProfile = default!;
 #endif
         /// <summary>The Screenshot property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Screenshot? Screenshot { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Screenshot? Screenshot { get => _explicitNullValueScreenshot; set { _explicitNullValueScreenshot = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Screenshot"); else _explicitNullProperties?.Remove("Screenshot"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Screenshot? _explicitNullValueScreenshot = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Screenshot Screenshot { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Screenshot Screenshot { get => _explicitNullValueScreenshot; set { _explicitNullValueScreenshot = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Screenshot"); else _explicitNullProperties?.Remove("Screenshot"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Screenshot _explicitNullValueScreenshot = default!;
 #endif
         /// <summary>The Thumb property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Thumb? Thumb { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Thumb? Thumb { get => _explicitNullValueThumb; set { _explicitNullValueThumb = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Thumb"); else _explicitNullProperties?.Remove("Thumb"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Thumb? _explicitNullValueThumb = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Thumb Thumb { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Thumb Thumb { get => _explicitNullValueThumb; set { _explicitNullValueThumb = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Thumb"); else _explicitNullProperties?.Remove("Thumb"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Thumb _explicitNullValueThumb = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -125,7 +171,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -169,7 +215,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteObjectValue<global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Primary>("Primary", Primary);
             writer.WriteObjectValue<global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Profile>("Profile", Profile);
             writer.WriteObjectValue<global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Screenshot>("Screenshot", Screenshot);
-            writer.WriteObjectValue<global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Thumb>("Thumb", Thumb);
+            writer.WriteObjectValue<global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto_ImageBlurHashes_Thumb>("Thumb", Thumb);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

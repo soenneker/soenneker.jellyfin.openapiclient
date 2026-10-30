@@ -54,6 +54,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Playlists.Item.Users.Item
             {
                 { "403", global::Soenneker.Jellyfin.OpenApiClient.Models.ProblemDetails.CreateFromDiscriminatorValue },
                 { "404", global::Soenneker.Jellyfin.OpenApiClient.Models.ProblemDetails.CreateFromDiscriminatorValue },
+                { "4XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
+                { "5XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
             };
             await RequestAdapter.SendNoContentAsync(requestInfo, errorMapping, cancellationToken).ConfigureAwait(false);
         }
@@ -79,6 +81,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Playlists.Item.Users.Item
             {
                 { "403", global::Soenneker.Jellyfin.OpenApiClient.Models.ProblemDetails.CreateFromDiscriminatorValue },
                 { "404", global::Soenneker.Jellyfin.OpenApiClient.Models.ProblemDetails.CreateFromDiscriminatorValue },
+                { "4XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
+                { "5XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
             };
             return await RequestAdapter.SendAsync<global::Soenneker.Jellyfin.OpenApiClient.Models.PlaylistUserPermissions>(requestInfo, global::Soenneker.Jellyfin.OpenApiClient.Models.PlaylistUserPermissions.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
@@ -105,6 +109,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Playlists.Item.Users.Item
             {
                 { "403", global::Soenneker.Jellyfin.OpenApiClient.Models.ProblemDetails.CreateFromDiscriminatorValue },
                 { "404", global::Soenneker.Jellyfin.OpenApiClient.Models.ProblemDetails.CreateFromDiscriminatorValue },
+                { "4XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
+                { "5XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
             };
             await RequestAdapter.SendNoContentAsync(requestInfo, errorMapping, cancellationToken).ConfigureAwait(false);
         }

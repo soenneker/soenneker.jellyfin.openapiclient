@@ -12,49 +12,73 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class CodecProfile : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("ApplyConditions") is { } nullNodeApplyConditions && nullNodeApplyConditions.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ApplyConditions = null;
+            if (parseNode.GetChildNode("Codec") is { } nullNodeCodec && nullNodeCodec.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Codec = null;
+            if (parseNode.GetChildNode("Conditions") is { } nullNodeConditions && nullNodeConditions.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Conditions = null;
+            if (parseNode.GetChildNode("Container") is { } nullNodeContainer && nullNodeContainer.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Container = null;
+            if (parseNode.GetChildNode("SubContainer") is { } nullNodeSubContainer && nullNodeSubContainer.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SubContainer = null;
+            if (parseNode.GetChildNode("Type") is { } nullNodeType && nullNodeType.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Type = null;
+        }
+
         /// <summary>Gets or sets the list of MediaBrowser.Model.Dlna.ProfileCondition to apply if this profile is met.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ProfileCondition>? ApplyConditions { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ProfileCondition>? ApplyConditions { get => _explicitNullValueApplyConditions; set { _explicitNullValueApplyConditions = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ApplyConditions"); else _explicitNullProperties?.Remove("ApplyConditions"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ProfileCondition>? _explicitNullValueApplyConditions = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ProfileCondition> ApplyConditions { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ProfileCondition> ApplyConditions { get => _explicitNullValueApplyConditions; set { _explicitNullValueApplyConditions = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ApplyConditions"); else _explicitNullProperties?.Remove("ApplyConditions"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ProfileCondition> _explicitNullValueApplyConditions = default!;
 #endif
         /// <summary>Gets or sets the codec(s) that this profile applies to.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Codec { get; set; }
+        public string? Codec { get => _explicitNullValueCodec; set { _explicitNullValueCodec = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Codec"); else _explicitNullProperties?.Remove("Codec"); } }
+        private string? _explicitNullValueCodec = default!;
 #nullable restore
 #else
-        public string Codec { get; set; }
+        public string Codec { get => _explicitNullValueCodec; set { _explicitNullValueCodec = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Codec"); else _explicitNullProperties?.Remove("Codec"); } }
+        private string _explicitNullValueCodec = default!;
 #endif
         /// <summary>Gets or sets the list of MediaBrowser.Model.Dlna.ProfileCondition which this profile must meet.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ProfileCondition>? Conditions { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ProfileCondition>? Conditions { get => _explicitNullValueConditions; set { _explicitNullValueConditions = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Conditions"); else _explicitNullProperties?.Remove("Conditions"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ProfileCondition>? _explicitNullValueConditions = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ProfileCondition> Conditions { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ProfileCondition> Conditions { get => _explicitNullValueConditions; set { _explicitNullValueConditions = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Conditions"); else _explicitNullProperties?.Remove("Conditions"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ProfileCondition> _explicitNullValueConditions = default!;
 #endif
         /// <summary>Gets or sets the container(s) which this profile will be applied to.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Container { get; set; }
+        public string? Container { get => _explicitNullValueContainer; set { _explicitNullValueContainer = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Container"); else _explicitNullProperties?.Remove("Container"); } }
+        private string? _explicitNullValueContainer = default!;
 #nullable restore
 #else
-        public string Container { get; set; }
+        public string Container { get => _explicitNullValueContainer; set { _explicitNullValueContainer = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Container"); else _explicitNullProperties?.Remove("Container"); } }
+        private string _explicitNullValueContainer = default!;
 #endif
         /// <summary>Gets or sets the sub-container(s) which this profile will be applied to.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? SubContainer { get; set; }
+        public string? SubContainer { get => _explicitNullValueSubContainer; set { _explicitNullValueSubContainer = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SubContainer"); else _explicitNullProperties?.Remove("SubContainer"); } }
+        private string? _explicitNullValueSubContainer = default!;
 #nullable restore
 #else
-        public string SubContainer { get; set; }
+        public string SubContainer { get => _explicitNullValueSubContainer; set { _explicitNullValueSubContainer = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SubContainer"); else _explicitNullProperties?.Remove("SubContainer"); } }
+        private string _explicitNullValueSubContainer = default!;
 #endif
         /// <summary>Gets or sets the MediaBrowser.Model.Dlna.CodecType which this container must meet.</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.CodecProfile_Type? Type { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.CodecProfile_Type? Type { get => _explicitNullValueType; set { _explicitNullValueType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Type"); else _explicitNullProperties?.Remove("Type"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.CodecProfile_Type? _explicitNullValueType = default!;
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
@@ -63,7 +87,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.CodecProfile CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.CodecProfile();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.CodecProfile(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -93,7 +117,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.ProfileCondition>("Conditions", Conditions);
             writer.WriteStringValue("Container", Container);
             writer.WriteStringValue("SubContainer", SubContainer);
-            writer.WriteEnumValue<global::Soenneker.Jellyfin.OpenApiClient.Models.CodecProfile_Type>("Type", Type);
+            writer.WriteEnumValue<global::Soenneker.Jellyfin.OpenApiClient.Models.CodecProfile_Type>("Type", Type);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

@@ -12,51 +12,77 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class ClientCapabilitiesDto : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("AppStoreUrl") is { } nullNodeAppStoreUrl && nullNodeAppStoreUrl.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AppStoreUrl = null;
+            if (parseNode.GetChildNode("DeviceProfile") is { } nullNodeDeviceProfile && nullNodeDeviceProfile.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DeviceProfile = null;
+            if (parseNode.GetChildNode("IconUrl") is { } nullNodeIconUrl && nullNodeIconUrl.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IconUrl = null;
+            if (parseNode.GetChildNode("PlayableMediaTypes") is { } nullNodePlayableMediaTypes && nullNodePlayableMediaTypes.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PlayableMediaTypes = null;
+            if (parseNode.GetChildNode("SupportedCommands") is { } nullNodeSupportedCommands && nullNodeSupportedCommands.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SupportedCommands = null;
+            if (parseNode.GetChildNode("SupportsMediaControl") is { } nullNodeSupportsMediaControl && nullNodeSupportsMediaControl.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SupportsMediaControl = null;
+            if (parseNode.GetChildNode("SupportsPersistentIdentifier") is { } nullNodeSupportsPersistentIdentifier && nullNodeSupportsPersistentIdentifier.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SupportsPersistentIdentifier = null;
+        }
+
         /// <summary>Gets or sets the app store url.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? AppStoreUrl { get; set; }
+        public string? AppStoreUrl { get => _explicitNullValueAppStoreUrl; set { _explicitNullValueAppStoreUrl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("AppStoreUrl"); else _explicitNullProperties?.Remove("AppStoreUrl"); } }
+        private string? _explicitNullValueAppStoreUrl = default!;
 #nullable restore
 #else
-        public string AppStoreUrl { get; set; }
+        public string AppStoreUrl { get => _explicitNullValueAppStoreUrl; set { _explicitNullValueAppStoreUrl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("AppStoreUrl"); else _explicitNullProperties?.Remove("AppStoreUrl"); } }
+        private string _explicitNullValueAppStoreUrl = default!;
 #endif
         /// <summary>Gets or sets the device profile.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.DeviceProfile? DeviceProfile { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.DeviceProfile? DeviceProfile { get => _explicitNullValueDeviceProfile; set { _explicitNullValueDeviceProfile = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DeviceProfile"); else _explicitNullProperties?.Remove("DeviceProfile"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.DeviceProfile? _explicitNullValueDeviceProfile = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.DeviceProfile DeviceProfile { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.DeviceProfile DeviceProfile { get => _explicitNullValueDeviceProfile; set { _explicitNullValueDeviceProfile = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DeviceProfile"); else _explicitNullProperties?.Remove("DeviceProfile"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.DeviceProfile _explicitNullValueDeviceProfile = default!;
 #endif
         /// <summary>Gets or sets the icon url.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? IconUrl { get; set; }
+        public string? IconUrl { get => _explicitNullValueIconUrl; set { _explicitNullValueIconUrl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IconUrl"); else _explicitNullProperties?.Remove("IconUrl"); } }
+        private string? _explicitNullValueIconUrl = default!;
 #nullable restore
 #else
-        public string IconUrl { get; set; }
+        public string IconUrl { get => _explicitNullValueIconUrl; set { _explicitNullValueIconUrl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IconUrl"); else _explicitNullProperties?.Remove("IconUrl"); } }
+        private string _explicitNullValueIconUrl = default!;
 #endif
         /// <summary>Gets or sets the list of playable media types.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaType?>? PlayableMediaTypes { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaType?>? PlayableMediaTypes { get => _explicitNullValuePlayableMediaTypes; set { _explicitNullValuePlayableMediaTypes = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PlayableMediaTypes"); else _explicitNullProperties?.Remove("PlayableMediaTypes"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaType?>? _explicitNullValuePlayableMediaTypes = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaType?> PlayableMediaTypes { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaType?> PlayableMediaTypes { get => _explicitNullValuePlayableMediaTypes; set { _explicitNullValuePlayableMediaTypes = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PlayableMediaTypes"); else _explicitNullProperties?.Remove("PlayableMediaTypes"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaType?> _explicitNullValuePlayableMediaTypes = default!;
 #endif
         /// <summary>Gets or sets the list of supported commands.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.GeneralCommandType?>? SupportedCommands { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.GeneralCommandType?>? SupportedCommands { get => _explicitNullValueSupportedCommands; set { _explicitNullValueSupportedCommands = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SupportedCommands"); else _explicitNullProperties?.Remove("SupportedCommands"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.GeneralCommandType?>? _explicitNullValueSupportedCommands = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.GeneralCommandType?> SupportedCommands { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.GeneralCommandType?> SupportedCommands { get => _explicitNullValueSupportedCommands; set { _explicitNullValueSupportedCommands = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SupportedCommands"); else _explicitNullProperties?.Remove("SupportedCommands"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.GeneralCommandType?> _explicitNullValueSupportedCommands = default!;
 #endif
         /// <summary>Gets or sets a value indicating whether session supports media control.</summary>
-        public bool? SupportsMediaControl { get; set; }
+        public bool? SupportsMediaControl { get => _explicitNullValueSupportsMediaControl; set { _explicitNullValueSupportsMediaControl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SupportsMediaControl"); else _explicitNullProperties?.Remove("SupportsMediaControl"); } }
+        private bool? _explicitNullValueSupportsMediaControl = default!;
         /// <summary>Gets or sets a value indicating whether session supports a persistent identifier.</summary>
-        public bool? SupportsPersistentIdentifier { get; set; }
+        public bool? SupportsPersistentIdentifier { get => _explicitNullValueSupportsPersistentIdentifier; set { _explicitNullValueSupportsPersistentIdentifier = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SupportsPersistentIdentifier"); else _explicitNullProperties?.Remove("SupportsPersistentIdentifier"); } }
+        private bool? _explicitNullValueSupportsPersistentIdentifier = default!;
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
@@ -65,7 +91,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.ClientCapabilitiesDto CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.ClientCapabilitiesDto();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.ClientCapabilitiesDto(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -97,7 +123,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteCollectionOfEnumValues<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaType>("PlayableMediaTypes", PlayableMediaTypes);
             writer.WriteCollectionOfEnumValues<global::Soenneker.Jellyfin.OpenApiClient.Models.GeneralCommandType>("SupportedCommands", SupportedCommands);
             writer.WriteBoolValue("SupportsMediaControl", SupportsMediaControl);
-            writer.WriteBoolValue("SupportsPersistentIdentifier", SupportsPersistentIdentifier);
+            writer.WriteBoolValue("SupportsPersistentIdentifier", SupportsPersistentIdentifier);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

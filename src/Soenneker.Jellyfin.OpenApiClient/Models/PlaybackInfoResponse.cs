@@ -12,24 +12,39 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class PlaybackInfoResponse : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("ErrorCode") is { } nullNodeErrorCode && nullNodeErrorCode.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ErrorCode = null;
+            if (parseNode.GetChildNode("MediaSources") is { } nullNodeMediaSources && nullNodeMediaSources.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MediaSources = null;
+            if (parseNode.GetChildNode("PlaySessionId") is { } nullNodePlaySessionId && nullNodePlaySessionId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PlaySessionId = null;
+        }
+
         /// <summary>Gets or sets the error code.</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.PlaybackInfoResponse_ErrorCode? ErrorCode { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.PlaybackInfoResponse_ErrorCode? ErrorCode { get => _explicitNullValueErrorCode; set { _explicitNullValueErrorCode = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ErrorCode"); else _explicitNullProperties?.Remove("ErrorCode"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.PlaybackInfoResponse_ErrorCode? _explicitNullValueErrorCode = default!;
         /// <summary>Gets or sets the media sources.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo>? MediaSources { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo>? MediaSources { get => _explicitNullValueMediaSources; set { _explicitNullValueMediaSources = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MediaSources"); else _explicitNullProperties?.Remove("MediaSources"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo>? _explicitNullValueMediaSources = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo> MediaSources { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo> MediaSources { get => _explicitNullValueMediaSources; set { _explicitNullValueMediaSources = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MediaSources"); else _explicitNullProperties?.Remove("MediaSources"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo> _explicitNullValueMediaSources = default!;
 #endif
         /// <summary>Gets or sets the play session identifier.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? PlaySessionId { get; set; }
+        public string? PlaySessionId { get => _explicitNullValuePlaySessionId; set { _explicitNullValuePlaySessionId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PlaySessionId"); else _explicitNullProperties?.Remove("PlaySessionId"); } }
+        private string? _explicitNullValuePlaySessionId = default!;
 #nullable restore
 #else
-        public string PlaySessionId { get; set; }
+        public string PlaySessionId { get => _explicitNullValuePlaySessionId; set { _explicitNullValuePlaySessionId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PlaySessionId"); else _explicitNullProperties?.Remove("PlaySessionId"); } }
+        private string _explicitNullValuePlaySessionId = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -39,7 +54,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.PlaybackInfoResponse CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.PlaybackInfoResponse();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.PlaybackInfoResponse(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -63,7 +78,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
             writer.WriteEnumValue<global::Soenneker.Jellyfin.OpenApiClient.Models.PlaybackInfoResponse_ErrorCode>("ErrorCode", ErrorCode);
             writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo>("MediaSources", MediaSources);
-            writer.WriteStringValue("PlaySessionId", PlaySessionId);
+            writer.WriteStringValue("PlaySessionId", PlaySessionId);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

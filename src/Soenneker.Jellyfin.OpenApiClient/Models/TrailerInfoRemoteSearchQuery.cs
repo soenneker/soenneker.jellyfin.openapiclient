@@ -11,26 +11,43 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     #pragma warning disable CS1591
     public partial class TrailerInfoRemoteSearchQuery : IParsable
     #pragma warning restore CS1591
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("IncludeDisabledProviders") is { } nullNodeIncludeDisabledProviders && nullNodeIncludeDisabledProviders.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IncludeDisabledProviders = null;
+            if (parseNode.GetChildNode("ItemId") is { } nullNodeItemId && nullNodeItemId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ItemId = null;
+            if (parseNode.GetChildNode("SearchInfo") is { } nullNodeSearchInfo && nullNodeSearchInfo.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SearchInfo = null;
+            if (parseNode.GetChildNode("SearchProviderName") is { } nullNodeSearchProviderName && nullNodeSearchProviderName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SearchProviderName = null;
+        }
+
         /// <summary>Gets or sets a value indicating whether disabled providers should be included.</summary>
-        public bool? IncludeDisabledProviders { get; set; }
+        public bool? IncludeDisabledProviders { get => _explicitNullValueIncludeDisabledProviders; set { _explicitNullValueIncludeDisabledProviders = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IncludeDisabledProviders"); else _explicitNullProperties?.Remove("IncludeDisabledProviders"); } }
+        private bool? _explicitNullValueIncludeDisabledProviders = default!;
         /// <summary>The ItemId property</summary>
-        public Guid? ItemId { get; set; }
+        public Guid? ItemId { get => _explicitNullValueItemId; set { _explicitNullValueItemId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ItemId"); else _explicitNullProperties?.Remove("ItemId"); } }
+        private Guid? _explicitNullValueItemId = default!;
         /// <summary>The lookup info for trailers.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.TrailerInfo? SearchInfo { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.TrailerInfo? SearchInfo { get => _explicitNullValueSearchInfo; set { _explicitNullValueSearchInfo = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SearchInfo"); else _explicitNullProperties?.Remove("SearchInfo"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.TrailerInfo? _explicitNullValueSearchInfo = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.TrailerInfo SearchInfo { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.TrailerInfo SearchInfo { get => _explicitNullValueSearchInfo; set { _explicitNullValueSearchInfo = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SearchInfo"); else _explicitNullProperties?.Remove("SearchInfo"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.TrailerInfo _explicitNullValueSearchInfo = default!;
 #endif
         /// <summary>Gets or sets the provider name to search within if set.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? SearchProviderName { get; set; }
+        public string? SearchProviderName { get => _explicitNullValueSearchProviderName; set { _explicitNullValueSearchProviderName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SearchProviderName"); else _explicitNullProperties?.Remove("SearchProviderName"); } }
+        private string? _explicitNullValueSearchProviderName = default!;
 #nullable restore
 #else
-        public string SearchProviderName { get; set; }
+        public string SearchProviderName { get => _explicitNullValueSearchProviderName; set { _explicitNullValueSearchProviderName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SearchProviderName"); else _explicitNullProperties?.Remove("SearchProviderName"); } }
+        private string _explicitNullValueSearchProviderName = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -40,7 +57,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.TrailerInfoRemoteSearchQuery CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.TrailerInfoRemoteSearchQuery();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.TrailerInfoRemoteSearchQuery(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -66,7 +83,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteBoolValue("IncludeDisabledProviders", IncludeDisabledProviders);
             writer.WriteGuidValue("ItemId", ItemId);
             writer.WriteObjectValue<global::Soenneker.Jellyfin.OpenApiClient.Models.TrailerInfo>("SearchInfo", SearchInfo);
-            writer.WriteStringValue("SearchProviderName", SearchProviderName);
+            writer.WriteStringValue("SearchProviderName", SearchProviderName);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

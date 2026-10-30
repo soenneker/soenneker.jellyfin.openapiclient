@@ -12,64 +12,99 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class DeviceProfile : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("CodecProfiles") is { } nullNodeCodecProfiles && nullNodeCodecProfiles.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) CodecProfiles = null;
+            if (parseNode.GetChildNode("ContainerProfiles") is { } nullNodeContainerProfiles && nullNodeContainerProfiles.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ContainerProfiles = null;
+            if (parseNode.GetChildNode("DirectPlayProfiles") is { } nullNodeDirectPlayProfiles && nullNodeDirectPlayProfiles.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DirectPlayProfiles = null;
+            if (parseNode.GetChildNode("Id") is { } nullNodeId && nullNodeId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Id = null;
+            if (parseNode.GetChildNode("MaxStaticBitrate") is { } nullNodeMaxStaticBitrate && nullNodeMaxStaticBitrate.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MaxStaticBitrate = null;
+            if (parseNode.GetChildNode("MaxStaticMusicBitrate") is { } nullNodeMaxStaticMusicBitrate && nullNodeMaxStaticMusicBitrate.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MaxStaticMusicBitrate = null;
+            if (parseNode.GetChildNode("MaxStreamingBitrate") is { } nullNodeMaxStreamingBitrate && nullNodeMaxStreamingBitrate.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MaxStreamingBitrate = null;
+            if (parseNode.GetChildNode("MusicStreamingTranscodingBitrate") is { } nullNodeMusicStreamingTranscodingBitrate && nullNodeMusicStreamingTranscodingBitrate.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MusicStreamingTranscodingBitrate = null;
+            if (parseNode.GetChildNode("Name") is { } nullNodeName && nullNodeName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Name = null;
+            if (parseNode.GetChildNode("SubtitleProfiles") is { } nullNodeSubtitleProfiles && nullNodeSubtitleProfiles.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SubtitleProfiles = null;
+            if (parseNode.GetChildNode("TranscodingProfiles") is { } nullNodeTranscodingProfiles && nullNodeTranscodingProfiles.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) TranscodingProfiles = null;
+        }
+
         /// <summary>Gets or sets the codec profiles.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.CodecProfile>? CodecProfiles { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.CodecProfile>? CodecProfiles { get => _explicitNullValueCodecProfiles; set { _explicitNullValueCodecProfiles = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("CodecProfiles"); else _explicitNullProperties?.Remove("CodecProfiles"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.CodecProfile>? _explicitNullValueCodecProfiles = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.CodecProfile> CodecProfiles { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.CodecProfile> CodecProfiles { get => _explicitNullValueCodecProfiles; set { _explicitNullValueCodecProfiles = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("CodecProfiles"); else _explicitNullProperties?.Remove("CodecProfiles"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.CodecProfile> _explicitNullValueCodecProfiles = default!;
 #endif
         /// <summary>Gets or sets the container profiles. Failing to meet these optional conditions causes transcoding to occur.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ContainerProfile>? ContainerProfiles { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ContainerProfile>? ContainerProfiles { get => _explicitNullValueContainerProfiles; set { _explicitNullValueContainerProfiles = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ContainerProfiles"); else _explicitNullProperties?.Remove("ContainerProfiles"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ContainerProfile>? _explicitNullValueContainerProfiles = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ContainerProfile> ContainerProfiles { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ContainerProfile> ContainerProfiles { get => _explicitNullValueContainerProfiles; set { _explicitNullValueContainerProfiles = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ContainerProfiles"); else _explicitNullProperties?.Remove("ContainerProfiles"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ContainerProfile> _explicitNullValueContainerProfiles = default!;
 #endif
         /// <summary>Gets or sets the direct play profiles.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.DirectPlayProfile>? DirectPlayProfiles { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.DirectPlayProfile>? DirectPlayProfiles { get => _explicitNullValueDirectPlayProfiles; set { _explicitNullValueDirectPlayProfiles = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DirectPlayProfiles"); else _explicitNullProperties?.Remove("DirectPlayProfiles"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.DirectPlayProfile>? _explicitNullValueDirectPlayProfiles = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.DirectPlayProfile> DirectPlayProfiles { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.DirectPlayProfile> DirectPlayProfiles { get => _explicitNullValueDirectPlayProfiles; set { _explicitNullValueDirectPlayProfiles = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DirectPlayProfiles"); else _explicitNullProperties?.Remove("DirectPlayProfiles"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.DirectPlayProfile> _explicitNullValueDirectPlayProfiles = default!;
 #endif
         /// <summary>Gets or sets the unique internal identifier.</summary>
-        public Guid? Id { get; set; }
+        public Guid? Id { get => _explicitNullValueId; set { _explicitNullValueId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Id"); else _explicitNullProperties?.Remove("Id"); } }
+        private Guid? _explicitNullValueId = default!;
         /// <summary>Gets or sets the maximum allowed bitrate for statically streamed content (= direct played files).</summary>
-        public int? MaxStaticBitrate { get; set; }
+        public int? MaxStaticBitrate { get => _explicitNullValueMaxStaticBitrate; set { _explicitNullValueMaxStaticBitrate = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MaxStaticBitrate"); else _explicitNullProperties?.Remove("MaxStaticBitrate"); } }
+        private int? _explicitNullValueMaxStaticBitrate = default!;
         /// <summary>Gets or sets the maximum allowed bitrate for statically streamed (= direct played) music files.</summary>
-        public int? MaxStaticMusicBitrate { get; set; }
+        public int? MaxStaticMusicBitrate { get => _explicitNullValueMaxStaticMusicBitrate; set { _explicitNullValueMaxStaticMusicBitrate = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MaxStaticMusicBitrate"); else _explicitNullProperties?.Remove("MaxStaticMusicBitrate"); } }
+        private int? _explicitNullValueMaxStaticMusicBitrate = default!;
         /// <summary>Gets or sets the maximum allowed bitrate for all streamed content.</summary>
-        public int? MaxStreamingBitrate { get; set; }
+        public int? MaxStreamingBitrate { get => _explicitNullValueMaxStreamingBitrate; set { _explicitNullValueMaxStreamingBitrate = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MaxStreamingBitrate"); else _explicitNullProperties?.Remove("MaxStreamingBitrate"); } }
+        private int? _explicitNullValueMaxStreamingBitrate = default!;
         /// <summary>Gets or sets the maximum allowed bitrate for transcoded music streams.</summary>
-        public int? MusicStreamingTranscodingBitrate { get; set; }
+        public int? MusicStreamingTranscodingBitrate { get => _explicitNullValueMusicStreamingTranscodingBitrate; set { _explicitNullValueMusicStreamingTranscodingBitrate = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MusicStreamingTranscodingBitrate"); else _explicitNullProperties?.Remove("MusicStreamingTranscodingBitrate"); } }
+        private int? _explicitNullValueMusicStreamingTranscodingBitrate = default!;
         /// <summary>Gets or sets the name of this device profile. User profiles must have a unique name.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Name { get; set; }
+        public string? Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Name"); else _explicitNullProperties?.Remove("Name"); } }
+        private string? _explicitNullValueName = default!;
 #nullable restore
 #else
-        public string Name { get; set; }
+        public string Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Name"); else _explicitNullProperties?.Remove("Name"); } }
+        private string _explicitNullValueName = default!;
 #endif
         /// <summary>Gets or sets the subtitle profiles.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.SubtitleProfile>? SubtitleProfiles { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.SubtitleProfile>? SubtitleProfiles { get => _explicitNullValueSubtitleProfiles; set { _explicitNullValueSubtitleProfiles = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SubtitleProfiles"); else _explicitNullProperties?.Remove("SubtitleProfiles"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.SubtitleProfile>? _explicitNullValueSubtitleProfiles = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.SubtitleProfile> SubtitleProfiles { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.SubtitleProfile> SubtitleProfiles { get => _explicitNullValueSubtitleProfiles; set { _explicitNullValueSubtitleProfiles = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SubtitleProfiles"); else _explicitNullProperties?.Remove("SubtitleProfiles"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.SubtitleProfile> _explicitNullValueSubtitleProfiles = default!;
 #endif
         /// <summary>Gets or sets the transcoding profiles.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodingProfile>? TranscodingProfiles { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodingProfile>? TranscodingProfiles { get => _explicitNullValueTranscodingProfiles; set { _explicitNullValueTranscodingProfiles = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("TranscodingProfiles"); else _explicitNullProperties?.Remove("TranscodingProfiles"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodingProfile>? _explicitNullValueTranscodingProfiles = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodingProfile> TranscodingProfiles { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodingProfile> TranscodingProfiles { get => _explicitNullValueTranscodingProfiles; set { _explicitNullValueTranscodingProfiles = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("TranscodingProfiles"); else _explicitNullProperties?.Remove("TranscodingProfiles"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodingProfile> _explicitNullValueTranscodingProfiles = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -79,7 +114,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.DeviceProfile CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.DeviceProfile();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.DeviceProfile(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -119,7 +154,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteIntValue("MusicStreamingTranscodingBitrate", MusicStreamingTranscodingBitrate);
             writer.WriteStringValue("Name", Name);
             writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.SubtitleProfile>("SubtitleProfiles", SubtitleProfiles);
-            writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodingProfile>("TranscodingProfiles", TranscodingProfiles);
+            writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodingProfile>("TranscodingProfiles", TranscodingProfiles);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

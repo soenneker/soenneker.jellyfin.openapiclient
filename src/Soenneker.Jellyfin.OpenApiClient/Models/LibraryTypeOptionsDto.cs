@@ -12,54 +12,79 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class LibraryTypeOptionsDto : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("DefaultImageOptions") is { } nullNodeDefaultImageOptions && nullNodeDefaultImageOptions.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DefaultImageOptions = null;
+            if (parseNode.GetChildNode("ImageFetchers") is { } nullNodeImageFetchers && nullNodeImageFetchers.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ImageFetchers = null;
+            if (parseNode.GetChildNode("MetadataFetchers") is { } nullNodeMetadataFetchers && nullNodeMetadataFetchers.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MetadataFetchers = null;
+            if (parseNode.GetChildNode("SimilarItemProviders") is { } nullNodeSimilarItemProviders && nullNodeSimilarItemProviders.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SimilarItemProviders = null;
+            if (parseNode.GetChildNode("SupportedImageTypes") is { } nullNodeSupportedImageTypes && nullNodeSupportedImageTypes.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SupportedImageTypes = null;
+            if (parseNode.GetChildNode("Type") is { } nullNodeType && nullNodeType.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Type = null;
+        }
+
         /// <summary>Gets or sets the default image options.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ImageOption>? DefaultImageOptions { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ImageOption>? DefaultImageOptions { get => _explicitNullValueDefaultImageOptions; set { _explicitNullValueDefaultImageOptions = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DefaultImageOptions"); else _explicitNullProperties?.Remove("DefaultImageOptions"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ImageOption>? _explicitNullValueDefaultImageOptions = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ImageOption> DefaultImageOptions { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ImageOption> DefaultImageOptions { get => _explicitNullValueDefaultImageOptions; set { _explicitNullValueDefaultImageOptions = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DefaultImageOptions"); else _explicitNullProperties?.Remove("DefaultImageOptions"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ImageOption> _explicitNullValueDefaultImageOptions = default!;
 #endif
         /// <summary>Gets or sets the image fetchers.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>? ImageFetchers { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>? ImageFetchers { get => _explicitNullValueImageFetchers; set { _explicitNullValueImageFetchers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ImageFetchers"); else _explicitNullProperties?.Remove("ImageFetchers"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>? _explicitNullValueImageFetchers = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto> ImageFetchers { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto> ImageFetchers { get => _explicitNullValueImageFetchers; set { _explicitNullValueImageFetchers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ImageFetchers"); else _explicitNullProperties?.Remove("ImageFetchers"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto> _explicitNullValueImageFetchers = default!;
 #endif
         /// <summary>Gets or sets the metadata fetchers.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>? MetadataFetchers { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>? MetadataFetchers { get => _explicitNullValueMetadataFetchers; set { _explicitNullValueMetadataFetchers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MetadataFetchers"); else _explicitNullProperties?.Remove("MetadataFetchers"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>? _explicitNullValueMetadataFetchers = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto> MetadataFetchers { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto> MetadataFetchers { get => _explicitNullValueMetadataFetchers; set { _explicitNullValueMetadataFetchers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MetadataFetchers"); else _explicitNullProperties?.Remove("MetadataFetchers"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto> _explicitNullValueMetadataFetchers = default!;
 #endif
         /// <summary>Gets or sets the similar item providers.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>? SimilarItemProviders { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>? SimilarItemProviders { get => _explicitNullValueSimilarItemProviders; set { _explicitNullValueSimilarItemProviders = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SimilarItemProviders"); else _explicitNullProperties?.Remove("SimilarItemProviders"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>? _explicitNullValueSimilarItemProviders = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto> SimilarItemProviders { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto> SimilarItemProviders { get => _explicitNullValueSimilarItemProviders; set { _explicitNullValueSimilarItemProviders = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SimilarItemProviders"); else _explicitNullProperties?.Remove("SimilarItemProviders"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto> _explicitNullValueSimilarItemProviders = default!;
 #endif
         /// <summary>Gets or sets the supported image types.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ImageType?>? SupportedImageTypes { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ImageType?>? SupportedImageTypes { get => _explicitNullValueSupportedImageTypes; set { _explicitNullValueSupportedImageTypes = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SupportedImageTypes"); else _explicitNullProperties?.Remove("SupportedImageTypes"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ImageType?>? _explicitNullValueSupportedImageTypes = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ImageType?> SupportedImageTypes { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ImageType?> SupportedImageTypes { get => _explicitNullValueSupportedImageTypes; set { _explicitNullValueSupportedImageTypes = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SupportedImageTypes"); else _explicitNullProperties?.Remove("SupportedImageTypes"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ImageType?> _explicitNullValueSupportedImageTypes = default!;
 #endif
         /// <summary>Gets or sets the type.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Type { get; set; }
+        public string? Type { get => _explicitNullValueType; set { _explicitNullValueType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Type"); else _explicitNullProperties?.Remove("Type"); } }
+        private string? _explicitNullValueType = default!;
 #nullable restore
 #else
-        public string Type { get; set; }
+        public string Type { get => _explicitNullValueType; set { _explicitNullValueType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Type"); else _explicitNullProperties?.Remove("Type"); } }
+        private string _explicitNullValueType = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -69,7 +94,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryTypeOptionsDto CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryTypeOptionsDto();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryTypeOptionsDto(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -99,7 +124,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>("MetadataFetchers", MetadataFetchers);
             writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>("SimilarItemProviders", SimilarItemProviders);
             writer.WriteCollectionOfEnumValues<global::Soenneker.Jellyfin.OpenApiClient.Models.ImageType>("SupportedImageTypes", SupportedImageTypes);
-            writer.WriteStringValue("Type", Type);
+            writer.WriteStringValue("Type", Type);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

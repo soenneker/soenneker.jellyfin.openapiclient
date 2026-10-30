@@ -11,181 +11,292 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     #pragma warning disable CS1591
     public partial class MediaSourceInfo : IParsable
     #pragma warning restore CS1591
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("AnalyzeDurationMs") is { } nullNodeAnalyzeDurationMs && nullNodeAnalyzeDurationMs.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AnalyzeDurationMs = null;
+            if (parseNode.GetChildNode("Bitrate") is { } nullNodeBitrate && nullNodeBitrate.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Bitrate = null;
+            if (parseNode.GetChildNode("BufferMs") is { } nullNodeBufferMs && nullNodeBufferMs.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) BufferMs = null;
+            if (parseNode.GetChildNode("Container") is { } nullNodeContainer && nullNodeContainer.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Container = null;
+            if (parseNode.GetChildNode("DefaultAudioStreamIndex") is { } nullNodeDefaultAudioStreamIndex && nullNodeDefaultAudioStreamIndex.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DefaultAudioStreamIndex = null;
+            if (parseNode.GetChildNode("DefaultSubtitleStreamIndex") is { } nullNodeDefaultSubtitleStreamIndex && nullNodeDefaultSubtitleStreamIndex.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DefaultSubtitleStreamIndex = null;
+            if (parseNode.GetChildNode("EncoderPath") is { } nullNodeEncoderPath && nullNodeEncoderPath.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EncoderPath = null;
+            if (parseNode.GetChildNode("EncoderProtocol") is { } nullNodeEncoderProtocol && nullNodeEncoderProtocol.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EncoderProtocol = null;
+            if (parseNode.GetChildNode("ETag") is { } nullNodeETag && nullNodeETag.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ETag = null;
+            if (parseNode.GetChildNode("FallbackMaxStreamingBitrate") is { } nullNodeFallbackMaxStreamingBitrate && nullNodeFallbackMaxStreamingBitrate.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) FallbackMaxStreamingBitrate = null;
+            if (parseNode.GetChildNode("Formats") is { } nullNodeFormats && nullNodeFormats.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Formats = null;
+            if (parseNode.GetChildNode("GenPtsInput") is { } nullNodeGenPtsInput && nullNodeGenPtsInput.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) GenPtsInput = null;
+            if (parseNode.GetChildNode("HasSegments") is { } nullNodeHasSegments && nullNodeHasSegments.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) HasSegments = null;
+            if (parseNode.GetChildNode("Id") is { } nullNodeId && nullNodeId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Id = null;
+            if (parseNode.GetChildNode("IgnoreDts") is { } nullNodeIgnoreDts && nullNodeIgnoreDts.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IgnoreDts = null;
+            if (parseNode.GetChildNode("IgnoreIndex") is { } nullNodeIgnoreIndex && nullNodeIgnoreIndex.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IgnoreIndex = null;
+            if (parseNode.GetChildNode("IsInfiniteStream") is { } nullNodeIsInfiniteStream && nullNodeIsInfiniteStream.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsInfiniteStream = null;
+            if (parseNode.GetChildNode("IsoType") is { } nullNodeIsoType && nullNodeIsoType.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsoType = null;
+            if (parseNode.GetChildNode("IsRemote") is { } nullNodeIsRemote && nullNodeIsRemote.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsRemote = null;
+            if (parseNode.GetChildNode("LiveStreamId") is { } nullNodeLiveStreamId && nullNodeLiveStreamId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LiveStreamId = null;
+            if (parseNode.GetChildNode("MediaAttachments") is { } nullNodeMediaAttachments && nullNodeMediaAttachments.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MediaAttachments = null;
+            if (parseNode.GetChildNode("MediaStreams") is { } nullNodeMediaStreams && nullNodeMediaStreams.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MediaStreams = null;
+            if (parseNode.GetChildNode("Name") is { } nullNodeName && nullNodeName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Name = null;
+            if (parseNode.GetChildNode("OpenToken") is { } nullNodeOpenToken && nullNodeOpenToken.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) OpenToken = null;
+            if (parseNode.GetChildNode("Path") is { } nullNodePath && nullNodePath.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Path = null;
+            if (parseNode.GetChildNode("Protocol") is { } nullNodeProtocol && nullNodeProtocol.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Protocol = null;
+            if (parseNode.GetChildNode("ReadAtNativeFramerate") is { } nullNodeReadAtNativeFramerate && nullNodeReadAtNativeFramerate.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ReadAtNativeFramerate = null;
+            if (parseNode.GetChildNode("RequiredHttpHeaders") is { } nullNodeRequiredHttpHeaders && nullNodeRequiredHttpHeaders.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) RequiredHttpHeaders = null;
+            if (parseNode.GetChildNode("RequiresClosing") is { } nullNodeRequiresClosing && nullNodeRequiresClosing.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) RequiresClosing = null;
+            if (parseNode.GetChildNode("RequiresLooping") is { } nullNodeRequiresLooping && nullNodeRequiresLooping.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) RequiresLooping = null;
+            if (parseNode.GetChildNode("RequiresOpening") is { } nullNodeRequiresOpening && nullNodeRequiresOpening.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) RequiresOpening = null;
+            if (parseNode.GetChildNode("RunTimeTicks") is { } nullNodeRunTimeTicks && nullNodeRunTimeTicks.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) RunTimeTicks = null;
+            if (parseNode.GetChildNode("Size") is { } nullNodeSize && nullNodeSize.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Size = null;
+            if (parseNode.GetChildNode("SupportsDirectPlay") is { } nullNodeSupportsDirectPlay && nullNodeSupportsDirectPlay.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SupportsDirectPlay = null;
+            if (parseNode.GetChildNode("SupportsDirectStream") is { } nullNodeSupportsDirectStream && nullNodeSupportsDirectStream.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SupportsDirectStream = null;
+            if (parseNode.GetChildNode("SupportsProbing") is { } nullNodeSupportsProbing && nullNodeSupportsProbing.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SupportsProbing = null;
+            if (parseNode.GetChildNode("SupportsTranscoding") is { } nullNodeSupportsTranscoding && nullNodeSupportsTranscoding.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SupportsTranscoding = null;
+            if (parseNode.GetChildNode("Timestamp") is { } nullNodeTimestamp && nullNodeTimestamp.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Timestamp = null;
+            if (parseNode.GetChildNode("TranscodingContainer") is { } nullNodeTranscodingContainer && nullNodeTranscodingContainer.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) TranscodingContainer = null;
+            if (parseNode.GetChildNode("TranscodingSubProtocol") is { } nullNodeTranscodingSubProtocol && nullNodeTranscodingSubProtocol.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) TranscodingSubProtocol = null;
+            if (parseNode.GetChildNode("TranscodingUrl") is { } nullNodeTranscodingUrl && nullNodeTranscodingUrl.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) TranscodingUrl = null;
+            if (parseNode.GetChildNode("Type") is { } nullNodeType && nullNodeType.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Type = null;
+            if (parseNode.GetChildNode("UseMostCompatibleTranscodingProfile") is { } nullNodeUseMostCompatibleTranscodingProfile && nullNodeUseMostCompatibleTranscodingProfile.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) UseMostCompatibleTranscodingProfile = null;
+            if (parseNode.GetChildNode("Video3DFormat") is { } nullNodeVideo3DFormat && nullNodeVideo3DFormat.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Video3DFormat = null;
+            if (parseNode.GetChildNode("VideoType") is { } nullNodeVideoType && nullNodeVideoType.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) VideoType = null;
+        }
+
         /// <summary>The AnalyzeDurationMs property</summary>
-        public int? AnalyzeDurationMs { get; set; }
+        public int? AnalyzeDurationMs { get => _explicitNullValueAnalyzeDurationMs; set { _explicitNullValueAnalyzeDurationMs = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("AnalyzeDurationMs"); else _explicitNullProperties?.Remove("AnalyzeDurationMs"); } }
+        private int? _explicitNullValueAnalyzeDurationMs = default!;
         /// <summary>The Bitrate property</summary>
-        public int? Bitrate { get; set; }
+        public int? Bitrate { get => _explicitNullValueBitrate; set { _explicitNullValueBitrate = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Bitrate"); else _explicitNullProperties?.Remove("Bitrate"); } }
+        private int? _explicitNullValueBitrate = default!;
         /// <summary>The BufferMs property</summary>
-        public int? BufferMs { get; set; }
+        public int? BufferMs { get => _explicitNullValueBufferMs; set { _explicitNullValueBufferMs = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("BufferMs"); else _explicitNullProperties?.Remove("BufferMs"); } }
+        private int? _explicitNullValueBufferMs = default!;
         /// <summary>The Container property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Container { get; set; }
+        public string? Container { get => _explicitNullValueContainer; set { _explicitNullValueContainer = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Container"); else _explicitNullProperties?.Remove("Container"); } }
+        private string? _explicitNullValueContainer = default!;
 #nullable restore
 #else
-        public string Container { get; set; }
+        public string Container { get => _explicitNullValueContainer; set { _explicitNullValueContainer = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Container"); else _explicitNullProperties?.Remove("Container"); } }
+        private string _explicitNullValueContainer = default!;
 #endif
         /// <summary>The DefaultAudioStreamIndex property</summary>
-        public int? DefaultAudioStreamIndex { get; set; }
+        public int? DefaultAudioStreamIndex { get => _explicitNullValueDefaultAudioStreamIndex; set { _explicitNullValueDefaultAudioStreamIndex = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DefaultAudioStreamIndex"); else _explicitNullProperties?.Remove("DefaultAudioStreamIndex"); } }
+        private int? _explicitNullValueDefaultAudioStreamIndex = default!;
         /// <summary>The DefaultSubtitleStreamIndex property</summary>
-        public int? DefaultSubtitleStreamIndex { get; set; }
+        public int? DefaultSubtitleStreamIndex { get => _explicitNullValueDefaultSubtitleStreamIndex; set { _explicitNullValueDefaultSubtitleStreamIndex = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DefaultSubtitleStreamIndex"); else _explicitNullProperties?.Remove("DefaultSubtitleStreamIndex"); } }
+        private int? _explicitNullValueDefaultSubtitleStreamIndex = default!;
         /// <summary>The EncoderPath property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? EncoderPath { get; set; }
+        public string? EncoderPath { get => _explicitNullValueEncoderPath; set { _explicitNullValueEncoderPath = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EncoderPath"); else _explicitNullProperties?.Remove("EncoderPath"); } }
+        private string? _explicitNullValueEncoderPath = default!;
 #nullable restore
 #else
-        public string EncoderPath { get; set; }
+        public string EncoderPath { get => _explicitNullValueEncoderPath; set { _explicitNullValueEncoderPath = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EncoderPath"); else _explicitNullProperties?.Remove("EncoderPath"); } }
+        private string _explicitNullValueEncoderPath = default!;
 #endif
         /// <summary>The EncoderProtocol property</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_EncoderProtocol? EncoderProtocol { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_EncoderProtocol? EncoderProtocol { get => _explicitNullValueEncoderProtocol; set { _explicitNullValueEncoderProtocol = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EncoderProtocol"); else _explicitNullProperties?.Remove("EncoderProtocol"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_EncoderProtocol? _explicitNullValueEncoderProtocol = default!;
         /// <summary>The ETag property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ETag { get; set; }
+        public string? ETag { get => _explicitNullValueETag; set { _explicitNullValueETag = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ETag"); else _explicitNullProperties?.Remove("ETag"); } }
+        private string? _explicitNullValueETag = default!;
 #nullable restore
 #else
-        public string ETag { get; set; }
+        public string ETag { get => _explicitNullValueETag; set { _explicitNullValueETag = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ETag"); else _explicitNullProperties?.Remove("ETag"); } }
+        private string _explicitNullValueETag = default!;
 #endif
         /// <summary>The FallbackMaxStreamingBitrate property</summary>
-        public int? FallbackMaxStreamingBitrate { get; set; }
+        public int? FallbackMaxStreamingBitrate { get => _explicitNullValueFallbackMaxStreamingBitrate; set { _explicitNullValueFallbackMaxStreamingBitrate = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("FallbackMaxStreamingBitrate"); else _explicitNullProperties?.Remove("FallbackMaxStreamingBitrate"); } }
+        private int? _explicitNullValueFallbackMaxStreamingBitrate = default!;
         /// <summary>The Formats property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? Formats { get; set; }
+        public List<string>? Formats { get => _explicitNullValueFormats; set { _explicitNullValueFormats = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Formats"); else _explicitNullProperties?.Remove("Formats"); } }
+        private List<string>? _explicitNullValueFormats = default!;
 #nullable restore
 #else
-        public List<string> Formats { get; set; }
+        public List<string> Formats { get => _explicitNullValueFormats; set { _explicitNullValueFormats = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Formats"); else _explicitNullProperties?.Remove("Formats"); } }
+        private List<string> _explicitNullValueFormats = default!;
 #endif
         /// <summary>The GenPtsInput property</summary>
-        public bool? GenPtsInput { get; set; }
+        public bool? GenPtsInput { get => _explicitNullValueGenPtsInput; set { _explicitNullValueGenPtsInput = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("GenPtsInput"); else _explicitNullProperties?.Remove("GenPtsInput"); } }
+        private bool? _explicitNullValueGenPtsInput = default!;
         /// <summary>The HasSegments property</summary>
-        public bool? HasSegments { get; set; }
+        public bool? HasSegments { get => _explicitNullValueHasSegments; set { _explicitNullValueHasSegments = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("HasSegments"); else _explicitNullProperties?.Remove("HasSegments"); } }
+        private bool? _explicitNullValueHasSegments = default!;
         /// <summary>The Id property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Id { get; set; }
+        public string? Id { get => _explicitNullValueId; set { _explicitNullValueId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Id"); else _explicitNullProperties?.Remove("Id"); } }
+        private string? _explicitNullValueId = default!;
 #nullable restore
 #else
-        public string Id { get; set; }
+        public string Id { get => _explicitNullValueId; set { _explicitNullValueId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Id"); else _explicitNullProperties?.Remove("Id"); } }
+        private string _explicitNullValueId = default!;
 #endif
         /// <summary>The IgnoreDts property</summary>
-        public bool? IgnoreDts { get; set; }
+        public bool? IgnoreDts { get => _explicitNullValueIgnoreDts; set { _explicitNullValueIgnoreDts = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IgnoreDts"); else _explicitNullProperties?.Remove("IgnoreDts"); } }
+        private bool? _explicitNullValueIgnoreDts = default!;
         /// <summary>The IgnoreIndex property</summary>
-        public bool? IgnoreIndex { get; set; }
+        public bool? IgnoreIndex { get => _explicitNullValueIgnoreIndex; set { _explicitNullValueIgnoreIndex = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IgnoreIndex"); else _explicitNullProperties?.Remove("IgnoreIndex"); } }
+        private bool? _explicitNullValueIgnoreIndex = default!;
         /// <summary>The IsInfiniteStream property</summary>
-        public bool? IsInfiniteStream { get; set; }
+        public bool? IsInfiniteStream { get => _explicitNullValueIsInfiniteStream; set { _explicitNullValueIsInfiniteStream = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IsInfiniteStream"); else _explicitNullProperties?.Remove("IsInfiniteStream"); } }
+        private bool? _explicitNullValueIsInfiniteStream = default!;
         /// <summary>The IsoType property</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_IsoType? IsoType { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_IsoType? IsoType { get => _explicitNullValueIsoType; set { _explicitNullValueIsoType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IsoType"); else _explicitNullProperties?.Remove("IsoType"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_IsoType? _explicitNullValueIsoType = default!;
         /// <summary>Gets or sets a value indicating whether the media is remote.Differentiate internet url vs local network.</summary>
-        public bool? IsRemote { get; set; }
+        public bool? IsRemote { get => _explicitNullValueIsRemote; set { _explicitNullValueIsRemote = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IsRemote"); else _explicitNullProperties?.Remove("IsRemote"); } }
+        private bool? _explicitNullValueIsRemote = default!;
         /// <summary>The LiveStreamId property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? LiveStreamId { get; set; }
+        public string? LiveStreamId { get => _explicitNullValueLiveStreamId; set { _explicitNullValueLiveStreamId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LiveStreamId"); else _explicitNullProperties?.Remove("LiveStreamId"); } }
+        private string? _explicitNullValueLiveStreamId = default!;
 #nullable restore
 #else
-        public string LiveStreamId { get; set; }
+        public string LiveStreamId { get => _explicitNullValueLiveStreamId; set { _explicitNullValueLiveStreamId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LiveStreamId"); else _explicitNullProperties?.Remove("LiveStreamId"); } }
+        private string _explicitNullValueLiveStreamId = default!;
 #endif
         /// <summary>The MediaAttachments property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaAttachment>? MediaAttachments { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaAttachment>? MediaAttachments { get => _explicitNullValueMediaAttachments; set { _explicitNullValueMediaAttachments = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MediaAttachments"); else _explicitNullProperties?.Remove("MediaAttachments"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaAttachment>? _explicitNullValueMediaAttachments = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaAttachment> MediaAttachments { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaAttachment> MediaAttachments { get => _explicitNullValueMediaAttachments; set { _explicitNullValueMediaAttachments = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MediaAttachments"); else _explicitNullProperties?.Remove("MediaAttachments"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaAttachment> _explicitNullValueMediaAttachments = default!;
 #endif
         /// <summary>The MediaStreams property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaStream>? MediaStreams { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaStream>? MediaStreams { get => _explicitNullValueMediaStreams; set { _explicitNullValueMediaStreams = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MediaStreams"); else _explicitNullProperties?.Remove("MediaStreams"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaStream>? _explicitNullValueMediaStreams = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaStream> MediaStreams { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaStream> MediaStreams { get => _explicitNullValueMediaStreams; set { _explicitNullValueMediaStreams = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MediaStreams"); else _explicitNullProperties?.Remove("MediaStreams"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaStream> _explicitNullValueMediaStreams = default!;
 #endif
         /// <summary>The Name property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Name { get; set; }
+        public string? Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Name"); else _explicitNullProperties?.Remove("Name"); } }
+        private string? _explicitNullValueName = default!;
 #nullable restore
 #else
-        public string Name { get; set; }
+        public string Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Name"); else _explicitNullProperties?.Remove("Name"); } }
+        private string _explicitNullValueName = default!;
 #endif
         /// <summary>The OpenToken property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? OpenToken { get; set; }
+        public string? OpenToken { get => _explicitNullValueOpenToken; set { _explicitNullValueOpenToken = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("OpenToken"); else _explicitNullProperties?.Remove("OpenToken"); } }
+        private string? _explicitNullValueOpenToken = default!;
 #nullable restore
 #else
-        public string OpenToken { get; set; }
+        public string OpenToken { get => _explicitNullValueOpenToken; set { _explicitNullValueOpenToken = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("OpenToken"); else _explicitNullProperties?.Remove("OpenToken"); } }
+        private string _explicitNullValueOpenToken = default!;
 #endif
         /// <summary>The Path property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Path { get; set; }
+        public string? Path { get => _explicitNullValuePath; set { _explicitNullValuePath = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Path"); else _explicitNullProperties?.Remove("Path"); } }
+        private string? _explicitNullValuePath = default!;
 #nullable restore
 #else
-        public string Path { get; set; }
+        public string Path { get => _explicitNullValuePath; set { _explicitNullValuePath = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Path"); else _explicitNullProperties?.Remove("Path"); } }
+        private string _explicitNullValuePath = default!;
 #endif
         /// <summary>The Protocol property</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_Protocol? Protocol { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_Protocol? Protocol { get => _explicitNullValueProtocol; set { _explicitNullValueProtocol = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Protocol"); else _explicitNullProperties?.Remove("Protocol"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_Protocol? _explicitNullValueProtocol = default!;
         /// <summary>The ReadAtNativeFramerate property</summary>
-        public bool? ReadAtNativeFramerate { get; set; }
+        public bool? ReadAtNativeFramerate { get => _explicitNullValueReadAtNativeFramerate; set { _explicitNullValueReadAtNativeFramerate = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ReadAtNativeFramerate"); else _explicitNullProperties?.Remove("ReadAtNativeFramerate"); } }
+        private bool? _explicitNullValueReadAtNativeFramerate = default!;
         /// <summary>The RequiredHttpHeaders property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_RequiredHttpHeaders? RequiredHttpHeaders { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_RequiredHttpHeaders? RequiredHttpHeaders { get => _explicitNullValueRequiredHttpHeaders; set { _explicitNullValueRequiredHttpHeaders = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("RequiredHttpHeaders"); else _explicitNullProperties?.Remove("RequiredHttpHeaders"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_RequiredHttpHeaders? _explicitNullValueRequiredHttpHeaders = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_RequiredHttpHeaders RequiredHttpHeaders { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_RequiredHttpHeaders RequiredHttpHeaders { get => _explicitNullValueRequiredHttpHeaders; set { _explicitNullValueRequiredHttpHeaders = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("RequiredHttpHeaders"); else _explicitNullProperties?.Remove("RequiredHttpHeaders"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_RequiredHttpHeaders _explicitNullValueRequiredHttpHeaders = default!;
 #endif
         /// <summary>The RequiresClosing property</summary>
-        public bool? RequiresClosing { get; set; }
+        public bool? RequiresClosing { get => _explicitNullValueRequiresClosing; set { _explicitNullValueRequiresClosing = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("RequiresClosing"); else _explicitNullProperties?.Remove("RequiresClosing"); } }
+        private bool? _explicitNullValueRequiresClosing = default!;
         /// <summary>The RequiresLooping property</summary>
-        public bool? RequiresLooping { get; set; }
+        public bool? RequiresLooping { get => _explicitNullValueRequiresLooping; set { _explicitNullValueRequiresLooping = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("RequiresLooping"); else _explicitNullProperties?.Remove("RequiresLooping"); } }
+        private bool? _explicitNullValueRequiresLooping = default!;
         /// <summary>The RequiresOpening property</summary>
-        public bool? RequiresOpening { get; set; }
+        public bool? RequiresOpening { get => _explicitNullValueRequiresOpening; set { _explicitNullValueRequiresOpening = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("RequiresOpening"); else _explicitNullProperties?.Remove("RequiresOpening"); } }
+        private bool? _explicitNullValueRequiresOpening = default!;
         /// <summary>The RunTimeTicks property</summary>
-        public long? RunTimeTicks { get; set; }
+        public long? RunTimeTicks { get => _explicitNullValueRunTimeTicks; set { _explicitNullValueRunTimeTicks = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("RunTimeTicks"); else _explicitNullProperties?.Remove("RunTimeTicks"); } }
+        private long? _explicitNullValueRunTimeTicks = default!;
         /// <summary>The Size property</summary>
-        public long? Size { get; set; }
+        public long? Size { get => _explicitNullValueSize; set { _explicitNullValueSize = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Size"); else _explicitNullProperties?.Remove("Size"); } }
+        private long? _explicitNullValueSize = default!;
         /// <summary>The SupportsDirectPlay property</summary>
-        public bool? SupportsDirectPlay { get; set; }
+        public bool? SupportsDirectPlay { get => _explicitNullValueSupportsDirectPlay; set { _explicitNullValueSupportsDirectPlay = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SupportsDirectPlay"); else _explicitNullProperties?.Remove("SupportsDirectPlay"); } }
+        private bool? _explicitNullValueSupportsDirectPlay = default!;
         /// <summary>The SupportsDirectStream property</summary>
-        public bool? SupportsDirectStream { get; set; }
+        public bool? SupportsDirectStream { get => _explicitNullValueSupportsDirectStream; set { _explicitNullValueSupportsDirectStream = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SupportsDirectStream"); else _explicitNullProperties?.Remove("SupportsDirectStream"); } }
+        private bool? _explicitNullValueSupportsDirectStream = default!;
         /// <summary>The SupportsProbing property</summary>
-        public bool? SupportsProbing { get; set; }
+        public bool? SupportsProbing { get => _explicitNullValueSupportsProbing; set { _explicitNullValueSupportsProbing = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SupportsProbing"); else _explicitNullProperties?.Remove("SupportsProbing"); } }
+        private bool? _explicitNullValueSupportsProbing = default!;
         /// <summary>The SupportsTranscoding property</summary>
-        public bool? SupportsTranscoding { get; set; }
+        public bool? SupportsTranscoding { get => _explicitNullValueSupportsTranscoding; set { _explicitNullValueSupportsTranscoding = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SupportsTranscoding"); else _explicitNullProperties?.Remove("SupportsTranscoding"); } }
+        private bool? _explicitNullValueSupportsTranscoding = default!;
         /// <summary>The Timestamp property</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_Timestamp? Timestamp { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_Timestamp? Timestamp { get => _explicitNullValueTimestamp; set { _explicitNullValueTimestamp = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Timestamp"); else _explicitNullProperties?.Remove("Timestamp"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_Timestamp? _explicitNullValueTimestamp = default!;
         /// <summary>The TranscodingContainer property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? TranscodingContainer { get; set; }
+        public string? TranscodingContainer { get => _explicitNullValueTranscodingContainer; set { _explicitNullValueTranscodingContainer = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("TranscodingContainer"); else _explicitNullProperties?.Remove("TranscodingContainer"); } }
+        private string? _explicitNullValueTranscodingContainer = default!;
 #nullable restore
 #else
-        public string TranscodingContainer { get; set; }
+        public string TranscodingContainer { get => _explicitNullValueTranscodingContainer; set { _explicitNullValueTranscodingContainer = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("TranscodingContainer"); else _explicitNullProperties?.Remove("TranscodingContainer"); } }
+        private string _explicitNullValueTranscodingContainer = default!;
 #endif
         /// <summary>Media streaming protocol.Lowercase for backwards compatibility.</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_TranscodingSubProtocol? TranscodingSubProtocol { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_TranscodingSubProtocol? TranscodingSubProtocol { get => _explicitNullValueTranscodingSubProtocol; set { _explicitNullValueTranscodingSubProtocol = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("TranscodingSubProtocol"); else _explicitNullProperties?.Remove("TranscodingSubProtocol"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_TranscodingSubProtocol? _explicitNullValueTranscodingSubProtocol = default!;
         /// <summary>The TranscodingUrl property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? TranscodingUrl { get; set; }
+        public string? TranscodingUrl { get => _explicitNullValueTranscodingUrl; set { _explicitNullValueTranscodingUrl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("TranscodingUrl"); else _explicitNullProperties?.Remove("TranscodingUrl"); } }
+        private string? _explicitNullValueTranscodingUrl = default!;
 #nullable restore
 #else
-        public string TranscodingUrl { get; set; }
+        public string TranscodingUrl { get => _explicitNullValueTranscodingUrl; set { _explicitNullValueTranscodingUrl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("TranscodingUrl"); else _explicitNullProperties?.Remove("TranscodingUrl"); } }
+        private string _explicitNullValueTranscodingUrl = default!;
 #endif
         /// <summary>The type of a media source.</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_Type? Type { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_Type? Type { get => _explicitNullValueType; set { _explicitNullValueType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Type"); else _explicitNullProperties?.Remove("Type"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_Type? _explicitNullValueType = default!;
         /// <summary>The UseMostCompatibleTranscodingProfile property</summary>
-        public bool? UseMostCompatibleTranscodingProfile { get; set; }
+        public bool? UseMostCompatibleTranscodingProfile { get => _explicitNullValueUseMostCompatibleTranscodingProfile; set { _explicitNullValueUseMostCompatibleTranscodingProfile = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("UseMostCompatibleTranscodingProfile"); else _explicitNullProperties?.Remove("UseMostCompatibleTranscodingProfile"); } }
+        private bool? _explicitNullValueUseMostCompatibleTranscodingProfile = default!;
         /// <summary>The Video3DFormat property</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_Video3DFormat? Video3DFormat { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_Video3DFormat? Video3DFormat { get => _explicitNullValueVideo3DFormat; set { _explicitNullValueVideo3DFormat = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Video3DFormat"); else _explicitNullProperties?.Remove("Video3DFormat"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_Video3DFormat? _explicitNullValueVideo3DFormat = default!;
         /// <summary>The VideoType property</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_VideoType? VideoType { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_VideoType? VideoType { get => _explicitNullValueVideoType; set { _explicitNullValueVideoType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("VideoType"); else _explicitNullProperties?.Remove("VideoType"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_VideoType? _explicitNullValueVideoType = default!;
         /// <summary>
         /// Instantiates a new <see cref="global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo"/> and sets the default values.
         /// </summary>
@@ -201,7 +312,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -309,7 +420,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteEnumValue<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_Type>("Type", Type);
             writer.WriteBoolValue("UseMostCompatibleTranscodingProfile", UseMostCompatibleTranscodingProfile);
             writer.WriteEnumValue<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_Video3DFormat>("Video3DFormat", Video3DFormat);
-            writer.WriteEnumValue<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_VideoType>("VideoType", VideoType);
+            writer.WriteEnumValue<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaSourceInfo_VideoType>("VideoType", VideoType);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

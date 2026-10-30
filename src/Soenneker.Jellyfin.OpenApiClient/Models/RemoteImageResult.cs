@@ -12,25 +12,40 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class RemoteImageResult : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("Images") is { } nullNodeImages && nullNodeImages.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Images = null;
+            if (parseNode.GetChildNode("Providers") is { } nullNodeProviders && nullNodeProviders.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Providers = null;
+            if (parseNode.GetChildNode("TotalRecordCount") is { } nullNodeTotalRecordCount && nullNodeTotalRecordCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) TotalRecordCount = null;
+        }
+
         /// <summary>Gets or sets the images.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteImageInfo>? Images { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteImageInfo>? Images { get => _explicitNullValueImages; set { _explicitNullValueImages = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Images"); else _explicitNullProperties?.Remove("Images"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteImageInfo>? _explicitNullValueImages = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteImageInfo> Images { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteImageInfo> Images { get => _explicitNullValueImages; set { _explicitNullValueImages = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Images"); else _explicitNullProperties?.Remove("Images"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteImageInfo> _explicitNullValueImages = default!;
 #endif
         /// <summary>Gets or sets the providers.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? Providers { get; set; }
+        public List<string>? Providers { get => _explicitNullValueProviders; set { _explicitNullValueProviders = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Providers"); else _explicitNullProperties?.Remove("Providers"); } }
+        private List<string>? _explicitNullValueProviders = default!;
 #nullable restore
 #else
-        public List<string> Providers { get; set; }
+        public List<string> Providers { get => _explicitNullValueProviders; set { _explicitNullValueProviders = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Providers"); else _explicitNullProperties?.Remove("Providers"); } }
+        private List<string> _explicitNullValueProviders = default!;
 #endif
         /// <summary>Gets or sets the total record count.</summary>
-        public int? TotalRecordCount { get; set; }
+        public int? TotalRecordCount { get => _explicitNullValueTotalRecordCount; set { _explicitNullValueTotalRecordCount = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("TotalRecordCount"); else _explicitNullProperties?.Remove("TotalRecordCount"); } }
+        private int? _explicitNullValueTotalRecordCount = default!;
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
@@ -39,7 +54,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteImageResult CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteImageResult();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteImageResult(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -63,7 +78,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
             writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteImageInfo>("Images", Images);
             writer.WriteCollectionOfPrimitiveValues<string>("Providers", Providers);
-            writer.WriteIntValue("TotalRecordCount", TotalRecordCount);
+            writer.WriteIntValue("TotalRecordCount", TotalRecordCount);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

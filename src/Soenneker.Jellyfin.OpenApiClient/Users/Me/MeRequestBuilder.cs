@@ -53,6 +53,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Users.Me
             var errorMapping = new Dictionary<string, ParsableFactory<IParsable>>
             {
                 { "400", global::Soenneker.Jellyfin.OpenApiClient.Models.ProblemDetails.CreateFromDiscriminatorValue },
+                { "4XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
+                { "5XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
             };
             return await RequestAdapter.SendAsync<global::Soenneker.Jellyfin.OpenApiClient.Models.UserDto>(requestInfo, global::Soenneker.Jellyfin.OpenApiClient.Models.UserDto.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }

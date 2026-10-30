@@ -11,167 +11,274 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     #pragma warning disable CS1591
     public partial class UserPolicy : IParsable
     #pragma warning restore CS1591
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("AccessSchedules") is { } nullNodeAccessSchedules && nullNodeAccessSchedules.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AccessSchedules = null;
+            if (parseNode.GetChildNode("AllowedTags") is { } nullNodeAllowedTags && nullNodeAllowedTags.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AllowedTags = null;
+            if (parseNode.GetChildNode("AuthenticationProviderId") is { } nullNodeAuthenticationProviderId && nullNodeAuthenticationProviderId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AuthenticationProviderId = null;
+            if (parseNode.GetChildNode("BlockedChannels") is { } nullNodeBlockedChannels && nullNodeBlockedChannels.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) BlockedChannels = null;
+            if (parseNode.GetChildNode("BlockedMediaFolders") is { } nullNodeBlockedMediaFolders && nullNodeBlockedMediaFolders.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) BlockedMediaFolders = null;
+            if (parseNode.GetChildNode("BlockedTags") is { } nullNodeBlockedTags && nullNodeBlockedTags.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) BlockedTags = null;
+            if (parseNode.GetChildNode("BlockUnratedItems") is { } nullNodeBlockUnratedItems && nullNodeBlockUnratedItems.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) BlockUnratedItems = null;
+            if (parseNode.GetChildNode("EnableAllChannels") is { } nullNodeEnableAllChannels && nullNodeEnableAllChannels.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableAllChannels = null;
+            if (parseNode.GetChildNode("EnableAllDevices") is { } nullNodeEnableAllDevices && nullNodeEnableAllDevices.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableAllDevices = null;
+            if (parseNode.GetChildNode("EnableAllFolders") is { } nullNodeEnableAllFolders && nullNodeEnableAllFolders.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableAllFolders = null;
+            if (parseNode.GetChildNode("EnableAudioPlaybackTranscoding") is { } nullNodeEnableAudioPlaybackTranscoding && nullNodeEnableAudioPlaybackTranscoding.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableAudioPlaybackTranscoding = null;
+            if (parseNode.GetChildNode("EnableCollectionManagement") is { } nullNodeEnableCollectionManagement && nullNodeEnableCollectionManagement.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableCollectionManagement = null;
+            if (parseNode.GetChildNode("EnableContentDeletion") is { } nullNodeEnableContentDeletion && nullNodeEnableContentDeletion.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableContentDeletion = null;
+            if (parseNode.GetChildNode("EnableContentDeletionFromFolders") is { } nullNodeEnableContentDeletionFromFolders && nullNodeEnableContentDeletionFromFolders.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableContentDeletionFromFolders = null;
+            if (parseNode.GetChildNode("EnableContentDownloading") is { } nullNodeEnableContentDownloading && nullNodeEnableContentDownloading.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableContentDownloading = null;
+            if (parseNode.GetChildNode("EnabledChannels") is { } nullNodeEnabledChannels && nullNodeEnabledChannels.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnabledChannels = null;
+            if (parseNode.GetChildNode("EnabledDevices") is { } nullNodeEnabledDevices && nullNodeEnabledDevices.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnabledDevices = null;
+            if (parseNode.GetChildNode("EnabledFolders") is { } nullNodeEnabledFolders && nullNodeEnabledFolders.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnabledFolders = null;
+            if (parseNode.GetChildNode("EnableLiveTvAccess") is { } nullNodeEnableLiveTvAccess && nullNodeEnableLiveTvAccess.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableLiveTvAccess = null;
+            if (parseNode.GetChildNode("EnableLiveTvManagement") is { } nullNodeEnableLiveTvManagement && nullNodeEnableLiveTvManagement.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableLiveTvManagement = null;
+            if (parseNode.GetChildNode("EnableLyricManagement") is { } nullNodeEnableLyricManagement && nullNodeEnableLyricManagement.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableLyricManagement = null;
+            if (parseNode.GetChildNode("EnableMediaConversion") is { } nullNodeEnableMediaConversion && nullNodeEnableMediaConversion.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableMediaConversion = null;
+            if (parseNode.GetChildNode("EnableMediaPlayback") is { } nullNodeEnableMediaPlayback && nullNodeEnableMediaPlayback.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableMediaPlayback = null;
+            if (parseNode.GetChildNode("EnablePlaybackRemuxing") is { } nullNodeEnablePlaybackRemuxing && nullNodeEnablePlaybackRemuxing.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnablePlaybackRemuxing = null;
+            if (parseNode.GetChildNode("EnablePublicSharing") is { } nullNodeEnablePublicSharing && nullNodeEnablePublicSharing.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnablePublicSharing = null;
+            if (parseNode.GetChildNode("EnableRemoteAccess") is { } nullNodeEnableRemoteAccess && nullNodeEnableRemoteAccess.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableRemoteAccess = null;
+            if (parseNode.GetChildNode("EnableRemoteControlOfOtherUsers") is { } nullNodeEnableRemoteControlOfOtherUsers && nullNodeEnableRemoteControlOfOtherUsers.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableRemoteControlOfOtherUsers = null;
+            if (parseNode.GetChildNode("EnableSharedDeviceControl") is { } nullNodeEnableSharedDeviceControl && nullNodeEnableSharedDeviceControl.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableSharedDeviceControl = null;
+            if (parseNode.GetChildNode("EnableSubtitleManagement") is { } nullNodeEnableSubtitleManagement && nullNodeEnableSubtitleManagement.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableSubtitleManagement = null;
+            if (parseNode.GetChildNode("EnableSyncTranscoding") is { } nullNodeEnableSyncTranscoding && nullNodeEnableSyncTranscoding.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableSyncTranscoding = null;
+            if (parseNode.GetChildNode("EnableUserPreferenceAccess") is { } nullNodeEnableUserPreferenceAccess && nullNodeEnableUserPreferenceAccess.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableUserPreferenceAccess = null;
+            if (parseNode.GetChildNode("EnableVideoPlaybackTranscoding") is { } nullNodeEnableVideoPlaybackTranscoding && nullNodeEnableVideoPlaybackTranscoding.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableVideoPlaybackTranscoding = null;
+            if (parseNode.GetChildNode("ForceRemoteSourceTranscoding") is { } nullNodeForceRemoteSourceTranscoding && nullNodeForceRemoteSourceTranscoding.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ForceRemoteSourceTranscoding = null;
+            if (parseNode.GetChildNode("InvalidLoginAttemptCount") is { } nullNodeInvalidLoginAttemptCount && nullNodeInvalidLoginAttemptCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) InvalidLoginAttemptCount = null;
+            if (parseNode.GetChildNode("IsAdministrator") is { } nullNodeIsAdministrator && nullNodeIsAdministrator.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsAdministrator = null;
+            if (parseNode.GetChildNode("IsDisabled") is { } nullNodeIsDisabled && nullNodeIsDisabled.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsDisabled = null;
+            if (parseNode.GetChildNode("IsHidden") is { } nullNodeIsHidden && nullNodeIsHidden.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsHidden = null;
+            if (parseNode.GetChildNode("LoginAttemptsBeforeLockout") is { } nullNodeLoginAttemptsBeforeLockout && nullNodeLoginAttemptsBeforeLockout.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LoginAttemptsBeforeLockout = null;
+            if (parseNode.GetChildNode("MaxActiveSessions") is { } nullNodeMaxActiveSessions && nullNodeMaxActiveSessions.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MaxActiveSessions = null;
+            if (parseNode.GetChildNode("MaxParentalRating") is { } nullNodeMaxParentalRating && nullNodeMaxParentalRating.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MaxParentalRating = null;
+            if (parseNode.GetChildNode("MaxParentalSubRating") is { } nullNodeMaxParentalSubRating && nullNodeMaxParentalSubRating.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MaxParentalSubRating = null;
+            if (parseNode.GetChildNode("PasswordResetProviderId") is { } nullNodePasswordResetProviderId && nullNodePasswordResetProviderId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PasswordResetProviderId = null;
+            if (parseNode.GetChildNode("RemoteClientBitrateLimit") is { } nullNodeRemoteClientBitrateLimit && nullNodeRemoteClientBitrateLimit.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) RemoteClientBitrateLimit = null;
+            if (parseNode.GetChildNode("SyncPlayAccess") is { } nullNodeSyncPlayAccess && nullNodeSyncPlayAccess.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SyncPlayAccess = null;
+        }
+
         /// <summary>The AccessSchedules property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.AccessSchedule>? AccessSchedules { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.AccessSchedule>? AccessSchedules { get => _explicitNullValueAccessSchedules; set { _explicitNullValueAccessSchedules = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("AccessSchedules"); else _explicitNullProperties?.Remove("AccessSchedules"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.AccessSchedule>? _explicitNullValueAccessSchedules = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.AccessSchedule> AccessSchedules { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.AccessSchedule> AccessSchedules { get => _explicitNullValueAccessSchedules; set { _explicitNullValueAccessSchedules = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("AccessSchedules"); else _explicitNullProperties?.Remove("AccessSchedules"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.AccessSchedule> _explicitNullValueAccessSchedules = default!;
 #endif
         /// <summary>The AllowedTags property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? AllowedTags { get; set; }
+        public List<string>? AllowedTags { get => _explicitNullValueAllowedTags; set { _explicitNullValueAllowedTags = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("AllowedTags"); else _explicitNullProperties?.Remove("AllowedTags"); } }
+        private List<string>? _explicitNullValueAllowedTags = default!;
 #nullable restore
 #else
-        public List<string> AllowedTags { get; set; }
+        public List<string> AllowedTags { get => _explicitNullValueAllowedTags; set { _explicitNullValueAllowedTags = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("AllowedTags"); else _explicitNullProperties?.Remove("AllowedTags"); } }
+        private List<string> _explicitNullValueAllowedTags = default!;
 #endif
         /// <summary>The AuthenticationProviderId property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? AuthenticationProviderId { get; set; }
+        public string? AuthenticationProviderId { get => _explicitNullValueAuthenticationProviderId; set { _explicitNullValueAuthenticationProviderId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("AuthenticationProviderId"); else _explicitNullProperties?.Remove("AuthenticationProviderId"); } }
+        private string? _explicitNullValueAuthenticationProviderId = default!;
 #nullable restore
 #else
-        public string AuthenticationProviderId { get; set; }
+        public string AuthenticationProviderId { get => _explicitNullValueAuthenticationProviderId; set { _explicitNullValueAuthenticationProviderId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("AuthenticationProviderId"); else _explicitNullProperties?.Remove("AuthenticationProviderId"); } }
+        private string _explicitNullValueAuthenticationProviderId = default!;
 #endif
         /// <summary>The BlockedChannels property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<Guid?>? BlockedChannels { get; set; }
+        public List<Guid?>? BlockedChannels { get => _explicitNullValueBlockedChannels; set { _explicitNullValueBlockedChannels = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("BlockedChannels"); else _explicitNullProperties?.Remove("BlockedChannels"); } }
+        private List<Guid?>? _explicitNullValueBlockedChannels = default!;
 #nullable restore
 #else
-        public List<Guid?> BlockedChannels { get; set; }
+        public List<Guid?> BlockedChannels { get => _explicitNullValueBlockedChannels; set { _explicitNullValueBlockedChannels = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("BlockedChannels"); else _explicitNullProperties?.Remove("BlockedChannels"); } }
+        private List<Guid?> _explicitNullValueBlockedChannels = default!;
 #endif
         /// <summary>The BlockedMediaFolders property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<Guid?>? BlockedMediaFolders { get; set; }
+        public List<Guid?>? BlockedMediaFolders { get => _explicitNullValueBlockedMediaFolders; set { _explicitNullValueBlockedMediaFolders = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("BlockedMediaFolders"); else _explicitNullProperties?.Remove("BlockedMediaFolders"); } }
+        private List<Guid?>? _explicitNullValueBlockedMediaFolders = default!;
 #nullable restore
 #else
-        public List<Guid?> BlockedMediaFolders { get; set; }
+        public List<Guid?> BlockedMediaFolders { get => _explicitNullValueBlockedMediaFolders; set { _explicitNullValueBlockedMediaFolders = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("BlockedMediaFolders"); else _explicitNullProperties?.Remove("BlockedMediaFolders"); } }
+        private List<Guid?> _explicitNullValueBlockedMediaFolders = default!;
 #endif
         /// <summary>The BlockedTags property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? BlockedTags { get; set; }
+        public List<string>? BlockedTags { get => _explicitNullValueBlockedTags; set { _explicitNullValueBlockedTags = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("BlockedTags"); else _explicitNullProperties?.Remove("BlockedTags"); } }
+        private List<string>? _explicitNullValueBlockedTags = default!;
 #nullable restore
 #else
-        public List<string> BlockedTags { get; set; }
+        public List<string> BlockedTags { get => _explicitNullValueBlockedTags; set { _explicitNullValueBlockedTags = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("BlockedTags"); else _explicitNullProperties?.Remove("BlockedTags"); } }
+        private List<string> _explicitNullValueBlockedTags = default!;
 #endif
         /// <summary>The BlockUnratedItems property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.UnratedItem?>? BlockUnratedItems { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.UnratedItem?>? BlockUnratedItems { get => _explicitNullValueBlockUnratedItems; set { _explicitNullValueBlockUnratedItems = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("BlockUnratedItems"); else _explicitNullProperties?.Remove("BlockUnratedItems"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.UnratedItem?>? _explicitNullValueBlockUnratedItems = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.UnratedItem?> BlockUnratedItems { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.UnratedItem?> BlockUnratedItems { get => _explicitNullValueBlockUnratedItems; set { _explicitNullValueBlockUnratedItems = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("BlockUnratedItems"); else _explicitNullProperties?.Remove("BlockUnratedItems"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.UnratedItem?> _explicitNullValueBlockUnratedItems = default!;
 #endif
         /// <summary>The EnableAllChannels property</summary>
-        public bool? EnableAllChannels { get; set; }
+        public bool? EnableAllChannels { get => _explicitNullValueEnableAllChannels; set { _explicitNullValueEnableAllChannels = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableAllChannels"); else _explicitNullProperties?.Remove("EnableAllChannels"); } }
+        private bool? _explicitNullValueEnableAllChannels = default!;
         /// <summary>The EnableAllDevices property</summary>
-        public bool? EnableAllDevices { get; set; }
+        public bool? EnableAllDevices { get => _explicitNullValueEnableAllDevices; set { _explicitNullValueEnableAllDevices = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableAllDevices"); else _explicitNullProperties?.Remove("EnableAllDevices"); } }
+        private bool? _explicitNullValueEnableAllDevices = default!;
         /// <summary>The EnableAllFolders property</summary>
-        public bool? EnableAllFolders { get; set; }
+        public bool? EnableAllFolders { get => _explicitNullValueEnableAllFolders; set { _explicitNullValueEnableAllFolders = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableAllFolders"); else _explicitNullProperties?.Remove("EnableAllFolders"); } }
+        private bool? _explicitNullValueEnableAllFolders = default!;
         /// <summary>The EnableAudioPlaybackTranscoding property</summary>
-        public bool? EnableAudioPlaybackTranscoding { get; set; }
+        public bool? EnableAudioPlaybackTranscoding { get => _explicitNullValueEnableAudioPlaybackTranscoding; set { _explicitNullValueEnableAudioPlaybackTranscoding = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableAudioPlaybackTranscoding"); else _explicitNullProperties?.Remove("EnableAudioPlaybackTranscoding"); } }
+        private bool? _explicitNullValueEnableAudioPlaybackTranscoding = default!;
         /// <summary>Gets or sets a value indicating whether this instance can manage collections.</summary>
-        public bool? EnableCollectionManagement { get; set; }
+        public bool? EnableCollectionManagement { get => _explicitNullValueEnableCollectionManagement; set { _explicitNullValueEnableCollectionManagement = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableCollectionManagement"); else _explicitNullProperties?.Remove("EnableCollectionManagement"); } }
+        private bool? _explicitNullValueEnableCollectionManagement = default!;
         /// <summary>The EnableContentDeletion property</summary>
-        public bool? EnableContentDeletion { get; set; }
+        public bool? EnableContentDeletion { get => _explicitNullValueEnableContentDeletion; set { _explicitNullValueEnableContentDeletion = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableContentDeletion"); else _explicitNullProperties?.Remove("EnableContentDeletion"); } }
+        private bool? _explicitNullValueEnableContentDeletion = default!;
         /// <summary>The EnableContentDeletionFromFolders property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? EnableContentDeletionFromFolders { get; set; }
+        public List<string>? EnableContentDeletionFromFolders { get => _explicitNullValueEnableContentDeletionFromFolders; set { _explicitNullValueEnableContentDeletionFromFolders = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableContentDeletionFromFolders"); else _explicitNullProperties?.Remove("EnableContentDeletionFromFolders"); } }
+        private List<string>? _explicitNullValueEnableContentDeletionFromFolders = default!;
 #nullable restore
 #else
-        public List<string> EnableContentDeletionFromFolders { get; set; }
+        public List<string> EnableContentDeletionFromFolders { get => _explicitNullValueEnableContentDeletionFromFolders; set { _explicitNullValueEnableContentDeletionFromFolders = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableContentDeletionFromFolders"); else _explicitNullProperties?.Remove("EnableContentDeletionFromFolders"); } }
+        private List<string> _explicitNullValueEnableContentDeletionFromFolders = default!;
 #endif
         /// <summary>The EnableContentDownloading property</summary>
-        public bool? EnableContentDownloading { get; set; }
+        public bool? EnableContentDownloading { get => _explicitNullValueEnableContentDownloading; set { _explicitNullValueEnableContentDownloading = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableContentDownloading"); else _explicitNullProperties?.Remove("EnableContentDownloading"); } }
+        private bool? _explicitNullValueEnableContentDownloading = default!;
         /// <summary>The EnabledChannels property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<Guid?>? EnabledChannels { get; set; }
+        public List<Guid?>? EnabledChannels { get => _explicitNullValueEnabledChannels; set { _explicitNullValueEnabledChannels = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnabledChannels"); else _explicitNullProperties?.Remove("EnabledChannels"); } }
+        private List<Guid?>? _explicitNullValueEnabledChannels = default!;
 #nullable restore
 #else
-        public List<Guid?> EnabledChannels { get; set; }
+        public List<Guid?> EnabledChannels { get => _explicitNullValueEnabledChannels; set { _explicitNullValueEnabledChannels = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnabledChannels"); else _explicitNullProperties?.Remove("EnabledChannels"); } }
+        private List<Guid?> _explicitNullValueEnabledChannels = default!;
 #endif
         /// <summary>The EnabledDevices property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? EnabledDevices { get; set; }
+        public List<string>? EnabledDevices { get => _explicitNullValueEnabledDevices; set { _explicitNullValueEnabledDevices = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnabledDevices"); else _explicitNullProperties?.Remove("EnabledDevices"); } }
+        private List<string>? _explicitNullValueEnabledDevices = default!;
 #nullable restore
 #else
-        public List<string> EnabledDevices { get; set; }
+        public List<string> EnabledDevices { get => _explicitNullValueEnabledDevices; set { _explicitNullValueEnabledDevices = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnabledDevices"); else _explicitNullProperties?.Remove("EnabledDevices"); } }
+        private List<string> _explicitNullValueEnabledDevices = default!;
 #endif
         /// <summary>The EnabledFolders property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<Guid?>? EnabledFolders { get; set; }
+        public List<Guid?>? EnabledFolders { get => _explicitNullValueEnabledFolders; set { _explicitNullValueEnabledFolders = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnabledFolders"); else _explicitNullProperties?.Remove("EnabledFolders"); } }
+        private List<Guid?>? _explicitNullValueEnabledFolders = default!;
 #nullable restore
 #else
-        public List<Guid?> EnabledFolders { get; set; }
+        public List<Guid?> EnabledFolders { get => _explicitNullValueEnabledFolders; set { _explicitNullValueEnabledFolders = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnabledFolders"); else _explicitNullProperties?.Remove("EnabledFolders"); } }
+        private List<Guid?> _explicitNullValueEnabledFolders = default!;
 #endif
         /// <summary>The EnableLiveTvAccess property</summary>
-        public bool? EnableLiveTvAccess { get; set; }
+        public bool? EnableLiveTvAccess { get => _explicitNullValueEnableLiveTvAccess; set { _explicitNullValueEnableLiveTvAccess = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableLiveTvAccess"); else _explicitNullProperties?.Remove("EnableLiveTvAccess"); } }
+        private bool? _explicitNullValueEnableLiveTvAccess = default!;
         /// <summary>The EnableLiveTvManagement property</summary>
-        public bool? EnableLiveTvManagement { get; set; }
+        public bool? EnableLiveTvManagement { get => _explicitNullValueEnableLiveTvManagement; set { _explicitNullValueEnableLiveTvManagement = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableLiveTvManagement"); else _explicitNullProperties?.Remove("EnableLiveTvManagement"); } }
+        private bool? _explicitNullValueEnableLiveTvManagement = default!;
         /// <summary>Gets or sets a value indicating whether this user can manage lyrics.</summary>
-        public bool? EnableLyricManagement { get; set; }
+        public bool? EnableLyricManagement { get => _explicitNullValueEnableLyricManagement; set { _explicitNullValueEnableLyricManagement = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableLyricManagement"); else _explicitNullProperties?.Remove("EnableLyricManagement"); } }
+        private bool? _explicitNullValueEnableLyricManagement = default!;
         /// <summary>The EnableMediaConversion property</summary>
-        public bool? EnableMediaConversion { get; set; }
+        public bool? EnableMediaConversion { get => _explicitNullValueEnableMediaConversion; set { _explicitNullValueEnableMediaConversion = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableMediaConversion"); else _explicitNullProperties?.Remove("EnableMediaConversion"); } }
+        private bool? _explicitNullValueEnableMediaConversion = default!;
         /// <summary>The EnableMediaPlayback property</summary>
-        public bool? EnableMediaPlayback { get; set; }
+        public bool? EnableMediaPlayback { get => _explicitNullValueEnableMediaPlayback; set { _explicitNullValueEnableMediaPlayback = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableMediaPlayback"); else _explicitNullProperties?.Remove("EnableMediaPlayback"); } }
+        private bool? _explicitNullValueEnableMediaPlayback = default!;
         /// <summary>The EnablePlaybackRemuxing property</summary>
-        public bool? EnablePlaybackRemuxing { get; set; }
+        public bool? EnablePlaybackRemuxing { get => _explicitNullValueEnablePlaybackRemuxing; set { _explicitNullValueEnablePlaybackRemuxing = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnablePlaybackRemuxing"); else _explicitNullProperties?.Remove("EnablePlaybackRemuxing"); } }
+        private bool? _explicitNullValueEnablePlaybackRemuxing = default!;
         /// <summary>The EnablePublicSharing property</summary>
-        public bool? EnablePublicSharing { get; set; }
+        public bool? EnablePublicSharing { get => _explicitNullValueEnablePublicSharing; set { _explicitNullValueEnablePublicSharing = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnablePublicSharing"); else _explicitNullProperties?.Remove("EnablePublicSharing"); } }
+        private bool? _explicitNullValueEnablePublicSharing = default!;
         /// <summary>The EnableRemoteAccess property</summary>
-        public bool? EnableRemoteAccess { get; set; }
+        public bool? EnableRemoteAccess { get => _explicitNullValueEnableRemoteAccess; set { _explicitNullValueEnableRemoteAccess = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableRemoteAccess"); else _explicitNullProperties?.Remove("EnableRemoteAccess"); } }
+        private bool? _explicitNullValueEnableRemoteAccess = default!;
         /// <summary>The EnableRemoteControlOfOtherUsers property</summary>
-        public bool? EnableRemoteControlOfOtherUsers { get; set; }
+        public bool? EnableRemoteControlOfOtherUsers { get => _explicitNullValueEnableRemoteControlOfOtherUsers; set { _explicitNullValueEnableRemoteControlOfOtherUsers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableRemoteControlOfOtherUsers"); else _explicitNullProperties?.Remove("EnableRemoteControlOfOtherUsers"); } }
+        private bool? _explicitNullValueEnableRemoteControlOfOtherUsers = default!;
         /// <summary>The EnableSharedDeviceControl property</summary>
-        public bool? EnableSharedDeviceControl { get; set; }
+        public bool? EnableSharedDeviceControl { get => _explicitNullValueEnableSharedDeviceControl; set { _explicitNullValueEnableSharedDeviceControl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableSharedDeviceControl"); else _explicitNullProperties?.Remove("EnableSharedDeviceControl"); } }
+        private bool? _explicitNullValueEnableSharedDeviceControl = default!;
         /// <summary>Gets or sets a value indicating whether this instance can manage subtitles.</summary>
-        public bool? EnableSubtitleManagement { get; set; }
+        public bool? EnableSubtitleManagement { get => _explicitNullValueEnableSubtitleManagement; set { _explicitNullValueEnableSubtitleManagement = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableSubtitleManagement"); else _explicitNullProperties?.Remove("EnableSubtitleManagement"); } }
+        private bool? _explicitNullValueEnableSubtitleManagement = default!;
         /// <summary>Gets or sets a value indicating whether [enable synchronize].</summary>
-        public bool? EnableSyncTranscoding { get; set; }
+        public bool? EnableSyncTranscoding { get => _explicitNullValueEnableSyncTranscoding; set { _explicitNullValueEnableSyncTranscoding = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableSyncTranscoding"); else _explicitNullProperties?.Remove("EnableSyncTranscoding"); } }
+        private bool? _explicitNullValueEnableSyncTranscoding = default!;
         /// <summary>The EnableUserPreferenceAccess property</summary>
-        public bool? EnableUserPreferenceAccess { get; set; }
+        public bool? EnableUserPreferenceAccess { get => _explicitNullValueEnableUserPreferenceAccess; set { _explicitNullValueEnableUserPreferenceAccess = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableUserPreferenceAccess"); else _explicitNullProperties?.Remove("EnableUserPreferenceAccess"); } }
+        private bool? _explicitNullValueEnableUserPreferenceAccess = default!;
         /// <summary>The EnableVideoPlaybackTranscoding property</summary>
-        public bool? EnableVideoPlaybackTranscoding { get; set; }
+        public bool? EnableVideoPlaybackTranscoding { get => _explicitNullValueEnableVideoPlaybackTranscoding; set { _explicitNullValueEnableVideoPlaybackTranscoding = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableVideoPlaybackTranscoding"); else _explicitNullProperties?.Remove("EnableVideoPlaybackTranscoding"); } }
+        private bool? _explicitNullValueEnableVideoPlaybackTranscoding = default!;
         /// <summary>The ForceRemoteSourceTranscoding property</summary>
-        public bool? ForceRemoteSourceTranscoding { get; set; }
+        public bool? ForceRemoteSourceTranscoding { get => _explicitNullValueForceRemoteSourceTranscoding; set { _explicitNullValueForceRemoteSourceTranscoding = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ForceRemoteSourceTranscoding"); else _explicitNullProperties?.Remove("ForceRemoteSourceTranscoding"); } }
+        private bool? _explicitNullValueForceRemoteSourceTranscoding = default!;
         /// <summary>The InvalidLoginAttemptCount property</summary>
-        public int? InvalidLoginAttemptCount { get; set; }
+        public int? InvalidLoginAttemptCount { get => _explicitNullValueInvalidLoginAttemptCount; set { _explicitNullValueInvalidLoginAttemptCount = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("InvalidLoginAttemptCount"); else _explicitNullProperties?.Remove("InvalidLoginAttemptCount"); } }
+        private int? _explicitNullValueInvalidLoginAttemptCount = default!;
         /// <summary>Gets or sets a value indicating whether this instance is administrator.</summary>
-        public bool? IsAdministrator { get; set; }
+        public bool? IsAdministrator { get => _explicitNullValueIsAdministrator; set { _explicitNullValueIsAdministrator = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IsAdministrator"); else _explicitNullProperties?.Remove("IsAdministrator"); } }
+        private bool? _explicitNullValueIsAdministrator = default!;
         /// <summary>Gets or sets a value indicating whether this instance is disabled.</summary>
-        public bool? IsDisabled { get; set; }
+        public bool? IsDisabled { get => _explicitNullValueIsDisabled; set { _explicitNullValueIsDisabled = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IsDisabled"); else _explicitNullProperties?.Remove("IsDisabled"); } }
+        private bool? _explicitNullValueIsDisabled = default!;
         /// <summary>Gets or sets a value indicating whether this instance is hidden.</summary>
-        public bool? IsHidden { get; set; }
+        public bool? IsHidden { get => _explicitNullValueIsHidden; set { _explicitNullValueIsHidden = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IsHidden"); else _explicitNullProperties?.Remove("IsHidden"); } }
+        private bool? _explicitNullValueIsHidden = default!;
         /// <summary>The LoginAttemptsBeforeLockout property</summary>
-        public int? LoginAttemptsBeforeLockout { get; set; }
+        public int? LoginAttemptsBeforeLockout { get => _explicitNullValueLoginAttemptsBeforeLockout; set { _explicitNullValueLoginAttemptsBeforeLockout = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LoginAttemptsBeforeLockout"); else _explicitNullProperties?.Remove("LoginAttemptsBeforeLockout"); } }
+        private int? _explicitNullValueLoginAttemptsBeforeLockout = default!;
         /// <summary>The MaxActiveSessions property</summary>
-        public int? MaxActiveSessions { get; set; }
+        public int? MaxActiveSessions { get => _explicitNullValueMaxActiveSessions; set { _explicitNullValueMaxActiveSessions = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MaxActiveSessions"); else _explicitNullProperties?.Remove("MaxActiveSessions"); } }
+        private int? _explicitNullValueMaxActiveSessions = default!;
         /// <summary>Gets or sets the max parental rating.</summary>
-        public int? MaxParentalRating { get; set; }
+        public int? MaxParentalRating { get => _explicitNullValueMaxParentalRating; set { _explicitNullValueMaxParentalRating = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MaxParentalRating"); else _explicitNullProperties?.Remove("MaxParentalRating"); } }
+        private int? _explicitNullValueMaxParentalRating = default!;
         /// <summary>The MaxParentalSubRating property</summary>
-        public int? MaxParentalSubRating { get; set; }
+        public int? MaxParentalSubRating { get => _explicitNullValueMaxParentalSubRating; set { _explicitNullValueMaxParentalSubRating = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MaxParentalSubRating"); else _explicitNullProperties?.Remove("MaxParentalSubRating"); } }
+        private int? _explicitNullValueMaxParentalSubRating = default!;
         /// <summary>The PasswordResetProviderId property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? PasswordResetProviderId { get; set; }
+        public string? PasswordResetProviderId { get => _explicitNullValuePasswordResetProviderId; set { _explicitNullValuePasswordResetProviderId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PasswordResetProviderId"); else _explicitNullProperties?.Remove("PasswordResetProviderId"); } }
+        private string? _explicitNullValuePasswordResetProviderId = default!;
 #nullable restore
 #else
-        public string PasswordResetProviderId { get; set; }
+        public string PasswordResetProviderId { get => _explicitNullValuePasswordResetProviderId; set { _explicitNullValuePasswordResetProviderId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PasswordResetProviderId"); else _explicitNullProperties?.Remove("PasswordResetProviderId"); } }
+        private string _explicitNullValuePasswordResetProviderId = default!;
 #endif
         /// <summary>The RemoteClientBitrateLimit property</summary>
-        public int? RemoteClientBitrateLimit { get; set; }
+        public int? RemoteClientBitrateLimit { get => _explicitNullValueRemoteClientBitrateLimit; set { _explicitNullValueRemoteClientBitrateLimit = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("RemoteClientBitrateLimit"); else _explicitNullProperties?.Remove("RemoteClientBitrateLimit"); } }
+        private int? _explicitNullValueRemoteClientBitrateLimit = default!;
         /// <summary>Gets or sets a value indicating what SyncPlay features the user can access.</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.UserPolicy_SyncPlayAccess? SyncPlayAccess { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.UserPolicy_SyncPlayAccess? SyncPlayAccess { get => _explicitNullValueSyncPlayAccess; set { _explicitNullValueSyncPlayAccess = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SyncPlayAccess"); else _explicitNullProperties?.Remove("SyncPlayAccess"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.UserPolicy_SyncPlayAccess? _explicitNullValueSyncPlayAccess = default!;
         /// <summary>
         /// Instantiates a new <see cref="global::Soenneker.Jellyfin.OpenApiClient.Models.UserPolicy"/> and sets the default values.
         /// </summary>
@@ -189,7 +296,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.UserPolicy CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.UserPolicy();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.UserPolicy(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -295,7 +402,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteIntValue("MaxParentalSubRating", MaxParentalSubRating);
             writer.WriteStringValue("PasswordResetProviderId", PasswordResetProviderId);
             writer.WriteIntValue("RemoteClientBitrateLimit", RemoteClientBitrateLimit);
-            writer.WriteEnumValue<global::Soenneker.Jellyfin.OpenApiClient.Models.UserPolicy_SyncPlayAccess>("SyncPlayAccess", SyncPlayAccess);
+            writer.WriteEnumValue<global::Soenneker.Jellyfin.OpenApiClient.Models.UserPolicy_SyncPlayAccess>("SyncPlayAccess", SyncPlayAccess);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

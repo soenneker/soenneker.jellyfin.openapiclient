@@ -109,6 +109,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Items
             {
                 { "401", global::Soenneker.Jellyfin.OpenApiClient.Models.ProblemDetails.CreateFromDiscriminatorValue },
                 { "404", global::Soenneker.Jellyfin.OpenApiClient.Models.ProblemDetails.CreateFromDiscriminatorValue },
+                { "4XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
+                { "5XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
             };
             await RequestAdapter.SendNoContentAsync(requestInfo, errorMapping, cancellationToken).ConfigureAwait(false);
         }
@@ -128,7 +130,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Items
         {
 #endif
             var requestInfo = ToGetRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDtoQueryResult>(requestInfo, global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDtoQueryResult.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDtoQueryResult>(requestInfo, global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDtoQueryResult.CreateFromDiscriminatorValue, new global::System.Collections.Generic.Dictionary<string, global::Microsoft.Kiota.Abstractions.Serialization.ParsableFactory<global::Microsoft.Kiota.Abstractions.Serialization.IParsable>> { { "4XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue }, { "5XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue } }, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Deletes items from the library and filesystem.

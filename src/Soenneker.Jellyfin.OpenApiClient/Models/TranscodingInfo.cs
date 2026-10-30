@@ -12,57 +12,94 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class TranscodingInfo : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("AudioChannels") is { } nullNodeAudioChannels && nullNodeAudioChannels.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AudioChannels = null;
+            if (parseNode.GetChildNode("AudioCodec") is { } nullNodeAudioCodec && nullNodeAudioCodec.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AudioCodec = null;
+            if (parseNode.GetChildNode("Bitrate") is { } nullNodeBitrate && nullNodeBitrate.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Bitrate = null;
+            if (parseNode.GetChildNode("CompletionPercentage") is { } nullNodeCompletionPercentage && nullNodeCompletionPercentage.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) CompletionPercentage = null;
+            if (parseNode.GetChildNode("Container") is { } nullNodeContainer && nullNodeContainer.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Container = null;
+            if (parseNode.GetChildNode("Framerate") is { } nullNodeFramerate && nullNodeFramerate.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Framerate = null;
+            if (parseNode.GetChildNode("HardwareAccelerationType") is { } nullNodeHardwareAccelerationType && nullNodeHardwareAccelerationType.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) HardwareAccelerationType = null;
+            if (parseNode.GetChildNode("Height") is { } nullNodeHeight && nullNodeHeight.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Height = null;
+            if (parseNode.GetChildNode("IsAudioDirect") is { } nullNodeIsAudioDirect && nullNodeIsAudioDirect.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsAudioDirect = null;
+            if (parseNode.GetChildNode("IsVideoDirect") is { } nullNodeIsVideoDirect && nullNodeIsVideoDirect.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsVideoDirect = null;
+            if (parseNode.GetChildNode("TranscodeReasons") is { } nullNodeTranscodeReasons && nullNodeTranscodeReasons.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) TranscodeReasons = null;
+            if (parseNode.GetChildNode("VideoCodec") is { } nullNodeVideoCodec && nullNodeVideoCodec.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) VideoCodec = null;
+            if (parseNode.GetChildNode("Width") is { } nullNodeWidth && nullNodeWidth.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Width = null;
+        }
+
         /// <summary>Gets or sets the audio channels.</summary>
-        public int? AudioChannels { get; set; }
+        public int? AudioChannels { get => _explicitNullValueAudioChannels; set { _explicitNullValueAudioChannels = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("AudioChannels"); else _explicitNullProperties?.Remove("AudioChannels"); } }
+        private int? _explicitNullValueAudioChannels = default!;
         /// <summary>Gets or sets the thread count used for encoding.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? AudioCodec { get; set; }
+        public string? AudioCodec { get => _explicitNullValueAudioCodec; set { _explicitNullValueAudioCodec = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("AudioCodec"); else _explicitNullProperties?.Remove("AudioCodec"); } }
+        private string? _explicitNullValueAudioCodec = default!;
 #nullable restore
 #else
-        public string AudioCodec { get; set; }
+        public string AudioCodec { get => _explicitNullValueAudioCodec; set { _explicitNullValueAudioCodec = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("AudioCodec"); else _explicitNullProperties?.Remove("AudioCodec"); } }
+        private string _explicitNullValueAudioCodec = default!;
 #endif
         /// <summary>Gets or sets the bitrate.</summary>
-        public int? Bitrate { get; set; }
+        public int? Bitrate { get => _explicitNullValueBitrate; set { _explicitNullValueBitrate = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Bitrate"); else _explicitNullProperties?.Remove("Bitrate"); } }
+        private int? _explicitNullValueBitrate = default!;
         /// <summary>Gets or sets the completion percentage.</summary>
-        public double? CompletionPercentage { get; set; }
+        public double? CompletionPercentage { get => _explicitNullValueCompletionPercentage; set { _explicitNullValueCompletionPercentage = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("CompletionPercentage"); else _explicitNullProperties?.Remove("CompletionPercentage"); } }
+        private double? _explicitNullValueCompletionPercentage = default!;
         /// <summary>Gets or sets the thread count used for encoding.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Container { get; set; }
+        public string? Container { get => _explicitNullValueContainer; set { _explicitNullValueContainer = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Container"); else _explicitNullProperties?.Remove("Container"); } }
+        private string? _explicitNullValueContainer = default!;
 #nullable restore
 #else
-        public string Container { get; set; }
+        public string Container { get => _explicitNullValueContainer; set { _explicitNullValueContainer = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Container"); else _explicitNullProperties?.Remove("Container"); } }
+        private string _explicitNullValueContainer = default!;
 #endif
         /// <summary>Gets or sets the framerate.</summary>
-        public float? Framerate { get; set; }
+        public float? Framerate { get => _explicitNullValueFramerate; set { _explicitNullValueFramerate = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Framerate"); else _explicitNullProperties?.Remove("Framerate"); } }
+        private float? _explicitNullValueFramerate = default!;
         /// <summary>Gets or sets the hardware acceleration type.</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodingInfo_HardwareAccelerationType? HardwareAccelerationType { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodingInfo_HardwareAccelerationType? HardwareAccelerationType { get => _explicitNullValueHardwareAccelerationType; set { _explicitNullValueHardwareAccelerationType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("HardwareAccelerationType"); else _explicitNullProperties?.Remove("HardwareAccelerationType"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodingInfo_HardwareAccelerationType? _explicitNullValueHardwareAccelerationType = default!;
         /// <summary>Gets or sets the video height.</summary>
-        public int? Height { get; set; }
+        public int? Height { get => _explicitNullValueHeight; set { _explicitNullValueHeight = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Height"); else _explicitNullProperties?.Remove("Height"); } }
+        private int? _explicitNullValueHeight = default!;
         /// <summary>Gets or sets a value indicating whether the audio is passed through.</summary>
-        public bool? IsAudioDirect { get; set; }
+        public bool? IsAudioDirect { get => _explicitNullValueIsAudioDirect; set { _explicitNullValueIsAudioDirect = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IsAudioDirect"); else _explicitNullProperties?.Remove("IsAudioDirect"); } }
+        private bool? _explicitNullValueIsAudioDirect = default!;
         /// <summary>Gets or sets a value indicating whether the video is passed through.</summary>
-        public bool? IsVideoDirect { get; set; }
+        public bool? IsVideoDirect { get => _explicitNullValueIsVideoDirect; set { _explicitNullValueIsVideoDirect = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IsVideoDirect"); else _explicitNullProperties?.Remove("IsVideoDirect"); } }
+        private bool? _explicitNullValueIsVideoDirect = default!;
         /// <summary>Gets or sets the transcode reasons.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodeReason?>? TranscodeReasons { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodeReason?>? TranscodeReasons { get => _explicitNullValueTranscodeReasons; set { _explicitNullValueTranscodeReasons = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("TranscodeReasons"); else _explicitNullProperties?.Remove("TranscodeReasons"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodeReason?>? _explicitNullValueTranscodeReasons = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodeReason?> TranscodeReasons { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodeReason?> TranscodeReasons { get => _explicitNullValueTranscodeReasons; set { _explicitNullValueTranscodeReasons = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("TranscodeReasons"); else _explicitNullProperties?.Remove("TranscodeReasons"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodeReason?> _explicitNullValueTranscodeReasons = default!;
 #endif
         /// <summary>Gets or sets the thread count used for encoding.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? VideoCodec { get; set; }
+        public string? VideoCodec { get => _explicitNullValueVideoCodec; set { _explicitNullValueVideoCodec = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("VideoCodec"); else _explicitNullProperties?.Remove("VideoCodec"); } }
+        private string? _explicitNullValueVideoCodec = default!;
 #nullable restore
 #else
-        public string VideoCodec { get; set; }
+        public string VideoCodec { get => _explicitNullValueVideoCodec; set { _explicitNullValueVideoCodec = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("VideoCodec"); else _explicitNullProperties?.Remove("VideoCodec"); } }
+        private string _explicitNullValueVideoCodec = default!;
 #endif
         /// <summary>Gets or sets the video width.</summary>
-        public int? Width { get; set; }
+        public int? Width { get => _explicitNullValueWidth; set { _explicitNullValueWidth = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Width"); else _explicitNullProperties?.Remove("Width"); } }
+        private int? _explicitNullValueWidth = default!;
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
@@ -71,7 +108,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodingInfo CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodingInfo();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodingInfo(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -115,7 +152,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteBoolValue("IsVideoDirect", IsVideoDirect);
             writer.WriteCollectionOfEnumValues<global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodeReason>("TranscodeReasons", TranscodeReasons);
             writer.WriteStringValue("VideoCodec", VideoCodec);
-            writer.WriteIntValue("Width", Width);
+            writer.WriteIntValue("Width", Width);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

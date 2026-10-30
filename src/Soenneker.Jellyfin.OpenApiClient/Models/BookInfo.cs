@@ -12,73 +12,111 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class BookInfo : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("IndexNumber") is { } nullNodeIndexNumber && nullNodeIndexNumber.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IndexNumber = null;
+            if (parseNode.GetChildNode("IsAutomated") is { } nullNodeIsAutomated && nullNodeIsAutomated.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsAutomated = null;
+            if (parseNode.GetChildNode("MetadataCountryCode") is { } nullNodeMetadataCountryCode && nullNodeMetadataCountryCode.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MetadataCountryCode = null;
+            if (parseNode.GetChildNode("MetadataLanguage") is { } nullNodeMetadataLanguage && nullNodeMetadataLanguage.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MetadataLanguage = null;
+            if (parseNode.GetChildNode("Name") is { } nullNodeName && nullNodeName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Name = null;
+            if (parseNode.GetChildNode("OriginalTitle") is { } nullNodeOriginalTitle && nullNodeOriginalTitle.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) OriginalTitle = null;
+            if (parseNode.GetChildNode("ParentIndexNumber") is { } nullNodeParentIndexNumber && nullNodeParentIndexNumber.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ParentIndexNumber = null;
+            if (parseNode.GetChildNode("Path") is { } nullNodePath && nullNodePath.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Path = null;
+            if (parseNode.GetChildNode("PremiereDate") is { } nullNodePremiereDate && nullNodePremiereDate.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PremiereDate = null;
+            if (parseNode.GetChildNode("ProviderIds") is { } nullNodeProviderIds && nullNodeProviderIds.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ProviderIds = null;
+            if (parseNode.GetChildNode("SeriesName") is { } nullNodeSeriesName && nullNodeSeriesName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SeriesName = null;
+            if (parseNode.GetChildNode("Year") is { } nullNodeYear && nullNodeYear.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Year = null;
+        }
+
         /// <summary>The IndexNumber property</summary>
-        public int? IndexNumber { get; set; }
+        public int? IndexNumber { get => _explicitNullValueIndexNumber; set { _explicitNullValueIndexNumber = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IndexNumber"); else _explicitNullProperties?.Remove("IndexNumber"); } }
+        private int? _explicitNullValueIndexNumber = default!;
         /// <summary>The IsAutomated property</summary>
-        public bool? IsAutomated { get; set; }
+        public bool? IsAutomated { get => _explicitNullValueIsAutomated; set { _explicitNullValueIsAutomated = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IsAutomated"); else _explicitNullProperties?.Remove("IsAutomated"); } }
+        private bool? _explicitNullValueIsAutomated = default!;
         /// <summary>Gets or sets the metadata country code.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? MetadataCountryCode { get; set; }
+        public string? MetadataCountryCode { get => _explicitNullValueMetadataCountryCode; set { _explicitNullValueMetadataCountryCode = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MetadataCountryCode"); else _explicitNullProperties?.Remove("MetadataCountryCode"); } }
+        private string? _explicitNullValueMetadataCountryCode = default!;
 #nullable restore
 #else
-        public string MetadataCountryCode { get; set; }
+        public string MetadataCountryCode { get => _explicitNullValueMetadataCountryCode; set { _explicitNullValueMetadataCountryCode = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MetadataCountryCode"); else _explicitNullProperties?.Remove("MetadataCountryCode"); } }
+        private string _explicitNullValueMetadataCountryCode = default!;
 #endif
         /// <summary>Gets or sets the metadata language.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? MetadataLanguage { get; set; }
+        public string? MetadataLanguage { get => _explicitNullValueMetadataLanguage; set { _explicitNullValueMetadataLanguage = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MetadataLanguage"); else _explicitNullProperties?.Remove("MetadataLanguage"); } }
+        private string? _explicitNullValueMetadataLanguage = default!;
 #nullable restore
 #else
-        public string MetadataLanguage { get; set; }
+        public string MetadataLanguage { get => _explicitNullValueMetadataLanguage; set { _explicitNullValueMetadataLanguage = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MetadataLanguage"); else _explicitNullProperties?.Remove("MetadataLanguage"); } }
+        private string _explicitNullValueMetadataLanguage = default!;
 #endif
         /// <summary>Gets or sets the name.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Name { get; set; }
+        public string? Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Name"); else _explicitNullProperties?.Remove("Name"); } }
+        private string? _explicitNullValueName = default!;
 #nullable restore
 #else
-        public string Name { get; set; }
+        public string Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Name"); else _explicitNullProperties?.Remove("Name"); } }
+        private string _explicitNullValueName = default!;
 #endif
         /// <summary>Gets or sets the original title.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? OriginalTitle { get; set; }
+        public string? OriginalTitle { get => _explicitNullValueOriginalTitle; set { _explicitNullValueOriginalTitle = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("OriginalTitle"); else _explicitNullProperties?.Remove("OriginalTitle"); } }
+        private string? _explicitNullValueOriginalTitle = default!;
 #nullable restore
 #else
-        public string OriginalTitle { get; set; }
+        public string OriginalTitle { get => _explicitNullValueOriginalTitle; set { _explicitNullValueOriginalTitle = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("OriginalTitle"); else _explicitNullProperties?.Remove("OriginalTitle"); } }
+        private string _explicitNullValueOriginalTitle = default!;
 #endif
         /// <summary>The ParentIndexNumber property</summary>
-        public int? ParentIndexNumber { get; set; }
+        public int? ParentIndexNumber { get => _explicitNullValueParentIndexNumber; set { _explicitNullValueParentIndexNumber = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ParentIndexNumber"); else _explicitNullProperties?.Remove("ParentIndexNumber"); } }
+        private int? _explicitNullValueParentIndexNumber = default!;
         /// <summary>Gets or sets the path.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Path { get; set; }
+        public string? Path { get => _explicitNullValuePath; set { _explicitNullValuePath = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Path"); else _explicitNullProperties?.Remove("Path"); } }
+        private string? _explicitNullValuePath = default!;
 #nullable restore
 #else
-        public string Path { get; set; }
+        public string Path { get => _explicitNullValuePath; set { _explicitNullValuePath = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Path"); else _explicitNullProperties?.Remove("Path"); } }
+        private string _explicitNullValuePath = default!;
 #endif
         /// <summary>The PremiereDate property</summary>
-        public DateTimeOffset? PremiereDate { get; set; }
+        public DateTimeOffset? PremiereDate { get => _explicitNullValuePremiereDate; set { _explicitNullValuePremiereDate = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PremiereDate"); else _explicitNullProperties?.Remove("PremiereDate"); } }
+        private DateTimeOffset? _explicitNullValuePremiereDate = default!;
         /// <summary>Gets or sets the provider ids.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BookInfo_ProviderIds? ProviderIds { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BookInfo_ProviderIds? ProviderIds { get => _explicitNullValueProviderIds; set { _explicitNullValueProviderIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ProviderIds"); else _explicitNullProperties?.Remove("ProviderIds"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BookInfo_ProviderIds? _explicitNullValueProviderIds = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BookInfo_ProviderIds ProviderIds { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BookInfo_ProviderIds ProviderIds { get => _explicitNullValueProviderIds; set { _explicitNullValueProviderIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ProviderIds"); else _explicitNullProperties?.Remove("ProviderIds"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BookInfo_ProviderIds _explicitNullValueProviderIds = default!;
 #endif
         /// <summary>Gets or sets the name of the series the book belongs to.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? SeriesName { get; set; }
+        public string? SeriesName { get => _explicitNullValueSeriesName; set { _explicitNullValueSeriesName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SeriesName"); else _explicitNullProperties?.Remove("SeriesName"); } }
+        private string? _explicitNullValueSeriesName = default!;
 #nullable restore
 #else
-        public string SeriesName { get; set; }
+        public string SeriesName { get => _explicitNullValueSeriesName; set { _explicitNullValueSeriesName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SeriesName"); else _explicitNullProperties?.Remove("SeriesName"); } }
+        private string _explicitNullValueSeriesName = default!;
 #endif
         /// <summary>Gets or sets the year.</summary>
-        public int? Year { get; set; }
+        public int? Year { get => _explicitNullValueYear; set { _explicitNullValueYear = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Year"); else _explicitNullProperties?.Remove("Year"); } }
+        private int? _explicitNullValueYear = default!;
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
@@ -87,7 +125,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.BookInfo CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.BookInfo();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.BookInfo(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -129,7 +167,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteDateTimeOffsetValue("PremiereDate", PremiereDate);
             writer.WriteObjectValue<global::Soenneker.Jellyfin.OpenApiClient.Models.BookInfo_ProviderIds>("ProviderIds", ProviderIds);
             writer.WriteStringValue("SeriesName", SeriesName);
-            writer.WriteIntValue("Year", Year);
+            writer.WriteIntValue("Year", Year);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

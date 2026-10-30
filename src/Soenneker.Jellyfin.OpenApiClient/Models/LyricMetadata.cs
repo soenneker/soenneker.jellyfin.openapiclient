@@ -12,68 +12,102 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class LyricMetadata : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("Album") is { } nullNodeAlbum && nullNodeAlbum.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Album = null;
+            if (parseNode.GetChildNode("Artist") is { } nullNodeArtist && nullNodeArtist.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Artist = null;
+            if (parseNode.GetChildNode("Author") is { } nullNodeAuthor && nullNodeAuthor.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Author = null;
+            if (parseNode.GetChildNode("By") is { } nullNodeBy && nullNodeBy.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) By = null;
+            if (parseNode.GetChildNode("Creator") is { } nullNodeCreator && nullNodeCreator.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Creator = null;
+            if (parseNode.GetChildNode("IsSynced") is { } nullNodeIsSynced && nullNodeIsSynced.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsSynced = null;
+            if (parseNode.GetChildNode("Length") is { } nullNodeLength && nullNodeLength.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Length = null;
+            if (parseNode.GetChildNode("Offset") is { } nullNodeOffset && nullNodeOffset.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Offset = null;
+            if (parseNode.GetChildNode("Title") is { } nullNodeTitle && nullNodeTitle.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Title = null;
+            if (parseNode.GetChildNode("Version") is { } nullNodeVersion && nullNodeVersion.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Version = null;
+        }
+
         /// <summary>Gets or sets the album this song is on.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Album { get; set; }
+        public string? Album { get => _explicitNullValueAlbum; set { _explicitNullValueAlbum = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Album"); else _explicitNullProperties?.Remove("Album"); } }
+        private string? _explicitNullValueAlbum = default!;
 #nullable restore
 #else
-        public string Album { get; set; }
+        public string Album { get => _explicitNullValueAlbum; set { _explicitNullValueAlbum = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Album"); else _explicitNullProperties?.Remove("Album"); } }
+        private string _explicitNullValueAlbum = default!;
 #endif
         /// <summary>Gets or sets the song artist.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Artist { get; set; }
+        public string? Artist { get => _explicitNullValueArtist; set { _explicitNullValueArtist = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Artist"); else _explicitNullProperties?.Remove("Artist"); } }
+        private string? _explicitNullValueArtist = default!;
 #nullable restore
 #else
-        public string Artist { get; set; }
+        public string Artist { get => _explicitNullValueArtist; set { _explicitNullValueArtist = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Artist"); else _explicitNullProperties?.Remove("Artist"); } }
+        private string _explicitNullValueArtist = default!;
 #endif
         /// <summary>Gets or sets the author of the lyric data.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Author { get; set; }
+        public string? Author { get => _explicitNullValueAuthor; set { _explicitNullValueAuthor = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Author"); else _explicitNullProperties?.Remove("Author"); } }
+        private string? _explicitNullValueAuthor = default!;
 #nullable restore
 #else
-        public string Author { get; set; }
+        public string Author { get => _explicitNullValueAuthor; set { _explicitNullValueAuthor = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Author"); else _explicitNullProperties?.Remove("Author"); } }
+        private string _explicitNullValueAuthor = default!;
 #endif
         /// <summary>Gets or sets who the LRC file was created by.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? By { get; set; }
+        public string? By { get => _explicitNullValueBy; set { _explicitNullValueBy = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("By"); else _explicitNullProperties?.Remove("By"); } }
+        private string? _explicitNullValueBy = default!;
 #nullable restore
 #else
-        public string By { get; set; }
+        public string By { get => _explicitNullValueBy; set { _explicitNullValueBy = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("By"); else _explicitNullProperties?.Remove("By"); } }
+        private string _explicitNullValueBy = default!;
 #endif
         /// <summary>Gets or sets the software used to create the LRC file.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Creator { get; set; }
+        public string? Creator { get => _explicitNullValueCreator; set { _explicitNullValueCreator = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Creator"); else _explicitNullProperties?.Remove("Creator"); } }
+        private string? _explicitNullValueCreator = default!;
 #nullable restore
 #else
-        public string Creator { get; set; }
+        public string Creator { get => _explicitNullValueCreator; set { _explicitNullValueCreator = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Creator"); else _explicitNullProperties?.Remove("Creator"); } }
+        private string _explicitNullValueCreator = default!;
 #endif
         /// <summary>Gets or sets a value indicating whether this lyric is synced.</summary>
-        public bool? IsSynced { get; set; }
+        public bool? IsSynced { get => _explicitNullValueIsSynced; set { _explicitNullValueIsSynced = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IsSynced"); else _explicitNullProperties?.Remove("IsSynced"); } }
+        private bool? _explicitNullValueIsSynced = default!;
         /// <summary>Gets or sets the length of the song in ticks.</summary>
-        public long? Length { get; set; }
+        public long? Length { get => _explicitNullValueLength; set { _explicitNullValueLength = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Length"); else _explicitNullProperties?.Remove("Length"); } }
+        private long? _explicitNullValueLength = default!;
         /// <summary>Gets or sets the lyric offset compared to audio in ticks.</summary>
-        public long? Offset { get; set; }
+        public long? Offset { get => _explicitNullValueOffset; set { _explicitNullValueOffset = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Offset"); else _explicitNullProperties?.Remove("Offset"); } }
+        private long? _explicitNullValueOffset = default!;
         /// <summary>Gets or sets the title of the song.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Title { get; set; }
+        public string? Title { get => _explicitNullValueTitle; set { _explicitNullValueTitle = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Title"); else _explicitNullProperties?.Remove("Title"); } }
+        private string? _explicitNullValueTitle = default!;
 #nullable restore
 #else
-        public string Title { get; set; }
+        public string Title { get => _explicitNullValueTitle; set { _explicitNullValueTitle = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Title"); else _explicitNullProperties?.Remove("Title"); } }
+        private string _explicitNullValueTitle = default!;
 #endif
         /// <summary>Gets or sets the version of the creator used.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Version { get; set; }
+        public string? Version { get => _explicitNullValueVersion; set { _explicitNullValueVersion = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Version"); else _explicitNullProperties?.Remove("Version"); } }
+        private string? _explicitNullValueVersion = default!;
 #nullable restore
 #else
-        public string Version { get; set; }
+        public string Version { get => _explicitNullValueVersion; set { _explicitNullValueVersion = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Version"); else _explicitNullProperties?.Remove("Version"); } }
+        private string _explicitNullValueVersion = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -83,7 +117,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.LyricMetadata CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.LyricMetadata();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.LyricMetadata(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -121,7 +155,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteLongValue("Length", Length);
             writer.WriteLongValue("Offset", Offset);
             writer.WriteStringValue("Title", Title);
-            writer.WriteStringValue("Version", Version);
+            writer.WriteStringValue("Version", Version);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

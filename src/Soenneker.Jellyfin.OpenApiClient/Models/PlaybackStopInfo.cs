@@ -12,76 +12,113 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class PlaybackStopInfo : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("Failed") is { } nullNodeFailed && nullNodeFailed.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Failed = null;
+            if (parseNode.GetChildNode("Item") is { } nullNodeItem && nullNodeItem.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Item = null;
+            if (parseNode.GetChildNode("ItemId") is { } nullNodeItemId && nullNodeItemId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ItemId = null;
+            if (parseNode.GetChildNode("LiveStreamId") is { } nullNodeLiveStreamId && nullNodeLiveStreamId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LiveStreamId = null;
+            if (parseNode.GetChildNode("MediaSourceId") is { } nullNodeMediaSourceId && nullNodeMediaSourceId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MediaSourceId = null;
+            if (parseNode.GetChildNode("NextMediaType") is { } nullNodeNextMediaType && nullNodeNextMediaType.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) NextMediaType = null;
+            if (parseNode.GetChildNode("NowPlayingQueue") is { } nullNodeNowPlayingQueue && nullNodeNowPlayingQueue.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) NowPlayingQueue = null;
+            if (parseNode.GetChildNode("PlaylistItemId") is { } nullNodePlaylistItemId && nullNodePlaylistItemId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PlaylistItemId = null;
+            if (parseNode.GetChildNode("PlaySessionId") is { } nullNodePlaySessionId && nullNodePlaySessionId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PlaySessionId = null;
+            if (parseNode.GetChildNode("PositionTicks") is { } nullNodePositionTicks && nullNodePositionTicks.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PositionTicks = null;
+            if (parseNode.GetChildNode("SessionId") is { } nullNodeSessionId && nullNodeSessionId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SessionId = null;
+        }
+
         /// <summary>Gets or sets a value indicating whether this MediaBrowser.Model.Session.PlaybackStopInfo is failed.</summary>
-        public bool? Failed { get; set; }
+        public bool? Failed { get => _explicitNullValueFailed; set { _explicitNullValueFailed = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Failed"); else _explicitNullProperties?.Remove("Failed"); } }
+        private bool? _explicitNullValueFailed = default!;
         /// <summary>Gets or sets the item.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto? Item { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto? Item { get => _explicitNullValueItem; set { _explicitNullValueItem = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Item"); else _explicitNullProperties?.Remove("Item"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto? _explicitNullValueItem = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto Item { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto Item { get => _explicitNullValueItem; set { _explicitNullValueItem = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Item"); else _explicitNullProperties?.Remove("Item"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto _explicitNullValueItem = default!;
 #endif
         /// <summary>Gets or sets the item identifier.</summary>
-        public Guid? ItemId { get; set; }
+        public Guid? ItemId { get => _explicitNullValueItemId; set { _explicitNullValueItemId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ItemId"); else _explicitNullProperties?.Remove("ItemId"); } }
+        private Guid? _explicitNullValueItemId = default!;
         /// <summary>Gets or sets the live stream identifier.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? LiveStreamId { get; set; }
+        public string? LiveStreamId { get => _explicitNullValueLiveStreamId; set { _explicitNullValueLiveStreamId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LiveStreamId"); else _explicitNullProperties?.Remove("LiveStreamId"); } }
+        private string? _explicitNullValueLiveStreamId = default!;
 #nullable restore
 #else
-        public string LiveStreamId { get; set; }
+        public string LiveStreamId { get => _explicitNullValueLiveStreamId; set { _explicitNullValueLiveStreamId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LiveStreamId"); else _explicitNullProperties?.Remove("LiveStreamId"); } }
+        private string _explicitNullValueLiveStreamId = default!;
 #endif
         /// <summary>Gets or sets the media version identifier.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? MediaSourceId { get; set; }
+        public string? MediaSourceId { get => _explicitNullValueMediaSourceId; set { _explicitNullValueMediaSourceId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MediaSourceId"); else _explicitNullProperties?.Remove("MediaSourceId"); } }
+        private string? _explicitNullValueMediaSourceId = default!;
 #nullable restore
 #else
-        public string MediaSourceId { get; set; }
+        public string MediaSourceId { get => _explicitNullValueMediaSourceId; set { _explicitNullValueMediaSourceId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MediaSourceId"); else _explicitNullProperties?.Remove("MediaSourceId"); } }
+        private string _explicitNullValueMediaSourceId = default!;
 #endif
         /// <summary>The NextMediaType property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? NextMediaType { get; set; }
+        public string? NextMediaType { get => _explicitNullValueNextMediaType; set { _explicitNullValueNextMediaType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("NextMediaType"); else _explicitNullProperties?.Remove("NextMediaType"); } }
+        private string? _explicitNullValueNextMediaType = default!;
 #nullable restore
 #else
-        public string NextMediaType { get; set; }
+        public string NextMediaType { get => _explicitNullValueNextMediaType; set { _explicitNullValueNextMediaType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("NextMediaType"); else _explicitNullProperties?.Remove("NextMediaType"); } }
+        private string _explicitNullValueNextMediaType = default!;
 #endif
         /// <summary>The NowPlayingQueue property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.QueueItem>? NowPlayingQueue { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.QueueItem>? NowPlayingQueue { get => _explicitNullValueNowPlayingQueue; set { _explicitNullValueNowPlayingQueue = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("NowPlayingQueue"); else _explicitNullProperties?.Remove("NowPlayingQueue"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.QueueItem>? _explicitNullValueNowPlayingQueue = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.QueueItem> NowPlayingQueue { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.QueueItem> NowPlayingQueue { get => _explicitNullValueNowPlayingQueue; set { _explicitNullValueNowPlayingQueue = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("NowPlayingQueue"); else _explicitNullProperties?.Remove("NowPlayingQueue"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.QueueItem> _explicitNullValueNowPlayingQueue = default!;
 #endif
         /// <summary>The PlaylistItemId property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? PlaylistItemId { get; set; }
+        public string? PlaylistItemId { get => _explicitNullValuePlaylistItemId; set { _explicitNullValuePlaylistItemId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PlaylistItemId"); else _explicitNullProperties?.Remove("PlaylistItemId"); } }
+        private string? _explicitNullValuePlaylistItemId = default!;
 #nullable restore
 #else
-        public string PlaylistItemId { get; set; }
+        public string PlaylistItemId { get => _explicitNullValuePlaylistItemId; set { _explicitNullValuePlaylistItemId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PlaylistItemId"); else _explicitNullProperties?.Remove("PlaylistItemId"); } }
+        private string _explicitNullValuePlaylistItemId = default!;
 #endif
         /// <summary>Gets or sets the play session identifier.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? PlaySessionId { get; set; }
+        public string? PlaySessionId { get => _explicitNullValuePlaySessionId; set { _explicitNullValuePlaySessionId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PlaySessionId"); else _explicitNullProperties?.Remove("PlaySessionId"); } }
+        private string? _explicitNullValuePlaySessionId = default!;
 #nullable restore
 #else
-        public string PlaySessionId { get; set; }
+        public string PlaySessionId { get => _explicitNullValuePlaySessionId; set { _explicitNullValuePlaySessionId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PlaySessionId"); else _explicitNullProperties?.Remove("PlaySessionId"); } }
+        private string _explicitNullValuePlaySessionId = default!;
 #endif
         /// <summary>Gets or sets the position ticks.</summary>
-        public long? PositionTicks { get; set; }
+        public long? PositionTicks { get => _explicitNullValuePositionTicks; set { _explicitNullValuePositionTicks = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PositionTicks"); else _explicitNullProperties?.Remove("PositionTicks"); } }
+        private long? _explicitNullValuePositionTicks = default!;
         /// <summary>Gets or sets the session id.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? SessionId { get; set; }
+        public string? SessionId { get => _explicitNullValueSessionId; set { _explicitNullValueSessionId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SessionId"); else _explicitNullProperties?.Remove("SessionId"); } }
+        private string? _explicitNullValueSessionId = default!;
 #nullable restore
 #else
-        public string SessionId { get; set; }
+        public string SessionId { get => _explicitNullValueSessionId; set { _explicitNullValueSessionId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SessionId"); else _explicitNullProperties?.Remove("SessionId"); } }
+        private string _explicitNullValueSessionId = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -91,7 +128,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.PlaybackStopInfo CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.PlaybackStopInfo();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.PlaybackStopInfo(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -131,7 +168,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteStringValue("PlaylistItemId", PlaylistItemId);
             writer.WriteStringValue("PlaySessionId", PlaySessionId);
             writer.WriteLongValue("PositionTicks", PositionTicks);
-            writer.WriteStringValue("SessionId", SessionId);
+            writer.WriteStringValue("SessionId", SessionId);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

@@ -12,41 +12,72 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class UpdateUserItemDataDto : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("IsFavorite") is { } nullNodeIsFavorite && nullNodeIsFavorite.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsFavorite = null;
+            if (parseNode.GetChildNode("ItemId") is { } nullNodeItemId && nullNodeItemId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ItemId = null;
+            if (parseNode.GetChildNode("Key") is { } nullNodeKey && nullNodeKey.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Key = null;
+            if (parseNode.GetChildNode("LastPlayedDate") is { } nullNodeLastPlayedDate && nullNodeLastPlayedDate.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LastPlayedDate = null;
+            if (parseNode.GetChildNode("Likes") is { } nullNodeLikes && nullNodeLikes.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Likes = null;
+            if (parseNode.GetChildNode("PlaybackPositionTicks") is { } nullNodePlaybackPositionTicks && nullNodePlaybackPositionTicks.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PlaybackPositionTicks = null;
+            if (parseNode.GetChildNode("PlayCount") is { } nullNodePlayCount && nullNodePlayCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PlayCount = null;
+            if (parseNode.GetChildNode("Played") is { } nullNodePlayed && nullNodePlayed.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Played = null;
+            if (parseNode.GetChildNode("PlayedPercentage") is { } nullNodePlayedPercentage && nullNodePlayedPercentage.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PlayedPercentage = null;
+            if (parseNode.GetChildNode("Rating") is { } nullNodeRating && nullNodeRating.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Rating = null;
+            if (parseNode.GetChildNode("UnplayedItemCount") is { } nullNodeUnplayedItemCount && nullNodeUnplayedItemCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) UnplayedItemCount = null;
+        }
+
         /// <summary>Gets or sets a value indicating whether this instance is favorite.</summary>
-        public bool? IsFavorite { get; set; }
+        public bool? IsFavorite { get => _explicitNullValueIsFavorite; set { _explicitNullValueIsFavorite = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IsFavorite"); else _explicitNullProperties?.Remove("IsFavorite"); } }
+        private bool? _explicitNullValueIsFavorite = default!;
         /// <summary>Gets or sets the item identifier.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ItemId { get; set; }
+        public string? ItemId { get => _explicitNullValueItemId; set { _explicitNullValueItemId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ItemId"); else _explicitNullProperties?.Remove("ItemId"); } }
+        private string? _explicitNullValueItemId = default!;
 #nullable restore
 #else
-        public string ItemId { get; set; }
+        public string ItemId { get => _explicitNullValueItemId; set { _explicitNullValueItemId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ItemId"); else _explicitNullProperties?.Remove("ItemId"); } }
+        private string _explicitNullValueItemId = default!;
 #endif
         /// <summary>Gets or sets the key.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Key { get; set; }
+        public string? Key { get => _explicitNullValueKey; set { _explicitNullValueKey = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Key"); else _explicitNullProperties?.Remove("Key"); } }
+        private string? _explicitNullValueKey = default!;
 #nullable restore
 #else
-        public string Key { get; set; }
+        public string Key { get => _explicitNullValueKey; set { _explicitNullValueKey = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Key"); else _explicitNullProperties?.Remove("Key"); } }
+        private string _explicitNullValueKey = default!;
 #endif
         /// <summary>Gets or sets the last played date.</summary>
-        public DateTimeOffset? LastPlayedDate { get; set; }
+        public DateTimeOffset? LastPlayedDate { get => _explicitNullValueLastPlayedDate; set { _explicitNullValueLastPlayedDate = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LastPlayedDate"); else _explicitNullProperties?.Remove("LastPlayedDate"); } }
+        private DateTimeOffset? _explicitNullValueLastPlayedDate = default!;
         /// <summary>Gets or sets a value indicating whether this MediaBrowser.Model.Dto.UpdateUserItemDataDto is likes.</summary>
-        public bool? Likes { get; set; }
+        public bool? Likes { get => _explicitNullValueLikes; set { _explicitNullValueLikes = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Likes"); else _explicitNullProperties?.Remove("Likes"); } }
+        private bool? _explicitNullValueLikes = default!;
         /// <summary>Gets or sets the playback position ticks.</summary>
-        public long? PlaybackPositionTicks { get; set; }
+        public long? PlaybackPositionTicks { get => _explicitNullValuePlaybackPositionTicks; set { _explicitNullValuePlaybackPositionTicks = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PlaybackPositionTicks"); else _explicitNullProperties?.Remove("PlaybackPositionTicks"); } }
+        private long? _explicitNullValuePlaybackPositionTicks = default!;
         /// <summary>Gets or sets the play count.</summary>
-        public int? PlayCount { get; set; }
+        public int? PlayCount { get => _explicitNullValuePlayCount; set { _explicitNullValuePlayCount = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PlayCount"); else _explicitNullProperties?.Remove("PlayCount"); } }
+        private int? _explicitNullValuePlayCount = default!;
         /// <summary>Gets or sets a value indicating whether this MediaBrowser.Model.Dto.UserItemDataDto is played.</summary>
-        public bool? Played { get; set; }
+        public bool? Played { get => _explicitNullValuePlayed; set { _explicitNullValuePlayed = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Played"); else _explicitNullProperties?.Remove("Played"); } }
+        private bool? _explicitNullValuePlayed = default!;
         /// <summary>Gets or sets the played percentage.</summary>
-        public double? PlayedPercentage { get; set; }
+        public double? PlayedPercentage { get => _explicitNullValuePlayedPercentage; set { _explicitNullValuePlayedPercentage = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PlayedPercentage"); else _explicitNullProperties?.Remove("PlayedPercentage"); } }
+        private double? _explicitNullValuePlayedPercentage = default!;
         /// <summary>Gets or sets the rating.</summary>
-        public double? Rating { get; set; }
+        public double? Rating { get => _explicitNullValueRating; set { _explicitNullValueRating = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Rating"); else _explicitNullProperties?.Remove("Rating"); } }
+        private double? _explicitNullValueRating = default!;
         /// <summary>Gets or sets the unplayed item count.</summary>
-        public int? UnplayedItemCount { get; set; }
+        public int? UnplayedItemCount { get => _explicitNullValueUnplayedItemCount; set { _explicitNullValueUnplayedItemCount = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("UnplayedItemCount"); else _explicitNullProperties?.Remove("UnplayedItemCount"); } }
+        private int? _explicitNullValueUnplayedItemCount = default!;
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
@@ -55,7 +86,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.UpdateUserItemDataDto CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.UpdateUserItemDataDto();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.UpdateUserItemDataDto(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -95,7 +126,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteBoolValue("Played", Played);
             writer.WriteDoubleValue("PlayedPercentage", PlayedPercentage);
             writer.WriteDoubleValue("Rating", Rating);
-            writer.WriteIntValue("UnplayedItemCount", UnplayedItemCount);
+            writer.WriteIntValue("UnplayedItemCount", UnplayedItemCount);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

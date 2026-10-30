@@ -12,36 +12,68 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class TrickplayOptions : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("EnableHwAcceleration") is { } nullNodeEnableHwAcceleration && nullNodeEnableHwAcceleration.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableHwAcceleration = null;
+            if (parseNode.GetChildNode("EnableHwEncoding") is { } nullNodeEnableHwEncoding && nullNodeEnableHwEncoding.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableHwEncoding = null;
+            if (parseNode.GetChildNode("EnableKeyFrameOnlyExtraction") is { } nullNodeEnableKeyFrameOnlyExtraction && nullNodeEnableKeyFrameOnlyExtraction.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableKeyFrameOnlyExtraction = null;
+            if (parseNode.GetChildNode("Interval") is { } nullNodeInterval && nullNodeInterval.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Interval = null;
+            if (parseNode.GetChildNode("JpegQuality") is { } nullNodeJpegQuality && nullNodeJpegQuality.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) JpegQuality = null;
+            if (parseNode.GetChildNode("ProcessPriority") is { } nullNodeProcessPriority && nullNodeProcessPriority.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ProcessPriority = null;
+            if (parseNode.GetChildNode("ProcessThreads") is { } nullNodeProcessThreads && nullNodeProcessThreads.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ProcessThreads = null;
+            if (parseNode.GetChildNode("Qscale") is { } nullNodeQscale && nullNodeQscale.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Qscale = null;
+            if (parseNode.GetChildNode("ScanBehavior") is { } nullNodeScanBehavior && nullNodeScanBehavior.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ScanBehavior = null;
+            if (parseNode.GetChildNode("TileHeight") is { } nullNodeTileHeight && nullNodeTileHeight.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) TileHeight = null;
+            if (parseNode.GetChildNode("TileWidth") is { } nullNodeTileWidth && nullNodeTileWidth.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) TileWidth = null;
+            if (parseNode.GetChildNode("WidthResolutions") is { } nullNodeWidthResolutions && nullNodeWidthResolutions.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) WidthResolutions = null;
+        }
+
         /// <summary>Gets or sets a value indicating whether or not to use HW acceleration.</summary>
-        public bool? EnableHwAcceleration { get; set; }
+        public bool? EnableHwAcceleration { get => _explicitNullValueEnableHwAcceleration; set { _explicitNullValueEnableHwAcceleration = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableHwAcceleration"); else _explicitNullProperties?.Remove("EnableHwAcceleration"); } }
+        private bool? _explicitNullValueEnableHwAcceleration = default!;
         /// <summary>Gets or sets a value indicating whether or not to use HW accelerated MJPEG encoding.</summary>
-        public bool? EnableHwEncoding { get; set; }
+        public bool? EnableHwEncoding { get => _explicitNullValueEnableHwEncoding; set { _explicitNullValueEnableHwEncoding = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableHwEncoding"); else _explicitNullProperties?.Remove("EnableHwEncoding"); } }
+        private bool? _explicitNullValueEnableHwEncoding = default!;
         /// <summary>Gets or sets a value indicating whether to only extract key frames.Significantly faster, but is not compatible with all decoders and/or video files.</summary>
-        public bool? EnableKeyFrameOnlyExtraction { get; set; }
+        public bool? EnableKeyFrameOnlyExtraction { get => _explicitNullValueEnableKeyFrameOnlyExtraction; set { _explicitNullValueEnableKeyFrameOnlyExtraction = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableKeyFrameOnlyExtraction"); else _explicitNullProperties?.Remove("EnableKeyFrameOnlyExtraction"); } }
+        private bool? _explicitNullValueEnableKeyFrameOnlyExtraction = default!;
         /// <summary>Gets or sets the interval, in ms, between each new trickplay image.</summary>
-        public int? Interval { get; set; }
+        public int? Interval { get => _explicitNullValueInterval; set { _explicitNullValueInterval = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Interval"); else _explicitNullProperties?.Remove("Interval"); } }
+        private int? _explicitNullValueInterval = default!;
         /// <summary>Gets or sets the jpeg quality to use for image tiles.</summary>
-        public int? JpegQuality { get; set; }
+        public int? JpegQuality { get => _explicitNullValueJpegQuality; set { _explicitNullValueJpegQuality = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("JpegQuality"); else _explicitNullProperties?.Remove("JpegQuality"); } }
+        private int? _explicitNullValueJpegQuality = default!;
         /// <summary>Gets or sets the process priority for the ffmpeg process.</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.TrickplayOptions_ProcessPriority? ProcessPriority { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.TrickplayOptions_ProcessPriority? ProcessPriority { get => _explicitNullValueProcessPriority; set { _explicitNullValueProcessPriority = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ProcessPriority"); else _explicitNullProperties?.Remove("ProcessPriority"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.TrickplayOptions_ProcessPriority? _explicitNullValueProcessPriority = default!;
         /// <summary>Gets or sets the number of threads to be used by ffmpeg.</summary>
-        public int? ProcessThreads { get; set; }
+        public int? ProcessThreads { get => _explicitNullValueProcessThreads; set { _explicitNullValueProcessThreads = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ProcessThreads"); else _explicitNullProperties?.Remove("ProcessThreads"); } }
+        private int? _explicitNullValueProcessThreads = default!;
         /// <summary>Gets or sets the ffmpeg output quality level.</summary>
-        public int? Qscale { get; set; }
+        public int? Qscale { get => _explicitNullValueQscale; set { _explicitNullValueQscale = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Qscale"); else _explicitNullProperties?.Remove("Qscale"); } }
+        private int? _explicitNullValueQscale = default!;
         /// <summary>Gets or sets the behavior used by trickplay provider on library scan/update.</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.TrickplayOptions_ScanBehavior? ScanBehavior { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.TrickplayOptions_ScanBehavior? ScanBehavior { get => _explicitNullValueScanBehavior; set { _explicitNullValueScanBehavior = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ScanBehavior"); else _explicitNullProperties?.Remove("ScanBehavior"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.TrickplayOptions_ScanBehavior? _explicitNullValueScanBehavior = default!;
         /// <summary>Gets or sets number of tile images to allow in Y dimension.</summary>
-        public int? TileHeight { get; set; }
+        public int? TileHeight { get => _explicitNullValueTileHeight; set { _explicitNullValueTileHeight = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("TileHeight"); else _explicitNullProperties?.Remove("TileHeight"); } }
+        private int? _explicitNullValueTileHeight = default!;
         /// <summary>Gets or sets number of tile images to allow in X dimension.</summary>
-        public int? TileWidth { get; set; }
+        public int? TileWidth { get => _explicitNullValueTileWidth; set { _explicitNullValueTileWidth = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("TileWidth"); else _explicitNullProperties?.Remove("TileWidth"); } }
+        private int? _explicitNullValueTileWidth = default!;
         /// <summary>Gets or sets the target width resolutions, in px, to generates preview images for.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<int?>? WidthResolutions { get; set; }
+        public List<int?>? WidthResolutions { get => _explicitNullValueWidthResolutions; set { _explicitNullValueWidthResolutions = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("WidthResolutions"); else _explicitNullProperties?.Remove("WidthResolutions"); } }
+        private List<int?>? _explicitNullValueWidthResolutions = default!;
 #nullable restore
 #else
-        public List<int?> WidthResolutions { get; set; }
+        public List<int?> WidthResolutions { get => _explicitNullValueWidthResolutions; set { _explicitNullValueWidthResolutions = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("WidthResolutions"); else _explicitNullProperties?.Remove("WidthResolutions"); } }
+        private List<int?> _explicitNullValueWidthResolutions = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -51,7 +83,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.TrickplayOptions CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.TrickplayOptions();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.TrickplayOptions(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -93,7 +125,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteEnumValue<global::Soenneker.Jellyfin.OpenApiClient.Models.TrickplayOptions_ScanBehavior>("ScanBehavior", ScanBehavior);
             writer.WriteIntValue("TileHeight", TileHeight);
             writer.WriteIntValue("TileWidth", TileWidth);
-            writer.WriteCollectionOfPrimitiveValues<int?>("WidthResolutions", WidthResolutions);
+            writer.WriteCollectionOfPrimitiveValues<int?>("WidthResolutions", WidthResolutions);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

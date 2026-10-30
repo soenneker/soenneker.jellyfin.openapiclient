@@ -12,16 +12,28 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class UpdateLibraryOptionsDto : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("Id") is { } nullNodeId && nullNodeId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Id = null;
+            if (parseNode.GetChildNode("LibraryOptions") is { } nullNodeLibraryOptions && nullNodeLibraryOptions.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LibraryOptions = null;
+        }
+
         /// <summary>Gets or sets the library item id.</summary>
-        public Guid? Id { get; set; }
+        public Guid? Id { get => _explicitNullValueId; set { _explicitNullValueId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Id"); else _explicitNullProperties?.Remove("Id"); } }
+        private Guid? _explicitNullValueId = default!;
         /// <summary>Gets or sets library options.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptions? LibraryOptions { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptions? LibraryOptions { get => _explicitNullValueLibraryOptions; set { _explicitNullValueLibraryOptions = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LibraryOptions"); else _explicitNullProperties?.Remove("LibraryOptions"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptions? _explicitNullValueLibraryOptions = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptions LibraryOptions { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptions LibraryOptions { get => _explicitNullValueLibraryOptions; set { _explicitNullValueLibraryOptions = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LibraryOptions"); else _explicitNullProperties?.Remove("LibraryOptions"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptions _explicitNullValueLibraryOptions = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -31,7 +43,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.UpdateLibraryOptionsDto CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.UpdateLibraryOptionsDto();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.UpdateLibraryOptionsDto(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -53,7 +65,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         {
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
             writer.WriteGuidValue("Id", Id);
-            writer.WriteObjectValue<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptions>("LibraryOptions", LibraryOptions);
+            writer.WriteObjectValue<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptions>("LibraryOptions", LibraryOptions);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

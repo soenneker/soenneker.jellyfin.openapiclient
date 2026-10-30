@@ -12,81 +12,127 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class UserConfiguration : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("AudioLanguagePreference") is { } nullNodeAudioLanguagePreference && nullNodeAudioLanguagePreference.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AudioLanguagePreference = null;
+            if (parseNode.GetChildNode("CastReceiverId") is { } nullNodeCastReceiverId && nullNodeCastReceiverId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) CastReceiverId = null;
+            if (parseNode.GetChildNode("DisplayCollectionsView") is { } nullNodeDisplayCollectionsView && nullNodeDisplayCollectionsView.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DisplayCollectionsView = null;
+            if (parseNode.GetChildNode("DisplayMissingEpisodes") is { } nullNodeDisplayMissingEpisodes && nullNodeDisplayMissingEpisodes.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DisplayMissingEpisodes = null;
+            if (parseNode.GetChildNode("EnableLocalPassword") is { } nullNodeEnableLocalPassword && nullNodeEnableLocalPassword.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableLocalPassword = null;
+            if (parseNode.GetChildNode("EnableNextEpisodeAutoPlay") is { } nullNodeEnableNextEpisodeAutoPlay && nullNodeEnableNextEpisodeAutoPlay.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableNextEpisodeAutoPlay = null;
+            if (parseNode.GetChildNode("GroupedFolders") is { } nullNodeGroupedFolders && nullNodeGroupedFolders.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) GroupedFolders = null;
+            if (parseNode.GetChildNode("HidePlayedInLatest") is { } nullNodeHidePlayedInLatest && nullNodeHidePlayedInLatest.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) HidePlayedInLatest = null;
+            if (parseNode.GetChildNode("LatestItemsExcludes") is { } nullNodeLatestItemsExcludes && nullNodeLatestItemsExcludes.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LatestItemsExcludes = null;
+            if (parseNode.GetChildNode("MyMediaExcludes") is { } nullNodeMyMediaExcludes && nullNodeMyMediaExcludes.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MyMediaExcludes = null;
+            if (parseNode.GetChildNode("OrderedViews") is { } nullNodeOrderedViews && nullNodeOrderedViews.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) OrderedViews = null;
+            if (parseNode.GetChildNode("PlayDefaultAudioTrack") is { } nullNodePlayDefaultAudioTrack && nullNodePlayDefaultAudioTrack.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PlayDefaultAudioTrack = null;
+            if (parseNode.GetChildNode("RememberAudioSelections") is { } nullNodeRememberAudioSelections && nullNodeRememberAudioSelections.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) RememberAudioSelections = null;
+            if (parseNode.GetChildNode("RememberSubtitleSelections") is { } nullNodeRememberSubtitleSelections && nullNodeRememberSubtitleSelections.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) RememberSubtitleSelections = null;
+            if (parseNode.GetChildNode("SubtitleLanguagePreference") is { } nullNodeSubtitleLanguagePreference && nullNodeSubtitleLanguagePreference.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SubtitleLanguagePreference = null;
+            if (parseNode.GetChildNode("SubtitleMode") is { } nullNodeSubtitleMode && nullNodeSubtitleMode.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SubtitleMode = null;
+        }
+
         /// <summary>Gets or sets the audio language preference.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? AudioLanguagePreference { get; set; }
+        public string? AudioLanguagePreference { get => _explicitNullValueAudioLanguagePreference; set { _explicitNullValueAudioLanguagePreference = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("AudioLanguagePreference"); else _explicitNullProperties?.Remove("AudioLanguagePreference"); } }
+        private string? _explicitNullValueAudioLanguagePreference = default!;
 #nullable restore
 #else
-        public string AudioLanguagePreference { get; set; }
+        public string AudioLanguagePreference { get => _explicitNullValueAudioLanguagePreference; set { _explicitNullValueAudioLanguagePreference = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("AudioLanguagePreference"); else _explicitNullProperties?.Remove("AudioLanguagePreference"); } }
+        private string _explicitNullValueAudioLanguagePreference = default!;
 #endif
         /// <summary>Gets or sets the id of the selected cast receiver.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? CastReceiverId { get; set; }
+        public string? CastReceiverId { get => _explicitNullValueCastReceiverId; set { _explicitNullValueCastReceiverId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("CastReceiverId"); else _explicitNullProperties?.Remove("CastReceiverId"); } }
+        private string? _explicitNullValueCastReceiverId = default!;
 #nullable restore
 #else
-        public string CastReceiverId { get; set; }
+        public string CastReceiverId { get => _explicitNullValueCastReceiverId; set { _explicitNullValueCastReceiverId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("CastReceiverId"); else _explicitNullProperties?.Remove("CastReceiverId"); } }
+        private string _explicitNullValueCastReceiverId = default!;
 #endif
         /// <summary>The DisplayCollectionsView property</summary>
-        public bool? DisplayCollectionsView { get; set; }
+        public bool? DisplayCollectionsView { get => _explicitNullValueDisplayCollectionsView; set { _explicitNullValueDisplayCollectionsView = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DisplayCollectionsView"); else _explicitNullProperties?.Remove("DisplayCollectionsView"); } }
+        private bool? _explicitNullValueDisplayCollectionsView = default!;
         /// <summary>The DisplayMissingEpisodes property</summary>
-        public bool? DisplayMissingEpisodes { get; set; }
+        public bool? DisplayMissingEpisodes { get => _explicitNullValueDisplayMissingEpisodes; set { _explicitNullValueDisplayMissingEpisodes = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DisplayMissingEpisodes"); else _explicitNullProperties?.Remove("DisplayMissingEpisodes"); } }
+        private bool? _explicitNullValueDisplayMissingEpisodes = default!;
         /// <summary>The EnableLocalPassword property</summary>
-        public bool? EnableLocalPassword { get; set; }
+        public bool? EnableLocalPassword { get => _explicitNullValueEnableLocalPassword; set { _explicitNullValueEnableLocalPassword = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableLocalPassword"); else _explicitNullProperties?.Remove("EnableLocalPassword"); } }
+        private bool? _explicitNullValueEnableLocalPassword = default!;
         /// <summary>The EnableNextEpisodeAutoPlay property</summary>
-        public bool? EnableNextEpisodeAutoPlay { get; set; }
+        public bool? EnableNextEpisodeAutoPlay { get => _explicitNullValueEnableNextEpisodeAutoPlay; set { _explicitNullValueEnableNextEpisodeAutoPlay = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableNextEpisodeAutoPlay"); else _explicitNullProperties?.Remove("EnableNextEpisodeAutoPlay"); } }
+        private bool? _explicitNullValueEnableNextEpisodeAutoPlay = default!;
         /// <summary>The GroupedFolders property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<Guid?>? GroupedFolders { get; set; }
+        public List<Guid?>? GroupedFolders { get => _explicitNullValueGroupedFolders; set { _explicitNullValueGroupedFolders = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("GroupedFolders"); else _explicitNullProperties?.Remove("GroupedFolders"); } }
+        private List<Guid?>? _explicitNullValueGroupedFolders = default!;
 #nullable restore
 #else
-        public List<Guid?> GroupedFolders { get; set; }
+        public List<Guid?> GroupedFolders { get => _explicitNullValueGroupedFolders; set { _explicitNullValueGroupedFolders = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("GroupedFolders"); else _explicitNullProperties?.Remove("GroupedFolders"); } }
+        private List<Guid?> _explicitNullValueGroupedFolders = default!;
 #endif
         /// <summary>The HidePlayedInLatest property</summary>
-        public bool? HidePlayedInLatest { get; set; }
+        public bool? HidePlayedInLatest { get => _explicitNullValueHidePlayedInLatest; set { _explicitNullValueHidePlayedInLatest = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("HidePlayedInLatest"); else _explicitNullProperties?.Remove("HidePlayedInLatest"); } }
+        private bool? _explicitNullValueHidePlayedInLatest = default!;
         /// <summary>The LatestItemsExcludes property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<Guid?>? LatestItemsExcludes { get; set; }
+        public List<Guid?>? LatestItemsExcludes { get => _explicitNullValueLatestItemsExcludes; set { _explicitNullValueLatestItemsExcludes = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LatestItemsExcludes"); else _explicitNullProperties?.Remove("LatestItemsExcludes"); } }
+        private List<Guid?>? _explicitNullValueLatestItemsExcludes = default!;
 #nullable restore
 #else
-        public List<Guid?> LatestItemsExcludes { get; set; }
+        public List<Guid?> LatestItemsExcludes { get => _explicitNullValueLatestItemsExcludes; set { _explicitNullValueLatestItemsExcludes = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LatestItemsExcludes"); else _explicitNullProperties?.Remove("LatestItemsExcludes"); } }
+        private List<Guid?> _explicitNullValueLatestItemsExcludes = default!;
 #endif
         /// <summary>The MyMediaExcludes property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<Guid?>? MyMediaExcludes { get; set; }
+        public List<Guid?>? MyMediaExcludes { get => _explicitNullValueMyMediaExcludes; set { _explicitNullValueMyMediaExcludes = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MyMediaExcludes"); else _explicitNullProperties?.Remove("MyMediaExcludes"); } }
+        private List<Guid?>? _explicitNullValueMyMediaExcludes = default!;
 #nullable restore
 #else
-        public List<Guid?> MyMediaExcludes { get; set; }
+        public List<Guid?> MyMediaExcludes { get => _explicitNullValueMyMediaExcludes; set { _explicitNullValueMyMediaExcludes = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MyMediaExcludes"); else _explicitNullProperties?.Remove("MyMediaExcludes"); } }
+        private List<Guid?> _explicitNullValueMyMediaExcludes = default!;
 #endif
         /// <summary>The OrderedViews property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<Guid?>? OrderedViews { get; set; }
+        public List<Guid?>? OrderedViews { get => _explicitNullValueOrderedViews; set { _explicitNullValueOrderedViews = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("OrderedViews"); else _explicitNullProperties?.Remove("OrderedViews"); } }
+        private List<Guid?>? _explicitNullValueOrderedViews = default!;
 #nullable restore
 #else
-        public List<Guid?> OrderedViews { get; set; }
+        public List<Guid?> OrderedViews { get => _explicitNullValueOrderedViews; set { _explicitNullValueOrderedViews = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("OrderedViews"); else _explicitNullProperties?.Remove("OrderedViews"); } }
+        private List<Guid?> _explicitNullValueOrderedViews = default!;
 #endif
         /// <summary>Gets or sets a value indicating whether [play default audio track].</summary>
-        public bool? PlayDefaultAudioTrack { get; set; }
+        public bool? PlayDefaultAudioTrack { get => _explicitNullValuePlayDefaultAudioTrack; set { _explicitNullValuePlayDefaultAudioTrack = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PlayDefaultAudioTrack"); else _explicitNullProperties?.Remove("PlayDefaultAudioTrack"); } }
+        private bool? _explicitNullValuePlayDefaultAudioTrack = default!;
         /// <summary>The RememberAudioSelections property</summary>
-        public bool? RememberAudioSelections { get; set; }
+        public bool? RememberAudioSelections { get => _explicitNullValueRememberAudioSelections; set { _explicitNullValueRememberAudioSelections = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("RememberAudioSelections"); else _explicitNullProperties?.Remove("RememberAudioSelections"); } }
+        private bool? _explicitNullValueRememberAudioSelections = default!;
         /// <summary>The RememberSubtitleSelections property</summary>
-        public bool? RememberSubtitleSelections { get; set; }
+        public bool? RememberSubtitleSelections { get => _explicitNullValueRememberSubtitleSelections; set { _explicitNullValueRememberSubtitleSelections = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("RememberSubtitleSelections"); else _explicitNullProperties?.Remove("RememberSubtitleSelections"); } }
+        private bool? _explicitNullValueRememberSubtitleSelections = default!;
         /// <summary>Gets or sets the subtitle language preference.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? SubtitleLanguagePreference { get; set; }
+        public string? SubtitleLanguagePreference { get => _explicitNullValueSubtitleLanguagePreference; set { _explicitNullValueSubtitleLanguagePreference = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SubtitleLanguagePreference"); else _explicitNullProperties?.Remove("SubtitleLanguagePreference"); } }
+        private string? _explicitNullValueSubtitleLanguagePreference = default!;
 #nullable restore
 #else
-        public string SubtitleLanguagePreference { get; set; }
+        public string SubtitleLanguagePreference { get => _explicitNullValueSubtitleLanguagePreference; set { _explicitNullValueSubtitleLanguagePreference = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SubtitleLanguagePreference"); else _explicitNullProperties?.Remove("SubtitleLanguagePreference"); } }
+        private string _explicitNullValueSubtitleLanguagePreference = default!;
 #endif
         /// <summary>An enum representing a subtitle playback mode.</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.UserConfiguration_SubtitleMode? SubtitleMode { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.UserConfiguration_SubtitleMode? SubtitleMode { get => _explicitNullValueSubtitleMode; set { _explicitNullValueSubtitleMode = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SubtitleMode"); else _explicitNullProperties?.Remove("SubtitleMode"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.UserConfiguration_SubtitleMode? _explicitNullValueSubtitleMode = default!;
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
@@ -95,7 +141,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.UserConfiguration CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.UserConfiguration();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.UserConfiguration(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -145,7 +191,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteBoolValue("RememberAudioSelections", RememberAudioSelections);
             writer.WriteBoolValue("RememberSubtitleSelections", RememberSubtitleSelections);
             writer.WriteStringValue("SubtitleLanguagePreference", SubtitleLanguagePreference);
-            writer.WriteEnumValue<global::Soenneker.Jellyfin.OpenApiClient.Models.UserConfiguration_SubtitleMode>("SubtitleMode", SubtitleMode);
+            writer.WriteEnumValue<global::Soenneker.Jellyfin.OpenApiClient.Models.UserConfiguration_SubtitleMode>("SubtitleMode", SubtitleMode);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

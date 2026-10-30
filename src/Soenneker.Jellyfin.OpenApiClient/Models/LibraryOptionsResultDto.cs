@@ -12,54 +12,79 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class LibraryOptionsResultDto : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("LyricFetchers") is { } nullNodeLyricFetchers && nullNodeLyricFetchers.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LyricFetchers = null;
+            if (parseNode.GetChildNode("MediaSegmentProviders") is { } nullNodeMediaSegmentProviders && nullNodeMediaSegmentProviders.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MediaSegmentProviders = null;
+            if (parseNode.GetChildNode("MetadataReaders") is { } nullNodeMetadataReaders && nullNodeMetadataReaders.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MetadataReaders = null;
+            if (parseNode.GetChildNode("MetadataSavers") is { } nullNodeMetadataSavers && nullNodeMetadataSavers.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MetadataSavers = null;
+            if (parseNode.GetChildNode("SubtitleFetchers") is { } nullNodeSubtitleFetchers && nullNodeSubtitleFetchers.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SubtitleFetchers = null;
+            if (parseNode.GetChildNode("TypeOptions") is { } nullNodeTypeOptions && nullNodeTypeOptions.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) TypeOptions = null;
+        }
+
         /// <summary>Gets or sets the list of lyric fetchers.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>? LyricFetchers { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>? LyricFetchers { get => _explicitNullValueLyricFetchers; set { _explicitNullValueLyricFetchers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LyricFetchers"); else _explicitNullProperties?.Remove("LyricFetchers"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>? _explicitNullValueLyricFetchers = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto> LyricFetchers { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto> LyricFetchers { get => _explicitNullValueLyricFetchers; set { _explicitNullValueLyricFetchers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LyricFetchers"); else _explicitNullProperties?.Remove("LyricFetchers"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto> _explicitNullValueLyricFetchers = default!;
 #endif
         /// <summary>Gets or sets the list of MediaSegment Providers.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>? MediaSegmentProviders { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>? MediaSegmentProviders { get => _explicitNullValueMediaSegmentProviders; set { _explicitNullValueMediaSegmentProviders = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MediaSegmentProviders"); else _explicitNullProperties?.Remove("MediaSegmentProviders"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>? _explicitNullValueMediaSegmentProviders = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto> MediaSegmentProviders { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto> MediaSegmentProviders { get => _explicitNullValueMediaSegmentProviders; set { _explicitNullValueMediaSegmentProviders = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MediaSegmentProviders"); else _explicitNullProperties?.Remove("MediaSegmentProviders"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto> _explicitNullValueMediaSegmentProviders = default!;
 #endif
         /// <summary>Gets or sets the metadata readers.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>? MetadataReaders { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>? MetadataReaders { get => _explicitNullValueMetadataReaders; set { _explicitNullValueMetadataReaders = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MetadataReaders"); else _explicitNullProperties?.Remove("MetadataReaders"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>? _explicitNullValueMetadataReaders = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto> MetadataReaders { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto> MetadataReaders { get => _explicitNullValueMetadataReaders; set { _explicitNullValueMetadataReaders = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MetadataReaders"); else _explicitNullProperties?.Remove("MetadataReaders"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto> _explicitNullValueMetadataReaders = default!;
 #endif
         /// <summary>Gets or sets the metadata savers.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>? MetadataSavers { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>? MetadataSavers { get => _explicitNullValueMetadataSavers; set { _explicitNullValueMetadataSavers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MetadataSavers"); else _explicitNullProperties?.Remove("MetadataSavers"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>? _explicitNullValueMetadataSavers = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto> MetadataSavers { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto> MetadataSavers { get => _explicitNullValueMetadataSavers; set { _explicitNullValueMetadataSavers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MetadataSavers"); else _explicitNullProperties?.Remove("MetadataSavers"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto> _explicitNullValueMetadataSavers = default!;
 #endif
         /// <summary>Gets or sets the subtitle fetchers.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>? SubtitleFetchers { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>? SubtitleFetchers { get => _explicitNullValueSubtitleFetchers; set { _explicitNullValueSubtitleFetchers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SubtitleFetchers"); else _explicitNullProperties?.Remove("SubtitleFetchers"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>? _explicitNullValueSubtitleFetchers = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto> SubtitleFetchers { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto> SubtitleFetchers { get => _explicitNullValueSubtitleFetchers; set { _explicitNullValueSubtitleFetchers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SubtitleFetchers"); else _explicitNullProperties?.Remove("SubtitleFetchers"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto> _explicitNullValueSubtitleFetchers = default!;
 #endif
         /// <summary>Gets or sets the type options.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryTypeOptionsDto>? TypeOptions { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryTypeOptionsDto>? TypeOptions { get => _explicitNullValueTypeOptions; set { _explicitNullValueTypeOptions = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("TypeOptions"); else _explicitNullProperties?.Remove("TypeOptions"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryTypeOptionsDto>? _explicitNullValueTypeOptions = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryTypeOptionsDto> TypeOptions { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryTypeOptionsDto> TypeOptions { get => _explicitNullValueTypeOptions; set { _explicitNullValueTypeOptions = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("TypeOptions"); else _explicitNullProperties?.Remove("TypeOptions"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryTypeOptionsDto> _explicitNullValueTypeOptions = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -69,7 +94,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionsResultDto CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionsResultDto();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionsResultDto(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -99,7 +124,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>("MetadataReaders", MetadataReaders);
             writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>("MetadataSavers", MetadataSavers);
             writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptionInfoDto>("SubtitleFetchers", SubtitleFetchers);
-            writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryTypeOptionsDto>("TypeOptions", TypeOptions);
+            writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryTypeOptionsDto>("TypeOptions", TypeOptions);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

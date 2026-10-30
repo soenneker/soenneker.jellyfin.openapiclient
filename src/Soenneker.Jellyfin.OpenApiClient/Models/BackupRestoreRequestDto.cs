@@ -12,14 +12,24 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class BackupRestoreRequestDto : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("ArchiveFileName") is { } nullNodeArchiveFileName && nullNodeArchiveFileName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ArchiveFileName = null;
+        }
+
         /// <summary>Gets or Sets the name of the backup archive to restore from. Must be present in MediaBrowser.Common.Configuration.IApplicationPaths.BackupPath.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ArchiveFileName { get; set; }
+        public string? ArchiveFileName { get => _explicitNullValueArchiveFileName; set { _explicitNullValueArchiveFileName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ArchiveFileName"); else _explicitNullProperties?.Remove("ArchiveFileName"); } }
+        private string? _explicitNullValueArchiveFileName = default!;
 #nullable restore
 #else
-        public string ArchiveFileName { get; set; }
+        public string ArchiveFileName { get => _explicitNullValueArchiveFileName; set { _explicitNullValueArchiveFileName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ArchiveFileName"); else _explicitNullProperties?.Remove("ArchiveFileName"); } }
+        private string _explicitNullValueArchiveFileName = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -29,7 +39,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.BackupRestoreRequestDto CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.BackupRestoreRequestDto();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.BackupRestoreRequestDto(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -49,7 +59,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public virtual void Serialize(ISerializationWriter writer)
         {
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
-            writer.WriteStringValue("ArchiveFileName", ArchiveFileName);
+            writer.WriteStringValue("ArchiveFileName", ArchiveFileName);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

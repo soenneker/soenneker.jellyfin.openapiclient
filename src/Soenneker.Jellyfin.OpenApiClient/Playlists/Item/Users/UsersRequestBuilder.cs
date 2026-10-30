@@ -68,6 +68,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Playlists.Item.Users
             {
                 { "403", global::Soenneker.Jellyfin.OpenApiClient.Models.ProblemDetails.CreateFromDiscriminatorValue },
                 { "404", global::Soenneker.Jellyfin.OpenApiClient.Models.ProblemDetails.CreateFromDiscriminatorValue },
+                { "4XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
+                { "5XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue },
             };
             var collectionResult = await RequestAdapter.SendCollectionAsync<global::Soenneker.Jellyfin.OpenApiClient.Models.PlaylistUserPermissions>(requestInfo, global::Soenneker.Jellyfin.OpenApiClient.Models.PlaylistUserPermissions.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
             return collectionResult?.AsList();

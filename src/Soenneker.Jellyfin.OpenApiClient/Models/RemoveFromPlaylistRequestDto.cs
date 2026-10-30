@@ -12,18 +12,32 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class RemoveFromPlaylistRequestDto : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("ClearPlayingItem") is { } nullNodeClearPlayingItem && nullNodeClearPlayingItem.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ClearPlayingItem = null;
+            if (parseNode.GetChildNode("ClearPlaylist") is { } nullNodeClearPlaylist && nullNodeClearPlaylist.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ClearPlaylist = null;
+            if (parseNode.GetChildNode("PlaylistItemIds") is { } nullNodePlaylistItemIds && nullNodePlaylistItemIds.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PlaylistItemIds = null;
+        }
+
         /// <summary>Gets or sets a value indicating whether the playing item should be removed as well. Used only when clearing the playlist.</summary>
-        public bool? ClearPlayingItem { get; set; }
+        public bool? ClearPlayingItem { get => _explicitNullValueClearPlayingItem; set { _explicitNullValueClearPlayingItem = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ClearPlayingItem"); else _explicitNullProperties?.Remove("ClearPlayingItem"); } }
+        private bool? _explicitNullValueClearPlayingItem = default!;
         /// <summary>Gets or sets a value indicating whether the entire playlist should be cleared.</summary>
-        public bool? ClearPlaylist { get; set; }
+        public bool? ClearPlaylist { get => _explicitNullValueClearPlaylist; set { _explicitNullValueClearPlaylist = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ClearPlaylist"); else _explicitNullProperties?.Remove("ClearPlaylist"); } }
+        private bool? _explicitNullValueClearPlaylist = default!;
         /// <summary>Gets or sets the playlist identifiers of the items. Ignored when clearing the playlist.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<Guid?>? PlaylistItemIds { get; set; }
+        public List<Guid?>? PlaylistItemIds { get => _explicitNullValuePlaylistItemIds; set { _explicitNullValuePlaylistItemIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PlaylistItemIds"); else _explicitNullProperties?.Remove("PlaylistItemIds"); } }
+        private List<Guid?>? _explicitNullValuePlaylistItemIds = default!;
 #nullable restore
 #else
-        public List<Guid?> PlaylistItemIds { get; set; }
+        public List<Guid?> PlaylistItemIds { get => _explicitNullValuePlaylistItemIds; set { _explicitNullValuePlaylistItemIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PlaylistItemIds"); else _explicitNullProperties?.Remove("PlaylistItemIds"); } }
+        private List<Guid?> _explicitNullValuePlaylistItemIds = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -33,7 +47,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.RemoveFromPlaylistRequestDto CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.RemoveFromPlaylistRequestDto();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.RemoveFromPlaylistRequestDto(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -57,7 +71,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
             writer.WriteBoolValue("ClearPlayingItem", ClearPlayingItem);
             writer.WriteBoolValue("ClearPlaylist", ClearPlaylist);
-            writer.WriteCollectionOfPrimitiveValues<Guid?>("PlaylistItemIds", PlaylistItemIds);
+            writer.WriteCollectionOfPrimitiveValues<Guid?>("PlaylistItemIds", PlaylistItemIds);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

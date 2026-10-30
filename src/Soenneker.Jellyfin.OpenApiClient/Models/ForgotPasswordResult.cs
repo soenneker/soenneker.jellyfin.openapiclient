@@ -11,18 +11,32 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     #pragma warning disable CS1591
     public partial class ForgotPasswordResult : IParsable
     #pragma warning restore CS1591
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("Action") is { } nullNodeAction && nullNodeAction.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Action = null;
+            if (parseNode.GetChildNode("PinExpirationDate") is { } nullNodePinExpirationDate && nullNodePinExpirationDate.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PinExpirationDate = null;
+            if (parseNode.GetChildNode("PinFile") is { } nullNodePinFile && nullNodePinFile.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PinFile = null;
+        }
+
         /// <summary>Gets or sets the action.</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.ForgotPasswordResult_Action? Action { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.ForgotPasswordResult_Action? Action { get => _explicitNullValueAction; set { _explicitNullValueAction = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Action"); else _explicitNullProperties?.Remove("Action"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.ForgotPasswordResult_Action? _explicitNullValueAction = default!;
         /// <summary>Gets or sets the pin expiration date.</summary>
-        public DateTimeOffset? PinExpirationDate { get; set; }
+        public DateTimeOffset? PinExpirationDate { get => _explicitNullValuePinExpirationDate; set { _explicitNullValuePinExpirationDate = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PinExpirationDate"); else _explicitNullProperties?.Remove("PinExpirationDate"); } }
+        private DateTimeOffset? _explicitNullValuePinExpirationDate = default!;
         /// <summary>Gets or sets the pin file.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? PinFile { get; set; }
+        public string? PinFile { get => _explicitNullValuePinFile; set { _explicitNullValuePinFile = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PinFile"); else _explicitNullProperties?.Remove("PinFile"); } }
+        private string? _explicitNullValuePinFile = default!;
 #nullable restore
 #else
-        public string PinFile { get; set; }
+        public string PinFile { get => _explicitNullValuePinFile; set { _explicitNullValuePinFile = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PinFile"); else _explicitNullProperties?.Remove("PinFile"); } }
+        private string _explicitNullValuePinFile = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -32,7 +46,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.ForgotPasswordResult CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.ForgotPasswordResult();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.ForgotPasswordResult(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -56,7 +70,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
             writer.WriteEnumValue<global::Soenneker.Jellyfin.OpenApiClient.Models.ForgotPasswordResult_Action>("Action", Action);
             writer.WriteDateTimeOffsetValue("PinExpirationDate", PinExpirationDate);
-            writer.WriteStringValue("PinFile", PinFile);
+            writer.WriteStringValue("PinFile", PinFile);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

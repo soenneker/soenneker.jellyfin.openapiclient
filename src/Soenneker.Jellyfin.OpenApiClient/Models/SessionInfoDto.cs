@@ -12,182 +12,265 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class SessionInfoDto : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("AdditionalUsers") is { } nullNodeAdditionalUsers && nullNodeAdditionalUsers.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AdditionalUsers = null;
+            if (parseNode.GetChildNode("ApplicationVersion") is { } nullNodeApplicationVersion && nullNodeApplicationVersion.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ApplicationVersion = null;
+            if (parseNode.GetChildNode("Capabilities") is { } nullNodeCapabilities && nullNodeCapabilities.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Capabilities = null;
+            if (parseNode.GetChildNode("Client") is { } nullNodeClient && nullNodeClient.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Client = null;
+            if (parseNode.GetChildNode("DeviceId") is { } nullNodeDeviceId && nullNodeDeviceId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DeviceId = null;
+            if (parseNode.GetChildNode("DeviceName") is { } nullNodeDeviceName && nullNodeDeviceName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DeviceName = null;
+            if (parseNode.GetChildNode("DeviceType") is { } nullNodeDeviceType && nullNodeDeviceType.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DeviceType = null;
+            if (parseNode.GetChildNode("HasCustomDeviceName") is { } nullNodeHasCustomDeviceName && nullNodeHasCustomDeviceName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) HasCustomDeviceName = null;
+            if (parseNode.GetChildNode("Id") is { } nullNodeId && nullNodeId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Id = null;
+            if (parseNode.GetChildNode("IsActive") is { } nullNodeIsActive && nullNodeIsActive.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsActive = null;
+            if (parseNode.GetChildNode("LastActivityDate") is { } nullNodeLastActivityDate && nullNodeLastActivityDate.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LastActivityDate = null;
+            if (parseNode.GetChildNode("LastPausedDate") is { } nullNodeLastPausedDate && nullNodeLastPausedDate.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LastPausedDate = null;
+            if (parseNode.GetChildNode("LastPlaybackCheckIn") is { } nullNodeLastPlaybackCheckIn && nullNodeLastPlaybackCheckIn.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LastPlaybackCheckIn = null;
+            if (parseNode.GetChildNode("NowPlayingItem") is { } nullNodeNowPlayingItem && nullNodeNowPlayingItem.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) NowPlayingItem = null;
+            if (parseNode.GetChildNode("NowPlayingQueue") is { } nullNodeNowPlayingQueue && nullNodeNowPlayingQueue.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) NowPlayingQueue = null;
+            if (parseNode.GetChildNode("NowViewingItem") is { } nullNodeNowViewingItem && nullNodeNowViewingItem.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) NowViewingItem = null;
+            if (parseNode.GetChildNode("PlayableMediaTypes") is { } nullNodePlayableMediaTypes && nullNodePlayableMediaTypes.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PlayableMediaTypes = null;
+            if (parseNode.GetChildNode("PlaylistItemId") is { } nullNodePlaylistItemId && nullNodePlaylistItemId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PlaylistItemId = null;
+            if (parseNode.GetChildNode("PlayState") is { } nullNodePlayState && nullNodePlayState.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PlayState = null;
+            if (parseNode.GetChildNode("RemoteEndPoint") is { } nullNodeRemoteEndPoint && nullNodeRemoteEndPoint.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) RemoteEndPoint = null;
+            if (parseNode.GetChildNode("ServerId") is { } nullNodeServerId && nullNodeServerId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ServerId = null;
+            if (parseNode.GetChildNode("SupportedCommands") is { } nullNodeSupportedCommands && nullNodeSupportedCommands.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SupportedCommands = null;
+            if (parseNode.GetChildNode("SupportsMediaControl") is { } nullNodeSupportsMediaControl && nullNodeSupportsMediaControl.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SupportsMediaControl = null;
+            if (parseNode.GetChildNode("SupportsRemoteControl") is { } nullNodeSupportsRemoteControl && nullNodeSupportsRemoteControl.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SupportsRemoteControl = null;
+            if (parseNode.GetChildNode("TranscodingInfo") is { } nullNodeTranscodingInfo && nullNodeTranscodingInfo.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) TranscodingInfo = null;
+            if (parseNode.GetChildNode("UserId") is { } nullNodeUserId && nullNodeUserId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) UserId = null;
+            if (parseNode.GetChildNode("UserName") is { } nullNodeUserName && nullNodeUserName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) UserName = null;
+            if (parseNode.GetChildNode("UserPrimaryImageTag") is { } nullNodeUserPrimaryImageTag && nullNodeUserPrimaryImageTag.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) UserPrimaryImageTag = null;
+        }
+
         /// <summary>Gets or sets the additional users.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.SessionUserInfo>? AdditionalUsers { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.SessionUserInfo>? AdditionalUsers { get => _explicitNullValueAdditionalUsers; set { _explicitNullValueAdditionalUsers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("AdditionalUsers"); else _explicitNullProperties?.Remove("AdditionalUsers"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.SessionUserInfo>? _explicitNullValueAdditionalUsers = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.SessionUserInfo> AdditionalUsers { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.SessionUserInfo> AdditionalUsers { get => _explicitNullValueAdditionalUsers; set { _explicitNullValueAdditionalUsers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("AdditionalUsers"); else _explicitNullProperties?.Remove("AdditionalUsers"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.SessionUserInfo> _explicitNullValueAdditionalUsers = default!;
 #endif
         /// <summary>Gets or sets the application version.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ApplicationVersion { get; set; }
+        public string? ApplicationVersion { get => _explicitNullValueApplicationVersion; set { _explicitNullValueApplicationVersion = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ApplicationVersion"); else _explicitNullProperties?.Remove("ApplicationVersion"); } }
+        private string? _explicitNullValueApplicationVersion = default!;
 #nullable restore
 #else
-        public string ApplicationVersion { get; set; }
+        public string ApplicationVersion { get => _explicitNullValueApplicationVersion; set { _explicitNullValueApplicationVersion = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ApplicationVersion"); else _explicitNullProperties?.Remove("ApplicationVersion"); } }
+        private string _explicitNullValueApplicationVersion = default!;
 #endif
         /// <summary>Gets or sets the client capabilities.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.ClientCapabilitiesDto? Capabilities { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.ClientCapabilitiesDto? Capabilities { get => _explicitNullValueCapabilities; set { _explicitNullValueCapabilities = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Capabilities"); else _explicitNullProperties?.Remove("Capabilities"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.ClientCapabilitiesDto? _explicitNullValueCapabilities = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.ClientCapabilitiesDto Capabilities { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.ClientCapabilitiesDto Capabilities { get => _explicitNullValueCapabilities; set { _explicitNullValueCapabilities = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Capabilities"); else _explicitNullProperties?.Remove("Capabilities"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.ClientCapabilitiesDto _explicitNullValueCapabilities = default!;
 #endif
         /// <summary>Gets or sets the type of the client.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Client { get; set; }
+        public string? Client { get => _explicitNullValueClient; set { _explicitNullValueClient = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Client"); else _explicitNullProperties?.Remove("Client"); } }
+        private string? _explicitNullValueClient = default!;
 #nullable restore
 #else
-        public string Client { get; set; }
+        public string Client { get => _explicitNullValueClient; set { _explicitNullValueClient = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Client"); else _explicitNullProperties?.Remove("Client"); } }
+        private string _explicitNullValueClient = default!;
 #endif
         /// <summary>Gets or sets the device id.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? DeviceId { get; set; }
+        public string? DeviceId { get => _explicitNullValueDeviceId; set { _explicitNullValueDeviceId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DeviceId"); else _explicitNullProperties?.Remove("DeviceId"); } }
+        private string? _explicitNullValueDeviceId = default!;
 #nullable restore
 #else
-        public string DeviceId { get; set; }
+        public string DeviceId { get => _explicitNullValueDeviceId; set { _explicitNullValueDeviceId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DeviceId"); else _explicitNullProperties?.Remove("DeviceId"); } }
+        private string _explicitNullValueDeviceId = default!;
 #endif
         /// <summary>Gets or sets the name of the device.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? DeviceName { get; set; }
+        public string? DeviceName { get => _explicitNullValueDeviceName; set { _explicitNullValueDeviceName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DeviceName"); else _explicitNullProperties?.Remove("DeviceName"); } }
+        private string? _explicitNullValueDeviceName = default!;
 #nullable restore
 #else
-        public string DeviceName { get; set; }
+        public string DeviceName { get => _explicitNullValueDeviceName; set { _explicitNullValueDeviceName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DeviceName"); else _explicitNullProperties?.Remove("DeviceName"); } }
+        private string _explicitNullValueDeviceName = default!;
 #endif
         /// <summary>Gets or sets the type of the device.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? DeviceType { get; set; }
+        public string? DeviceType { get => _explicitNullValueDeviceType; set { _explicitNullValueDeviceType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DeviceType"); else _explicitNullProperties?.Remove("DeviceType"); } }
+        private string? _explicitNullValueDeviceType = default!;
 #nullable restore
 #else
-        public string DeviceType { get; set; }
+        public string DeviceType { get => _explicitNullValueDeviceType; set { _explicitNullValueDeviceType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DeviceType"); else _explicitNullProperties?.Remove("DeviceType"); } }
+        private string _explicitNullValueDeviceType = default!;
 #endif
         /// <summary>Gets or sets a value indicating whether this session has a custom device name.</summary>
-        public bool? HasCustomDeviceName { get; set; }
+        public bool? HasCustomDeviceName { get => _explicitNullValueHasCustomDeviceName; set { _explicitNullValueHasCustomDeviceName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("HasCustomDeviceName"); else _explicitNullProperties?.Remove("HasCustomDeviceName"); } }
+        private bool? _explicitNullValueHasCustomDeviceName = default!;
         /// <summary>Gets or sets the id.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Id { get; set; }
+        public string? Id { get => _explicitNullValueId; set { _explicitNullValueId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Id"); else _explicitNullProperties?.Remove("Id"); } }
+        private string? _explicitNullValueId = default!;
 #nullable restore
 #else
-        public string Id { get; set; }
+        public string Id { get => _explicitNullValueId; set { _explicitNullValueId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Id"); else _explicitNullProperties?.Remove("Id"); } }
+        private string _explicitNullValueId = default!;
 #endif
         /// <summary>Gets or sets a value indicating whether this session is active.</summary>
-        public bool? IsActive { get; set; }
+        public bool? IsActive { get => _explicitNullValueIsActive; set { _explicitNullValueIsActive = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IsActive"); else _explicitNullProperties?.Remove("IsActive"); } }
+        private bool? _explicitNullValueIsActive = default!;
         /// <summary>Gets or sets the last activity date.</summary>
-        public DateTimeOffset? LastActivityDate { get; set; }
+        public DateTimeOffset? LastActivityDate { get => _explicitNullValueLastActivityDate; set { _explicitNullValueLastActivityDate = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LastActivityDate"); else _explicitNullProperties?.Remove("LastActivityDate"); } }
+        private DateTimeOffset? _explicitNullValueLastActivityDate = default!;
         /// <summary>Gets or sets the last paused date.</summary>
-        public DateTimeOffset? LastPausedDate { get; set; }
+        public DateTimeOffset? LastPausedDate { get => _explicitNullValueLastPausedDate; set { _explicitNullValueLastPausedDate = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LastPausedDate"); else _explicitNullProperties?.Remove("LastPausedDate"); } }
+        private DateTimeOffset? _explicitNullValueLastPausedDate = default!;
         /// <summary>Gets or sets the last playback check in.</summary>
-        public DateTimeOffset? LastPlaybackCheckIn { get; set; }
+        public DateTimeOffset? LastPlaybackCheckIn { get => _explicitNullValueLastPlaybackCheckIn; set { _explicitNullValueLastPlaybackCheckIn = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LastPlaybackCheckIn"); else _explicitNullProperties?.Remove("LastPlaybackCheckIn"); } }
+        private DateTimeOffset? _explicitNullValueLastPlaybackCheckIn = default!;
         /// <summary>Gets or sets the now playing item.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto? NowPlayingItem { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto? NowPlayingItem { get => _explicitNullValueNowPlayingItem; set { _explicitNullValueNowPlayingItem = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("NowPlayingItem"); else _explicitNullProperties?.Remove("NowPlayingItem"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto? _explicitNullValueNowPlayingItem = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto NowPlayingItem { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto NowPlayingItem { get => _explicitNullValueNowPlayingItem; set { _explicitNullValueNowPlayingItem = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("NowPlayingItem"); else _explicitNullProperties?.Remove("NowPlayingItem"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto _explicitNullValueNowPlayingItem = default!;
 #endif
         /// <summary>Gets or sets the now playing queue.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.QueueItem>? NowPlayingQueue { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.QueueItem>? NowPlayingQueue { get => _explicitNullValueNowPlayingQueue; set { _explicitNullValueNowPlayingQueue = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("NowPlayingQueue"); else _explicitNullProperties?.Remove("NowPlayingQueue"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.QueueItem>? _explicitNullValueNowPlayingQueue = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.QueueItem> NowPlayingQueue { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.QueueItem> NowPlayingQueue { get => _explicitNullValueNowPlayingQueue; set { _explicitNullValueNowPlayingQueue = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("NowPlayingQueue"); else _explicitNullProperties?.Remove("NowPlayingQueue"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.QueueItem> _explicitNullValueNowPlayingQueue = default!;
 #endif
         /// <summary>Gets or sets the now viewing item.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto? NowViewingItem { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto? NowViewingItem { get => _explicitNullValueNowViewingItem; set { _explicitNullValueNowViewingItem = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("NowViewingItem"); else _explicitNullProperties?.Remove("NowViewingItem"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto? _explicitNullValueNowViewingItem = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto NowViewingItem { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto NowViewingItem { get => _explicitNullValueNowViewingItem; set { _explicitNullValueNowViewingItem = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("NowViewingItem"); else _explicitNullProperties?.Remove("NowViewingItem"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemDto _explicitNullValueNowViewingItem = default!;
 #endif
         /// <summary>Gets or sets the playable media types.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaType?>? PlayableMediaTypes { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaType?>? PlayableMediaTypes { get => _explicitNullValuePlayableMediaTypes; set { _explicitNullValuePlayableMediaTypes = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PlayableMediaTypes"); else _explicitNullProperties?.Remove("PlayableMediaTypes"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaType?>? _explicitNullValuePlayableMediaTypes = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaType?> PlayableMediaTypes { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaType?> PlayableMediaTypes { get => _explicitNullValuePlayableMediaTypes; set { _explicitNullValuePlayableMediaTypes = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PlayableMediaTypes"); else _explicitNullProperties?.Remove("PlayableMediaTypes"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaType?> _explicitNullValuePlayableMediaTypes = default!;
 #endif
         /// <summary>Gets or sets the playlist item id.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? PlaylistItemId { get; set; }
+        public string? PlaylistItemId { get => _explicitNullValuePlaylistItemId; set { _explicitNullValuePlaylistItemId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PlaylistItemId"); else _explicitNullProperties?.Remove("PlaylistItemId"); } }
+        private string? _explicitNullValuePlaylistItemId = default!;
 #nullable restore
 #else
-        public string PlaylistItemId { get; set; }
+        public string PlaylistItemId { get => _explicitNullValuePlaylistItemId; set { _explicitNullValuePlaylistItemId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PlaylistItemId"); else _explicitNullProperties?.Remove("PlaylistItemId"); } }
+        private string _explicitNullValuePlaylistItemId = default!;
 #endif
         /// <summary>Gets or sets the play state.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.PlayerStateInfo? PlayState { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.PlayerStateInfo? PlayState { get => _explicitNullValuePlayState; set { _explicitNullValuePlayState = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PlayState"); else _explicitNullProperties?.Remove("PlayState"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.PlayerStateInfo? _explicitNullValuePlayState = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.PlayerStateInfo PlayState { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.PlayerStateInfo PlayState { get => _explicitNullValuePlayState; set { _explicitNullValuePlayState = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PlayState"); else _explicitNullProperties?.Remove("PlayState"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.PlayerStateInfo _explicitNullValuePlayState = default!;
 #endif
         /// <summary>Gets or sets the remote end point.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? RemoteEndPoint { get; set; }
+        public string? RemoteEndPoint { get => _explicitNullValueRemoteEndPoint; set { _explicitNullValueRemoteEndPoint = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("RemoteEndPoint"); else _explicitNullProperties?.Remove("RemoteEndPoint"); } }
+        private string? _explicitNullValueRemoteEndPoint = default!;
 #nullable restore
 #else
-        public string RemoteEndPoint { get; set; }
+        public string RemoteEndPoint { get => _explicitNullValueRemoteEndPoint; set { _explicitNullValueRemoteEndPoint = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("RemoteEndPoint"); else _explicitNullProperties?.Remove("RemoteEndPoint"); } }
+        private string _explicitNullValueRemoteEndPoint = default!;
 #endif
         /// <summary>Gets or sets the server id.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ServerId { get; set; }
+        public string? ServerId { get => _explicitNullValueServerId; set { _explicitNullValueServerId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ServerId"); else _explicitNullProperties?.Remove("ServerId"); } }
+        private string? _explicitNullValueServerId = default!;
 #nullable restore
 #else
-        public string ServerId { get; set; }
+        public string ServerId { get => _explicitNullValueServerId; set { _explicitNullValueServerId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ServerId"); else _explicitNullProperties?.Remove("ServerId"); } }
+        private string _explicitNullValueServerId = default!;
 #endif
         /// <summary>Gets or sets the supported commands.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.GeneralCommandType?>? SupportedCommands { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.GeneralCommandType?>? SupportedCommands { get => _explicitNullValueSupportedCommands; set { _explicitNullValueSupportedCommands = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SupportedCommands"); else _explicitNullProperties?.Remove("SupportedCommands"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.GeneralCommandType?>? _explicitNullValueSupportedCommands = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.GeneralCommandType?> SupportedCommands { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.GeneralCommandType?> SupportedCommands { get => _explicitNullValueSupportedCommands; set { _explicitNullValueSupportedCommands = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SupportedCommands"); else _explicitNullProperties?.Remove("SupportedCommands"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.GeneralCommandType?> _explicitNullValueSupportedCommands = default!;
 #endif
         /// <summary>Gets or sets a value indicating whether the session supports media control.</summary>
-        public bool? SupportsMediaControl { get; set; }
+        public bool? SupportsMediaControl { get => _explicitNullValueSupportsMediaControl; set { _explicitNullValueSupportsMediaControl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SupportsMediaControl"); else _explicitNullProperties?.Remove("SupportsMediaControl"); } }
+        private bool? _explicitNullValueSupportsMediaControl = default!;
         /// <summary>Gets or sets a value indicating whether the session supports remote control.</summary>
-        public bool? SupportsRemoteControl { get; set; }
+        public bool? SupportsRemoteControl { get => _explicitNullValueSupportsRemoteControl; set { _explicitNullValueSupportsRemoteControl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SupportsRemoteControl"); else _explicitNullProperties?.Remove("SupportsRemoteControl"); } }
+        private bool? _explicitNullValueSupportsRemoteControl = default!;
         /// <summary>Gets or sets the transcoding info.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodingInfo? TranscodingInfo { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodingInfo? TranscodingInfo { get => _explicitNullValueTranscodingInfo; set { _explicitNullValueTranscodingInfo = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("TranscodingInfo"); else _explicitNullProperties?.Remove("TranscodingInfo"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodingInfo? _explicitNullValueTranscodingInfo = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodingInfo TranscodingInfo { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodingInfo TranscodingInfo { get => _explicitNullValueTranscodingInfo; set { _explicitNullValueTranscodingInfo = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("TranscodingInfo"); else _explicitNullProperties?.Remove("TranscodingInfo"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodingInfo _explicitNullValueTranscodingInfo = default!;
 #endif
         /// <summary>Gets or sets the user id.</summary>
-        public Guid? UserId { get; set; }
+        public Guid? UserId { get => _explicitNullValueUserId; set { _explicitNullValueUserId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("UserId"); else _explicitNullProperties?.Remove("UserId"); } }
+        private Guid? _explicitNullValueUserId = default!;
         /// <summary>Gets or sets the username.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? UserName { get; set; }
+        public string? UserName { get => _explicitNullValueUserName; set { _explicitNullValueUserName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("UserName"); else _explicitNullProperties?.Remove("UserName"); } }
+        private string? _explicitNullValueUserName = default!;
 #nullable restore
 #else
-        public string UserName { get; set; }
+        public string UserName { get => _explicitNullValueUserName; set { _explicitNullValueUserName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("UserName"); else _explicitNullProperties?.Remove("UserName"); } }
+        private string _explicitNullValueUserName = default!;
 #endif
         /// <summary>Gets or sets the user primary image tag.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? UserPrimaryImageTag { get; set; }
+        public string? UserPrimaryImageTag { get => _explicitNullValueUserPrimaryImageTag; set { _explicitNullValueUserPrimaryImageTag = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("UserPrimaryImageTag"); else _explicitNullProperties?.Remove("UserPrimaryImageTag"); } }
+        private string? _explicitNullValueUserPrimaryImageTag = default!;
 #nullable restore
 #else
-        public string UserPrimaryImageTag { get; set; }
+        public string UserPrimaryImageTag { get => _explicitNullValueUserPrimaryImageTag; set { _explicitNullValueUserPrimaryImageTag = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("UserPrimaryImageTag"); else _explicitNullProperties?.Remove("UserPrimaryImageTag"); } }
+        private string _explicitNullValueUserPrimaryImageTag = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -197,7 +280,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.SessionInfoDto CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.SessionInfoDto();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.SessionInfoDto(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -271,7 +354,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteObjectValue<global::Soenneker.Jellyfin.OpenApiClient.Models.TranscodingInfo>("TranscodingInfo", TranscodingInfo);
             writer.WriteGuidValue("UserId", UserId);
             writer.WriteStringValue("UserName", UserName);
-            writer.WriteStringValue("UserPrimaryImageTag", UserPrimaryImageTag);
+            writer.WriteStringValue("UserPrimaryImageTag", UserPrimaryImageTag);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

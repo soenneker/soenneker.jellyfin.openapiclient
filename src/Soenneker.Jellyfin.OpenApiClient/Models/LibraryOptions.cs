@@ -11,194 +11,302 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     #pragma warning disable CS1591
     public partial class LibraryOptions : IParsable
     #pragma warning restore CS1591
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("AllowEmbeddedSubtitles") is { } nullNodeAllowEmbeddedSubtitles && nullNodeAllowEmbeddedSubtitles.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AllowEmbeddedSubtitles = null;
+            if (parseNode.GetChildNode("AutomaticallyAddToCollection") is { } nullNodeAutomaticallyAddToCollection && nullNodeAutomaticallyAddToCollection.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AutomaticallyAddToCollection = null;
+            if (parseNode.GetChildNode("AutomaticRefreshIntervalDays") is { } nullNodeAutomaticRefreshIntervalDays && nullNodeAutomaticRefreshIntervalDays.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AutomaticRefreshIntervalDays = null;
+            if (parseNode.GetChildNode("CustomTagDelimiters") is { } nullNodeCustomTagDelimiters && nullNodeCustomTagDelimiters.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) CustomTagDelimiters = null;
+            if (parseNode.GetChildNode("DelimiterWhitelist") is { } nullNodeDelimiterWhitelist && nullNodeDelimiterWhitelist.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DelimiterWhitelist = null;
+            if (parseNode.GetChildNode("DisabledLocalMetadataReaders") is { } nullNodeDisabledLocalMetadataReaders && nullNodeDisabledLocalMetadataReaders.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DisabledLocalMetadataReaders = null;
+            if (parseNode.GetChildNode("DisabledLyricFetchers") is { } nullNodeDisabledLyricFetchers && nullNodeDisabledLyricFetchers.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DisabledLyricFetchers = null;
+            if (parseNode.GetChildNode("DisabledMediaSegmentProviders") is { } nullNodeDisabledMediaSegmentProviders && nullNodeDisabledMediaSegmentProviders.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DisabledMediaSegmentProviders = null;
+            if (parseNode.GetChildNode("DisabledSubtitleFetchers") is { } nullNodeDisabledSubtitleFetchers && nullNodeDisabledSubtitleFetchers.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DisabledSubtitleFetchers = null;
+            if (parseNode.GetChildNode("EnableAutomaticSeriesGrouping") is { } nullNodeEnableAutomaticSeriesGrouping && nullNodeEnableAutomaticSeriesGrouping.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableAutomaticSeriesGrouping = null;
+            if (parseNode.GetChildNode("EnableChapterImageExtraction") is { } nullNodeEnableChapterImageExtraction && nullNodeEnableChapterImageExtraction.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableChapterImageExtraction = null;
+            if (parseNode.GetChildNode("Enabled") is { } nullNodeEnabled && nullNodeEnabled.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Enabled = null;
+            if (parseNode.GetChildNode("EnableEmbeddedEpisodeInfos") is { } nullNodeEnableEmbeddedEpisodeInfos && nullNodeEnableEmbeddedEpisodeInfos.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableEmbeddedEpisodeInfos = null;
+            if (parseNode.GetChildNode("EnableEmbeddedExtrasTitles") is { } nullNodeEnableEmbeddedExtrasTitles && nullNodeEnableEmbeddedExtrasTitles.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableEmbeddedExtrasTitles = null;
+            if (parseNode.GetChildNode("EnableEmbeddedTitles") is { } nullNodeEnableEmbeddedTitles && nullNodeEnableEmbeddedTitles.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableEmbeddedTitles = null;
+            if (parseNode.GetChildNode("EnableInternetProviders") is { } nullNodeEnableInternetProviders && nullNodeEnableInternetProviders.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableInternetProviders = null;
+            if (parseNode.GetChildNode("EnableLUFSScan") is { } nullNodeEnableLUFSScan && nullNodeEnableLUFSScan.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableLUFSScan = null;
+            if (parseNode.GetChildNode("EnablePhotos") is { } nullNodeEnablePhotos && nullNodeEnablePhotos.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnablePhotos = null;
+            if (parseNode.GetChildNode("EnableRealtimeMonitor") is { } nullNodeEnableRealtimeMonitor && nullNodeEnableRealtimeMonitor.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableRealtimeMonitor = null;
+            if (parseNode.GetChildNode("EnableTrickplayImageExtraction") is { } nullNodeEnableTrickplayImageExtraction && nullNodeEnableTrickplayImageExtraction.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableTrickplayImageExtraction = null;
+            if (parseNode.GetChildNode("ExtractChapterImagesDuringLibraryScan") is { } nullNodeExtractChapterImagesDuringLibraryScan && nullNodeExtractChapterImagesDuringLibraryScan.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ExtractChapterImagesDuringLibraryScan = null;
+            if (parseNode.GetChildNode("ExtractTrickplayImagesDuringLibraryScan") is { } nullNodeExtractTrickplayImagesDuringLibraryScan && nullNodeExtractTrickplayImagesDuringLibraryScan.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ExtractTrickplayImagesDuringLibraryScan = null;
+            if (parseNode.GetChildNode("LocalMetadataReaderOrder") is { } nullNodeLocalMetadataReaderOrder && nullNodeLocalMetadataReaderOrder.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LocalMetadataReaderOrder = null;
+            if (parseNode.GetChildNode("LyricFetcherOrder") is { } nullNodeLyricFetcherOrder && nullNodeLyricFetcherOrder.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LyricFetcherOrder = null;
+            if (parseNode.GetChildNode("MediaSegmentProviderOrder") is { } nullNodeMediaSegmentProviderOrder && nullNodeMediaSegmentProviderOrder.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MediaSegmentProviderOrder = null;
+            if (parseNode.GetChildNode("MetadataCountryCode") is { } nullNodeMetadataCountryCode && nullNodeMetadataCountryCode.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MetadataCountryCode = null;
+            if (parseNode.GetChildNode("MetadataSavers") is { } nullNodeMetadataSavers && nullNodeMetadataSavers.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MetadataSavers = null;
+            if (parseNode.GetChildNode("PathInfos") is { } nullNodePathInfos && nullNodePathInfos.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PathInfos = null;
+            if (parseNode.GetChildNode("PreferNonstandardArtistsTag") is { } nullNodePreferNonstandardArtistsTag && nullNodePreferNonstandardArtistsTag.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PreferNonstandardArtistsTag = null;
+            if (parseNode.GetChildNode("PreferredMetadataLanguage") is { } nullNodePreferredMetadataLanguage && nullNodePreferredMetadataLanguage.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PreferredMetadataLanguage = null;
+            if (parseNode.GetChildNode("RequirePerfectSubtitleMatch") is { } nullNodeRequirePerfectSubtitleMatch && nullNodeRequirePerfectSubtitleMatch.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) RequirePerfectSubtitleMatch = null;
+            if (parseNode.GetChildNode("SaveLocalMetadata") is { } nullNodeSaveLocalMetadata && nullNodeSaveLocalMetadata.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SaveLocalMetadata = null;
+            if (parseNode.GetChildNode("SaveLyricsWithMedia") is { } nullNodeSaveLyricsWithMedia && nullNodeSaveLyricsWithMedia.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SaveLyricsWithMedia = null;
+            if (parseNode.GetChildNode("SaveSubtitlesWithMedia") is { } nullNodeSaveSubtitlesWithMedia && nullNodeSaveSubtitlesWithMedia.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SaveSubtitlesWithMedia = null;
+            if (parseNode.GetChildNode("SaveTrickplayWithMedia") is { } nullNodeSaveTrickplayWithMedia && nullNodeSaveTrickplayWithMedia.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SaveTrickplayWithMedia = null;
+            if (parseNode.GetChildNode("SeasonZeroDisplayName") is { } nullNodeSeasonZeroDisplayName && nullNodeSeasonZeroDisplayName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SeasonZeroDisplayName = null;
+            if (parseNode.GetChildNode("SkipSubtitlesIfAudioTrackMatches") is { } nullNodeSkipSubtitlesIfAudioTrackMatches && nullNodeSkipSubtitlesIfAudioTrackMatches.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SkipSubtitlesIfAudioTrackMatches = null;
+            if (parseNode.GetChildNode("SkipSubtitlesIfEmbeddedSubtitlesPresent") is { } nullNodeSkipSubtitlesIfEmbeddedSubtitlesPresent && nullNodeSkipSubtitlesIfEmbeddedSubtitlesPresent.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SkipSubtitlesIfEmbeddedSubtitlesPresent = null;
+            if (parseNode.GetChildNode("SubtitleDownloadLanguages") is { } nullNodeSubtitleDownloadLanguages && nullNodeSubtitleDownloadLanguages.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SubtitleDownloadLanguages = null;
+            if (parseNode.GetChildNode("SubtitleFetcherOrder") is { } nullNodeSubtitleFetcherOrder && nullNodeSubtitleFetcherOrder.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SubtitleFetcherOrder = null;
+            if (parseNode.GetChildNode("TypeOptions") is { } nullNodeTypeOptions && nullNodeTypeOptions.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) TypeOptions = null;
+            if (parseNode.GetChildNode("UseCustomTagDelimiters") is { } nullNodeUseCustomTagDelimiters && nullNodeUseCustomTagDelimiters.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) UseCustomTagDelimiters = null;
+        }
+
         /// <summary>An enum representing the options to disable embedded subs.</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptions_AllowEmbeddedSubtitles? AllowEmbeddedSubtitles { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptions_AllowEmbeddedSubtitles? AllowEmbeddedSubtitles { get => _explicitNullValueAllowEmbeddedSubtitles; set { _explicitNullValueAllowEmbeddedSubtitles = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("AllowEmbeddedSubtitles"); else _explicitNullProperties?.Remove("AllowEmbeddedSubtitles"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptions_AllowEmbeddedSubtitles? _explicitNullValueAllowEmbeddedSubtitles = default!;
         /// <summary>The AutomaticallyAddToCollection property</summary>
-        public bool? AutomaticallyAddToCollection { get; set; }
+        public bool? AutomaticallyAddToCollection { get => _explicitNullValueAutomaticallyAddToCollection; set { _explicitNullValueAutomaticallyAddToCollection = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("AutomaticallyAddToCollection"); else _explicitNullProperties?.Remove("AutomaticallyAddToCollection"); } }
+        private bool? _explicitNullValueAutomaticallyAddToCollection = default!;
         /// <summary>The AutomaticRefreshIntervalDays property</summary>
-        public int? AutomaticRefreshIntervalDays { get; set; }
+        public int? AutomaticRefreshIntervalDays { get => _explicitNullValueAutomaticRefreshIntervalDays; set { _explicitNullValueAutomaticRefreshIntervalDays = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("AutomaticRefreshIntervalDays"); else _explicitNullProperties?.Remove("AutomaticRefreshIntervalDays"); } }
+        private int? _explicitNullValueAutomaticRefreshIntervalDays = default!;
         /// <summary>The CustomTagDelimiters property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? CustomTagDelimiters { get; set; }
+        public List<string>? CustomTagDelimiters { get => _explicitNullValueCustomTagDelimiters; set { _explicitNullValueCustomTagDelimiters = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("CustomTagDelimiters"); else _explicitNullProperties?.Remove("CustomTagDelimiters"); } }
+        private List<string>? _explicitNullValueCustomTagDelimiters = default!;
 #nullable restore
 #else
-        public List<string> CustomTagDelimiters { get; set; }
+        public List<string> CustomTagDelimiters { get => _explicitNullValueCustomTagDelimiters; set { _explicitNullValueCustomTagDelimiters = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("CustomTagDelimiters"); else _explicitNullProperties?.Remove("CustomTagDelimiters"); } }
+        private List<string> _explicitNullValueCustomTagDelimiters = default!;
 #endif
         /// <summary>The DelimiterWhitelist property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? DelimiterWhitelist { get; set; }
+        public List<string>? DelimiterWhitelist { get => _explicitNullValueDelimiterWhitelist; set { _explicitNullValueDelimiterWhitelist = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DelimiterWhitelist"); else _explicitNullProperties?.Remove("DelimiterWhitelist"); } }
+        private List<string>? _explicitNullValueDelimiterWhitelist = default!;
 #nullable restore
 #else
-        public List<string> DelimiterWhitelist { get; set; }
+        public List<string> DelimiterWhitelist { get => _explicitNullValueDelimiterWhitelist; set { _explicitNullValueDelimiterWhitelist = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DelimiterWhitelist"); else _explicitNullProperties?.Remove("DelimiterWhitelist"); } }
+        private List<string> _explicitNullValueDelimiterWhitelist = default!;
 #endif
         /// <summary>The DisabledLocalMetadataReaders property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? DisabledLocalMetadataReaders { get; set; }
+        public List<string>? DisabledLocalMetadataReaders { get => _explicitNullValueDisabledLocalMetadataReaders; set { _explicitNullValueDisabledLocalMetadataReaders = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DisabledLocalMetadataReaders"); else _explicitNullProperties?.Remove("DisabledLocalMetadataReaders"); } }
+        private List<string>? _explicitNullValueDisabledLocalMetadataReaders = default!;
 #nullable restore
 #else
-        public List<string> DisabledLocalMetadataReaders { get; set; }
+        public List<string> DisabledLocalMetadataReaders { get => _explicitNullValueDisabledLocalMetadataReaders; set { _explicitNullValueDisabledLocalMetadataReaders = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DisabledLocalMetadataReaders"); else _explicitNullProperties?.Remove("DisabledLocalMetadataReaders"); } }
+        private List<string> _explicitNullValueDisabledLocalMetadataReaders = default!;
 #endif
         /// <summary>The DisabledLyricFetchers property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? DisabledLyricFetchers { get; set; }
+        public List<string>? DisabledLyricFetchers { get => _explicitNullValueDisabledLyricFetchers; set { _explicitNullValueDisabledLyricFetchers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DisabledLyricFetchers"); else _explicitNullProperties?.Remove("DisabledLyricFetchers"); } }
+        private List<string>? _explicitNullValueDisabledLyricFetchers = default!;
 #nullable restore
 #else
-        public List<string> DisabledLyricFetchers { get; set; }
+        public List<string> DisabledLyricFetchers { get => _explicitNullValueDisabledLyricFetchers; set { _explicitNullValueDisabledLyricFetchers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DisabledLyricFetchers"); else _explicitNullProperties?.Remove("DisabledLyricFetchers"); } }
+        private List<string> _explicitNullValueDisabledLyricFetchers = default!;
 #endif
         /// <summary>The DisabledMediaSegmentProviders property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? DisabledMediaSegmentProviders { get; set; }
+        public List<string>? DisabledMediaSegmentProviders { get => _explicitNullValueDisabledMediaSegmentProviders; set { _explicitNullValueDisabledMediaSegmentProviders = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DisabledMediaSegmentProviders"); else _explicitNullProperties?.Remove("DisabledMediaSegmentProviders"); } }
+        private List<string>? _explicitNullValueDisabledMediaSegmentProviders = default!;
 #nullable restore
 #else
-        public List<string> DisabledMediaSegmentProviders { get; set; }
+        public List<string> DisabledMediaSegmentProviders { get => _explicitNullValueDisabledMediaSegmentProviders; set { _explicitNullValueDisabledMediaSegmentProviders = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DisabledMediaSegmentProviders"); else _explicitNullProperties?.Remove("DisabledMediaSegmentProviders"); } }
+        private List<string> _explicitNullValueDisabledMediaSegmentProviders = default!;
 #endif
         /// <summary>The DisabledSubtitleFetchers property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? DisabledSubtitleFetchers { get; set; }
+        public List<string>? DisabledSubtitleFetchers { get => _explicitNullValueDisabledSubtitleFetchers; set { _explicitNullValueDisabledSubtitleFetchers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DisabledSubtitleFetchers"); else _explicitNullProperties?.Remove("DisabledSubtitleFetchers"); } }
+        private List<string>? _explicitNullValueDisabledSubtitleFetchers = default!;
 #nullable restore
 #else
-        public List<string> DisabledSubtitleFetchers { get; set; }
+        public List<string> DisabledSubtitleFetchers { get => _explicitNullValueDisabledSubtitleFetchers; set { _explicitNullValueDisabledSubtitleFetchers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DisabledSubtitleFetchers"); else _explicitNullProperties?.Remove("DisabledSubtitleFetchers"); } }
+        private List<string> _explicitNullValueDisabledSubtitleFetchers = default!;
 #endif
         /// <summary>The EnableAutomaticSeriesGrouping property</summary>
-        public bool? EnableAutomaticSeriesGrouping { get; set; }
+        public bool? EnableAutomaticSeriesGrouping { get => _explicitNullValueEnableAutomaticSeriesGrouping; set { _explicitNullValueEnableAutomaticSeriesGrouping = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableAutomaticSeriesGrouping"); else _explicitNullProperties?.Remove("EnableAutomaticSeriesGrouping"); } }
+        private bool? _explicitNullValueEnableAutomaticSeriesGrouping = default!;
         /// <summary>The EnableChapterImageExtraction property</summary>
-        public bool? EnableChapterImageExtraction { get; set; }
+        public bool? EnableChapterImageExtraction { get => _explicitNullValueEnableChapterImageExtraction; set { _explicitNullValueEnableChapterImageExtraction = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableChapterImageExtraction"); else _explicitNullProperties?.Remove("EnableChapterImageExtraction"); } }
+        private bool? _explicitNullValueEnableChapterImageExtraction = default!;
         /// <summary>The Enabled property</summary>
-        public bool? Enabled { get; set; }
+        public bool? Enabled { get => _explicitNullValueEnabled; set { _explicitNullValueEnabled = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Enabled"); else _explicitNullProperties?.Remove("Enabled"); } }
+        private bool? _explicitNullValueEnabled = default!;
         /// <summary>The EnableEmbeddedEpisodeInfos property</summary>
-        public bool? EnableEmbeddedEpisodeInfos { get; set; }
+        public bool? EnableEmbeddedEpisodeInfos { get => _explicitNullValueEnableEmbeddedEpisodeInfos; set { _explicitNullValueEnableEmbeddedEpisodeInfos = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableEmbeddedEpisodeInfos"); else _explicitNullProperties?.Remove("EnableEmbeddedEpisodeInfos"); } }
+        private bool? _explicitNullValueEnableEmbeddedEpisodeInfos = default!;
         /// <summary>The EnableEmbeddedExtrasTitles property</summary>
-        public bool? EnableEmbeddedExtrasTitles { get; set; }
+        public bool? EnableEmbeddedExtrasTitles { get => _explicitNullValueEnableEmbeddedExtrasTitles; set { _explicitNullValueEnableEmbeddedExtrasTitles = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableEmbeddedExtrasTitles"); else _explicitNullProperties?.Remove("EnableEmbeddedExtrasTitles"); } }
+        private bool? _explicitNullValueEnableEmbeddedExtrasTitles = default!;
         /// <summary>The EnableEmbeddedTitles property</summary>
-        public bool? EnableEmbeddedTitles { get; set; }
+        public bool? EnableEmbeddedTitles { get => _explicitNullValueEnableEmbeddedTitles; set { _explicitNullValueEnableEmbeddedTitles = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableEmbeddedTitles"); else _explicitNullProperties?.Remove("EnableEmbeddedTitles"); } }
+        private bool? _explicitNullValueEnableEmbeddedTitles = default!;
         /// <summary>The EnableInternetProviders property</summary>
         [Obsolete("")]
-        public bool? EnableInternetProviders { get; set; }
+        public bool? EnableInternetProviders { get => _explicitNullValueEnableInternetProviders; set { _explicitNullValueEnableInternetProviders = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableInternetProviders"); else _explicitNullProperties?.Remove("EnableInternetProviders"); } }
+        private bool? _explicitNullValueEnableInternetProviders = default!;
         /// <summary>The EnableLUFSScan property</summary>
-        public bool? EnableLUFSScan { get; set; }
+        public bool? EnableLUFSScan { get => _explicitNullValueEnableLUFSScan; set { _explicitNullValueEnableLUFSScan = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableLUFSScan"); else _explicitNullProperties?.Remove("EnableLUFSScan"); } }
+        private bool? _explicitNullValueEnableLUFSScan = default!;
         /// <summary>The EnablePhotos property</summary>
-        public bool? EnablePhotos { get; set; }
+        public bool? EnablePhotos { get => _explicitNullValueEnablePhotos; set { _explicitNullValueEnablePhotos = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnablePhotos"); else _explicitNullProperties?.Remove("EnablePhotos"); } }
+        private bool? _explicitNullValueEnablePhotos = default!;
         /// <summary>The EnableRealtimeMonitor property</summary>
-        public bool? EnableRealtimeMonitor { get; set; }
+        public bool? EnableRealtimeMonitor { get => _explicitNullValueEnableRealtimeMonitor; set { _explicitNullValueEnableRealtimeMonitor = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableRealtimeMonitor"); else _explicitNullProperties?.Remove("EnableRealtimeMonitor"); } }
+        private bool? _explicitNullValueEnableRealtimeMonitor = default!;
         /// <summary>The EnableTrickplayImageExtraction property</summary>
-        public bool? EnableTrickplayImageExtraction { get; set; }
+        public bool? EnableTrickplayImageExtraction { get => _explicitNullValueEnableTrickplayImageExtraction; set { _explicitNullValueEnableTrickplayImageExtraction = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableTrickplayImageExtraction"); else _explicitNullProperties?.Remove("EnableTrickplayImageExtraction"); } }
+        private bool? _explicitNullValueEnableTrickplayImageExtraction = default!;
         /// <summary>The ExtractChapterImagesDuringLibraryScan property</summary>
-        public bool? ExtractChapterImagesDuringLibraryScan { get; set; }
+        public bool? ExtractChapterImagesDuringLibraryScan { get => _explicitNullValueExtractChapterImagesDuringLibraryScan; set { _explicitNullValueExtractChapterImagesDuringLibraryScan = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ExtractChapterImagesDuringLibraryScan"); else _explicitNullProperties?.Remove("ExtractChapterImagesDuringLibraryScan"); } }
+        private bool? _explicitNullValueExtractChapterImagesDuringLibraryScan = default!;
         /// <summary>The ExtractTrickplayImagesDuringLibraryScan property</summary>
-        public bool? ExtractTrickplayImagesDuringLibraryScan { get; set; }
+        public bool? ExtractTrickplayImagesDuringLibraryScan { get => _explicitNullValueExtractTrickplayImagesDuringLibraryScan; set { _explicitNullValueExtractTrickplayImagesDuringLibraryScan = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ExtractTrickplayImagesDuringLibraryScan"); else _explicitNullProperties?.Remove("ExtractTrickplayImagesDuringLibraryScan"); } }
+        private bool? _explicitNullValueExtractTrickplayImagesDuringLibraryScan = default!;
         /// <summary>The LocalMetadataReaderOrder property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? LocalMetadataReaderOrder { get; set; }
+        public List<string>? LocalMetadataReaderOrder { get => _explicitNullValueLocalMetadataReaderOrder; set { _explicitNullValueLocalMetadataReaderOrder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LocalMetadataReaderOrder"); else _explicitNullProperties?.Remove("LocalMetadataReaderOrder"); } }
+        private List<string>? _explicitNullValueLocalMetadataReaderOrder = default!;
 #nullable restore
 #else
-        public List<string> LocalMetadataReaderOrder { get; set; }
+        public List<string> LocalMetadataReaderOrder { get => _explicitNullValueLocalMetadataReaderOrder; set { _explicitNullValueLocalMetadataReaderOrder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LocalMetadataReaderOrder"); else _explicitNullProperties?.Remove("LocalMetadataReaderOrder"); } }
+        private List<string> _explicitNullValueLocalMetadataReaderOrder = default!;
 #endif
         /// <summary>The LyricFetcherOrder property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? LyricFetcherOrder { get; set; }
+        public List<string>? LyricFetcherOrder { get => _explicitNullValueLyricFetcherOrder; set { _explicitNullValueLyricFetcherOrder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LyricFetcherOrder"); else _explicitNullProperties?.Remove("LyricFetcherOrder"); } }
+        private List<string>? _explicitNullValueLyricFetcherOrder = default!;
 #nullable restore
 #else
-        public List<string> LyricFetcherOrder { get; set; }
+        public List<string> LyricFetcherOrder { get => _explicitNullValueLyricFetcherOrder; set { _explicitNullValueLyricFetcherOrder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LyricFetcherOrder"); else _explicitNullProperties?.Remove("LyricFetcherOrder"); } }
+        private List<string> _explicitNullValueLyricFetcherOrder = default!;
 #endif
         /// <summary>The MediaSegmentProviderOrder property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? MediaSegmentProviderOrder { get; set; }
+        public List<string>? MediaSegmentProviderOrder { get => _explicitNullValueMediaSegmentProviderOrder; set { _explicitNullValueMediaSegmentProviderOrder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MediaSegmentProviderOrder"); else _explicitNullProperties?.Remove("MediaSegmentProviderOrder"); } }
+        private List<string>? _explicitNullValueMediaSegmentProviderOrder = default!;
 #nullable restore
 #else
-        public List<string> MediaSegmentProviderOrder { get; set; }
+        public List<string> MediaSegmentProviderOrder { get => _explicitNullValueMediaSegmentProviderOrder; set { _explicitNullValueMediaSegmentProviderOrder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MediaSegmentProviderOrder"); else _explicitNullProperties?.Remove("MediaSegmentProviderOrder"); } }
+        private List<string> _explicitNullValueMediaSegmentProviderOrder = default!;
 #endif
         /// <summary>Gets or sets the metadata country code.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? MetadataCountryCode { get; set; }
+        public string? MetadataCountryCode { get => _explicitNullValueMetadataCountryCode; set { _explicitNullValueMetadataCountryCode = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MetadataCountryCode"); else _explicitNullProperties?.Remove("MetadataCountryCode"); } }
+        private string? _explicitNullValueMetadataCountryCode = default!;
 #nullable restore
 #else
-        public string MetadataCountryCode { get; set; }
+        public string MetadataCountryCode { get => _explicitNullValueMetadataCountryCode; set { _explicitNullValueMetadataCountryCode = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MetadataCountryCode"); else _explicitNullProperties?.Remove("MetadataCountryCode"); } }
+        private string _explicitNullValueMetadataCountryCode = default!;
 #endif
         /// <summary>The MetadataSavers property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? MetadataSavers { get; set; }
+        public List<string>? MetadataSavers { get => _explicitNullValueMetadataSavers; set { _explicitNullValueMetadataSavers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MetadataSavers"); else _explicitNullProperties?.Remove("MetadataSavers"); } }
+        private List<string>? _explicitNullValueMetadataSavers = default!;
 #nullable restore
 #else
-        public List<string> MetadataSavers { get; set; }
+        public List<string> MetadataSavers { get => _explicitNullValueMetadataSavers; set { _explicitNullValueMetadataSavers = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MetadataSavers"); else _explicitNullProperties?.Remove("MetadataSavers"); } }
+        private List<string> _explicitNullValueMetadataSavers = default!;
 #endif
         /// <summary>The PathInfos property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaPathInfo>? PathInfos { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaPathInfo>? PathInfos { get => _explicitNullValuePathInfos; set { _explicitNullValuePathInfos = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PathInfos"); else _explicitNullProperties?.Remove("PathInfos"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaPathInfo>? _explicitNullValuePathInfos = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaPathInfo> PathInfos { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaPathInfo> PathInfos { get => _explicitNullValuePathInfos; set { _explicitNullValuePathInfos = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PathInfos"); else _explicitNullProperties?.Remove("PathInfos"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.MediaPathInfo> _explicitNullValuePathInfos = default!;
 #endif
         /// <summary>The PreferNonstandardArtistsTag property</summary>
-        public bool? PreferNonstandardArtistsTag { get; set; }
+        public bool? PreferNonstandardArtistsTag { get => _explicitNullValuePreferNonstandardArtistsTag; set { _explicitNullValuePreferNonstandardArtistsTag = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PreferNonstandardArtistsTag"); else _explicitNullProperties?.Remove("PreferNonstandardArtistsTag"); } }
+        private bool? _explicitNullValuePreferNonstandardArtistsTag = default!;
         /// <summary>Gets or sets the preferred metadata language.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? PreferredMetadataLanguage { get; set; }
+        public string? PreferredMetadataLanguage { get => _explicitNullValuePreferredMetadataLanguage; set { _explicitNullValuePreferredMetadataLanguage = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PreferredMetadataLanguage"); else _explicitNullProperties?.Remove("PreferredMetadataLanguage"); } }
+        private string? _explicitNullValuePreferredMetadataLanguage = default!;
 #nullable restore
 #else
-        public string PreferredMetadataLanguage { get; set; }
+        public string PreferredMetadataLanguage { get => _explicitNullValuePreferredMetadataLanguage; set { _explicitNullValuePreferredMetadataLanguage = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PreferredMetadataLanguage"); else _explicitNullProperties?.Remove("PreferredMetadataLanguage"); } }
+        private string _explicitNullValuePreferredMetadataLanguage = default!;
 #endif
         /// <summary>The RequirePerfectSubtitleMatch property</summary>
-        public bool? RequirePerfectSubtitleMatch { get; set; }
+        public bool? RequirePerfectSubtitleMatch { get => _explicitNullValueRequirePerfectSubtitleMatch; set { _explicitNullValueRequirePerfectSubtitleMatch = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("RequirePerfectSubtitleMatch"); else _explicitNullProperties?.Remove("RequirePerfectSubtitleMatch"); } }
+        private bool? _explicitNullValueRequirePerfectSubtitleMatch = default!;
         /// <summary>The SaveLocalMetadata property</summary>
-        public bool? SaveLocalMetadata { get; set; }
+        public bool? SaveLocalMetadata { get => _explicitNullValueSaveLocalMetadata; set { _explicitNullValueSaveLocalMetadata = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SaveLocalMetadata"); else _explicitNullProperties?.Remove("SaveLocalMetadata"); } }
+        private bool? _explicitNullValueSaveLocalMetadata = default!;
         /// <summary>The SaveLyricsWithMedia property</summary>
-        public bool? SaveLyricsWithMedia { get; set; }
+        public bool? SaveLyricsWithMedia { get => _explicitNullValueSaveLyricsWithMedia; set { _explicitNullValueSaveLyricsWithMedia = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SaveLyricsWithMedia"); else _explicitNullProperties?.Remove("SaveLyricsWithMedia"); } }
+        private bool? _explicitNullValueSaveLyricsWithMedia = default!;
         /// <summary>The SaveSubtitlesWithMedia property</summary>
-        public bool? SaveSubtitlesWithMedia { get; set; }
+        public bool? SaveSubtitlesWithMedia { get => _explicitNullValueSaveSubtitlesWithMedia; set { _explicitNullValueSaveSubtitlesWithMedia = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SaveSubtitlesWithMedia"); else _explicitNullProperties?.Remove("SaveSubtitlesWithMedia"); } }
+        private bool? _explicitNullValueSaveSubtitlesWithMedia = default!;
         /// <summary>The SaveTrickplayWithMedia property</summary>
-        public bool? SaveTrickplayWithMedia { get; set; }
+        public bool? SaveTrickplayWithMedia { get => _explicitNullValueSaveTrickplayWithMedia; set { _explicitNullValueSaveTrickplayWithMedia = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SaveTrickplayWithMedia"); else _explicitNullProperties?.Remove("SaveTrickplayWithMedia"); } }
+        private bool? _explicitNullValueSaveTrickplayWithMedia = default!;
         /// <summary>The SeasonZeroDisplayName property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? SeasonZeroDisplayName { get; set; }
+        public string? SeasonZeroDisplayName { get => _explicitNullValueSeasonZeroDisplayName; set { _explicitNullValueSeasonZeroDisplayName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SeasonZeroDisplayName"); else _explicitNullProperties?.Remove("SeasonZeroDisplayName"); } }
+        private string? _explicitNullValueSeasonZeroDisplayName = default!;
 #nullable restore
 #else
-        public string SeasonZeroDisplayName { get; set; }
+        public string SeasonZeroDisplayName { get => _explicitNullValueSeasonZeroDisplayName; set { _explicitNullValueSeasonZeroDisplayName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SeasonZeroDisplayName"); else _explicitNullProperties?.Remove("SeasonZeroDisplayName"); } }
+        private string _explicitNullValueSeasonZeroDisplayName = default!;
 #endif
         /// <summary>The SkipSubtitlesIfAudioTrackMatches property</summary>
-        public bool? SkipSubtitlesIfAudioTrackMatches { get; set; }
+        public bool? SkipSubtitlesIfAudioTrackMatches { get => _explicitNullValueSkipSubtitlesIfAudioTrackMatches; set { _explicitNullValueSkipSubtitlesIfAudioTrackMatches = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SkipSubtitlesIfAudioTrackMatches"); else _explicitNullProperties?.Remove("SkipSubtitlesIfAudioTrackMatches"); } }
+        private bool? _explicitNullValueSkipSubtitlesIfAudioTrackMatches = default!;
         /// <summary>The SkipSubtitlesIfEmbeddedSubtitlesPresent property</summary>
-        public bool? SkipSubtitlesIfEmbeddedSubtitlesPresent { get; set; }
+        public bool? SkipSubtitlesIfEmbeddedSubtitlesPresent { get => _explicitNullValueSkipSubtitlesIfEmbeddedSubtitlesPresent; set { _explicitNullValueSkipSubtitlesIfEmbeddedSubtitlesPresent = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SkipSubtitlesIfEmbeddedSubtitlesPresent"); else _explicitNullProperties?.Remove("SkipSubtitlesIfEmbeddedSubtitlesPresent"); } }
+        private bool? _explicitNullValueSkipSubtitlesIfEmbeddedSubtitlesPresent = default!;
         /// <summary>The SubtitleDownloadLanguages property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? SubtitleDownloadLanguages { get; set; }
+        public List<string>? SubtitleDownloadLanguages { get => _explicitNullValueSubtitleDownloadLanguages; set { _explicitNullValueSubtitleDownloadLanguages = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SubtitleDownloadLanguages"); else _explicitNullProperties?.Remove("SubtitleDownloadLanguages"); } }
+        private List<string>? _explicitNullValueSubtitleDownloadLanguages = default!;
 #nullable restore
 #else
-        public List<string> SubtitleDownloadLanguages { get; set; }
+        public List<string> SubtitleDownloadLanguages { get => _explicitNullValueSubtitleDownloadLanguages; set { _explicitNullValueSubtitleDownloadLanguages = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SubtitleDownloadLanguages"); else _explicitNullProperties?.Remove("SubtitleDownloadLanguages"); } }
+        private List<string> _explicitNullValueSubtitleDownloadLanguages = default!;
 #endif
         /// <summary>The SubtitleFetcherOrder property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? SubtitleFetcherOrder { get; set; }
+        public List<string>? SubtitleFetcherOrder { get => _explicitNullValueSubtitleFetcherOrder; set { _explicitNullValueSubtitleFetcherOrder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SubtitleFetcherOrder"); else _explicitNullProperties?.Remove("SubtitleFetcherOrder"); } }
+        private List<string>? _explicitNullValueSubtitleFetcherOrder = default!;
 #nullable restore
 #else
-        public List<string> SubtitleFetcherOrder { get; set; }
+        public List<string> SubtitleFetcherOrder { get => _explicitNullValueSubtitleFetcherOrder; set { _explicitNullValueSubtitleFetcherOrder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SubtitleFetcherOrder"); else _explicitNullProperties?.Remove("SubtitleFetcherOrder"); } }
+        private List<string> _explicitNullValueSubtitleFetcherOrder = default!;
 #endif
         /// <summary>The TypeOptions property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.TypeOptions>? TypeOptions { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.TypeOptions>? TypeOptions { get => _explicitNullValueTypeOptions; set { _explicitNullValueTypeOptions = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("TypeOptions"); else _explicitNullProperties?.Remove("TypeOptions"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.TypeOptions>? _explicitNullValueTypeOptions = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.TypeOptions> TypeOptions { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.TypeOptions> TypeOptions { get => _explicitNullValueTypeOptions; set { _explicitNullValueTypeOptions = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("TypeOptions"); else _explicitNullProperties?.Remove("TypeOptions"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.TypeOptions> _explicitNullValueTypeOptions = default!;
 #endif
         /// <summary>The UseCustomTagDelimiters property</summary>
-        public bool? UseCustomTagDelimiters { get; set; }
+        public bool? UseCustomTagDelimiters { get => _explicitNullValueUseCustomTagDelimiters; set { _explicitNullValueUseCustomTagDelimiters = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("UseCustomTagDelimiters"); else _explicitNullProperties?.Remove("UseCustomTagDelimiters"); } }
+        private bool? _explicitNullValueUseCustomTagDelimiters = default!;
         /// <summary>
         /// Instantiates a new <see cref="global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptions"/> and sets the default values.
         /// </summary>
@@ -217,7 +325,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptions CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptions();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptions(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -319,7 +427,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteCollectionOfPrimitiveValues<string>("SubtitleDownloadLanguages", SubtitleDownloadLanguages);
             writer.WriteCollectionOfPrimitiveValues<string>("SubtitleFetcherOrder", SubtitleFetcherOrder);
             writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.TypeOptions>("TypeOptions", TypeOptions);
-            writer.WriteBoolValue("UseCustomTagDelimiters", UseCustomTagDelimiters);
+            writer.WriteBoolValue("UseCustomTagDelimiters", UseCustomTagDelimiters);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

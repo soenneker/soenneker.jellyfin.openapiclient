@@ -12,51 +12,82 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class RemoteImageInfo : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("CommunityRating") is { } nullNodeCommunityRating && nullNodeCommunityRating.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) CommunityRating = null;
+            if (parseNode.GetChildNode("Height") is { } nullNodeHeight && nullNodeHeight.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Height = null;
+            if (parseNode.GetChildNode("Language") is { } nullNodeLanguage && nullNodeLanguage.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Language = null;
+            if (parseNode.GetChildNode("ProviderName") is { } nullNodeProviderName && nullNodeProviderName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ProviderName = null;
+            if (parseNode.GetChildNode("RatingType") is { } nullNodeRatingType && nullNodeRatingType.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) RatingType = null;
+            if (parseNode.GetChildNode("ThumbnailUrl") is { } nullNodeThumbnailUrl && nullNodeThumbnailUrl.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ThumbnailUrl = null;
+            if (parseNode.GetChildNode("Type") is { } nullNodeType && nullNodeType.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Type = null;
+            if (parseNode.GetChildNode("Url") is { } nullNodeUrl && nullNodeUrl.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Url = null;
+            if (parseNode.GetChildNode("VoteCount") is { } nullNodeVoteCount && nullNodeVoteCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) VoteCount = null;
+            if (parseNode.GetChildNode("Width") is { } nullNodeWidth && nullNodeWidth.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Width = null;
+        }
+
         /// <summary>Gets or sets the community rating.</summary>
-        public double? CommunityRating { get; set; }
+        public double? CommunityRating { get => _explicitNullValueCommunityRating; set { _explicitNullValueCommunityRating = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("CommunityRating"); else _explicitNullProperties?.Remove("CommunityRating"); } }
+        private double? _explicitNullValueCommunityRating = default!;
         /// <summary>Gets or sets the height.</summary>
-        public int? Height { get; set; }
+        public int? Height { get => _explicitNullValueHeight; set { _explicitNullValueHeight = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Height"); else _explicitNullProperties?.Remove("Height"); } }
+        private int? _explicitNullValueHeight = default!;
         /// <summary>Gets or sets the language.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Language { get; set; }
+        public string? Language { get => _explicitNullValueLanguage; set { _explicitNullValueLanguage = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Language"); else _explicitNullProperties?.Remove("Language"); } }
+        private string? _explicitNullValueLanguage = default!;
 #nullable restore
 #else
-        public string Language { get; set; }
+        public string Language { get => _explicitNullValueLanguage; set { _explicitNullValueLanguage = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Language"); else _explicitNullProperties?.Remove("Language"); } }
+        private string _explicitNullValueLanguage = default!;
 #endif
         /// <summary>Gets or sets the name of the provider.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ProviderName { get; set; }
+        public string? ProviderName { get => _explicitNullValueProviderName; set { _explicitNullValueProviderName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ProviderName"); else _explicitNullProperties?.Remove("ProviderName"); } }
+        private string? _explicitNullValueProviderName = default!;
 #nullable restore
 #else
-        public string ProviderName { get; set; }
+        public string ProviderName { get => _explicitNullValueProviderName; set { _explicitNullValueProviderName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ProviderName"); else _explicitNullProperties?.Remove("ProviderName"); } }
+        private string _explicitNullValueProviderName = default!;
 #endif
         /// <summary>Gets or sets the type of the rating.</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteImageInfo_RatingType? RatingType { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteImageInfo_RatingType? RatingType { get => _explicitNullValueRatingType; set { _explicitNullValueRatingType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("RatingType"); else _explicitNullProperties?.Remove("RatingType"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteImageInfo_RatingType? _explicitNullValueRatingType = default!;
         /// <summary>Gets or sets a url used for previewing a smaller version.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ThumbnailUrl { get; set; }
+        public string? ThumbnailUrl { get => _explicitNullValueThumbnailUrl; set { _explicitNullValueThumbnailUrl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ThumbnailUrl"); else _explicitNullProperties?.Remove("ThumbnailUrl"); } }
+        private string? _explicitNullValueThumbnailUrl = default!;
 #nullable restore
 #else
-        public string ThumbnailUrl { get; set; }
+        public string ThumbnailUrl { get => _explicitNullValueThumbnailUrl; set { _explicitNullValueThumbnailUrl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ThumbnailUrl"); else _explicitNullProperties?.Remove("ThumbnailUrl"); } }
+        private string _explicitNullValueThumbnailUrl = default!;
 #endif
         /// <summary>Gets or sets the type.</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteImageInfo_Type? Type { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteImageInfo_Type? Type { get => _explicitNullValueType; set { _explicitNullValueType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Type"); else _explicitNullProperties?.Remove("Type"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteImageInfo_Type? _explicitNullValueType = default!;
         /// <summary>Gets or sets the URL.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Url { get; set; }
+        public string? Url { get => _explicitNullValueUrl; set { _explicitNullValueUrl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Url"); else _explicitNullProperties?.Remove("Url"); } }
+        private string? _explicitNullValueUrl = default!;
 #nullable restore
 #else
-        public string Url { get; set; }
+        public string Url { get => _explicitNullValueUrl; set { _explicitNullValueUrl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Url"); else _explicitNullProperties?.Remove("Url"); } }
+        private string _explicitNullValueUrl = default!;
 #endif
         /// <summary>Gets or sets the vote count.</summary>
-        public int? VoteCount { get; set; }
+        public int? VoteCount { get => _explicitNullValueVoteCount; set { _explicitNullValueVoteCount = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("VoteCount"); else _explicitNullProperties?.Remove("VoteCount"); } }
+        private int? _explicitNullValueVoteCount = default!;
         /// <summary>Gets or sets the width.</summary>
-        public int? Width { get; set; }
+        public int? Width { get => _explicitNullValueWidth; set { _explicitNullValueWidth = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Width"); else _explicitNullProperties?.Remove("Width"); } }
+        private int? _explicitNullValueWidth = default!;
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
@@ -65,7 +96,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteImageInfo CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteImageInfo();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteImageInfo(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -103,7 +134,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteEnumValue<global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteImageInfo_Type>("Type", Type);
             writer.WriteStringValue("Url", Url);
             writer.WriteIntValue("VoteCount", VoteCount);
-            writer.WriteIntValue("Width", Width);
+            writer.WriteIntValue("Width", Width);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

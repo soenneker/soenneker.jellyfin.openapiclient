@@ -17,6 +17,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.MusicGenres
     public partial class MusicGenresRequestBuilder : BaseRequestBuilder
     {
         /// <summary>The InstantMix property</summary>
+        [Obsolete("")]
         public global::Soenneker.Jellyfin.OpenApiClient.MusicGenres.InstantMix.InstantMixRequestBuilder InstantMix
         {
             get => new global::Soenneker.Jellyfin.OpenApiClient.MusicGenres.InstantMix.InstantMixRequestBuilder(PathParameters, RequestAdapter);

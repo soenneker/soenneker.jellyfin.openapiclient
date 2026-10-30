@@ -11,144 +11,204 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     #pragma warning disable CS1591
     public partial class ListingsProviderInfo : IParsable
     #pragma warning restore CS1591
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("ChannelMappings") is { } nullNodeChannelMappings && nullNodeChannelMappings.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ChannelMappings = null;
+            if (parseNode.GetChildNode("Country") is { } nullNodeCountry && nullNodeCountry.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Country = null;
+            if (parseNode.GetChildNode("EnableAllTuners") is { } nullNodeEnableAllTuners && nullNodeEnableAllTuners.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableAllTuners = null;
+            if (parseNode.GetChildNode("EnabledTuners") is { } nullNodeEnabledTuners && nullNodeEnabledTuners.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnabledTuners = null;
+            if (parseNode.GetChildNode("Id") is { } nullNodeId && nullNodeId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Id = null;
+            if (parseNode.GetChildNode("KidsCategories") is { } nullNodeKidsCategories && nullNodeKidsCategories.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) KidsCategories = null;
+            if (parseNode.GetChildNode("ListingsId") is { } nullNodeListingsId && nullNodeListingsId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ListingsId = null;
+            if (parseNode.GetChildNode("MovieCategories") is { } nullNodeMovieCategories && nullNodeMovieCategories.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MovieCategories = null;
+            if (parseNode.GetChildNode("MoviePrefix") is { } nullNodeMoviePrefix && nullNodeMoviePrefix.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MoviePrefix = null;
+            if (parseNode.GetChildNode("NewsCategories") is { } nullNodeNewsCategories && nullNodeNewsCategories.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) NewsCategories = null;
+            if (parseNode.GetChildNode("Password") is { } nullNodePassword && nullNodePassword.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Password = null;
+            if (parseNode.GetChildNode("Path") is { } nullNodePath && nullNodePath.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Path = null;
+            if (parseNode.GetChildNode("PreferredLanguage") is { } nullNodePreferredLanguage && nullNodePreferredLanguage.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PreferredLanguage = null;
+            if (parseNode.GetChildNode("SportsCategories") is { } nullNodeSportsCategories && nullNodeSportsCategories.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SportsCategories = null;
+            if (parseNode.GetChildNode("Type") is { } nullNodeType && nullNodeType.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Type = null;
+            if (parseNode.GetChildNode("UserAgent") is { } nullNodeUserAgent && nullNodeUserAgent.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) UserAgent = null;
+            if (parseNode.GetChildNode("Username") is { } nullNodeUsername && nullNodeUsername.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Username = null;
+            if (parseNode.GetChildNode("ZipCode") is { } nullNodeZipCode && nullNodeZipCode.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ZipCode = null;
+        }
+
         /// <summary>The ChannelMappings property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.NameValuePair>? ChannelMappings { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.NameValuePair>? ChannelMappings { get => _explicitNullValueChannelMappings; set { _explicitNullValueChannelMappings = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ChannelMappings"); else _explicitNullProperties?.Remove("ChannelMappings"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.NameValuePair>? _explicitNullValueChannelMappings = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.NameValuePair> ChannelMappings { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.NameValuePair> ChannelMappings { get => _explicitNullValueChannelMappings; set { _explicitNullValueChannelMappings = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ChannelMappings"); else _explicitNullProperties?.Remove("ChannelMappings"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.NameValuePair> _explicitNullValueChannelMappings = default!;
 #endif
         /// <summary>The Country property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Country { get; set; }
+        public string? Country { get => _explicitNullValueCountry; set { _explicitNullValueCountry = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Country"); else _explicitNullProperties?.Remove("Country"); } }
+        private string? _explicitNullValueCountry = default!;
 #nullable restore
 #else
-        public string Country { get; set; }
+        public string Country { get => _explicitNullValueCountry; set { _explicitNullValueCountry = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Country"); else _explicitNullProperties?.Remove("Country"); } }
+        private string _explicitNullValueCountry = default!;
 #endif
         /// <summary>The EnableAllTuners property</summary>
-        public bool? EnableAllTuners { get; set; }
+        public bool? EnableAllTuners { get => _explicitNullValueEnableAllTuners; set { _explicitNullValueEnableAllTuners = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableAllTuners"); else _explicitNullProperties?.Remove("EnableAllTuners"); } }
+        private bool? _explicitNullValueEnableAllTuners = default!;
         /// <summary>The EnabledTuners property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? EnabledTuners { get; set; }
+        public List<string>? EnabledTuners { get => _explicitNullValueEnabledTuners; set { _explicitNullValueEnabledTuners = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnabledTuners"); else _explicitNullProperties?.Remove("EnabledTuners"); } }
+        private List<string>? _explicitNullValueEnabledTuners = default!;
 #nullable restore
 #else
-        public List<string> EnabledTuners { get; set; }
+        public List<string> EnabledTuners { get => _explicitNullValueEnabledTuners; set { _explicitNullValueEnabledTuners = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnabledTuners"); else _explicitNullProperties?.Remove("EnabledTuners"); } }
+        private List<string> _explicitNullValueEnabledTuners = default!;
 #endif
         /// <summary>The Id property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Id { get; set; }
+        public string? Id { get => _explicitNullValueId; set { _explicitNullValueId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Id"); else _explicitNullProperties?.Remove("Id"); } }
+        private string? _explicitNullValueId = default!;
 #nullable restore
 #else
-        public string Id { get; set; }
+        public string Id { get => _explicitNullValueId; set { _explicitNullValueId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Id"); else _explicitNullProperties?.Remove("Id"); } }
+        private string _explicitNullValueId = default!;
 #endif
         /// <summary>The KidsCategories property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? KidsCategories { get; set; }
+        public List<string>? KidsCategories { get => _explicitNullValueKidsCategories; set { _explicitNullValueKidsCategories = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("KidsCategories"); else _explicitNullProperties?.Remove("KidsCategories"); } }
+        private List<string>? _explicitNullValueKidsCategories = default!;
 #nullable restore
 #else
-        public List<string> KidsCategories { get; set; }
+        public List<string> KidsCategories { get => _explicitNullValueKidsCategories; set { _explicitNullValueKidsCategories = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("KidsCategories"); else _explicitNullProperties?.Remove("KidsCategories"); } }
+        private List<string> _explicitNullValueKidsCategories = default!;
 #endif
         /// <summary>The ListingsId property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ListingsId { get; set; }
+        public string? ListingsId { get => _explicitNullValueListingsId; set { _explicitNullValueListingsId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ListingsId"); else _explicitNullProperties?.Remove("ListingsId"); } }
+        private string? _explicitNullValueListingsId = default!;
 #nullable restore
 #else
-        public string ListingsId { get; set; }
+        public string ListingsId { get => _explicitNullValueListingsId; set { _explicitNullValueListingsId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ListingsId"); else _explicitNullProperties?.Remove("ListingsId"); } }
+        private string _explicitNullValueListingsId = default!;
 #endif
         /// <summary>The MovieCategories property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? MovieCategories { get; set; }
+        public List<string>? MovieCategories { get => _explicitNullValueMovieCategories; set { _explicitNullValueMovieCategories = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MovieCategories"); else _explicitNullProperties?.Remove("MovieCategories"); } }
+        private List<string>? _explicitNullValueMovieCategories = default!;
 #nullable restore
 #else
-        public List<string> MovieCategories { get; set; }
+        public List<string> MovieCategories { get => _explicitNullValueMovieCategories; set { _explicitNullValueMovieCategories = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MovieCategories"); else _explicitNullProperties?.Remove("MovieCategories"); } }
+        private List<string> _explicitNullValueMovieCategories = default!;
 #endif
         /// <summary>The MoviePrefix property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? MoviePrefix { get; set; }
+        public string? MoviePrefix { get => _explicitNullValueMoviePrefix; set { _explicitNullValueMoviePrefix = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MoviePrefix"); else _explicitNullProperties?.Remove("MoviePrefix"); } }
+        private string? _explicitNullValueMoviePrefix = default!;
 #nullable restore
 #else
-        public string MoviePrefix { get; set; }
+        public string MoviePrefix { get => _explicitNullValueMoviePrefix; set { _explicitNullValueMoviePrefix = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MoviePrefix"); else _explicitNullProperties?.Remove("MoviePrefix"); } }
+        private string _explicitNullValueMoviePrefix = default!;
 #endif
         /// <summary>The NewsCategories property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? NewsCategories { get; set; }
+        public List<string>? NewsCategories { get => _explicitNullValueNewsCategories; set { _explicitNullValueNewsCategories = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("NewsCategories"); else _explicitNullProperties?.Remove("NewsCategories"); } }
+        private List<string>? _explicitNullValueNewsCategories = default!;
 #nullable restore
 #else
-        public List<string> NewsCategories { get; set; }
+        public List<string> NewsCategories { get => _explicitNullValueNewsCategories; set { _explicitNullValueNewsCategories = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("NewsCategories"); else _explicitNullProperties?.Remove("NewsCategories"); } }
+        private List<string> _explicitNullValueNewsCategories = default!;
 #endif
         /// <summary>The Password property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Password { get; set; }
+        public string? Password { get => _explicitNullValuePassword; set { _explicitNullValuePassword = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Password"); else _explicitNullProperties?.Remove("Password"); } }
+        private string? _explicitNullValuePassword = default!;
 #nullable restore
 #else
-        public string Password { get; set; }
+        public string Password { get => _explicitNullValuePassword; set { _explicitNullValuePassword = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Password"); else _explicitNullProperties?.Remove("Password"); } }
+        private string _explicitNullValuePassword = default!;
 #endif
         /// <summary>The Path property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Path { get; set; }
+        public string? Path { get => _explicitNullValuePath; set { _explicitNullValuePath = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Path"); else _explicitNullProperties?.Remove("Path"); } }
+        private string? _explicitNullValuePath = default!;
 #nullable restore
 #else
-        public string Path { get; set; }
+        public string Path { get => _explicitNullValuePath; set { _explicitNullValuePath = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Path"); else _explicitNullProperties?.Remove("Path"); } }
+        private string _explicitNullValuePath = default!;
 #endif
         /// <summary>The PreferredLanguage property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? PreferredLanguage { get; set; }
+        public string? PreferredLanguage { get => _explicitNullValuePreferredLanguage; set { _explicitNullValuePreferredLanguage = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PreferredLanguage"); else _explicitNullProperties?.Remove("PreferredLanguage"); } }
+        private string? _explicitNullValuePreferredLanguage = default!;
 #nullable restore
 #else
-        public string PreferredLanguage { get; set; }
+        public string PreferredLanguage { get => _explicitNullValuePreferredLanguage; set { _explicitNullValuePreferredLanguage = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PreferredLanguage"); else _explicitNullProperties?.Remove("PreferredLanguage"); } }
+        private string _explicitNullValuePreferredLanguage = default!;
 #endif
         /// <summary>The SportsCategories property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? SportsCategories { get; set; }
+        public List<string>? SportsCategories { get => _explicitNullValueSportsCategories; set { _explicitNullValueSportsCategories = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SportsCategories"); else _explicitNullProperties?.Remove("SportsCategories"); } }
+        private List<string>? _explicitNullValueSportsCategories = default!;
 #nullable restore
 #else
-        public List<string> SportsCategories { get; set; }
+        public List<string> SportsCategories { get => _explicitNullValueSportsCategories; set { _explicitNullValueSportsCategories = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SportsCategories"); else _explicitNullProperties?.Remove("SportsCategories"); } }
+        private List<string> _explicitNullValueSportsCategories = default!;
 #endif
         /// <summary>The Type property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Type { get; set; }
+        public string? Type { get => _explicitNullValueType; set { _explicitNullValueType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Type"); else _explicitNullProperties?.Remove("Type"); } }
+        private string? _explicitNullValueType = default!;
 #nullable restore
 #else
-        public string Type { get; set; }
+        public string Type { get => _explicitNullValueType; set { _explicitNullValueType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Type"); else _explicitNullProperties?.Remove("Type"); } }
+        private string _explicitNullValueType = default!;
 #endif
         /// <summary>The UserAgent property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? UserAgent { get; set; }
+        public string? UserAgent { get => _explicitNullValueUserAgent; set { _explicitNullValueUserAgent = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("UserAgent"); else _explicitNullProperties?.Remove("UserAgent"); } }
+        private string? _explicitNullValueUserAgent = default!;
 #nullable restore
 #else
-        public string UserAgent { get; set; }
+        public string UserAgent { get => _explicitNullValueUserAgent; set { _explicitNullValueUserAgent = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("UserAgent"); else _explicitNullProperties?.Remove("UserAgent"); } }
+        private string _explicitNullValueUserAgent = default!;
 #endif
         /// <summary>The Username property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Username { get; set; }
+        public string? Username { get => _explicitNullValueUsername; set { _explicitNullValueUsername = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Username"); else _explicitNullProperties?.Remove("Username"); } }
+        private string? _explicitNullValueUsername = default!;
 #nullable restore
 #else
-        public string Username { get; set; }
+        public string Username { get => _explicitNullValueUsername; set { _explicitNullValueUsername = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Username"); else _explicitNullProperties?.Remove("Username"); } }
+        private string _explicitNullValueUsername = default!;
 #endif
         /// <summary>The ZipCode property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ZipCode { get; set; }
+        public string? ZipCode { get => _explicitNullValueZipCode; set { _explicitNullValueZipCode = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ZipCode"); else _explicitNullProperties?.Remove("ZipCode"); } }
+        private string? _explicitNullValueZipCode = default!;
 #nullable restore
 #else
-        public string ZipCode { get; set; }
+        public string ZipCode { get => _explicitNullValueZipCode; set { _explicitNullValueZipCode = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ZipCode"); else _explicitNullProperties?.Remove("ZipCode"); } }
+        private string _explicitNullValueZipCode = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -158,7 +218,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.ListingsProviderInfo CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.ListingsProviderInfo();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.ListingsProviderInfo(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -212,7 +272,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteStringValue("Type", Type);
             writer.WriteStringValue("UserAgent", UserAgent);
             writer.WriteStringValue("Username", Username);
-            writer.WriteStringValue("ZipCode", ZipCode);
+            writer.WriteStringValue("ZipCode", ZipCode);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

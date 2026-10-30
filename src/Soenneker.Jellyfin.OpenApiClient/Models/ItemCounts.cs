@@ -12,31 +12,62 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class ItemCounts : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("AlbumCount") is { } nullNodeAlbumCount && nullNodeAlbumCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AlbumCount = null;
+            if (parseNode.GetChildNode("ArtistCount") is { } nullNodeArtistCount && nullNodeArtistCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ArtistCount = null;
+            if (parseNode.GetChildNode("BookCount") is { } nullNodeBookCount && nullNodeBookCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) BookCount = null;
+            if (parseNode.GetChildNode("BoxSetCount") is { } nullNodeBoxSetCount && nullNodeBoxSetCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) BoxSetCount = null;
+            if (parseNode.GetChildNode("EpisodeCount") is { } nullNodeEpisodeCount && nullNodeEpisodeCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EpisodeCount = null;
+            if (parseNode.GetChildNode("ItemCount") is { } nullNodeItemCount && nullNodeItemCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ItemCount = null;
+            if (parseNode.GetChildNode("MovieCount") is { } nullNodeMovieCount && nullNodeMovieCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MovieCount = null;
+            if (parseNode.GetChildNode("MusicVideoCount") is { } nullNodeMusicVideoCount && nullNodeMusicVideoCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MusicVideoCount = null;
+            if (parseNode.GetChildNode("ProgramCount") is { } nullNodeProgramCount && nullNodeProgramCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ProgramCount = null;
+            if (parseNode.GetChildNode("SeriesCount") is { } nullNodeSeriesCount && nullNodeSeriesCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SeriesCount = null;
+            if (parseNode.GetChildNode("SongCount") is { } nullNodeSongCount && nullNodeSongCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SongCount = null;
+            if (parseNode.GetChildNode("TrailerCount") is { } nullNodeTrailerCount && nullNodeTrailerCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) TrailerCount = null;
+        }
+
         /// <summary>Gets or sets the album count.</summary>
-        public int? AlbumCount { get; set; }
+        public int? AlbumCount { get => _explicitNullValueAlbumCount; set { _explicitNullValueAlbumCount = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("AlbumCount"); else _explicitNullProperties?.Remove("AlbumCount"); } }
+        private int? _explicitNullValueAlbumCount = default!;
         /// <summary>Gets or sets the artist count.</summary>
-        public int? ArtistCount { get; set; }
+        public int? ArtistCount { get => _explicitNullValueArtistCount; set { _explicitNullValueArtistCount = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ArtistCount"); else _explicitNullProperties?.Remove("ArtistCount"); } }
+        private int? _explicitNullValueArtistCount = default!;
         /// <summary>Gets or sets the book count.</summary>
-        public int? BookCount { get; set; }
+        public int? BookCount { get => _explicitNullValueBookCount; set { _explicitNullValueBookCount = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("BookCount"); else _explicitNullProperties?.Remove("BookCount"); } }
+        private int? _explicitNullValueBookCount = default!;
         /// <summary>Gets or sets the box set count.</summary>
-        public int? BoxSetCount { get; set; }
+        public int? BoxSetCount { get => _explicitNullValueBoxSetCount; set { _explicitNullValueBoxSetCount = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("BoxSetCount"); else _explicitNullProperties?.Remove("BoxSetCount"); } }
+        private int? _explicitNullValueBoxSetCount = default!;
         /// <summary>Gets or sets the episode count.</summary>
-        public int? EpisodeCount { get; set; }
+        public int? EpisodeCount { get => _explicitNullValueEpisodeCount; set { _explicitNullValueEpisodeCount = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EpisodeCount"); else _explicitNullProperties?.Remove("EpisodeCount"); } }
+        private int? _explicitNullValueEpisodeCount = default!;
         /// <summary>Gets or sets the item count.</summary>
-        public int? ItemCount { get; set; }
+        public int? ItemCount { get => _explicitNullValueItemCount; set { _explicitNullValueItemCount = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ItemCount"); else _explicitNullProperties?.Remove("ItemCount"); } }
+        private int? _explicitNullValueItemCount = default!;
         /// <summary>Gets or sets the movie count.</summary>
-        public int? MovieCount { get; set; }
+        public int? MovieCount { get => _explicitNullValueMovieCount; set { _explicitNullValueMovieCount = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MovieCount"); else _explicitNullProperties?.Remove("MovieCount"); } }
+        private int? _explicitNullValueMovieCount = default!;
         /// <summary>Gets or sets the music video count.</summary>
-        public int? MusicVideoCount { get; set; }
+        public int? MusicVideoCount { get => _explicitNullValueMusicVideoCount; set { _explicitNullValueMusicVideoCount = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MusicVideoCount"); else _explicitNullProperties?.Remove("MusicVideoCount"); } }
+        private int? _explicitNullValueMusicVideoCount = default!;
         /// <summary>Gets or sets the program count.</summary>
-        public int? ProgramCount { get; set; }
+        public int? ProgramCount { get => _explicitNullValueProgramCount; set { _explicitNullValueProgramCount = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ProgramCount"); else _explicitNullProperties?.Remove("ProgramCount"); } }
+        private int? _explicitNullValueProgramCount = default!;
         /// <summary>Gets or sets the series count.</summary>
-        public int? SeriesCount { get; set; }
+        public int? SeriesCount { get => _explicitNullValueSeriesCount; set { _explicitNullValueSeriesCount = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SeriesCount"); else _explicitNullProperties?.Remove("SeriesCount"); } }
+        private int? _explicitNullValueSeriesCount = default!;
         /// <summary>Gets or sets the song count.</summary>
-        public int? SongCount { get; set; }
+        public int? SongCount { get => _explicitNullValueSongCount; set { _explicitNullValueSongCount = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SongCount"); else _explicitNullProperties?.Remove("SongCount"); } }
+        private int? _explicitNullValueSongCount = default!;
         /// <summary>Gets or sets the trailer count.</summary>
-        public int? TrailerCount { get; set; }
+        public int? TrailerCount { get => _explicitNullValueTrailerCount; set { _explicitNullValueTrailerCount = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("TrailerCount"); else _explicitNullProperties?.Remove("TrailerCount"); } }
+        private int? _explicitNullValueTrailerCount = default!;
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
@@ -45,7 +76,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.ItemCounts CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.ItemCounts();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.ItemCounts(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -87,7 +118,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteIntValue("ProgramCount", ProgramCount);
             writer.WriteIntValue("SeriesCount", SeriesCount);
             writer.WriteIntValue("SongCount", SongCount);
-            writer.WriteIntValue("TrailerCount", TrailerCount);
+            writer.WriteIntValue("TrailerCount", TrailerCount);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

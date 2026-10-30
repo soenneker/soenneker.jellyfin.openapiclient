@@ -12,58 +12,87 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class VirtualFolderInfo : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("CollectionType") is { } nullNodeCollectionType && nullNodeCollectionType.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) CollectionType = null;
+            if (parseNode.GetChildNode("ItemId") is { } nullNodeItemId && nullNodeItemId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ItemId = null;
+            if (parseNode.GetChildNode("LibraryOptions") is { } nullNodeLibraryOptions && nullNodeLibraryOptions.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LibraryOptions = null;
+            if (parseNode.GetChildNode("Locations") is { } nullNodeLocations && nullNodeLocations.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Locations = null;
+            if (parseNode.GetChildNode("Name") is { } nullNodeName && nullNodeName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Name = null;
+            if (parseNode.GetChildNode("PrimaryImageItemId") is { } nullNodePrimaryImageItemId && nullNodePrimaryImageItemId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PrimaryImageItemId = null;
+            if (parseNode.GetChildNode("RefreshProgress") is { } nullNodeRefreshProgress && nullNodeRefreshProgress.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) RefreshProgress = null;
+            if (parseNode.GetChildNode("RefreshStatus") is { } nullNodeRefreshStatus && nullNodeRefreshStatus.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) RefreshStatus = null;
+        }
+
         /// <summary>Gets or sets the type of the collection.</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.VirtualFolderInfo_CollectionType? CollectionType { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.VirtualFolderInfo_CollectionType? CollectionType { get => _explicitNullValueCollectionType; set { _explicitNullValueCollectionType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("CollectionType"); else _explicitNullProperties?.Remove("CollectionType"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.VirtualFolderInfo_CollectionType? _explicitNullValueCollectionType = default!;
         /// <summary>Gets or sets the item identifier.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ItemId { get; set; }
+        public string? ItemId { get => _explicitNullValueItemId; set { _explicitNullValueItemId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ItemId"); else _explicitNullProperties?.Remove("ItemId"); } }
+        private string? _explicitNullValueItemId = default!;
 #nullable restore
 #else
-        public string ItemId { get; set; }
+        public string ItemId { get => _explicitNullValueItemId; set { _explicitNullValueItemId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ItemId"); else _explicitNullProperties?.Remove("ItemId"); } }
+        private string _explicitNullValueItemId = default!;
 #endif
         /// <summary>The LibraryOptions property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptions? LibraryOptions { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptions? LibraryOptions { get => _explicitNullValueLibraryOptions; set { _explicitNullValueLibraryOptions = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LibraryOptions"); else _explicitNullProperties?.Remove("LibraryOptions"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptions? _explicitNullValueLibraryOptions = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptions LibraryOptions { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptions LibraryOptions { get => _explicitNullValueLibraryOptions; set { _explicitNullValueLibraryOptions = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LibraryOptions"); else _explicitNullProperties?.Remove("LibraryOptions"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryOptions _explicitNullValueLibraryOptions = default!;
 #endif
         /// <summary>Gets or sets the locations.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? Locations { get; set; }
+        public List<string>? Locations { get => _explicitNullValueLocations; set { _explicitNullValueLocations = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Locations"); else _explicitNullProperties?.Remove("Locations"); } }
+        private List<string>? _explicitNullValueLocations = default!;
 #nullable restore
 #else
-        public List<string> Locations { get; set; }
+        public List<string> Locations { get => _explicitNullValueLocations; set { _explicitNullValueLocations = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Locations"); else _explicitNullProperties?.Remove("Locations"); } }
+        private List<string> _explicitNullValueLocations = default!;
 #endif
         /// <summary>Gets or sets the name.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Name { get; set; }
+        public string? Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Name"); else _explicitNullProperties?.Remove("Name"); } }
+        private string? _explicitNullValueName = default!;
 #nullable restore
 #else
-        public string Name { get; set; }
+        public string Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Name"); else _explicitNullProperties?.Remove("Name"); } }
+        private string _explicitNullValueName = default!;
 #endif
         /// <summary>Gets or sets the primary image item identifier.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? PrimaryImageItemId { get; set; }
+        public string? PrimaryImageItemId { get => _explicitNullValuePrimaryImageItemId; set { _explicitNullValuePrimaryImageItemId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PrimaryImageItemId"); else _explicitNullProperties?.Remove("PrimaryImageItemId"); } }
+        private string? _explicitNullValuePrimaryImageItemId = default!;
 #nullable restore
 #else
-        public string PrimaryImageItemId { get; set; }
+        public string PrimaryImageItemId { get => _explicitNullValuePrimaryImageItemId; set { _explicitNullValuePrimaryImageItemId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PrimaryImageItemId"); else _explicitNullProperties?.Remove("PrimaryImageItemId"); } }
+        private string _explicitNullValuePrimaryImageItemId = default!;
 #endif
         /// <summary>The RefreshProgress property</summary>
-        public double? RefreshProgress { get; set; }
+        public double? RefreshProgress { get => _explicitNullValueRefreshProgress; set { _explicitNullValueRefreshProgress = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("RefreshProgress"); else _explicitNullProperties?.Remove("RefreshProgress"); } }
+        private double? _explicitNullValueRefreshProgress = default!;
         /// <summary>The RefreshStatus property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? RefreshStatus { get; set; }
+        public string? RefreshStatus { get => _explicitNullValueRefreshStatus; set { _explicitNullValueRefreshStatus = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("RefreshStatus"); else _explicitNullProperties?.Remove("RefreshStatus"); } }
+        private string? _explicitNullValueRefreshStatus = default!;
 #nullable restore
 #else
-        public string RefreshStatus { get; set; }
+        public string RefreshStatus { get => _explicitNullValueRefreshStatus; set { _explicitNullValueRefreshStatus = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("RefreshStatus"); else _explicitNullProperties?.Remove("RefreshStatus"); } }
+        private string _explicitNullValueRefreshStatus = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -73,7 +102,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.VirtualFolderInfo CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.VirtualFolderInfo();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.VirtualFolderInfo(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -107,7 +136,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteStringValue("Name", Name);
             writer.WriteStringValue("PrimaryImageItemId", PrimaryImageItemId);
             writer.WriteDoubleValue("RefreshProgress", RefreshProgress);
-            writer.WriteStringValue("RefreshStatus", RefreshStatus);
+            writer.WriteStringValue("RefreshStatus", RefreshStatus);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

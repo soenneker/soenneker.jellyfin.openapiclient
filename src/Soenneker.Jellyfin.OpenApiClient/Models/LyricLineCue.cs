@@ -12,15 +12,30 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class LyricLineCue : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("End") is { } nullNodeEnd && nullNodeEnd.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) End = null;
+            if (parseNode.GetChildNode("EndPosition") is { } nullNodeEndPosition && nullNodeEndPosition.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EndPosition = null;
+            if (parseNode.GetChildNode("Position") is { } nullNodePosition && nullNodePosition.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Position = null;
+            if (parseNode.GetChildNode("Start") is { } nullNodeStart && nullNodeStart.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Start = null;
+        }
+
         /// <summary>Gets the end timestamp the lyric is synced to in ticks.</summary>
-        public long? End { get; set; }
+        public long? End { get => _explicitNullValueEnd; set { _explicitNullValueEnd = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("End"); else _explicitNullProperties?.Remove("End"); } }
+        private long? _explicitNullValueEnd = default!;
         /// <summary>Gets the end character index of the cue.</summary>
-        public int? EndPosition { get; set; }
+        public int? EndPosition { get => _explicitNullValueEndPosition; set { _explicitNullValueEndPosition = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EndPosition"); else _explicitNullProperties?.Remove("EndPosition"); } }
+        private int? _explicitNullValueEndPosition = default!;
         /// <summary>Gets the start character index of the cue.</summary>
-        public int? Position { get; set; }
+        public int? Position { get => _explicitNullValuePosition; set { _explicitNullValuePosition = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Position"); else _explicitNullProperties?.Remove("Position"); } }
+        private int? _explicitNullValuePosition = default!;
         /// <summary>Gets the timestamp the lyric is synced to in ticks.</summary>
-        public long? Start { get; set; }
+        public long? Start { get => _explicitNullValueStart; set { _explicitNullValueStart = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Start"); else _explicitNullProperties?.Remove("Start"); } }
+        private long? _explicitNullValueStart = default!;
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
@@ -29,7 +44,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.LyricLineCue CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.LyricLineCue();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.LyricLineCue(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -55,7 +70,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteLongValue("End", End);
             writer.WriteIntValue("EndPosition", EndPosition);
             writer.WriteIntValue("Position", Position);
-            writer.WriteLongValue("Start", Start);
+            writer.WriteLongValue("Start", Start);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

@@ -49,7 +49,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.UserFavoriteItems.Item
         {
 #endif
             var requestInfo = ToDeleteRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::Soenneker.Jellyfin.OpenApiClient.Models.UserItemDataDto>(requestInfo, global::Soenneker.Jellyfin.OpenApiClient.Models.UserItemDataDto.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::Soenneker.Jellyfin.OpenApiClient.Models.UserItemDataDto>(requestInfo, global::Soenneker.Jellyfin.OpenApiClient.Models.UserItemDataDto.CreateFromDiscriminatorValue, new global::System.Collections.Generic.Dictionary<string, global::Microsoft.Kiota.Abstractions.Serialization.ParsableFactory<global::Microsoft.Kiota.Abstractions.Serialization.IParsable>> { { "4XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue }, { "5XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue } }, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Marks an item as a favorite.
@@ -67,7 +67,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.UserFavoriteItems.Item
         {
 #endif
             var requestInfo = ToPostRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<global::Soenneker.Jellyfin.OpenApiClient.Models.UserItemDataDto>(requestInfo, global::Soenneker.Jellyfin.OpenApiClient.Models.UserItemDataDto.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::Soenneker.Jellyfin.OpenApiClient.Models.UserItemDataDto>(requestInfo, global::Soenneker.Jellyfin.OpenApiClient.Models.UserItemDataDto.CreateFromDiscriminatorValue, new global::System.Collections.Generic.Dictionary<string, global::Microsoft.Kiota.Abstractions.Serialization.ParsableFactory<global::Microsoft.Kiota.Abstractions.Serialization.IParsable>> { { "4XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue }, { "5XX", global::Soenneker.OpenApi.Generated.OpenApiRawError.CreateFromDiscriminatorValue } }, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Unmarks item as a favorite.

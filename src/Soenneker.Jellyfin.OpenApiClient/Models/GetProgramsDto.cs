@@ -12,109 +12,178 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class GetProgramsDto : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("ChannelIds") is { } nullNodeChannelIds && nullNodeChannelIds.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ChannelIds = null;
+            if (parseNode.GetChildNode("EnableImages") is { } nullNodeEnableImages && nullNodeEnableImages.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableImages = null;
+            if (parseNode.GetChildNode("EnableImageTypes") is { } nullNodeEnableImageTypes && nullNodeEnableImageTypes.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableImageTypes = null;
+            if (parseNode.GetChildNode("EnableTotalRecordCount") is { } nullNodeEnableTotalRecordCount && nullNodeEnableTotalRecordCount.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableTotalRecordCount = null;
+            if (parseNode.GetChildNode("EnableUserData") is { } nullNodeEnableUserData && nullNodeEnableUserData.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableUserData = null;
+            if (parseNode.GetChildNode("Fields") is { } nullNodeFields && nullNodeFields.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Fields = null;
+            if (parseNode.GetChildNode("GenreIds") is { } nullNodeGenreIds && nullNodeGenreIds.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) GenreIds = null;
+            if (parseNode.GetChildNode("Genres") is { } nullNodeGenres && nullNodeGenres.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Genres = null;
+            if (parseNode.GetChildNode("HasAired") is { } nullNodeHasAired && nullNodeHasAired.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) HasAired = null;
+            if (parseNode.GetChildNode("ImageTypeLimit") is { } nullNodeImageTypeLimit && nullNodeImageTypeLimit.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ImageTypeLimit = null;
+            if (parseNode.GetChildNode("IsAiring") is { } nullNodeIsAiring && nullNodeIsAiring.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsAiring = null;
+            if (parseNode.GetChildNode("IsKids") is { } nullNodeIsKids && nullNodeIsKids.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsKids = null;
+            if (parseNode.GetChildNode("IsMovie") is { } nullNodeIsMovie && nullNodeIsMovie.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsMovie = null;
+            if (parseNode.GetChildNode("IsNews") is { } nullNodeIsNews && nullNodeIsNews.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsNews = null;
+            if (parseNode.GetChildNode("IsSeries") is { } nullNodeIsSeries && nullNodeIsSeries.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsSeries = null;
+            if (parseNode.GetChildNode("IsSports") is { } nullNodeIsSports && nullNodeIsSports.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsSports = null;
+            if (parseNode.GetChildNode("LibrarySeriesId") is { } nullNodeLibrarySeriesId && nullNodeLibrarySeriesId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LibrarySeriesId = null;
+            if (parseNode.GetChildNode("Limit") is { } nullNodeLimit && nullNodeLimit.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Limit = null;
+            if (parseNode.GetChildNode("MaxEndDate") is { } nullNodeMaxEndDate && nullNodeMaxEndDate.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MaxEndDate = null;
+            if (parseNode.GetChildNode("MaxStartDate") is { } nullNodeMaxStartDate && nullNodeMaxStartDate.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MaxStartDate = null;
+            if (parseNode.GetChildNode("MinEndDate") is { } nullNodeMinEndDate && nullNodeMinEndDate.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MinEndDate = null;
+            if (parseNode.GetChildNode("MinStartDate") is { } nullNodeMinStartDate && nullNodeMinStartDate.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MinStartDate = null;
+            if (parseNode.GetChildNode("SeriesTimerId") is { } nullNodeSeriesTimerId && nullNodeSeriesTimerId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SeriesTimerId = null;
+            if (parseNode.GetChildNode("SortBy") is { } nullNodeSortBy && nullNodeSortBy.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SortBy = null;
+            if (parseNode.GetChildNode("SortOrder") is { } nullNodeSortOrder && nullNodeSortOrder.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SortOrder = null;
+            if (parseNode.GetChildNode("StartIndex") is { } nullNodeStartIndex && nullNodeStartIndex.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) StartIndex = null;
+            if (parseNode.GetChildNode("UserId") is { } nullNodeUserId && nullNodeUserId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) UserId = null;
+        }
+
         /// <summary>Gets or sets the channels to return guide information for.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<Guid?>? ChannelIds { get; set; }
+        public List<Guid?>? ChannelIds { get => _explicitNullValueChannelIds; set { _explicitNullValueChannelIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ChannelIds"); else _explicitNullProperties?.Remove("ChannelIds"); } }
+        private List<Guid?>? _explicitNullValueChannelIds = default!;
 #nullable restore
 #else
-        public List<Guid?> ChannelIds { get; set; }
+        public List<Guid?> ChannelIds { get => _explicitNullValueChannelIds; set { _explicitNullValueChannelIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ChannelIds"); else _explicitNullProperties?.Remove("ChannelIds"); } }
+        private List<Guid?> _explicitNullValueChannelIds = default!;
 #endif
         /// <summary>Gets or sets include image information in output.</summary>
-        public bool? EnableImages { get; set; }
+        public bool? EnableImages { get => _explicitNullValueEnableImages; set { _explicitNullValueEnableImages = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableImages"); else _explicitNullProperties?.Remove("EnableImages"); } }
+        private bool? _explicitNullValueEnableImages = default!;
         /// <summary>Gets or sets the image types to include in the output.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ImageType?>? EnableImageTypes { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ImageType?>? EnableImageTypes { get => _explicitNullValueEnableImageTypes; set { _explicitNullValueEnableImageTypes = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableImageTypes"); else _explicitNullProperties?.Remove("EnableImageTypes"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ImageType?>? _explicitNullValueEnableImageTypes = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ImageType?> EnableImageTypes { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ImageType?> EnableImageTypes { get => _explicitNullValueEnableImageTypes; set { _explicitNullValueEnableImageTypes = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableImageTypes"); else _explicitNullProperties?.Remove("EnableImageTypes"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ImageType?> _explicitNullValueEnableImageTypes = default!;
 #endif
         /// <summary>Gets or sets a value indicating whether retrieve total record count.</summary>
-        public bool? EnableTotalRecordCount { get; set; }
+        public bool? EnableTotalRecordCount { get => _explicitNullValueEnableTotalRecordCount; set { _explicitNullValueEnableTotalRecordCount = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableTotalRecordCount"); else _explicitNullProperties?.Remove("EnableTotalRecordCount"); } }
+        private bool? _explicitNullValueEnableTotalRecordCount = default!;
         /// <summary>Gets or sets include user data.</summary>
-        public bool? EnableUserData { get; set; }
+        public bool? EnableUserData { get => _explicitNullValueEnableUserData; set { _explicitNullValueEnableUserData = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableUserData"); else _explicitNullProperties?.Remove("EnableUserData"); } }
+        private bool? _explicitNullValueEnableUserData = default!;
         /// <summary>Gets or sets specify additional fields of information to return in the output.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ItemFields?>? Fields { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ItemFields?>? Fields { get => _explicitNullValueFields; set { _explicitNullValueFields = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Fields"); else _explicitNullProperties?.Remove("Fields"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ItemFields?>? _explicitNullValueFields = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ItemFields?> Fields { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ItemFields?> Fields { get => _explicitNullValueFields; set { _explicitNullValueFields = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Fields"); else _explicitNullProperties?.Remove("Fields"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ItemFields?> _explicitNullValueFields = default!;
 #endif
         /// <summary>Gets or sets the genre ids to return guide information for.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<Guid?>? GenreIds { get; set; }
+        public List<Guid?>? GenreIds { get => _explicitNullValueGenreIds; set { _explicitNullValueGenreIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("GenreIds"); else _explicitNullProperties?.Remove("GenreIds"); } }
+        private List<Guid?>? _explicitNullValueGenreIds = default!;
 #nullable restore
 #else
-        public List<Guid?> GenreIds { get; set; }
+        public List<Guid?> GenreIds { get => _explicitNullValueGenreIds; set { _explicitNullValueGenreIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("GenreIds"); else _explicitNullProperties?.Remove("GenreIds"); } }
+        private List<Guid?> _explicitNullValueGenreIds = default!;
 #endif
         /// <summary>Gets or sets the genres to return guide information for.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? Genres { get; set; }
+        public List<string>? Genres { get => _explicitNullValueGenres; set { _explicitNullValueGenres = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Genres"); else _explicitNullProperties?.Remove("Genres"); } }
+        private List<string>? _explicitNullValueGenres = default!;
 #nullable restore
 #else
-        public List<string> Genres { get; set; }
+        public List<string> Genres { get => _explicitNullValueGenres; set { _explicitNullValueGenres = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Genres"); else _explicitNullProperties?.Remove("Genres"); } }
+        private List<string> _explicitNullValueGenres = default!;
 #endif
         /// <summary>Gets or sets filter by programs that have completed airing, or not.</summary>
-        public bool? HasAired { get; set; }
+        public bool? HasAired { get => _explicitNullValueHasAired; set { _explicitNullValueHasAired = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("HasAired"); else _explicitNullProperties?.Remove("HasAired"); } }
+        private bool? _explicitNullValueHasAired = default!;
         /// <summary>Gets or sets the max number of images to return, per image type.</summary>
-        public int? ImageTypeLimit { get; set; }
+        public int? ImageTypeLimit { get => _explicitNullValueImageTypeLimit; set { _explicitNullValueImageTypeLimit = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ImageTypeLimit"); else _explicitNullProperties?.Remove("ImageTypeLimit"); } }
+        private int? _explicitNullValueImageTypeLimit = default!;
         /// <summary>Gets or sets filter by programs that are currently airing, or not.</summary>
-        public bool? IsAiring { get; set; }
+        public bool? IsAiring { get => _explicitNullValueIsAiring; set { _explicitNullValueIsAiring = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IsAiring"); else _explicitNullProperties?.Remove("IsAiring"); } }
+        private bool? _explicitNullValueIsAiring = default!;
         /// <summary>Gets or sets filter for kids.</summary>
-        public bool? IsKids { get; set; }
+        public bool? IsKids { get => _explicitNullValueIsKids; set { _explicitNullValueIsKids = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IsKids"); else _explicitNullProperties?.Remove("IsKids"); } }
+        private bool? _explicitNullValueIsKids = default!;
         /// <summary>Gets or sets filter for movies.</summary>
-        public bool? IsMovie { get; set; }
+        public bool? IsMovie { get => _explicitNullValueIsMovie; set { _explicitNullValueIsMovie = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IsMovie"); else _explicitNullProperties?.Remove("IsMovie"); } }
+        private bool? _explicitNullValueIsMovie = default!;
         /// <summary>Gets or sets filter for news.</summary>
-        public bool? IsNews { get; set; }
+        public bool? IsNews { get => _explicitNullValueIsNews; set { _explicitNullValueIsNews = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IsNews"); else _explicitNullProperties?.Remove("IsNews"); } }
+        private bool? _explicitNullValueIsNews = default!;
         /// <summary>Gets or sets filter for series.</summary>
-        public bool? IsSeries { get; set; }
+        public bool? IsSeries { get => _explicitNullValueIsSeries; set { _explicitNullValueIsSeries = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IsSeries"); else _explicitNullProperties?.Remove("IsSeries"); } }
+        private bool? _explicitNullValueIsSeries = default!;
         /// <summary>Gets or sets filter for sports.</summary>
-        public bool? IsSports { get; set; }
+        public bool? IsSports { get => _explicitNullValueIsSports; set { _explicitNullValueIsSports = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IsSports"); else _explicitNullProperties?.Remove("IsSports"); } }
+        private bool? _explicitNullValueIsSports = default!;
         /// <summary>Gets or sets filter by library series id.</summary>
-        public Guid? LibrarySeriesId { get; set; }
+        public Guid? LibrarySeriesId { get => _explicitNullValueLibrarySeriesId; set { _explicitNullValueLibrarySeriesId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LibrarySeriesId"); else _explicitNullProperties?.Remove("LibrarySeriesId"); } }
+        private Guid? _explicitNullValueLibrarySeriesId = default!;
         /// <summary>Gets or sets the maximum number of records to return.</summary>
-        public int? Limit { get; set; }
+        public int? Limit { get => _explicitNullValueLimit; set { _explicitNullValueLimit = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Limit"); else _explicitNullProperties?.Remove("Limit"); } }
+        private int? _explicitNullValueLimit = default!;
         /// <summary>Gets or sets the maximum premiere end date.</summary>
-        public DateTimeOffset? MaxEndDate { get; set; }
+        public DateTimeOffset? MaxEndDate { get => _explicitNullValueMaxEndDate; set { _explicitNullValueMaxEndDate = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MaxEndDate"); else _explicitNullProperties?.Remove("MaxEndDate"); } }
+        private DateTimeOffset? _explicitNullValueMaxEndDate = default!;
         /// <summary>Gets or sets the maximum premiere start date.</summary>
-        public DateTimeOffset? MaxStartDate { get; set; }
+        public DateTimeOffset? MaxStartDate { get => _explicitNullValueMaxStartDate; set { _explicitNullValueMaxStartDate = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MaxStartDate"); else _explicitNullProperties?.Remove("MaxStartDate"); } }
+        private DateTimeOffset? _explicitNullValueMaxStartDate = default!;
         /// <summary>Gets or sets the minimum premiere end date.</summary>
-        public DateTimeOffset? MinEndDate { get; set; }
+        public DateTimeOffset? MinEndDate { get => _explicitNullValueMinEndDate; set { _explicitNullValueMinEndDate = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MinEndDate"); else _explicitNullProperties?.Remove("MinEndDate"); } }
+        private DateTimeOffset? _explicitNullValueMinEndDate = default!;
         /// <summary>Gets or sets the minimum premiere start date.</summary>
-        public DateTimeOffset? MinStartDate { get; set; }
+        public DateTimeOffset? MinStartDate { get => _explicitNullValueMinStartDate; set { _explicitNullValueMinStartDate = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MinStartDate"); else _explicitNullProperties?.Remove("MinStartDate"); } }
+        private DateTimeOffset? _explicitNullValueMinStartDate = default!;
         /// <summary>Gets or sets filter by series timer id.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? SeriesTimerId { get; set; }
+        public string? SeriesTimerId { get => _explicitNullValueSeriesTimerId; set { _explicitNullValueSeriesTimerId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SeriesTimerId"); else _explicitNullProperties?.Remove("SeriesTimerId"); } }
+        private string? _explicitNullValueSeriesTimerId = default!;
 #nullable restore
 #else
-        public string SeriesTimerId { get; set; }
+        public string SeriesTimerId { get => _explicitNullValueSeriesTimerId; set { _explicitNullValueSeriesTimerId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SeriesTimerId"); else _explicitNullProperties?.Remove("SeriesTimerId"); } }
+        private string _explicitNullValueSeriesTimerId = default!;
 #endif
         /// <summary>Gets or sets specify one or more sort orders, comma delimited. Options: Name, StartDate.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ItemSortBy?>? SortBy { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ItemSortBy?>? SortBy { get => _explicitNullValueSortBy; set { _explicitNullValueSortBy = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SortBy"); else _explicitNullProperties?.Remove("SortBy"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ItemSortBy?>? _explicitNullValueSortBy = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ItemSortBy?> SortBy { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ItemSortBy?> SortBy { get => _explicitNullValueSortBy; set { _explicitNullValueSortBy = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SortBy"); else _explicitNullProperties?.Remove("SortBy"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ItemSortBy?> _explicitNullValueSortBy = default!;
 #endif
         /// <summary>Gets or sets sort order.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.SortOrder?>? SortOrder { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.SortOrder?>? SortOrder { get => _explicitNullValueSortOrder; set { _explicitNullValueSortOrder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SortOrder"); else _explicitNullProperties?.Remove("SortOrder"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.SortOrder?>? _explicitNullValueSortOrder = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.SortOrder?> SortOrder { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.SortOrder?> SortOrder { get => _explicitNullValueSortOrder; set { _explicitNullValueSortOrder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SortOrder"); else _explicitNullProperties?.Remove("SortOrder"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.SortOrder?> _explicitNullValueSortOrder = default!;
 #endif
         /// <summary>Gets or sets the record index to start at. All items with a lower index will be dropped from the results.</summary>
-        public int? StartIndex { get; set; }
+        public int? StartIndex { get => _explicitNullValueStartIndex; set { _explicitNullValueStartIndex = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("StartIndex"); else _explicitNullProperties?.Remove("StartIndex"); } }
+        private int? _explicitNullValueStartIndex = default!;
         /// <summary>Gets or sets optional. Filter by user id.</summary>
-        public Guid? UserId { get; set; }
+        public Guid? UserId { get => _explicitNullValueUserId; set { _explicitNullValueUserId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("UserId"); else _explicitNullProperties?.Remove("UserId"); } }
+        private Guid? _explicitNullValueUserId = default!;
         /// <summary>
         /// Instantiates a new <see cref="global::Soenneker.Jellyfin.OpenApiClient.Models.GetProgramsDto"/> and sets the default values.
         /// </summary>
@@ -130,7 +199,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.GetProgramsDto CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.GetProgramsDto();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.GetProgramsDto(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -202,7 +271,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteCollectionOfEnumValues<global::Soenneker.Jellyfin.OpenApiClient.Models.ItemSortBy>("SortBy", SortBy);
             writer.WriteCollectionOfEnumValues<global::Soenneker.Jellyfin.OpenApiClient.Models.SortOrder>("SortOrder", SortOrder);
             writer.WriteIntValue("StartIndex", StartIndex);
-            writer.WriteGuidValue("UserId", UserId);
+            writer.WriteGuidValue("UserId", UserId);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

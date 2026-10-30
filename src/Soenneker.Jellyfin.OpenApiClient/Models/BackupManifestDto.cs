@@ -12,40 +12,61 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class BackupManifestDto : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("BackupEngineVersion") is { } nullNodeBackupEngineVersion && nullNodeBackupEngineVersion.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) BackupEngineVersion = null;
+            if (parseNode.GetChildNode("DateCreated") is { } nullNodeDateCreated && nullNodeDateCreated.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DateCreated = null;
+            if (parseNode.GetChildNode("Options") is { } nullNodeOptions && nullNodeOptions.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Options = null;
+            if (parseNode.GetChildNode("Path") is { } nullNodePath && nullNodePath.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Path = null;
+            if (parseNode.GetChildNode("ServerVersion") is { } nullNodeServerVersion && nullNodeServerVersion.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ServerVersion = null;
+        }
+
         /// <summary>Gets or sets the backup engine version this backup was created with.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? BackupEngineVersion { get; set; }
+        public string? BackupEngineVersion { get => _explicitNullValueBackupEngineVersion; set { _explicitNullValueBackupEngineVersion = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("BackupEngineVersion"); else _explicitNullProperties?.Remove("BackupEngineVersion"); } }
+        private string? _explicitNullValueBackupEngineVersion = default!;
 #nullable restore
 #else
-        public string BackupEngineVersion { get; set; }
+        public string BackupEngineVersion { get => _explicitNullValueBackupEngineVersion; set { _explicitNullValueBackupEngineVersion = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("BackupEngineVersion"); else _explicitNullProperties?.Remove("BackupEngineVersion"); } }
+        private string _explicitNullValueBackupEngineVersion = default!;
 #endif
         /// <summary>Gets or sets the date this backup was created with.</summary>
-        public DateTimeOffset? DateCreated { get; set; }
+        public DateTimeOffset? DateCreated { get => _explicitNullValueDateCreated; set { _explicitNullValueDateCreated = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DateCreated"); else _explicitNullProperties?.Remove("DateCreated"); } }
+        private DateTimeOffset? _explicitNullValueDateCreated = default!;
         /// <summary>Gets or sets the contents of the backup archive.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BackupOptionsDto? Options { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BackupOptionsDto? Options { get => _explicitNullValueOptions; set { _explicitNullValueOptions = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Options"); else _explicitNullProperties?.Remove("Options"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BackupOptionsDto? _explicitNullValueOptions = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.BackupOptionsDto Options { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.BackupOptionsDto Options { get => _explicitNullValueOptions; set { _explicitNullValueOptions = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Options"); else _explicitNullProperties?.Remove("Options"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.BackupOptionsDto _explicitNullValueOptions = default!;
 #endif
         /// <summary>Gets or sets the path to the backup on the system.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Path { get; set; }
+        public string? Path { get => _explicitNullValuePath; set { _explicitNullValuePath = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Path"); else _explicitNullProperties?.Remove("Path"); } }
+        private string? _explicitNullValuePath = default!;
 #nullable restore
 #else
-        public string Path { get; set; }
+        public string Path { get => _explicitNullValuePath; set { _explicitNullValuePath = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Path"); else _explicitNullProperties?.Remove("Path"); } }
+        private string _explicitNullValuePath = default!;
 #endif
         /// <summary>Gets or sets the jellyfin version this backup was created with.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ServerVersion { get; set; }
+        public string? ServerVersion { get => _explicitNullValueServerVersion; set { _explicitNullValueServerVersion = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ServerVersion"); else _explicitNullProperties?.Remove("ServerVersion"); } }
+        private string? _explicitNullValueServerVersion = default!;
 #nullable restore
 #else
-        public string ServerVersion { get; set; }
+        public string ServerVersion { get => _explicitNullValueServerVersion; set { _explicitNullValueServerVersion = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ServerVersion"); else _explicitNullProperties?.Remove("ServerVersion"); } }
+        private string _explicitNullValueServerVersion = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -55,7 +76,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.BackupManifestDto CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.BackupManifestDto();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.BackupManifestDto(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -83,7 +104,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteDateTimeOffsetValue("DateCreated", DateCreated);
             writer.WriteObjectValue<global::Soenneker.Jellyfin.OpenApiClient.Models.BackupOptionsDto>("Options", Options);
             writer.WriteStringValue("Path", Path);
-            writer.WriteStringValue("ServerVersion", ServerVersion);
+            writer.WriteStringValue("ServerVersion", ServerVersion);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

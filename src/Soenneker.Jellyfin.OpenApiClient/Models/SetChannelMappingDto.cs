@@ -12,30 +12,46 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class SetChannelMappingDto : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("ProviderChannelId") is { } nullNodeProviderChannelId && nullNodeProviderChannelId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ProviderChannelId = null;
+            if (parseNode.GetChildNode("ProviderId") is { } nullNodeProviderId && nullNodeProviderId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ProviderId = null;
+            if (parseNode.GetChildNode("TunerChannelId") is { } nullNodeTunerChannelId && nullNodeTunerChannelId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) TunerChannelId = null;
+        }
+
         /// <summary>Gets or sets the provider channel id.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ProviderChannelId { get; set; }
+        public string? ProviderChannelId { get => _explicitNullValueProviderChannelId; set { _explicitNullValueProviderChannelId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ProviderChannelId"); else _explicitNullProperties?.Remove("ProviderChannelId"); } }
+        private string? _explicitNullValueProviderChannelId = default!;
 #nullable restore
 #else
-        public string ProviderChannelId { get; set; }
+        public string ProviderChannelId { get => _explicitNullValueProviderChannelId; set { _explicitNullValueProviderChannelId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ProviderChannelId"); else _explicitNullProperties?.Remove("ProviderChannelId"); } }
+        private string _explicitNullValueProviderChannelId = default!;
 #endif
         /// <summary>Gets or sets the provider id.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ProviderId { get; set; }
+        public string? ProviderId { get => _explicitNullValueProviderId; set { _explicitNullValueProviderId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ProviderId"); else _explicitNullProperties?.Remove("ProviderId"); } }
+        private string? _explicitNullValueProviderId = default!;
 #nullable restore
 #else
-        public string ProviderId { get; set; }
+        public string ProviderId { get => _explicitNullValueProviderId; set { _explicitNullValueProviderId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ProviderId"); else _explicitNullProperties?.Remove("ProviderId"); } }
+        private string _explicitNullValueProviderId = default!;
 #endif
         /// <summary>Gets or sets the tuner channel id.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? TunerChannelId { get; set; }
+        public string? TunerChannelId { get => _explicitNullValueTunerChannelId; set { _explicitNullValueTunerChannelId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("TunerChannelId"); else _explicitNullProperties?.Remove("TunerChannelId"); } }
+        private string? _explicitNullValueTunerChannelId = default!;
 #nullable restore
 #else
-        public string TunerChannelId { get; set; }
+        public string TunerChannelId { get => _explicitNullValueTunerChannelId; set { _explicitNullValueTunerChannelId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("TunerChannelId"); else _explicitNullProperties?.Remove("TunerChannelId"); } }
+        private string _explicitNullValueTunerChannelId = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -45,7 +61,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.SetChannelMappingDto CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.SetChannelMappingDto();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.SetChannelMappingDto(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -69,7 +85,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
             writer.WriteStringValue("ProviderChannelId", ProviderChannelId);
             writer.WriteStringValue("ProviderId", ProviderId);
-            writer.WriteStringValue("TunerChannelId", TunerChannelId);
+            writer.WriteStringValue("TunerChannelId", TunerChannelId);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

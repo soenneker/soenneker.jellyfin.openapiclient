@@ -12,52 +12,80 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class LiveTvServiceInfo : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("HasUpdateAvailable") is { } nullNodeHasUpdateAvailable && nullNodeHasUpdateAvailable.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) HasUpdateAvailable = null;
+            if (parseNode.GetChildNode("HomePageUrl") is { } nullNodeHomePageUrl && nullNodeHomePageUrl.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) HomePageUrl = null;
+            if (parseNode.GetChildNode("IsVisible") is { } nullNodeIsVisible && nullNodeIsVisible.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IsVisible = null;
+            if (parseNode.GetChildNode("Name") is { } nullNodeName && nullNodeName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Name = null;
+            if (parseNode.GetChildNode("Status") is { } nullNodeStatus && nullNodeStatus.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Status = null;
+            if (parseNode.GetChildNode("StatusMessage") is { } nullNodeStatusMessage && nullNodeStatusMessage.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) StatusMessage = null;
+            if (parseNode.GetChildNode("Tuners") is { } nullNodeTuners && nullNodeTuners.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Tuners = null;
+            if (parseNode.GetChildNode("Version") is { } nullNodeVersion && nullNodeVersion.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Version = null;
+        }
+
         /// <summary>Gets or sets a value indicating whether this instance has update available.</summary>
-        public bool? HasUpdateAvailable { get; set; }
+        public bool? HasUpdateAvailable { get => _explicitNullValueHasUpdateAvailable; set { _explicitNullValueHasUpdateAvailable = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("HasUpdateAvailable"); else _explicitNullProperties?.Remove("HasUpdateAvailable"); } }
+        private bool? _explicitNullValueHasUpdateAvailable = default!;
         /// <summary>Gets or sets the home page URL.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? HomePageUrl { get; set; }
+        public string? HomePageUrl { get => _explicitNullValueHomePageUrl; set { _explicitNullValueHomePageUrl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("HomePageUrl"); else _explicitNullProperties?.Remove("HomePageUrl"); } }
+        private string? _explicitNullValueHomePageUrl = default!;
 #nullable restore
 #else
-        public string HomePageUrl { get; set; }
+        public string HomePageUrl { get => _explicitNullValueHomePageUrl; set { _explicitNullValueHomePageUrl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("HomePageUrl"); else _explicitNullProperties?.Remove("HomePageUrl"); } }
+        private string _explicitNullValueHomePageUrl = default!;
 #endif
         /// <summary>Gets or sets a value indicating whether this instance is visible.</summary>
-        public bool? IsVisible { get; set; }
+        public bool? IsVisible { get => _explicitNullValueIsVisible; set { _explicitNullValueIsVisible = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IsVisible"); else _explicitNullProperties?.Remove("IsVisible"); } }
+        private bool? _explicitNullValueIsVisible = default!;
         /// <summary>Gets or sets the name.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Name { get; set; }
+        public string? Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Name"); else _explicitNullProperties?.Remove("Name"); } }
+        private string? _explicitNullValueName = default!;
 #nullable restore
 #else
-        public string Name { get; set; }
+        public string Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Name"); else _explicitNullProperties?.Remove("Name"); } }
+        private string _explicitNullValueName = default!;
 #endif
         /// <summary>Gets or sets the status.</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.LiveTvServiceInfo_Status? Status { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.LiveTvServiceInfo_Status? Status { get => _explicitNullValueStatus; set { _explicitNullValueStatus = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Status"); else _explicitNullProperties?.Remove("Status"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.LiveTvServiceInfo_Status? _explicitNullValueStatus = default!;
         /// <summary>Gets or sets the status message.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? StatusMessage { get; set; }
+        public string? StatusMessage { get => _explicitNullValueStatusMessage; set { _explicitNullValueStatusMessage = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("StatusMessage"); else _explicitNullProperties?.Remove("StatusMessage"); } }
+        private string? _explicitNullValueStatusMessage = default!;
 #nullable restore
 #else
-        public string StatusMessage { get; set; }
+        public string StatusMessage { get => _explicitNullValueStatusMessage; set { _explicitNullValueStatusMessage = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("StatusMessage"); else _explicitNullProperties?.Remove("StatusMessage"); } }
+        private string _explicitNullValueStatusMessage = default!;
 #endif
         /// <summary>The Tuners property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<string>? Tuners { get; set; }
+        public List<string>? Tuners { get => _explicitNullValueTuners; set { _explicitNullValueTuners = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Tuners"); else _explicitNullProperties?.Remove("Tuners"); } }
+        private List<string>? _explicitNullValueTuners = default!;
 #nullable restore
 #else
-        public List<string> Tuners { get; set; }
+        public List<string> Tuners { get => _explicitNullValueTuners; set { _explicitNullValueTuners = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Tuners"); else _explicitNullProperties?.Remove("Tuners"); } }
+        private List<string> _explicitNullValueTuners = default!;
 #endif
         /// <summary>Gets or sets the version.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Version { get; set; }
+        public string? Version { get => _explicitNullValueVersion; set { _explicitNullValueVersion = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Version"); else _explicitNullProperties?.Remove("Version"); } }
+        private string? _explicitNullValueVersion = default!;
 #nullable restore
 #else
-        public string Version { get; set; }
+        public string Version { get => _explicitNullValueVersion; set { _explicitNullValueVersion = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Version"); else _explicitNullProperties?.Remove("Version"); } }
+        private string _explicitNullValueVersion = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -67,7 +95,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.LiveTvServiceInfo CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.LiveTvServiceInfo();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.LiveTvServiceInfo(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -101,7 +129,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteEnumValue<global::Soenneker.Jellyfin.OpenApiClient.Models.LiveTvServiceInfo_Status>("Status", Status);
             writer.WriteStringValue("StatusMessage", StatusMessage);
             writer.WriteCollectionOfPrimitiveValues<string>("Tuners", Tuners);
-            writer.WriteStringValue("Version", Version);
+            writer.WriteStringValue("Version", Version);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

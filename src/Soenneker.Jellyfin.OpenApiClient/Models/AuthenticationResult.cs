@@ -12,38 +12,57 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class AuthenticationResult : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("AccessToken") is { } nullNodeAccessToken && nullNodeAccessToken.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AccessToken = null;
+            if (parseNode.GetChildNode("ServerId") is { } nullNodeServerId && nullNodeServerId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ServerId = null;
+            if (parseNode.GetChildNode("SessionInfo") is { } nullNodeSessionInfo && nullNodeSessionInfo.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SessionInfo = null;
+            if (parseNode.GetChildNode("User") is { } nullNodeUser && nullNodeUser.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) User = null;
+        }
+
         /// <summary>Gets or sets the access token.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? AccessToken { get; set; }
+        public string? AccessToken { get => _explicitNullValueAccessToken; set { _explicitNullValueAccessToken = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("AccessToken"); else _explicitNullProperties?.Remove("AccessToken"); } }
+        private string? _explicitNullValueAccessToken = default!;
 #nullable restore
 #else
-        public string AccessToken { get; set; }
+        public string AccessToken { get => _explicitNullValueAccessToken; set { _explicitNullValueAccessToken = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("AccessToken"); else _explicitNullProperties?.Remove("AccessToken"); } }
+        private string _explicitNullValueAccessToken = default!;
 #endif
         /// <summary>Gets or sets the server id.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ServerId { get; set; }
+        public string? ServerId { get => _explicitNullValueServerId; set { _explicitNullValueServerId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ServerId"); else _explicitNullProperties?.Remove("ServerId"); } }
+        private string? _explicitNullValueServerId = default!;
 #nullable restore
 #else
-        public string ServerId { get; set; }
+        public string ServerId { get => _explicitNullValueServerId; set { _explicitNullValueServerId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ServerId"); else _explicitNullProperties?.Remove("ServerId"); } }
+        private string _explicitNullValueServerId = default!;
 #endif
         /// <summary>Session info DTO.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.SessionInfoDto? SessionInfo { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.SessionInfoDto? SessionInfo { get => _explicitNullValueSessionInfo; set { _explicitNullValueSessionInfo = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SessionInfo"); else _explicitNullProperties?.Remove("SessionInfo"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.SessionInfoDto? _explicitNullValueSessionInfo = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.SessionInfoDto SessionInfo { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.SessionInfoDto SessionInfo { get => _explicitNullValueSessionInfo; set { _explicitNullValueSessionInfo = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SessionInfo"); else _explicitNullProperties?.Remove("SessionInfo"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.SessionInfoDto _explicitNullValueSessionInfo = default!;
 #endif
         /// <summary>Class UserDto.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.UserDto? User { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.UserDto? User { get => _explicitNullValueUser; set { _explicitNullValueUser = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("User"); else _explicitNullProperties?.Remove("User"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.UserDto? _explicitNullValueUser = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.UserDto User { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.UserDto User { get => _explicitNullValueUser; set { _explicitNullValueUser = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("User"); else _explicitNullProperties?.Remove("User"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.UserDto _explicitNullValueUser = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -53,7 +72,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.AuthenticationResult CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.AuthenticationResult();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.AuthenticationResult(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -79,7 +98,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteStringValue("AccessToken", AccessToken);
             writer.WriteStringValue("ServerId", ServerId);
             writer.WriteObjectValue<global::Soenneker.Jellyfin.OpenApiClient.Models.SessionInfoDto>("SessionInfo", SessionInfo);
-            writer.WriteObjectValue<global::Soenneker.Jellyfin.OpenApiClient.Models.UserDto>("User", User);
+            writer.WriteObjectValue<global::Soenneker.Jellyfin.OpenApiClient.Models.UserDto>("User", User);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

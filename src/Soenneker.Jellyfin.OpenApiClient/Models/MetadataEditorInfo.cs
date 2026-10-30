@@ -12,48 +12,72 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class MetadataEditorInfo : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("ContentType") is { } nullNodeContentType && nullNodeContentType.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ContentType = null;
+            if (parseNode.GetChildNode("ContentTypeOptions") is { } nullNodeContentTypeOptions && nullNodeContentTypeOptions.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ContentTypeOptions = null;
+            if (parseNode.GetChildNode("Countries") is { } nullNodeCountries && nullNodeCountries.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Countries = null;
+            if (parseNode.GetChildNode("Cultures") is { } nullNodeCultures && nullNodeCultures.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Cultures = null;
+            if (parseNode.GetChildNode("ExternalIdInfos") is { } nullNodeExternalIdInfos && nullNodeExternalIdInfos.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ExternalIdInfos = null;
+            if (parseNode.GetChildNode("ParentalRatingOptions") is { } nullNodeParentalRatingOptions && nullNodeParentalRatingOptions.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ParentalRatingOptions = null;
+        }
+
         /// <summary>Gets or sets the content type.</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.MetadataEditorInfo_ContentType? ContentType { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.MetadataEditorInfo_ContentType? ContentType { get => _explicitNullValueContentType; set { _explicitNullValueContentType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ContentType"); else _explicitNullProperties?.Remove("ContentType"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.MetadataEditorInfo_ContentType? _explicitNullValueContentType = default!;
         /// <summary>Gets or sets the content type options.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.NameValuePair>? ContentTypeOptions { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.NameValuePair>? ContentTypeOptions { get => _explicitNullValueContentTypeOptions; set { _explicitNullValueContentTypeOptions = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ContentTypeOptions"); else _explicitNullProperties?.Remove("ContentTypeOptions"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.NameValuePair>? _explicitNullValueContentTypeOptions = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.NameValuePair> ContentTypeOptions { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.NameValuePair> ContentTypeOptions { get => _explicitNullValueContentTypeOptions; set { _explicitNullValueContentTypeOptions = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ContentTypeOptions"); else _explicitNullProperties?.Remove("ContentTypeOptions"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.NameValuePair> _explicitNullValueContentTypeOptions = default!;
 #endif
         /// <summary>Gets or sets the countries.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.CountryInfo>? Countries { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.CountryInfo>? Countries { get => _explicitNullValueCountries; set { _explicitNullValueCountries = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Countries"); else _explicitNullProperties?.Remove("Countries"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.CountryInfo>? _explicitNullValueCountries = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.CountryInfo> Countries { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.CountryInfo> Countries { get => _explicitNullValueCountries; set { _explicitNullValueCountries = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Countries"); else _explicitNullProperties?.Remove("Countries"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.CountryInfo> _explicitNullValueCountries = default!;
 #endif
         /// <summary>Gets or sets the cultures.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.CultureDto>? Cultures { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.CultureDto>? Cultures { get => _explicitNullValueCultures; set { _explicitNullValueCultures = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Cultures"); else _explicitNullProperties?.Remove("Cultures"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.CultureDto>? _explicitNullValueCultures = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.CultureDto> Cultures { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.CultureDto> Cultures { get => _explicitNullValueCultures; set { _explicitNullValueCultures = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Cultures"); else _explicitNullProperties?.Remove("Cultures"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.CultureDto> _explicitNullValueCultures = default!;
 #endif
         /// <summary>Gets or sets the external id infos.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ExternalIdInfo>? ExternalIdInfos { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ExternalIdInfo>? ExternalIdInfos { get => _explicitNullValueExternalIdInfos; set { _explicitNullValueExternalIdInfos = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ExternalIdInfos"); else _explicitNullProperties?.Remove("ExternalIdInfos"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ExternalIdInfo>? _explicitNullValueExternalIdInfos = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ExternalIdInfo> ExternalIdInfos { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ExternalIdInfo> ExternalIdInfos { get => _explicitNullValueExternalIdInfos; set { _explicitNullValueExternalIdInfos = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ExternalIdInfos"); else _explicitNullProperties?.Remove("ExternalIdInfos"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ExternalIdInfo> _explicitNullValueExternalIdInfos = default!;
 #endif
         /// <summary>Gets or sets the parental rating options.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ParentalRating>? ParentalRatingOptions { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ParentalRating>? ParentalRatingOptions { get => _explicitNullValueParentalRatingOptions; set { _explicitNullValueParentalRatingOptions = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ParentalRatingOptions"); else _explicitNullProperties?.Remove("ParentalRatingOptions"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ParentalRating>? _explicitNullValueParentalRatingOptions = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ParentalRating> ParentalRatingOptions { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.ParentalRating> ParentalRatingOptions { get => _explicitNullValueParentalRatingOptions; set { _explicitNullValueParentalRatingOptions = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ParentalRatingOptions"); else _explicitNullProperties?.Remove("ParentalRatingOptions"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.ParentalRating> _explicitNullValueParentalRatingOptions = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -63,7 +87,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.MetadataEditorInfo CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.MetadataEditorInfo();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.MetadataEditorInfo(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -93,7 +117,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.CountryInfo>("Countries", Countries);
             writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.CultureDto>("Cultures", Cultures);
             writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.ExternalIdInfo>("ExternalIdInfos", ExternalIdInfos);
-            writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.ParentalRating>("ParentalRatingOptions", ParentalRatingOptions);
+            writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.ParentalRating>("ParentalRatingOptions", ParentalRatingOptions);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

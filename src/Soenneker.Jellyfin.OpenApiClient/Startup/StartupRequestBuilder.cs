@@ -25,16 +25,19 @@ namespace Soenneker.Jellyfin.OpenApiClient.Startup
             get => new global::Soenneker.Jellyfin.OpenApiClient.Startup.Complete.CompleteRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>The Configuration property</summary>
+        [Obsolete("")]
         public global::Soenneker.Jellyfin.OpenApiClient.Startup.Configuration.ConfigurationRequestBuilder Configuration
         {
             get => new global::Soenneker.Jellyfin.OpenApiClient.Startup.Configuration.ConfigurationRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>The FirstUser property</summary>
+        [Obsolete("")]
         public global::Soenneker.Jellyfin.OpenApiClient.Startup.FirstUser.FirstUserRequestBuilder FirstUser
         {
             get => new global::Soenneker.Jellyfin.OpenApiClient.Startup.FirstUser.FirstUserRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>The RemoteAccess property</summary>
+        [Obsolete("")]
         public global::Soenneker.Jellyfin.OpenApiClient.Startup.RemoteAccess.RemoteAccessRequestBuilder RemoteAccess
         {
             get => new global::Soenneker.Jellyfin.OpenApiClient.Startup.RemoteAccess.RemoteAccessRequestBuilder(PathParameters, RequestAdapter);

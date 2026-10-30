@@ -12,17 +12,34 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class TaskTriggerInfo : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("DayOfWeek") is { } nullNodeDayOfWeek && nullNodeDayOfWeek.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) DayOfWeek = null;
+            if (parseNode.GetChildNode("IntervalTicks") is { } nullNodeIntervalTicks && nullNodeIntervalTicks.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IntervalTicks = null;
+            if (parseNode.GetChildNode("MaxRuntimeTicks") is { } nullNodeMaxRuntimeTicks && nullNodeMaxRuntimeTicks.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) MaxRuntimeTicks = null;
+            if (parseNode.GetChildNode("TimeOfDayTicks") is { } nullNodeTimeOfDayTicks && nullNodeTimeOfDayTicks.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) TimeOfDayTicks = null;
+            if (parseNode.GetChildNode("Type") is { } nullNodeType && nullNodeType.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Type = null;
+        }
+
         /// <summary>Gets or sets the day of week.</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.TaskTriggerInfo_DayOfWeek? DayOfWeek { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.TaskTriggerInfo_DayOfWeek? DayOfWeek { get => _explicitNullValueDayOfWeek; set { _explicitNullValueDayOfWeek = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("DayOfWeek"); else _explicitNullProperties?.Remove("DayOfWeek"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.TaskTriggerInfo_DayOfWeek? _explicitNullValueDayOfWeek = default!;
         /// <summary>Gets or sets the interval.</summary>
-        public long? IntervalTicks { get; set; }
+        public long? IntervalTicks { get => _explicitNullValueIntervalTicks; set { _explicitNullValueIntervalTicks = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IntervalTicks"); else _explicitNullProperties?.Remove("IntervalTicks"); } }
+        private long? _explicitNullValueIntervalTicks = default!;
         /// <summary>Gets or sets the maximum runtime ticks.</summary>
-        public long? MaxRuntimeTicks { get; set; }
+        public long? MaxRuntimeTicks { get => _explicitNullValueMaxRuntimeTicks; set { _explicitNullValueMaxRuntimeTicks = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("MaxRuntimeTicks"); else _explicitNullProperties?.Remove("MaxRuntimeTicks"); } }
+        private long? _explicitNullValueMaxRuntimeTicks = default!;
         /// <summary>Gets or sets the time of day.</summary>
-        public long? TimeOfDayTicks { get; set; }
+        public long? TimeOfDayTicks { get => _explicitNullValueTimeOfDayTicks; set { _explicitNullValueTimeOfDayTicks = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("TimeOfDayTicks"); else _explicitNullProperties?.Remove("TimeOfDayTicks"); } }
+        private long? _explicitNullValueTimeOfDayTicks = default!;
         /// <summary>Gets or sets the type.</summary>
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.TaskTriggerInfo_Type? Type { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.TaskTriggerInfo_Type? Type { get => _explicitNullValueType; set { _explicitNullValueType = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Type"); else _explicitNullProperties?.Remove("Type"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.TaskTriggerInfo_Type? _explicitNullValueType = default!;
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
@@ -31,7 +48,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.TaskTriggerInfo CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.TaskTriggerInfo();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.TaskTriggerInfo(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -59,7 +76,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteLongValue("IntervalTicks", IntervalTicks);
             writer.WriteLongValue("MaxRuntimeTicks", MaxRuntimeTicks);
             writer.WriteLongValue("TimeOfDayTicks", TimeOfDayTicks);
-            writer.WriteEnumValue<global::Soenneker.Jellyfin.OpenApiClient.Models.TaskTriggerInfo_Type>("Type", Type);
+            writer.WriteEnumValue<global::Soenneker.Jellyfin.OpenApiClient.Models.TaskTriggerInfo_Type>("Type", Type);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

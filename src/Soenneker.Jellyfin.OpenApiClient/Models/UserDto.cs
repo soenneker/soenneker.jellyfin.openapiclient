@@ -12,73 +12,114 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class UserDto : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("Configuration") is { } nullNodeConfiguration && nullNodeConfiguration.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Configuration = null;
+            if (parseNode.GetChildNode("EnableAutoLogin") is { } nullNodeEnableAutoLogin && nullNodeEnableAutoLogin.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) EnableAutoLogin = null;
+            if (parseNode.GetChildNode("HasConfiguredEasyPassword") is { } nullNodeHasConfiguredEasyPassword && nullNodeHasConfiguredEasyPassword.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) HasConfiguredEasyPassword = null;
+            if (parseNode.GetChildNode("HasConfiguredPassword") is { } nullNodeHasConfiguredPassword && nullNodeHasConfiguredPassword.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) HasConfiguredPassword = null;
+            if (parseNode.GetChildNode("HasPassword") is { } nullNodeHasPassword && nullNodeHasPassword.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) HasPassword = null;
+            if (parseNode.GetChildNode("Id") is { } nullNodeId && nullNodeId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Id = null;
+            if (parseNode.GetChildNode("LastActivityDate") is { } nullNodeLastActivityDate && nullNodeLastActivityDate.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LastActivityDate = null;
+            if (parseNode.GetChildNode("LastLoginDate") is { } nullNodeLastLoginDate && nullNodeLastLoginDate.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LastLoginDate = null;
+            if (parseNode.GetChildNode("Name") is { } nullNodeName && nullNodeName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Name = null;
+            if (parseNode.GetChildNode("Policy") is { } nullNodePolicy && nullNodePolicy.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Policy = null;
+            if (parseNode.GetChildNode("PrimaryImageAspectRatio") is { } nullNodePrimaryImageAspectRatio && nullNodePrimaryImageAspectRatio.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PrimaryImageAspectRatio = null;
+            if (parseNode.GetChildNode("PrimaryImageTag") is { } nullNodePrimaryImageTag && nullNodePrimaryImageTag.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PrimaryImageTag = null;
+            if (parseNode.GetChildNode("ServerId") is { } nullNodeServerId && nullNodeServerId.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ServerId = null;
+            if (parseNode.GetChildNode("ServerName") is { } nullNodeServerName && nullNodeServerName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ServerName = null;
+        }
+
         /// <summary>Gets or sets the configuration.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.UserConfiguration? Configuration { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.UserConfiguration? Configuration { get => _explicitNullValueConfiguration; set { _explicitNullValueConfiguration = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Configuration"); else _explicitNullProperties?.Remove("Configuration"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.UserConfiguration? _explicitNullValueConfiguration = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.UserConfiguration Configuration { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.UserConfiguration Configuration { get => _explicitNullValueConfiguration; set { _explicitNullValueConfiguration = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Configuration"); else _explicitNullProperties?.Remove("Configuration"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.UserConfiguration _explicitNullValueConfiguration = default!;
 #endif
         /// <summary>Gets or sets whether async login is enabled or not.</summary>
-        public bool? EnableAutoLogin { get; set; }
+        public bool? EnableAutoLogin { get => _explicitNullValueEnableAutoLogin; set { _explicitNullValueEnableAutoLogin = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("EnableAutoLogin"); else _explicitNullProperties?.Remove("EnableAutoLogin"); } }
+        private bool? _explicitNullValueEnableAutoLogin = default!;
         /// <summary>Gets or sets a value indicating whether this instance has configured easy password.</summary>
         [Obsolete("")]
-        public bool? HasConfiguredEasyPassword { get; set; }
+        public bool? HasConfiguredEasyPassword { get => _explicitNullValueHasConfiguredEasyPassword; set { _explicitNullValueHasConfiguredEasyPassword = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("HasConfiguredEasyPassword"); else _explicitNullProperties?.Remove("HasConfiguredEasyPassword"); } }
+        private bool? _explicitNullValueHasConfiguredEasyPassword = default!;
         /// <summary>Gets or sets a value indicating whether this instance has configured password.</summary>
         [Obsolete("")]
-        public bool? HasConfiguredPassword { get; set; }
+        public bool? HasConfiguredPassword { get => _explicitNullValueHasConfiguredPassword; set { _explicitNullValueHasConfiguredPassword = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("HasConfiguredPassword"); else _explicitNullProperties?.Remove("HasConfiguredPassword"); } }
+        private bool? _explicitNullValueHasConfiguredPassword = default!;
         /// <summary>Gets or sets a value indicating whether this instance has password.</summary>
         [Obsolete("")]
-        public bool? HasPassword { get; set; }
+        public bool? HasPassword { get => _explicitNullValueHasPassword; set { _explicitNullValueHasPassword = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("HasPassword"); else _explicitNullProperties?.Remove("HasPassword"); } }
+        private bool? _explicitNullValueHasPassword = default!;
         /// <summary>Gets or sets the id.</summary>
-        public Guid? Id { get; set; }
+        public Guid? Id { get => _explicitNullValueId; set { _explicitNullValueId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Id"); else _explicitNullProperties?.Remove("Id"); } }
+        private Guid? _explicitNullValueId = default!;
         /// <summary>Gets or sets the last activity date.</summary>
-        public DateTimeOffset? LastActivityDate { get; set; }
+        public DateTimeOffset? LastActivityDate { get => _explicitNullValueLastActivityDate; set { _explicitNullValueLastActivityDate = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LastActivityDate"); else _explicitNullProperties?.Remove("LastActivityDate"); } }
+        private DateTimeOffset? _explicitNullValueLastActivityDate = default!;
         /// <summary>Gets or sets the last login date.</summary>
-        public DateTimeOffset? LastLoginDate { get; set; }
+        public DateTimeOffset? LastLoginDate { get => _explicitNullValueLastLoginDate; set { _explicitNullValueLastLoginDate = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LastLoginDate"); else _explicitNullProperties?.Remove("LastLoginDate"); } }
+        private DateTimeOffset? _explicitNullValueLastLoginDate = default!;
         /// <summary>Gets or sets the name.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Name { get; set; }
+        public string? Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Name"); else _explicitNullProperties?.Remove("Name"); } }
+        private string? _explicitNullValueName = default!;
 #nullable restore
 #else
-        public string Name { get; set; }
+        public string Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Name"); else _explicitNullProperties?.Remove("Name"); } }
+        private string _explicitNullValueName = default!;
 #endif
         /// <summary>Gets or sets the policy.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.UserPolicy? Policy { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.UserPolicy? Policy { get => _explicitNullValuePolicy; set { _explicitNullValuePolicy = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Policy"); else _explicitNullProperties?.Remove("Policy"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.UserPolicy? _explicitNullValuePolicy = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.UserPolicy Policy { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.UserPolicy Policy { get => _explicitNullValuePolicy; set { _explicitNullValuePolicy = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Policy"); else _explicitNullProperties?.Remove("Policy"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.UserPolicy _explicitNullValuePolicy = default!;
 #endif
         /// <summary>Gets or sets the primary image aspect ratio.</summary>
-        public double? PrimaryImageAspectRatio { get; set; }
+        public double? PrimaryImageAspectRatio { get => _explicitNullValuePrimaryImageAspectRatio; set { _explicitNullValuePrimaryImageAspectRatio = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PrimaryImageAspectRatio"); else _explicitNullProperties?.Remove("PrimaryImageAspectRatio"); } }
+        private double? _explicitNullValuePrimaryImageAspectRatio = default!;
         /// <summary>Gets or sets the primary image tag.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? PrimaryImageTag { get; set; }
+        public string? PrimaryImageTag { get => _explicitNullValuePrimaryImageTag; set { _explicitNullValuePrimaryImageTag = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PrimaryImageTag"); else _explicitNullProperties?.Remove("PrimaryImageTag"); } }
+        private string? _explicitNullValuePrimaryImageTag = default!;
 #nullable restore
 #else
-        public string PrimaryImageTag { get; set; }
+        public string PrimaryImageTag { get => _explicitNullValuePrimaryImageTag; set { _explicitNullValuePrimaryImageTag = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PrimaryImageTag"); else _explicitNullProperties?.Remove("PrimaryImageTag"); } }
+        private string _explicitNullValuePrimaryImageTag = default!;
 #endif
         /// <summary>Gets or sets the server identifier.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ServerId { get; set; }
+        public string? ServerId { get => _explicitNullValueServerId; set { _explicitNullValueServerId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ServerId"); else _explicitNullProperties?.Remove("ServerId"); } }
+        private string? _explicitNullValueServerId = default!;
 #nullable restore
 #else
-        public string ServerId { get; set; }
+        public string ServerId { get => _explicitNullValueServerId; set { _explicitNullValueServerId = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ServerId"); else _explicitNullProperties?.Remove("ServerId"); } }
+        private string _explicitNullValueServerId = default!;
 #endif
         /// <summary>Gets or sets the name of the server.This is not used by the server and is for client-side usage only.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ServerName { get; set; }
+        public string? ServerName { get => _explicitNullValueServerName; set { _explicitNullValueServerName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ServerName"); else _explicitNullProperties?.Remove("ServerName"); } }
+        private string? _explicitNullValueServerName = default!;
 #nullable restore
 #else
-        public string ServerName { get; set; }
+        public string ServerName { get => _explicitNullValueServerName; set { _explicitNullValueServerName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ServerName"); else _explicitNullProperties?.Remove("ServerName"); } }
+        private string _explicitNullValueServerName = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -88,7 +129,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.UserDto CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.UserDto();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.UserDto(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -134,7 +175,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteDoubleValue("PrimaryImageAspectRatio", PrimaryImageAspectRatio);
             writer.WriteStringValue("PrimaryImageTag", PrimaryImageTag);
             writer.WriteStringValue("ServerId", ServerId);
-            writer.WriteStringValue("ServerName", ServerName);
+            writer.WriteStringValue("ServerName", ServerName);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

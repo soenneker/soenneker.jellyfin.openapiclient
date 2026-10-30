@@ -12,38 +12,57 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class ChannelMappingOptionsDto : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("Mappings") is { } nullNodeMappings && nullNodeMappings.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Mappings = null;
+            if (parseNode.GetChildNode("ProviderChannels") is { } nullNodeProviderChannels && nullNodeProviderChannels.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ProviderChannels = null;
+            if (parseNode.GetChildNode("ProviderName") is { } nullNodeProviderName && nullNodeProviderName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ProviderName = null;
+            if (parseNode.GetChildNode("TunerChannels") is { } nullNodeTunerChannels && nullNodeTunerChannels.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) TunerChannels = null;
+        }
+
         /// <summary>Gets or sets list of mappings.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.NameValuePair>? Mappings { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.NameValuePair>? Mappings { get => _explicitNullValueMappings; set { _explicitNullValueMappings = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Mappings"); else _explicitNullProperties?.Remove("Mappings"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.NameValuePair>? _explicitNullValueMappings = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.NameValuePair> Mappings { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.NameValuePair> Mappings { get => _explicitNullValueMappings; set { _explicitNullValueMappings = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Mappings"); else _explicitNullProperties?.Remove("Mappings"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.NameValuePair> _explicitNullValueMappings = default!;
 #endif
         /// <summary>Gets or sets list of provider channels.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.NameIdPair>? ProviderChannels { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.NameIdPair>? ProviderChannels { get => _explicitNullValueProviderChannels; set { _explicitNullValueProviderChannels = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ProviderChannels"); else _explicitNullProperties?.Remove("ProviderChannels"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.NameIdPair>? _explicitNullValueProviderChannels = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.NameIdPair> ProviderChannels { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.NameIdPair> ProviderChannels { get => _explicitNullValueProviderChannels; set { _explicitNullValueProviderChannels = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ProviderChannels"); else _explicitNullProperties?.Remove("ProviderChannels"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.NameIdPair> _explicitNullValueProviderChannels = default!;
 #endif
         /// <summary>Gets or sets provider name.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ProviderName { get; set; }
+        public string? ProviderName { get => _explicitNullValueProviderName; set { _explicitNullValueProviderName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ProviderName"); else _explicitNullProperties?.Remove("ProviderName"); } }
+        private string? _explicitNullValueProviderName = default!;
 #nullable restore
 #else
-        public string ProviderName { get; set; }
+        public string ProviderName { get => _explicitNullValueProviderName; set { _explicitNullValueProviderName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ProviderName"); else _explicitNullProperties?.Remove("ProviderName"); } }
+        private string _explicitNullValueProviderName = default!;
 #endif
         /// <summary>Gets or sets list of tuner channels.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.TunerChannelMapping>? TunerChannels { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.TunerChannelMapping>? TunerChannels { get => _explicitNullValueTunerChannels; set { _explicitNullValueTunerChannels = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("TunerChannels"); else _explicitNullProperties?.Remove("TunerChannels"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.TunerChannelMapping>? _explicitNullValueTunerChannels = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.TunerChannelMapping> TunerChannels { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.TunerChannelMapping> TunerChannels { get => _explicitNullValueTunerChannels; set { _explicitNullValueTunerChannels = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("TunerChannels"); else _explicitNullProperties?.Remove("TunerChannels"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.TunerChannelMapping> _explicitNullValueTunerChannels = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -53,7 +72,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.ChannelMappingOptionsDto CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.ChannelMappingOptionsDto();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.ChannelMappingOptionsDto(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -79,7 +98,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.NameValuePair>("Mappings", Mappings);
             writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.NameIdPair>("ProviderChannels", ProviderChannels);
             writer.WriteStringValue("ProviderName", ProviderName);
-            writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.TunerChannelMapping>("TunerChannels", TunerChannels);
+            writer.WriteCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.TunerChannelMapping>("TunerChannels", TunerChannels);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

@@ -12,25 +12,40 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class BrandingOptionsDto : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("CustomCss") is { } nullNodeCustomCss && nullNodeCustomCss.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) CustomCss = null;
+            if (parseNode.GetChildNode("LoginDisclaimer") is { } nullNodeLoginDisclaimer && nullNodeLoginDisclaimer.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LoginDisclaimer = null;
+            if (parseNode.GetChildNode("SplashscreenEnabled") is { } nullNodeSplashscreenEnabled && nullNodeSplashscreenEnabled.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SplashscreenEnabled = null;
+        }
+
         /// <summary>Gets or sets the custom CSS.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? CustomCss { get; set; }
+        public string? CustomCss { get => _explicitNullValueCustomCss; set { _explicitNullValueCustomCss = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("CustomCss"); else _explicitNullProperties?.Remove("CustomCss"); } }
+        private string? _explicitNullValueCustomCss = default!;
 #nullable restore
 #else
-        public string CustomCss { get; set; }
+        public string CustomCss { get => _explicitNullValueCustomCss; set { _explicitNullValueCustomCss = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("CustomCss"); else _explicitNullProperties?.Remove("CustomCss"); } }
+        private string _explicitNullValueCustomCss = default!;
 #endif
         /// <summary>Gets or sets the login disclaimer.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? LoginDisclaimer { get; set; }
+        public string? LoginDisclaimer { get => _explicitNullValueLoginDisclaimer; set { _explicitNullValueLoginDisclaimer = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LoginDisclaimer"); else _explicitNullProperties?.Remove("LoginDisclaimer"); } }
+        private string? _explicitNullValueLoginDisclaimer = default!;
 #nullable restore
 #else
-        public string LoginDisclaimer { get; set; }
+        public string LoginDisclaimer { get => _explicitNullValueLoginDisclaimer; set { _explicitNullValueLoginDisclaimer = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LoginDisclaimer"); else _explicitNullProperties?.Remove("LoginDisclaimer"); } }
+        private string _explicitNullValueLoginDisclaimer = default!;
 #endif
         /// <summary>Gets or sets a value indicating whether to enable the splashscreen.</summary>
-        public bool? SplashscreenEnabled { get; set; }
+        public bool? SplashscreenEnabled { get => _explicitNullValueSplashscreenEnabled; set { _explicitNullValueSplashscreenEnabled = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SplashscreenEnabled"); else _explicitNullProperties?.Remove("SplashscreenEnabled"); } }
+        private bool? _explicitNullValueSplashscreenEnabled = default!;
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
@@ -39,7 +54,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.BrandingOptionsDto CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.BrandingOptionsDto();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.BrandingOptionsDto(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -63,7 +78,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
             writer.WriteStringValue("CustomCss", CustomCss);
             writer.WriteStringValue("LoginDisclaimer", LoginDisclaimer);
-            writer.WriteBoolValue("SplashscreenEnabled", SplashscreenEnabled);
+            writer.WriteBoolValue("SplashscreenEnabled", SplashscreenEnabled);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

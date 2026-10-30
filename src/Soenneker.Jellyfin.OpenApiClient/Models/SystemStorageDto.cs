@@ -12,70 +12,101 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class SystemStorageDto : IParsable
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("CacheFolder") is { } nullNodeCacheFolder && nullNodeCacheFolder.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) CacheFolder = null;
+            if (parseNode.GetChildNode("ImageCacheFolder") is { } nullNodeImageCacheFolder && nullNodeImageCacheFolder.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ImageCacheFolder = null;
+            if (parseNode.GetChildNode("InternalMetadataFolder") is { } nullNodeInternalMetadataFolder && nullNodeInternalMetadataFolder.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) InternalMetadataFolder = null;
+            if (parseNode.GetChildNode("Libraries") is { } nullNodeLibraries && nullNodeLibraries.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Libraries = null;
+            if (parseNode.GetChildNode("LogFolder") is { } nullNodeLogFolder && nullNodeLogFolder.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) LogFolder = null;
+            if (parseNode.GetChildNode("ProgramDataFolder") is { } nullNodeProgramDataFolder && nullNodeProgramDataFolder.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ProgramDataFolder = null;
+            if (parseNode.GetChildNode("TranscodingTempFolder") is { } nullNodeTranscodingTempFolder && nullNodeTranscodingTempFolder.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) TranscodingTempFolder = null;
+            if (parseNode.GetChildNode("WebFolder") is { } nullNodeWebFolder && nullNodeWebFolder.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) WebFolder = null;
+        }
+
         /// <summary>Gets or sets the Storage information of the cache folder.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto? CacheFolder { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto? CacheFolder { get => _explicitNullValueCacheFolder; set { _explicitNullValueCacheFolder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("CacheFolder"); else _explicitNullProperties?.Remove("CacheFolder"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto? _explicitNullValueCacheFolder = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto CacheFolder { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto CacheFolder { get => _explicitNullValueCacheFolder; set { _explicitNullValueCacheFolder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("CacheFolder"); else _explicitNullProperties?.Remove("CacheFolder"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto _explicitNullValueCacheFolder = default!;
 #endif
         /// <summary>Gets or sets the Storage information of the folder where images are cached.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto? ImageCacheFolder { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto? ImageCacheFolder { get => _explicitNullValueImageCacheFolder; set { _explicitNullValueImageCacheFolder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ImageCacheFolder"); else _explicitNullProperties?.Remove("ImageCacheFolder"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto? _explicitNullValueImageCacheFolder = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto ImageCacheFolder { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto ImageCacheFolder { get => _explicitNullValueImageCacheFolder; set { _explicitNullValueImageCacheFolder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ImageCacheFolder"); else _explicitNullProperties?.Remove("ImageCacheFolder"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto _explicitNullValueImageCacheFolder = default!;
 #endif
         /// <summary>Gets or sets the Storage information of the folder where metadata is stored.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto? InternalMetadataFolder { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto? InternalMetadataFolder { get => _explicitNullValueInternalMetadataFolder; set { _explicitNullValueInternalMetadataFolder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("InternalMetadataFolder"); else _explicitNullProperties?.Remove("InternalMetadataFolder"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto? _explicitNullValueInternalMetadataFolder = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto InternalMetadataFolder { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto InternalMetadataFolder { get => _explicitNullValueInternalMetadataFolder; set { _explicitNullValueInternalMetadataFolder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("InternalMetadataFolder"); else _explicitNullProperties?.Remove("InternalMetadataFolder"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto _explicitNullValueInternalMetadataFolder = default!;
 #endif
         /// <summary>Gets or sets the storage informations of all libraries.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryStorageDto>? Libraries { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryStorageDto>? Libraries { get => _explicitNullValueLibraries; set { _explicitNullValueLibraries = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Libraries"); else _explicitNullProperties?.Remove("Libraries"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryStorageDto>? _explicitNullValueLibraries = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryStorageDto> Libraries { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryStorageDto> Libraries { get => _explicitNullValueLibraries; set { _explicitNullValueLibraries = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Libraries"); else _explicitNullProperties?.Remove("Libraries"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.LibraryStorageDto> _explicitNullValueLibraries = default!;
 #endif
         /// <summary>Gets or sets the Storage information of the folder where logfiles are saved to.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto? LogFolder { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto? LogFolder { get => _explicitNullValueLogFolder; set { _explicitNullValueLogFolder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LogFolder"); else _explicitNullProperties?.Remove("LogFolder"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto? _explicitNullValueLogFolder = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto LogFolder { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto LogFolder { get => _explicitNullValueLogFolder; set { _explicitNullValueLogFolder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("LogFolder"); else _explicitNullProperties?.Remove("LogFolder"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto _explicitNullValueLogFolder = default!;
 #endif
         /// <summary>Gets or sets the Storage information of the program data folder.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto? ProgramDataFolder { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto? ProgramDataFolder { get => _explicitNullValueProgramDataFolder; set { _explicitNullValueProgramDataFolder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ProgramDataFolder"); else _explicitNullProperties?.Remove("ProgramDataFolder"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto? _explicitNullValueProgramDataFolder = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto ProgramDataFolder { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto ProgramDataFolder { get => _explicitNullValueProgramDataFolder; set { _explicitNullValueProgramDataFolder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ProgramDataFolder"); else _explicitNullProperties?.Remove("ProgramDataFolder"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto _explicitNullValueProgramDataFolder = default!;
 #endif
         /// <summary>Gets or sets the Storage information of the transcoding cache.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto? TranscodingTempFolder { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto? TranscodingTempFolder { get => _explicitNullValueTranscodingTempFolder; set { _explicitNullValueTranscodingTempFolder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("TranscodingTempFolder"); else _explicitNullProperties?.Remove("TranscodingTempFolder"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto? _explicitNullValueTranscodingTempFolder = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto TranscodingTempFolder { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto TranscodingTempFolder { get => _explicitNullValueTranscodingTempFolder; set { _explicitNullValueTranscodingTempFolder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("TranscodingTempFolder"); else _explicitNullProperties?.Remove("TranscodingTempFolder"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto _explicitNullValueTranscodingTempFolder = default!;
 #endif
         /// <summary>Gets or sets the Storage information of the web UI resources folder.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto? WebFolder { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto? WebFolder { get => _explicitNullValueWebFolder; set { _explicitNullValueWebFolder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("WebFolder"); else _explicitNullProperties?.Remove("WebFolder"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto? _explicitNullValueWebFolder = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto WebFolder { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto WebFolder { get => _explicitNullValueWebFolder; set { _explicitNullValueWebFolder = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("WebFolder"); else _explicitNullProperties?.Remove("WebFolder"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto _explicitNullValueWebFolder = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -85,7 +116,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.SystemStorageDto CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.SystemStorageDto();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.SystemStorageDto(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -119,7 +150,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteObjectValue<global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto>("LogFolder", LogFolder);
             writer.WriteObjectValue<global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto>("ProgramDataFolder", ProgramDataFolder);
             writer.WriteObjectValue<global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto>("TranscodingTempFolder", TranscodingTempFolder);
-            writer.WriteObjectValue<global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto>("WebFolder", WebFolder);
+            writer.WriteObjectValue<global::Soenneker.Jellyfin.OpenApiClient.Models.FolderStorageDto>("WebFolder", WebFolder);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }

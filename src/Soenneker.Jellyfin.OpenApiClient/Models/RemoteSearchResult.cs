@@ -11,72 +11,110 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
     #pragma warning disable CS1591
     public partial class RemoteSearchResult : IParsable
     #pragma warning restore CS1591
-    {
+    , global::Soenneker.OpenApi.Generated.IOpenApiExplicitNulls {
+        // Track explicitly assigned nulls separately from absent properties.
+        private global::System.Collections.Generic.HashSet<string> _explicitNullProperties = null!;
+
+        public virtual void CaptureExplicitNulls(global::Microsoft.Kiota.Abstractions.Serialization.IParseNode parseNode)
+        {
+            if (parseNode.GetChildNode("AlbumArtist") is { } nullNodeAlbumArtist && nullNodeAlbumArtist.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) AlbumArtist = null;
+            if (parseNode.GetChildNode("Artists") is { } nullNodeArtists && nullNodeArtists.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Artists = null;
+            if (parseNode.GetChildNode("ImageUrl") is { } nullNodeImageUrl && nullNodeImageUrl.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ImageUrl = null;
+            if (parseNode.GetChildNode("IndexNumber") is { } nullNodeIndexNumber && nullNodeIndexNumber.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IndexNumber = null;
+            if (parseNode.GetChildNode("IndexNumberEnd") is { } nullNodeIndexNumberEnd && nullNodeIndexNumberEnd.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) IndexNumberEnd = null;
+            if (parseNode.GetChildNode("Name") is { } nullNodeName && nullNodeName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Name = null;
+            if (parseNode.GetChildNode("Overview") is { } nullNodeOverview && nullNodeOverview.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) Overview = null;
+            if (parseNode.GetChildNode("ParentIndexNumber") is { } nullNodeParentIndexNumber && nullNodeParentIndexNumber.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ParentIndexNumber = null;
+            if (parseNode.GetChildNode("PremiereDate") is { } nullNodePremiereDate && nullNodePremiereDate.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) PremiereDate = null;
+            if (parseNode.GetChildNode("ProductionYear") is { } nullNodeProductionYear && nullNodeProductionYear.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ProductionYear = null;
+            if (parseNode.GetChildNode("ProviderIds") is { } nullNodeProviderIds && nullNodeProviderIds.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) ProviderIds = null;
+            if (parseNode.GetChildNode("SearchProviderName") is { } nullNodeSearchProviderName && nullNodeSearchProviderName.GetObjectValue<global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode>(global::Microsoft.Kiota.Abstractions.Serialization.UntypedNode.CreateFromDiscriminatorValue) is null or global::Microsoft.Kiota.Abstractions.Serialization.UntypedNull) SearchProviderName = null;
+        }
+
         /// <summary>The AlbumArtist property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteSearchResult? AlbumArtist { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteSearchResult? AlbumArtist { get => _explicitNullValueAlbumArtist; set { _explicitNullValueAlbumArtist = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("AlbumArtist"); else _explicitNullProperties?.Remove("AlbumArtist"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteSearchResult? _explicitNullValueAlbumArtist = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteSearchResult AlbumArtist { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteSearchResult AlbumArtist { get => _explicitNullValueAlbumArtist; set { _explicitNullValueAlbumArtist = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("AlbumArtist"); else _explicitNullProperties?.Remove("AlbumArtist"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteSearchResult _explicitNullValueAlbumArtist = default!;
 #endif
         /// <summary>The Artists property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteSearchResult>? Artists { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteSearchResult>? Artists { get => _explicitNullValueArtists; set { _explicitNullValueArtists = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Artists"); else _explicitNullProperties?.Remove("Artists"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteSearchResult>? _explicitNullValueArtists = default!;
 #nullable restore
 #else
-        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteSearchResult> Artists { get; set; }
+        public List<global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteSearchResult> Artists { get => _explicitNullValueArtists; set { _explicitNullValueArtists = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Artists"); else _explicitNullProperties?.Remove("Artists"); } }
+        private List<global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteSearchResult> _explicitNullValueArtists = default!;
 #endif
         /// <summary>The ImageUrl property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? ImageUrl { get; set; }
+        public string? ImageUrl { get => _explicitNullValueImageUrl; set { _explicitNullValueImageUrl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ImageUrl"); else _explicitNullProperties?.Remove("ImageUrl"); } }
+        private string? _explicitNullValueImageUrl = default!;
 #nullable restore
 #else
-        public string ImageUrl { get; set; }
+        public string ImageUrl { get => _explicitNullValueImageUrl; set { _explicitNullValueImageUrl = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ImageUrl"); else _explicitNullProperties?.Remove("ImageUrl"); } }
+        private string _explicitNullValueImageUrl = default!;
 #endif
         /// <summary>The IndexNumber property</summary>
-        public int? IndexNumber { get; set; }
+        public int? IndexNumber { get => _explicitNullValueIndexNumber; set { _explicitNullValueIndexNumber = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IndexNumber"); else _explicitNullProperties?.Remove("IndexNumber"); } }
+        private int? _explicitNullValueIndexNumber = default!;
         /// <summary>The IndexNumberEnd property</summary>
-        public int? IndexNumberEnd { get; set; }
+        public int? IndexNumberEnd { get => _explicitNullValueIndexNumberEnd; set { _explicitNullValueIndexNumberEnd = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("IndexNumberEnd"); else _explicitNullProperties?.Remove("IndexNumberEnd"); } }
+        private int? _explicitNullValueIndexNumberEnd = default!;
         /// <summary>Gets or sets the name.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Name { get; set; }
+        public string? Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Name"); else _explicitNullProperties?.Remove("Name"); } }
+        private string? _explicitNullValueName = default!;
 #nullable restore
 #else
-        public string Name { get; set; }
+        public string Name { get => _explicitNullValueName; set { _explicitNullValueName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Name"); else _explicitNullProperties?.Remove("Name"); } }
+        private string _explicitNullValueName = default!;
 #endif
         /// <summary>The Overview property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Overview { get; set; }
+        public string? Overview { get => _explicitNullValueOverview; set { _explicitNullValueOverview = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Overview"); else _explicitNullProperties?.Remove("Overview"); } }
+        private string? _explicitNullValueOverview = default!;
 #nullable restore
 #else
-        public string Overview { get; set; }
+        public string Overview { get => _explicitNullValueOverview; set { _explicitNullValueOverview = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("Overview"); else _explicitNullProperties?.Remove("Overview"); } }
+        private string _explicitNullValueOverview = default!;
 #endif
         /// <summary>The ParentIndexNumber property</summary>
-        public int? ParentIndexNumber { get; set; }
+        public int? ParentIndexNumber { get => _explicitNullValueParentIndexNumber; set { _explicitNullValueParentIndexNumber = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ParentIndexNumber"); else _explicitNullProperties?.Remove("ParentIndexNumber"); } }
+        private int? _explicitNullValueParentIndexNumber = default!;
         /// <summary>The PremiereDate property</summary>
-        public DateTimeOffset? PremiereDate { get; set; }
+        public DateTimeOffset? PremiereDate { get => _explicitNullValuePremiereDate; set { _explicitNullValuePremiereDate = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("PremiereDate"); else _explicitNullProperties?.Remove("PremiereDate"); } }
+        private DateTimeOffset? _explicitNullValuePremiereDate = default!;
         /// <summary>Gets or sets the year.</summary>
-        public int? ProductionYear { get; set; }
+        public int? ProductionYear { get => _explicitNullValueProductionYear; set { _explicitNullValueProductionYear = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ProductionYear"); else _explicitNullProperties?.Remove("ProductionYear"); } }
+        private int? _explicitNullValueProductionYear = default!;
         /// <summary>Gets or sets the provider ids.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteSearchResult_ProviderIds? ProviderIds { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteSearchResult_ProviderIds? ProviderIds { get => _explicitNullValueProviderIds; set { _explicitNullValueProviderIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ProviderIds"); else _explicitNullProperties?.Remove("ProviderIds"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteSearchResult_ProviderIds? _explicitNullValueProviderIds = default!;
 #nullable restore
 #else
-        public global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteSearchResult_ProviderIds ProviderIds { get; set; }
+        public global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteSearchResult_ProviderIds ProviderIds { get => _explicitNullValueProviderIds; set { _explicitNullValueProviderIds = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("ProviderIds"); else _explicitNullProperties?.Remove("ProviderIds"); } }
+        private global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteSearchResult_ProviderIds _explicitNullValueProviderIds = default!;
 #endif
         /// <summary>The SearchProviderName property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? SearchProviderName { get; set; }
+        public string? SearchProviderName { get => _explicitNullValueSearchProviderName; set { _explicitNullValueSearchProviderName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SearchProviderName"); else _explicitNullProperties?.Remove("SearchProviderName"); } }
+        private string? _explicitNullValueSearchProviderName = default!;
 #nullable restore
 #else
-        public string SearchProviderName { get; set; }
+        public string SearchProviderName { get => _explicitNullValueSearchProviderName; set { _explicitNullValueSearchProviderName = value; if (value is null) (_explicitNullProperties ??= new global::System.Collections.Generic.HashSet<string>()).Add("SearchProviderName"); else _explicitNullProperties?.Remove("SearchProviderName"); } }
+        private string _explicitNullValueSearchProviderName = default!;
 #endif
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -86,7 +124,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         public static global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteSearchResult CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             if(ReferenceEquals(parseNode, null)) throw new ArgumentNullException(nameof(parseNode));
-            return new global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteSearchResult();
+            return global::Soenneker.OpenApi.Generated.OpenApiNullTracking.Capture(new global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteSearchResult(), parseNode);
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -128,7 +166,8 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
             writer.WriteDateTimeOffsetValue("PremiereDate", PremiereDate);
             writer.WriteIntValue("ProductionYear", ProductionYear);
             writer.WriteObjectValue<global::Soenneker.Jellyfin.OpenApiClient.Models.RemoteSearchResult_ProviderIds>("ProviderIds", ProviderIds);
-            writer.WriteStringValue("SearchProviderName", SearchProviderName);
+            writer.WriteStringValue("SearchProviderName", SearchProviderName);if (_explicitNullProperties != null) foreach (string name in _explicitNullProperties) writer.WriteNullValue(name);
+            
         }
     }
 }
