@@ -81,7 +81,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Videos.Item.StreamNamespace
         public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::Soenneker.Jellyfin.OpenApiClient.Videos.Item.StreamNamespace.StreamRequestBuilder.StreamRequestBuilderGetQueryParameters>> requestConfiguration = default)
         {
 #endif
-            var requestInfo = new RequestInformation(Method.GET, global::Soenneker.OpenApi.Generated.OpenApiServiceRoutes.Resolve(UrlTemplate, RequestAdapter.BaseUrl, "http://localhost", "/Videos/{item%2Did}/stream", PathParameters.ContainsKey("request-raw-url")), PathParameters);
+            var requestInfo = new RequestInformation(Method.GET, UrlTemplate, PathParameters);
             requestInfo.Configure(requestConfiguration);
             requestInfo.Headers.TryAdd("Accept", "video/*");
             return requestInfo;
@@ -100,7 +100,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Videos.Item.StreamNamespace
         public RequestInformation ToHeadRequestInformation(Action<RequestConfiguration<global::Soenneker.Jellyfin.OpenApiClient.Videos.Item.StreamNamespace.StreamRequestBuilder.StreamRequestBuilderHeadQueryParameters>> requestConfiguration = default)
         {
 #endif
-            var requestInfo = new RequestInformation(Method.HEAD, global::Soenneker.OpenApi.Generated.OpenApiServiceRoutes.Resolve(UrlTemplate, RequestAdapter.BaseUrl, "http://localhost", "/Videos/{item%2Did}/stream", PathParameters.ContainsKey("request-raw-url")), PathParameters);
+            var requestInfo = new RequestInformation(Method.HEAD, UrlTemplate, PathParameters);
             requestInfo.Configure(requestConfiguration);
             requestInfo.Headers.TryAdd("Accept", "video/*");
             return requestInfo;

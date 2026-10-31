@@ -83,7 +83,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Audio.Item.StreamWithContainer
         public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::Soenneker.Jellyfin.OpenApiClient.Audio.Item.StreamWithContainer.StreamWithContainerRequestBuilder.StreamWithContainerRequestBuilderGetQueryParameters>> requestConfiguration = default)
         {
 #endif
-            var requestInfo = new RequestInformation(Method.GET, global::Soenneker.OpenApi.Generated.OpenApiServiceRoutes.Resolve(UrlTemplate, RequestAdapter.BaseUrl, "http://localhost", "/Audio/{itemId}/stream.{container}", PathParameters.ContainsKey("request-raw-url")), PathParameters);
+            var requestInfo = new RequestInformation(Method.GET, UrlTemplate, PathParameters);
             requestInfo.Configure(requestConfiguration);
             requestInfo.Headers.TryAdd("Accept", "audio/*");
             return requestInfo;
@@ -102,7 +102,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Audio.Item.StreamWithContainer
         public RequestInformation ToHeadRequestInformation(Action<RequestConfiguration<global::Soenneker.Jellyfin.OpenApiClient.Audio.Item.StreamWithContainer.StreamWithContainerRequestBuilder.StreamWithContainerRequestBuilderHeadQueryParameters>> requestConfiguration = default)
         {
 #endif
-            var requestInfo = new RequestInformation(Method.HEAD, global::Soenneker.OpenApi.Generated.OpenApiServiceRoutes.Resolve(UrlTemplate, RequestAdapter.BaseUrl, "http://localhost", "/Audio/{itemId}/stream.{container}", PathParameters.ContainsKey("request-raw-url")), PathParameters);
+            var requestInfo = new RequestInformation(Method.HEAD, UrlTemplate, PathParameters);
             requestInfo.Configure(requestConfiguration);
             requestInfo.Headers.TryAdd("Accept", "audio/*");
             return requestInfo;

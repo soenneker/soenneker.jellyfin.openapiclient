@@ -72,7 +72,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Videos.Item.Item.Subtitles.Item.Subti
         public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<global::Soenneker.Jellyfin.OpenApiClient.Videos.Item.Item.Subtitles.Item.SubtitlesM3u8.SubtitlesM3u8RequestBuilder.SubtitlesM3u8RequestBuilderGetQueryParameters>> requestConfiguration = default)
         {
 #endif
-            var requestInfo = new RequestInformation(Method.GET, global::Soenneker.OpenApi.Generated.OpenApiServiceRoutes.Resolve(UrlTemplate, RequestAdapter.BaseUrl, "http://localhost", "/Videos/{item%2Did}/{mediaSource%2Did}/Subtitles/{index%2Did}/subtitles.m3u8", PathParameters.ContainsKey("request-raw-url")), PathParameters);
+            var requestInfo = new RequestInformation(Method.GET, UrlTemplate, PathParameters);
             requestInfo.Configure(requestConfiguration);
             requestInfo.Headers.TryAdd("Accept", "application/x-mpegURL, application/json, application/json;profile=\"CamelCase\", application/json;profile=\"PascalCase\"");
             return requestInfo;
