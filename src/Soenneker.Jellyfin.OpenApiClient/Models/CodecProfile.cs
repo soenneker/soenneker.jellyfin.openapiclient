@@ -101,7 +101,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         /// <returns>A IDictionary&lt;string, Action&lt;IParseNode&gt;&gt;</returns>
         public virtual IDictionary<string, Action<IParseNode>> GetFieldDeserializers()
         {
-            return new Dictionary<string, Action<IParseNode>>
+            return new Dictionary<string, Action<IParseNode>>(6)
             {
                 { "ApplyConditions", n => { ApplyConditions = n.GetCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.ProfileCondition>(global::Soenneker.Jellyfin.OpenApiClient.Models.ProfileCondition.CreateFromDiscriminatorValue)?.AsList(); } },
                 { "Codec", n => { Codec = n.GetStringValue(); } },

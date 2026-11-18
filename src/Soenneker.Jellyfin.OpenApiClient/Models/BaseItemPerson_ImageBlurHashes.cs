@@ -192,7 +192,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         /// <returns>A IDictionary&lt;string, Action&lt;IParseNode&gt;&gt;</returns>
         public virtual IDictionary<string, Action<IParseNode>> GetFieldDeserializers()
         {
-            return new Dictionary<string, Action<IParseNode>>
+            return new Dictionary<string, Action<IParseNode>>(13)
             {
                 { "Art", n => { Art = n.GetObjectValue<global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemPerson_ImageBlurHashes_Art>(global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemPerson_ImageBlurHashes_Art.CreateFromDiscriminatorValue); } },
                 { "Backdrop", n => { Backdrop = n.GetObjectValue<global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemPerson_ImageBlurHashes_Backdrop>(global::Soenneker.Jellyfin.OpenApiClient.Models.BaseItemPerson_ImageBlurHashes_Backdrop.CreateFromDiscriminatorValue); } },

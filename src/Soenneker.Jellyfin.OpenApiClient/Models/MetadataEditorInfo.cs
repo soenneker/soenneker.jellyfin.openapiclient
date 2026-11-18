@@ -101,7 +101,7 @@ namespace Soenneker.Jellyfin.OpenApiClient.Models
         /// <returns>A IDictionary&lt;string, Action&lt;IParseNode&gt;&gt;</returns>
         public virtual IDictionary<string, Action<IParseNode>> GetFieldDeserializers()
         {
-            return new Dictionary<string, Action<IParseNode>>
+            return new Dictionary<string, Action<IParseNode>>(6)
             {
                 { "ContentType", n => { ContentType = n.GetEnumValue<global::Soenneker.Jellyfin.OpenApiClient.Models.MetadataEditorInfo_ContentType>(); } },
                 { "ContentTypeOptions", n => { ContentTypeOptions = n.GetCollectionOfObjectValues<global::Soenneker.Jellyfin.OpenApiClient.Models.NameValuePair>(global::Soenneker.Jellyfin.OpenApiClient.Models.NameValuePair.CreateFromDiscriminatorValue)?.AsList(); } },
